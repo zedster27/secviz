@@ -1,0 +1,1 @@
+In network system: Visualization (visualisation) is the visual representation of large-scale collections of network information. It help network system administrater to easily search, filter data and make command decisions.

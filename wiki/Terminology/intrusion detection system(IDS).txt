@@ -1,0 +1,17 @@
+A device or software application  that monitors network and/or system activities for malicious activities or policy violations and produces reports to a Management Station.
+
+IDS Terminology:
+    * Alert/Alarm
+    * True Positive
+    * False Positive
+    * False Negative
+    * True Negative
+    * Noise
+    * Site policy
+    * Site policy awareness
+    * Confidence value
+    * Alarm filtering
+    * Attacker or Intruder
+    * Masquerader
+    * Misfeasor
+    * Clandestine user
