@@ -1,0 +1,5 @@
+c:\users\ntt\documents\visual studio 2010\Projects\Secvic\ServerProgram\bin\Debug\ServerProgram.exe
+c:\users\ntt\documents\visual studio 2010\Projects\Secvic\ServerProgram\bin\Debug\ServerProgram.pdb
+c:\users\ntt\documents\visual studio 2010\Projects\Secvic\ServerProgram\obj\x86\Debug\ResolveAssemblyReference.cache
+c:\users\ntt\documents\visual studio 2010\Projects\Secvic\ServerProgram\obj\x86\Debug\ServerProgram.exe
+c:\users\ntt\documents\visual studio 2010\Projects\Secvic\ServerProgram\obj\x86\Debug\ServerProgram.pdb
