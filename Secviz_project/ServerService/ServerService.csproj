@@ -46,6 +46,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="configuration.xml" />
     <Content Include="WebService\Service1.asmx" />
     <Content Include="WebService\Web.config" />
     <Content Include="WebService\Web.Debug.config">
