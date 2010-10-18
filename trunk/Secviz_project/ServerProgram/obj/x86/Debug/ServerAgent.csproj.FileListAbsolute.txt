@@ -3,3 +3,8 @@ c:\users\ntt\documents\visual studio 2010\Projects\Secvic\ServerProgram\bin\Debu
 c:\users\ntt\documents\visual studio 2010\Projects\Secvic\ServerProgram\obj\x86\Debug\ResolveAssemblyReference.cache
 c:\users\ntt\documents\visual studio 2010\Projects\Secvic\ServerProgram\obj\x86\Debug\ServerProgram.exe
 c:\users\ntt\documents\visual studio 2010\Projects\Secvic\ServerProgram\obj\x86\Debug\ServerProgram.pdb
+C:\Users\NTT\Desktop\secviz\trunk\Secviz_project\ServerProgram\bin\Debug\ServerProgram.exe
+C:\Users\NTT\Desktop\secviz\trunk\Secviz_project\ServerProgram\bin\Debug\ServerProgram.pdb
+C:\Users\NTT\Desktop\secviz\trunk\Secviz_project\ServerProgram\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\NTT\Desktop\secviz\trunk\Secviz_project\ServerProgram\obj\x86\Debug\ServerProgram.exe
+C:\Users\NTT\Desktop\secviz\trunk\Secviz_project\ServerProgram\obj\x86\Debug\ServerProgram.pdb
