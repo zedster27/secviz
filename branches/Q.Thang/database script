@@ -1,0 +1,116 @@
+create table HATFact (
+      HyperAlertType varchar2(50) not null,
+      FactName varchar2(50) not null,
+      FactType   varchar2(50) not null,
+      constraint HATFact_pk primary key (HyperAlertType,FactName)
+      
+);
+create table HATPrereq (
+      HyperAlertType varchar2(50) not null,
+      Predicate varchar2(50) not null,
+      ArgPos int not null,
+      Arg_ID int,
+      ArgName varchar2(50),
+      constraint HATPrereq_pk primary key (HyperAlertType,Predicate,ArgPos)
+);
+create table HATConseq (
+      HyperAlertType varchar2(50) not null,
+      Predicate varchar2(50) not null,
+      ArgPos int not null,
+      Arg_ID int,
+      ArgName varchar2(50),
+      constraint HATConseq_pk primary key (HyperAlertType,Predicate,ArgPos)
+);
+create table Protocol (
+      HyperAlertType varchar2(50) not null,
+      Protocol varchar2(50),
+      constraint Protocol_pk primary key (HyperAlertType)
+);
+create table Implication (
+      Predicate varchar2(50) not null,
+      Implied varchar2(50) not null,
+      P_Arg_ID int not null,
+      I_Arg_ID int not null ,
+      constraint Implication_pk primary key (Predicate,Implied,P_Arg_ID,I_Arg_ID)
+);
+create table Predicate (
+    Predicate varchar2(50) not null,
+    Arg_ID int ,
+    ArgType varchar2(50) ,
+    constraint Predicate_pk primary key (Predicate)
+);
+create table Alert_Info (
+   SensorID int not null ,
+   AlertID int not null,
+   AlertName varchar2(50),
+   Begin_Time date,
+   End_Time date,
+   SrcIPAddress varchar2(20),
+   DestIPAddress varchar2(20),
+   SrcPort int ,
+   DestPort int,
+   constraint Alert_Info_pk primary key (SensorID,AlertID)
+);
+create table HyperAlertMapping (
+  HyperAlertName varchar2(50) not null,
+  OriginalName varchar2(50) ,
+  HyperAlertType varchar2(50),
+  constraint HyperAlertMapping_pk primary key (HyperAlertName)
+);
+create table CorrelatedAlerts (
+  PreparingHyperAlertID int not null,
+  PreparedHyperAlertID int not null,
+  constraint CorrelatedAlerts_pk primary key (PreparingHyperAlertID,PreparedHyperAlertID)
+);
+create table HyperAlert (
+  HyperAlertID int not null,
+  HyperAlertType varchar2(50),
+  Begin_Time date,
+  End_Time date,
+  constraint HyperAlert_pk primary key (HyperAlertID)
+);
+create table ConseqSet (
+  HyperAlertID int not null,
+  EncodedPredicate int not null,
+  Begin_Time date,
+  End_Time date,
+  constraint ConseqSet_pk primary key (HyperAlertID,EncodedPredicate)
+);
+create table PrereqSet (
+  HyperAlertID int not null,
+  EncodedPredicate int not null,
+  Begin_Time date,
+  End_Time date,
+  constraint PrereqSet_pk primary key (HyperAlertID,EncodedPredicate)
+);
+ALTER TABLE HATFact ADD 
+      CONSTRAINT fk_HATFact
+      FOREIGN    KEY (HyperAlertType)
+      REFERENCES Protocol(HyperAlertType) ;
+alter table HATPrereq add (
+constraint fk1_HATPrereq foreign key (HyperAlertType) references Protocol(HyperAlertType),
+constraint fk2_HATPrereq foreign key (Predicate) references Predicate(Predicate) 
+);
+alter table Predicate add 
+constraint u_Predicate unique ( Arg_ID) ;
+alter table HATConseq add (
+   constraint fk1_HATConseq foreign key (HyperAlertType) references Protocol(HyperAlertType),
+   constraint fk2_HATConseq foreign key (Predicate) references Predicate(Predicate),
+   constraint fk3_HATConseq foreign key (Arg_ID) references Predicate(Arg_ID)
+);
+alter table Implication add (
+  constraint fk11_Implication foreign key (Implied) references Predicate(Predicate),
+  constraint fk12_Implication foreign key (I_Arg_ID) references Predicate(Arg_ID),
+  constraint fk21_Implication foreign key (Predicate) references Predicate(Predicate),
+   constraint fk22_Implication foreign key (P_Arg_ID) references Predicate(Arg_ID)
+);
+alter table HyperAlertMapping add
+constraint fk_HyperAlertMapping foreign key (HyperAlertType) references Protocol (HyperAlertType);
+alter table CorrelatedAlerts add (
+   constraint fk1_CorrelatedAlerts foreign key (PreparingHyperAlertID) references HyperAlert (HyperAlertID),
+   constraint fk2_CorrelatedAlerts foreign key (PreparedHyperAlertID) references HyperAlert (HyperAlertID)
+);
+alter table ConseqSet add 
+  constraint fk_ConseqSet foreign key (HyperAlertID) references HyperAlert(HyperAlertID);
+alter table PrereqSet add
+ constraint fk_PrereqSet foreign key (HyperAlertID) references HyperAlert(HyperAlertID);
