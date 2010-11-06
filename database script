@@ -27,11 +27,9 @@ create table Protocol (
       constraint Protocol_pk primary key (HyperAlertType)
 );
 create table Implication (
-      Predicate varchar2(50) not null,
-      Implied varchar2(50) not null,
       P_Arg_ID int not null,
       I_Arg_ID int not null ,
-      constraint Implication_pk primary key (Predicate,Implied,P_Arg_ID,I_Arg_ID)
+      constraint Implication_pk primary key (P_Arg_ID,I_Arg_ID)
 );
 create table Predicate (
     Predicate varchar2(50) not null,
@@ -83,6 +81,8 @@ create table PrereqSet (
   End_Time date,
   constraint PrereqSet_pk primary key (HyperAlertID,EncodedPredicate)
 );
+
+
 ALTER TABLE HATFact ADD 
       CONSTRAINT fk_HATFact
       FOREIGN    KEY (HyperAlertType)
@@ -99,10 +99,8 @@ alter table HATConseq add (
    constraint fk3_HATConseq foreign key (Arg_ID) references Predicate(Arg_ID)
 );
 alter table Implication add (
-  constraint fk11_Implication foreign key (Implied) references Predicate(Predicate),
-  constraint fk12_Implication foreign key (I_Arg_ID) references Predicate(Arg_ID),
-  constraint fk21_Implication foreign key (Predicate) references Predicate(Predicate),
-   constraint fk22_Implication foreign key (P_Arg_ID) references Predicate(Arg_ID)
+  constraint fk1_Implication foreign key (I_Arg_ID) references Predicate(Arg_ID),
+   constraint fk2_Implication foreign key (P_Arg_ID) references Predicate(Arg_ID)
 );
 alter table HyperAlertMapping add
 constraint fk_HyperAlertMapping foreign key (HyperAlertType) references Protocol (HyperAlertType);
