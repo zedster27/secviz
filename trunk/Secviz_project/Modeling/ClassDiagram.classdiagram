@@ -1187,6 +1187,18 @@ there is an instance of this class, all actions using this class will be accesse
                           <referencedTypeMoniker Id="401f2a48-b3e6-4c8c-93e8-b2cf2091794d" LastKnownName="int" />
                         </type_NamedElement>
                       </property>
+                      <property Id="c48e0250-730b-4651-8866-15a054d0d995" name="beginTime" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                        <elementDefinition Id="e98ca0aa-eafe-4ad3-9c12-e00b17196b4c" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="5e0dcda0-d0fe-4f1d-b537-61b9fa1f220d" LastKnownName="DateTime" />
+                        </type_NamedElement>
+                      </property>
+                      <property Id="70031c30-61b1-4bcd-bedf-e39fb7227780" name="endTime" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                        <elementDefinition Id="96976b49-f59d-457e-a745-bc0109ff8126" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="5e0dcda0-d0fe-4f1d-b537-61b9fa1f220d" LastKnownName="DateTime" />
+                        </type_NamedElement>
+                      </property>
                     </ownedAttributesInternal>
                   </class>
                 </packageHasNamedElement>
