@@ -1,5 +1,0 @@
-C:\Users\NTT\Desktop\secviz\trunk\Secviz_project\ServiceTest\bin\Debug\ServiceTest.dll
-C:\Users\NTT\Desktop\secviz\trunk\Secviz_project\ServiceTest\bin\Debug\ServiceTest.pdb
-C:\Users\NTT\Desktop\secviz\trunk\Secviz_project\ServiceTest\obj\Debug\ResolveAssemblyReference.cache
-C:\Users\NTT\Desktop\secviz\trunk\Secviz_project\ServiceTest\obj\Debug\ServiceTest.dll
-C:\Users\NTT\Desktop\secviz\trunk\Secviz_project\ServiceTest\obj\Debug\ServiceTest.pdb

@@ -989,6 +989,42 @@
                 LastKnownLocation="Package_0923.uml" />
             </type_NamedElement>
           </property>
+          <property
+            Id="e98ca0aa-eafe-4ad3-9c12-e00b17196b4c"
+            name="beginTime"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="e7cf17a7-b009-4644-8142-5e2bd9ff3108"
+                LastKnownName="DateTime"
+                LastKnownLocation="Package_0939.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="96976b49-f59d-457e-a745-bc0109ff8126"
+            name="endTime"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="e7cf17a7-b009-4644-8142-5e2bd9ff3108"
+                LastKnownName="DateTime"
+                LastKnownLocation="Package_0939.uml" />
+            </type_NamedElement>
+          </property>
         </ownedAttributesInternal>
       </class>
     </packageHasNamedElement>
