@@ -113,30 +113,6 @@
         <ownedOperationsInternal>
           <operation
             Id="fd8bce17-a5ee-481a-99f3-ca71f4fbe4c9"
-            name="getCorrelatedGraphs"
-            isLeaf="false"
-            isStatic="false"
-            isAbstract="false"
-            concurrency="Sequential"
-            isQuery="false">
-            <ownedParameters>
-              <operationHasOwnedParameters>
-                <parameter
-                  Id="3d20eb11-caf7-4252-9b09-8945cd0ee035"
-                  direction="Return"
-                  isUnique="false">
-                  <type_NamedElement>
-                    <undefinedTypeMoniker
-                      Id="e76bd697-2222-42cf-8528-7a22de903938"
-                      LastKnownName="GraphResult"
-                      LastKnownLocation="Package_0914.uml" />
-                  </type_NamedElement>
-                </parameter>
-              </operationHasOwnedParameters>
-            </ownedParameters>
-          </operation>
-          <operation
-            Id="acc8108f-8551-499d-b8fa-e706293da3a5"
             name="getCorrelatedGraph"
             isLeaf="false"
             isStatic="false"
@@ -146,21 +122,7 @@
             <ownedParameters>
               <operationHasOwnedParameters>
                 <parameter
-                  Id="81c1d587-6a9e-4500-b30b-dcaa008f5131"
-                  name="graphID"
-                  direction="In"
-                  isUnique="false">
-                  <type_NamedElement>
-                    <undefinedTypeMoniker
-                      Id="9cbc3077-695f-4c08-9905-ad3b75d959d6"
-                      LastKnownName="int"
-                      LastKnownLocation="Package_0923.uml" />
-                  </type_NamedElement>
-                </parameter>
-              </operationHasOwnedParameters>
-              <operationHasOwnedParameters>
-                <parameter
-                  Id="07430d7c-2d9f-48d8-8f6f-a38508a0c877"
+                  Id="3d20eb11-caf7-4252-9b09-8945cd0ee035"
                   direction="Return"
                   isUnique="false">
                   <type_NamedElement>
@@ -759,8 +721,8 @@
             Id="71b891cf-0089-4341-8ff7-74f2550d0616"
             name="INVALID_PRIVILIDGE"
             isLeaf="false"
-            isStatic="false"
-            isReadOnly="false"
+            isStatic="true"
+            isReadOnly="true"
             isUnique="false"
             isDerived="false"
             isDerivedUnion="false"
@@ -777,8 +739,8 @@
             Id="a0d47c26-b55e-4604-8f6a-f775eca4c985"
             name="SUCCESSFUL"
             isLeaf="false"
-            isStatic="false"
-            isReadOnly="false"
+            isStatic="true"
+            isReadOnly="true"
             isUnique="false"
             isDerived="false"
             isDerivedUnion="false"
@@ -795,8 +757,8 @@
             Id="821ad406-dabb-4b7a-b66e-065a6f93a0a2"
             name="ERROR_EXECUTING"
             isLeaf="false"
-            isStatic="false"
-            isReadOnly="false"
+            isStatic="true"
+            isReadOnly="true"
             isUnique="false"
             isDerived="false"
             isDerivedUnion="false"
@@ -813,8 +775,8 @@
             Id="f4dc9244-a73f-4f50-afbb-3b258ad833db"
             name="INVALID_COMMAND"
             isLeaf="false"
-            isStatic="false"
-            isReadOnly="false"
+            isStatic="true"
+            isReadOnly="true"
             isUnique="false"
             isDerived="false"
             isDerivedUnion="false"
@@ -831,8 +793,8 @@
             Id="2f20afa5-85c6-41e7-8251-9767f1ed21eb"
             name="INVALID_PROPERTY"
             isLeaf="false"
-            isStatic="false"
-            isReadOnly="false"
+            isStatic="true"
+            isReadOnly="true"
             isUnique="false"
             isDerived="false"
             isDerivedUnion="false"
@@ -849,8 +811,8 @@
             Id="40ca98c7-f7cf-442f-b85a-b2d070935416"
             name="UNKNOWN_ERROR"
             isLeaf="false"
-            isStatic="false"
-            isReadOnly="false"
+            isStatic="true"
+            isReadOnly="true"
             isUnique="false"
             isDerived="false"
             isDerivedUnion="false"
@@ -867,8 +829,8 @@
             Id="63ef2387-a5c9-4787-87b8-09526f4afbd0"
             name="SUCCESSFUL_LOGIN"
             isLeaf="false"
-            isStatic="false"
-            isReadOnly="false"
+            isStatic="true"
+            isReadOnly="true"
             isUnique="false"
             isDerived="false"
             isDerivedUnion="false"
@@ -885,8 +847,8 @@
             Id="c32c4760-63b1-4a42-b68c-a70fa4ab80a3"
             name="SUCCESSFUL_LOGOUT"
             isLeaf="false"
-            isStatic="false"
-            isReadOnly="false"
+            isStatic="true"
+            isReadOnly="true"
             isUnique="false"
             isDerived="false"
             isDerivedUnion="false"
@@ -903,8 +865,8 @@
             Id="67724185-5d1e-42d3-b991-b6d3c94f789a"
             name="INVALID_ACCOUNT"
             isLeaf="false"
-            isStatic="false"
-            isReadOnly="false"
+            isStatic="true"
+            isReadOnly="true"
             isUnique="false"
             isDerived="false"
             isDerivedUnion="false"
