@@ -49,26 +49,8 @@
             </type_NamedElement>
           </property>
           <property
-            Id="3e97154b-d0e1-41a5-8617-9816408d3dca"
-            name="argIDArray"
-            isLeaf="false"
-            isStatic="false"
-            isReadOnly="false"
-            isUnique="false"
-            isDerived="false"
-            isDerivedUnion="false"
-            aggregation="None"
-            isComposite="false">
-            <type_NamedElement>
-              <undefinedTypeMoniker
-                Id="c7b0f622-48cd-49b9-a9ec-f64fdf89a933"
-                LastKnownName="Array&lt;int&gt;"
-                LastKnownLocation="Package_0939.uml" />
-            </type_NamedElement>
-          </property>
-          <property
             Id="bc07cd07-aed3-4d6b-81db-afe419fd03cb"
-            name="argTypeArray"
+            name="arguments"
             isLeaf="false"
             isStatic="false"
             isReadOnly="false"
@@ -79,8 +61,8 @@
             isComposite="false">
             <type_NamedElement>
               <undefinedTypeMoniker
-                Id="1aca7b23-6820-4e3c-8a2a-05c548585a57"
-                LastKnownName="Array&lt;String&gt;"
+                Id="bb160ea3-8310-4d4e-a936-729db8631f77"
+                LastKnownName="Array&lt;Argument&gt;"
                 LastKnownLocation="Package_0939.uml" />
             </type_NamedElement>
           </property>
@@ -97,21 +79,7 @@
             <ownedParameters>
               <operationHasOwnedParameters>
                 <parameter
-                  Id="54f85a89-9584-4ba5-b216-bf79168b7357"
-                  name="id"
-                  direction="In"
-                  isUnique="false">
-                  <type_NamedElement>
-                    <undefinedTypeMoniker
-                      Id="9cbc3077-695f-4c08-9905-ad3b75d959d6"
-                      LastKnownName="int"
-                      LastKnownLocation="Package_0923.uml" />
-                  </type_NamedElement>
-                </parameter>
-              </operationHasOwnedParameters>
-              <operationHasOwnedParameters>
-                <parameter
-                  Id="16211aea-3d8f-40d6-aae0-007821fc6684"
+                  Id="614b14cc-206e-40d4-8dd3-15b2527f4db5"
                   name="name"
                   direction="In"
                   isUnique="false">
@@ -126,84 +94,8 @@
             </ownedParameters>
           </operation>
           <operation
-            Id="49cd0d17-2bcb-4004-803a-f8f5259c9a5e"
-            name="addNewArg"
-            isLeaf="false"
-            isStatic="false"
-            isAbstract="false"
-            concurrency="Sequential"
-            isQuery="false">
-            <ownedParameters>
-              <operationHasOwnedParameters>
-                <parameter
-                  Id="09a7a474-8db7-4863-990e-23e710d215e3"
-                  name="argID"
-                  direction="In"
-                  isUnique="false">
-                  <type_NamedElement>
-                    <undefinedTypeMoniker
-                      Id="9cbc3077-695f-4c08-9905-ad3b75d959d6"
-                      LastKnownName="int"
-                      LastKnownLocation="Package_0923.uml" />
-                  </type_NamedElement>
-                </parameter>
-              </operationHasOwnedParameters>
-              <operationHasOwnedParameters>
-                <parameter
-                  Id="929c6055-bf5e-404a-a45e-98445a9ec1a5"
-                  name="type"
-                  direction="In"
-                  isUnique="false">
-                  <type_NamedElement>
-                    <primitiveTypeMoniker
-                      Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
-                      LastKnownName="String"
-                      LastKnownLocation="Modeling.uml" />
-                  </type_NamedElement>
-                </parameter>
-              </operationHasOwnedParameters>
-            </ownedParameters>
-          </operation>
-          <operation
-            Id="2ea18fb7-0ac6-4903-838d-f95f7a6bd740"
-            name="getArgType"
-            isLeaf="false"
-            isStatic="false"
-            isAbstract="false"
-            concurrency="Sequential"
-            isQuery="false">
-            <ownedParameters>
-              <operationHasOwnedParameters>
-                <parameter
-                  Id="eb18a779-b4bb-4d73-8b83-ad3bc5b2844a"
-                  name="index"
-                  direction="In"
-                  isUnique="false">
-                  <type_NamedElement>
-                    <undefinedTypeMoniker
-                      Id="9cbc3077-695f-4c08-9905-ad3b75d959d6"
-                      LastKnownName="int"
-                      LastKnownLocation="Package_0923.uml" />
-                  </type_NamedElement>
-                </parameter>
-              </operationHasOwnedParameters>
-              <operationHasOwnedParameters>
-                <parameter
-                  Id="dc651341-a998-4dd5-9109-224aed65eef9"
-                  direction="Return">
-                  <type_NamedElement>
-                    <primitiveTypeMoniker
-                      Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
-                      LastKnownName="String"
-                      LastKnownLocation="Modeling.uml" />
-                  </type_NamedElement>
-                </parameter>
-              </operationHasOwnedParameters>
-            </ownedParameters>
-          </operation>
-          <operation
             Id="e0ce1121-12a8-469e-b5dc-5a3530160b6b"
-            name="getNumberArgs"
+            name="numberOfArgs"
             isLeaf="false"
             isStatic="false"
             isAbstract="false"
@@ -213,7 +105,8 @@
               <operationHasOwnedParameters>
                 <parameter
                   Id="0c0993eb-e922-4b66-a802-e960cd295634"
-                  direction="Return">
+                  direction="Return"
+                  isUnique="false">
                   <type_NamedElement>
                     <undefinedTypeMoniker
                       Id="9cbc3077-695f-4c08-9905-ad3b75d959d6"
@@ -226,7 +119,7 @@
           </operation>
           <operation
             Id="5632fedf-a665-4c0a-b7eb-aad413b9b238"
-            name="getArgID"
+            name="getArg"
             isLeaf="false"
             isStatic="false"
             isAbstract="false"
@@ -239,6 +132,83 @@
                   direction="Return"
                   isUnique="false">
                   <type_NamedElement>
+                    <classMoniker
+                      Id="bed5a117-9915-4bd8-86ab-64c3074d96f6"
+                      LastKnownName="Argument"
+                      LastKnownLocation="Package_0939.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="22c5fea2-5b9c-40a6-8afa-706f8a08a3af"
+                  name="pos"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="9cbc3077-695f-4c08-9905-ad3b75d959d6"
+                      LastKnownName="int"
+                      LastKnownLocation="Package_0923.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="41c720b5-3d06-4757-bbc0-a21c59eb87b7"
+            name="addArg"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="18546370-6ded-4ca9-bcf8-131622147097"
+                  name="arg"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="bed5a117-9915-4bd8-86ab-64c3074d96f6"
+                      LastKnownName="Argument"
+                      LastKnownLocation="Package_0939.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="3cd693ef-7641-4510-8cbb-b1d97cf6000a"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="9306849d-44c3-4889-81af-df2863c7f4d9"
+                      LastKnownName="void"
+                      LastKnownLocation="Package_0923.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="a4961fb5-2d9f-47a6-bac3-1079f2cbb064"
+            name="addArgAtPos"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="e564cd92-e4e1-411d-93ec-47044748f87f"
+                  name="pos"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
                     <undefinedTypeMoniker
                       Id="9cbc3077-695f-4c08-9905-ad3b75d959d6"
                       LastKnownName="int"
@@ -248,14 +218,27 @@
               </operationHasOwnedParameters>
               <operationHasOwnedParameters>
                 <parameter
-                  Id="80b8fb0b-efd5-4d55-99dc-560aac7bac92"
-                  name="index"
+                  Id="510b823b-9462-4fa5-b533-d256a0192954"
+                  name="arg"
                   direction="In"
                   isUnique="false">
                   <type_NamedElement>
+                    <classMoniker
+                      Id="bed5a117-9915-4bd8-86ab-64c3074d96f6"
+                      LastKnownName="Argument"
+                      LastKnownLocation="Package_0939.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="670e6c0a-e18b-483c-9646-44a4398104fe"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
                     <undefinedTypeMoniker
-                      Id="9cbc3077-695f-4c08-9905-ad3b75d959d6"
-                      LastKnownName="int"
+                      Id="9306849d-44c3-4889-81af-df2863c7f4d9"
+                      LastKnownName="void"
                       LastKnownLocation="Package_0923.uml" />
                   </type_NamedElement>
                 </parameter>
@@ -688,6 +671,14 @@
               </operationHasOwnedParameters>
             </ownedParameters>
           </operation>
+          <operation
+            Id="7b773a49-4c1d-4888-b34a-2057ffbb1d7a"
+            name="Fact"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
         </ownedOperationsInternal>
       </class>
     </packageHasNamedElement>
@@ -948,8 +939,8 @@
             isComposite="false">
             <type_NamedElement>
               <undefinedTypeMoniker
-                Id="1aca7b23-6820-4e3c-8a2a-05c548585a57"
-                LastKnownName="Array&lt;String&gt;"
+                Id="7fd4ee01-1b48-4282-acf7-99cc514b7365"
+                LastKnownName="Array&lt;EncodedPredicate&gt;"
                 LastKnownLocation="Package_0939.uml" />
             </type_NamedElement>
           </property>
@@ -966,8 +957,8 @@
             isComposite="false">
             <type_NamedElement>
               <undefinedTypeMoniker
-                Id="1aca7b23-6820-4e3c-8a2a-05c548585a57"
-                LastKnownName="Array&lt;String&gt;"
+                Id="7fd4ee01-1b48-4282-acf7-99cc514b7365"
+                LastKnownName="Array&lt;EncodedPredicate&gt;"
                 LastKnownLocation="Package_0939.uml" />
             </type_NamedElement>
           </property>
@@ -1026,6 +1017,16 @@
             </type_NamedElement>
           </property>
         </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="2919ebd8-e7ab-45a9-8c5a-9548bb654269"
+            name="HyperAlert"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
       </class>
     </packageHasNamedElement>
     <packageHasNamedElement>
@@ -1052,42 +1053,6 @@
                 Id="9cbc3077-695f-4c08-9905-ad3b75d959d6"
                 LastKnownName="int"
                 LastKnownLocation="Package_0923.uml" />
-            </type_NamedElement>
-          </property>
-          <property
-            Id="ff62b949-d157-4fb6-942e-5e0f039b5488"
-            name="alertType"
-            isLeaf="false"
-            isStatic="false"
-            isReadOnly="false"
-            isUnique="false"
-            isDerived="false"
-            isDerivedUnion="false"
-            aggregation="None"
-            isComposite="false">
-            <type_NamedElement>
-              <primitiveTypeMoniker
-                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
-                LastKnownName="String"
-                LastKnownLocation="Modeling.uml" />
-            </type_NamedElement>
-          </property>
-          <property
-            Id="532aadcc-22e1-44f3-ad4a-2fbc68414fea"
-            name="alertValues"
-            isLeaf="false"
-            isStatic="false"
-            isReadOnly="false"
-            isUnique="false"
-            isDerived="false"
-            isDerivedUnion="false"
-            aggregation="None"
-            isComposite="false">
-            <type_NamedElement>
-              <undefinedTypeMoniker
-                Id="1aca7b23-6820-4e3c-8a2a-05c548585a57"
-                LastKnownName="Array&lt;String&gt;"
-                LastKnownLocation="Package_0939.uml" />
             </type_NamedElement>
           </property>
           <property
@@ -1221,28 +1186,12 @@
           <operation
             Id="9f9fcf4c-e4ea-4f04-8161-237e7ab60d6c"
             name="Alert"
+            visibility="Private"
             isLeaf="false"
             isStatic="false"
             isAbstract="false"
             concurrency="Sequential"
-            isQuery="false">
-            <ownedParameters>
-              <operationHasOwnedParameters>
-                <parameter
-                  Id="50ad3599-c600-4949-b561-ec5cdcc01ba9"
-                  name="ID"
-                  direction="In"
-                  isUnique="false">
-                  <type_NamedElement>
-                    <undefinedTypeMoniker
-                      Id="9cbc3077-695f-4c08-9905-ad3b75d959d6"
-                      LastKnownName="int"
-                      LastKnownLocation="Package_0923.uml" />
-                  </type_NamedElement>
-                </parameter>
-              </operationHasOwnedParameters>
-            </ownedParameters>
-          </operation>
+            isQuery="false" />
           <operation
             Id="bee03ba3-f851-4133-b3e1-b595e4e0ba35"
             name="loadFromAlertDB"
@@ -1263,6 +1212,235 @@
                       Id="9306849d-44c3-4889-81af-df2863c7f4d9"
                       LastKnownName="void"
                       LastKnownLocation="Package_0923.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="e7ffb19c-5cdc-4db4-aa23-4807399a4e79"
+            name="getNextAlert"
+            isLeaf="false"
+            isStatic="true"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="fb768afd-d082-4829-91f7-095ff1a92f69"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="60860058-241d-4c3f-b838-48d7ed2a4fb2"
+                      LastKnownName="Alert"
+                      LastKnownLocation="Package_0939.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="69191868-249e-40ab-b5ff-b48201096e8f"
+            name="getAlertWithInterval"
+            isLeaf="false"
+            isStatic="true"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="e6254a68-a97c-4f7e-b4e7-f0e3b75fb241"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="fa794408-314c-4993-8391-b6bf8a92b38a"
+                      LastKnownName="Array&lt;Alert&gt;"
+                      LastKnownLocation="Package_0939.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="952e6882-04ab-4a7d-8990-99e2484ca442"
+                  name="begin"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="e7cf17a7-b009-4644-8142-5e2bd9ff3108"
+                      LastKnownName="DateTime"
+                      LastKnownLocation="Package_0939.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="43f88bb0-1b1f-4aa5-a633-654c7e199bd9"
+                  name="end"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="e7cf17a7-b009-4644-8142-5e2bd9ff3108"
+                      LastKnownName="DateTime"
+                      LastKnownLocation="Package_0939.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="e4db5a58-43d8-4994-931b-a040ff8ff9f7"
+            name="getAlertFromSensor"
+            isLeaf="false"
+            isStatic="true"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="676d514a-5609-4991-8248-b5743e7817e7"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="fa794408-314c-4993-8391-b6bf8a92b38a"
+                      LastKnownName="Array&lt;Alert&gt;"
+                      LastKnownLocation="Package_0939.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="b05da1fb-f458-45da-a78f-a6d612dea2a0"
+                  name="sensorID"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="9cbc3077-695f-4c08-9905-ad3b75d959d6"
+                      LastKnownName="int"
+                      LastKnownLocation="Package_0923.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="420b0d37-5862-4c02-89ef-c147cd507bfb"
+            name="getAlertFromSource"
+            isLeaf="false"
+            isStatic="true"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="dec7d17f-3fad-4107-826f-28d66a70c654"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="fa794408-314c-4993-8391-b6bf8a92b38a"
+                      LastKnownName="Array&lt;Alert&gt;"
+                      LastKnownLocation="Package_0939.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="e4684b3e-7f95-423e-b9ea-85aacb651eb6"
+                  name="ipAddr"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                      LastKnownName="String"
+                      LastKnownLocation="Modeling.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="f544ad7f-66ba-4ca8-84a9-a5d45b668f11"
+                  name="port"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="9cbc3077-695f-4c08-9905-ad3b75d959d6"
+                      LastKnownName="int"
+                      LastKnownLocation="Package_0923.uml" />
+                  </type_NamedElement>
+                  <defaultValue>
+                    <literalString
+                      Id="aab7be9e-c6b9-49f1-ba51-c06014dcb7dc"
+                      value="0" />
+                  </defaultValue>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="22afc1e3-0c79-453d-8533-3ae016c2c505"
+            name="getAlertFromDestination"
+            isLeaf="false"
+            isStatic="true"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="50afd468-d225-4e43-85ba-905bc6f23867"
+                  name="ip"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                      LastKnownName="String"
+                      LastKnownLocation="Modeling.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="f0862472-45f7-4c5c-968d-345c57610c2a"
+                  name="port"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="9cbc3077-695f-4c08-9905-ad3b75d959d6"
+                      LastKnownName="int"
+                      LastKnownLocation="Package_0923.uml" />
+                  </type_NamedElement>
+                  <defaultValue>
+                    <literalString
+                      Id="ede3d25c-bbd6-4bbe-9ec2-809cec629029"
+                      name="DefaultValue"
+                      value="0" />
+                  </defaultValue>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="f2c35a97-d45c-49f9-8af3-e4f6be2ac07f"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="fa794408-314c-4993-8391-b6bf8a92b38a"
+                      LastKnownName="Array&lt;Alert&gt;"
+                      LastKnownLocation="Package_0939.uml" />
                   </type_NamedElement>
                 </parameter>
               </operationHasOwnedParameters>
@@ -1442,6 +1620,224 @@
           </operation>
         </ownedOperationsInternal>
       </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="bed5a117-9915-4bd8-86ab-64c3074d96f6"
+        name="Argument"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <property
+            Id="e2540ab1-b959-4f12-82c1-320b8b2206e1"
+            name="ID"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="9cbc3077-695f-4c08-9905-ad3b75d959d6"
+                LastKnownName="int"
+                LastKnownLocation="Package_0923.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="40b47e51-7bbc-46b2-9302-153836b90f24"
+            name="type"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
+                LastKnownLocation="Modeling.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="bd0794ff-0190-449b-b04d-4107822cc33d"
+            name="name"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
+                LastKnownLocation="Modeling.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="65f7edd5-6b92-465c-81e3-9498013d303d"
+            name="Argument"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="17f479d0-34ae-4b8c-af70-e54ff436c532"
+            name="Argument"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="b9cab575-ca67-4ad2-9c05-249e07a022c4"
+                  name="ID"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="9cbc3077-695f-4c08-9905-ad3b75d959d6"
+                      LastKnownName="int"
+                      LastKnownLocation="Package_0923.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="24d9be55-fe1a-4636-8298-2a60c1a1fa76"
+                  name="type"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                      LastKnownName="String"
+                      LastKnownLocation="Modeling.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="bb965220-1805-4bde-83da-b33eb0d886a6"
+                  name="name"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                      LastKnownName="String"
+                      LastKnownLocation="Modeling.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="bb160ea3-8310-4d4e-a936-729db8631f77"
+        name="Array&lt;Argument&gt;" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="fa794408-314c-4993-8391-b6bf8a92b38a"
+        name="Array&lt;Alert&gt;" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="a2b11a8c-7cc6-4e20-b48e-2aae9c0c27ab"
+        name="EncodedPredicate"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <property
+            Id="720a16ce-43ed-4083-8ff7-d80d27c15760"
+            name="predicate"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
+                LastKnownLocation="Modeling.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="ddf70e8c-5594-459f-9c96-a06ebc5b66b2"
+            name="beginTime"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="e7cf17a7-b009-4644-8142-5e2bd9ff3108"
+                LastKnownName="DateTime"
+                LastKnownLocation="Package_0939.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="38edb911-5d21-487a-bc21-7b1023894a48"
+            name="endTime"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="e7cf17a7-b009-4644-8142-5e2bd9ff3108"
+                LastKnownName="DateTime"
+                LastKnownLocation="Package_0939.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="48ca29c3-5350-4cb8-98d2-a304a702c236"
+            name="EncodedPredicate"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="7fd4ee01-1b48-4282-acf7-99cc514b7365"
+        name="Array&lt;EncodedPredicate&gt;" />
     </packageHasNamedElement>
   </packagedElements>
 </package>
