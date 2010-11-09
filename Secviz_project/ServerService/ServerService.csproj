@@ -62,6 +62,7 @@
     <Compile Include="AttackRecognition\DataAccess\SVDatabase.cs" />
     <Compile Include="AttackRecognition\DataAccess\SVKnowledgebase.cs" />
     <Compile Include="AttackRecognition\DataModel\SVAlert.cs" />
+    <Compile Include="AttackRecognition\DataModel\SVArgument.cs" />
     <Compile Include="AttackRecognition\DataModel\SVHyperAlertType.cs" />
     <Compile Include="AttackRecognition\DataModel\SVPredicateNode.cs" />
     <Compile Include="AttackRecognition\Utils\SVUniqueID.cs" />
