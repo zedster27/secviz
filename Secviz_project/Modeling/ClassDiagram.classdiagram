@@ -1381,28 +1381,33 @@ there is an instance of this class, all actions using this class will be accesse
                   <class Id="ef80796e-c5d1-429e-bc2a-6d2529d54846" name="GraphResult" isAbstract="false" isLeaf="false" isActiveClass="false">
                     <elementDefinition Id="d0b45970-cc77-4042-b3ba-0f521034193a" />
                     <ownedAttributesInternal>
-                      <property Id="a55cd2ce-2ea4-4946-9aa2-18d370b6cc6b" name="fileName" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-                        <elementDefinition Id="9058b24a-4b48-45dc-b7c4-549271a4a458" />
+                      <property Id="a637ec98-59bb-4600-9809-394310e52eb2" name="Nodes" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                        <elementDefinition Id="ea241a99-fcc4-4985-a4ec-a243bc955358" />
                         <type_NamedElement>
-                          <referencedTypeMoniker Id="eba71377-18a5-4db2-aea9-44c761270feb" LastKnownName="String" />
+                          <referencedTypeMoniker Id="7586ca3f-84c5-41c0-a63e-45800fa167bf" LastKnownName="HashSet&lt;GraphNode&gt;" />
                         </type_NamedElement>
                       </property>
                     </ownedAttributesInternal>
                     <ownedOperationsInternal>
-                      <operation Id="2bbeac39-a15c-4a0b-8e6a-b02897d5460a" name="GraphResult" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                      <operation Id="2bbeac39-a15c-4a0b-8e6a-b02897d5460a" name="GraphResult" visibility="Private" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
                         <elementDefinition Id="668606d8-bb01-4da0-be6a-e4c3977e3b0c" />
                         <ownedParameters>
                           <operationHasOwnedParameters>
-                            <parameter Id="3877080f-6896-4767-b6a9-1810d0af594e" name="constrain" direction="In" isUnique="false">
-                              <elementDefinition Id="74d3e16c-496f-48f7-b173-5cae7fd75b3c" />
+                            <parameter Id="d166d164-9e2b-447e-bd9f-3bd29bd9e216" name="constrain" direction="In" isUnique="false">
+                              <elementDefinition Id="a3c89850-9b00-439f-8dd6-f40aa35f393b" />
                               <type_NamedElement>
                                 <referencedTypeMoniker Id="eba71377-18a5-4db2-aea9-44c761270feb" LastKnownName="String" />
                               </type_NamedElement>
+                              <defaultValue>
+                                <literalString Id="7e3a2c31-7a1c-40e1-99c1-a71817be3126" name="DefaultValue" value="&quot;&quot;">
+                                  <elementDefinition Id="5d5423ca-493d-4987-b263-de5eb02adb78" />
+                                </literalString>
+                              </defaultValue>
                             </parameter>
                           </operationHasOwnedParameters>
                         </ownedParameters>
                       </operation>
-                      <operation Id="7c19b0aa-c86d-4480-bd26-6fe2e8acb4ef" name="saveToFile" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                      <operation Id="7c19b0aa-c86d-4480-bd26-6fe2e8acb4ef" name="saveToFile" isLeaf="false" isStatic="true" isAbstract="false" concurrency="Sequential" isQuery="false">
                         <elementDefinition Id="7de5e53a-380c-4bb7-ae92-421ec18b3bf1" />
                         <ownedParameters>
                           <operationHasOwnedParameters>
@@ -1413,38 +1418,25 @@ there is an instance of this class, all actions using this class will be accesse
                               </type_NamedElement>
                             </parameter>
                           </operationHasOwnedParameters>
-                        </ownedParameters>
-                      </operation>
-                      <operation Id="12e5938a-f8b6-4560-8d6e-f13883de67f1" name="setResultFile" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
-                        <elementDefinition Id="edf7869f-1081-4c16-b264-3264a779ae5b" />
-                        <ownedParameters>
                           <operationHasOwnedParameters>
-                            <parameter Id="de84caca-2546-4034-94ba-4139faebba62" name="file" direction="In" isUnique="false">
-                              <elementDefinition Id="31d9141d-a3d0-462f-99d6-06b88d3e9bdb" />
+                            <parameter Id="cdbca21e-d66d-4914-af67-c1106b777fd8" name="fileName" direction="In" isUnique="false">
+                              <elementDefinition Id="6e5c4b59-fd01-4e44-8e41-315922759ac0" />
                               <type_NamedElement>
-                                <referencedTypeMoniker Id="eba71377-18a5-4db2-aea9-44c761270feb" LastKnownName="String" />
+                                <referencedTypeMoniker Id="d1fd470f-cd6c-4837-987d-3c1361aa18e5" LastKnownName="string" />
                               </type_NamedElement>
                             </parameter>
                           </operationHasOwnedParameters>
                           <operationHasOwnedParameters>
-                            <parameter Id="0c26809e-d90d-40d6-8132-50fa1607b1e4" direction="Return" isUnique="false">
-                              <elementDefinition Id="88571aaa-7dd2-428a-a83b-fa8748163568" />
+                            <parameter Id="7da25e38-a11b-4e6a-a649-9c55681e0653" name="constraint" direction="In" isUnique="false">
+                              <elementDefinition Id="f961514f-7098-4426-b11f-65ce273f9067" />
                               <type_NamedElement>
-                                <referencedTypeMoniker Id="6332cac9-7643-4b14-81f3-211370b9654e" LastKnownName="void" />
+                                <referencedTypeMoniker Id="d1fd470f-cd6c-4837-987d-3c1361aa18e5" LastKnownName="string" />
                               </type_NamedElement>
-                            </parameter>
-                          </operationHasOwnedParameters>
-                        </ownedParameters>
-                      </operation>
-                      <operation Id="579a6695-a939-4246-9bbe-52d5a7e86fe2" name="getResultFile" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
-                        <elementDefinition Id="cb525c9a-b58d-4c75-bbfd-e01cf9b6c07e" />
-                        <ownedParameters>
-                          <operationHasOwnedParameters>
-                            <parameter Id="f8cfb11e-9112-4c90-bed4-a606dd58b5f1" direction="Return" isUnique="false">
-                              <elementDefinition Id="4fc69cb2-952a-4ceb-9082-146457437cca" />
-                              <type_NamedElement>
-                                <referencedTypeMoniker Id="eba71377-18a5-4db2-aea9-44c761270feb" LastKnownName="String" />
-                              </type_NamedElement>
+                              <defaultValue>
+                                <literalString Id="06912cb6-1f4c-48b7-a4f5-5fd700b07726" name="DefaultValue" value="&quot;&quot;">
+                                  <elementDefinition Id="c8a4e351-2654-49f1-85bf-76698ca59300" />
+                                </literalString>
+                              </defaultValue>
                             </parameter>
                           </operationHasOwnedParameters>
                         </ownedParameters>
@@ -1550,6 +1542,75 @@ there is an instance of this class, all actions using this class will be accesse
                     <ownedOperationsInternal>
                       <operation Id="d7e810fa-2a52-4c26-bbfc-6ce2bae71622" name="EncodedPredicate" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
                         <elementDefinition Id="48ca29c3-5350-4cb8-98d2-a304a702c236" />
+                      </operation>
+                    </ownedOperationsInternal>
+                  </class>
+                </packageHasNamedElement>
+                <packageHasNamedElement>
+                  <class Id="c195b1e5-303f-4f37-b838-5c60bfbeeafc" name="GraphNode" isAbstract="false" isLeaf="false" isActiveClass="false">
+                    <elementDefinition Id="8182b78e-f0fd-4ec2-9536-f0da53b7c5e2" />
+                    <ownedAttributesInternal>
+                      <property Id="274be44b-28b9-4094-b5b5-78581cf8aa62" name="Type" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                        <elementDefinition Id="42ac8daf-9c7c-40f2-ae07-563de8701da4" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="eba71377-18a5-4db2-aea9-44c761270feb" LastKnownName="String" />
+                        </type_NamedElement>
+                      </property>
+                      <property Id="d30b0880-3339-4a55-95ce-ef84b6f510f2" name="AlertID" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                        <elementDefinition Id="bbd3c89d-efa9-4a56-9a5c-0ac5e025d74d" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="eba71377-18a5-4db2-aea9-44c761270feb" LastKnownName="String" />
+                        </type_NamedElement>
+                      </property>
+                      <property Id="2b18f0dd-f640-4899-be43-d09dfc619a48" name="PostNodes" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                        <elementDefinition Id="f4d797aa-8bcf-4f45-86ba-cdf443a70683" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="948eb96d-38b9-42b5-ad99-25d8ce64749a" LastKnownName="List&lt;GraphNode&gt;" />
+                        </type_NamedElement>
+                      </property>
+                    </ownedAttributesInternal>
+                    <ownedOperationsInternal>
+                      <operation Id="806ab83d-564a-483d-b524-b954ac647006" name="GraphNode" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                        <elementDefinition Id="b92f6631-63d2-45f0-ad28-35d48079b6ca" />
+                        <ownedParameters>
+                          <operationHasOwnedParameters>
+                            <parameter Id="d516912b-1576-4499-8df1-9d1981d82737" name="type" direction="In" isUnique="false">
+                              <elementDefinition Id="7c9b53d8-423a-4549-9371-bba6a7743ce6" />
+                              <type_NamedElement>
+                                <referencedTypeMoniker Id="eba71377-18a5-4db2-aea9-44c761270feb" LastKnownName="String" />
+                              </type_NamedElement>
+                            </parameter>
+                          </operationHasOwnedParameters>
+                          <operationHasOwnedParameters>
+                            <parameter Id="6aefcbb3-e037-4044-bbbc-ad2087911984" name="alertID" direction="In" isUnique="false">
+                              <elementDefinition Id="d22aab35-5d67-490f-8f4a-47b684d4b706" />
+                              <type_NamedElement>
+                                <referencedTypeMoniker Id="eba71377-18a5-4db2-aea9-44c761270feb" LastKnownName="String" />
+                              </type_NamedElement>
+                            </parameter>
+                          </operationHasOwnedParameters>
+                        </ownedParameters>
+                      </operation>
+                      <operation Id="225de084-4ba6-40fe-96fe-7804f6c20e16" name="AddPostNode" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                        <elementDefinition Id="99c56ebe-523a-4fe9-bda9-07d2f0fe5262" />
+                        <ownedParameters>
+                          <operationHasOwnedParameters>
+                            <parameter Id="994ab119-0ae8-4afd-ba64-696d71cfa356" name="node" direction="In" isUnique="false">
+                              <elementDefinition Id="f3e1fa18-db09-49f1-b074-37b08e40a7fe" />
+                              <type_NamedElement>
+                                <referencedTypeMoniker Id="763a2e09-9714-4d36-85a3-bdd243d64cd9" LastKnownName="GraphNode" />
+                              </type_NamedElement>
+                            </parameter>
+                          </operationHasOwnedParameters>
+                          <operationHasOwnedParameters>
+                            <parameter Id="4063d777-d252-4726-8954-a7c0ab6b2d4d" direction="Return" isUnique="false">
+                              <elementDefinition Id="1be2fd20-8cc9-4377-8dbc-5ee61f9047ae" />
+                              <type_NamedElement>
+                                <referencedTypeMoniker Id="6332cac9-7643-4b14-81f3-211370b9654e" LastKnownName="void" />
+                              </type_NamedElement>
+                            </parameter>
+                          </operationHasOwnedParameters>
+                        </ownedParameters>
                       </operation>
                     </ownedOperationsInternal>
                   </class>
@@ -2411,6 +2472,26 @@ there is an instance of this class, all actions using this class will be accesse
     <packageHasNamedElement>
       <referencedType Id="6447e584-a85f-477b-a5fe-17c1b853b477" name="Array&lt;EncodedPredicate&gt;" isAbstract="false" isLeaf="false" cachedFullName="Array&lt;EncodedPredicate&gt;">
         <elementDefinition Id="7fd4ee01-1b48-4282-acf7-99cc514b7365" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="d1fd470f-cd6c-4837-987d-3c1361aa18e5" name="string" isAbstract="false" isLeaf="false" cachedFullName="string">
+        <elementDefinition Id="f034808c-3c86-4df7-93d9-2c16f09e0c4e" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="7586ca3f-84c5-41c0-a63e-45800fa167bf" name="HashSet&lt;GraphNode&gt;" isAbstract="false" isLeaf="false" cachedFullName="HashSet&lt;GraphNode&gt;">
+        <elementDefinition Id="2105a284-7d5a-4c6b-b709-9cde26b134ab" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="948eb96d-38b9-42b5-ad99-25d8ce64749a" name="List&lt;GraphNode&gt;" isAbstract="false" isLeaf="false" cachedFullName="List&lt;GraphNode&gt;">
+        <elementDefinition Id="aec82ece-782c-4bad-95e9-024664521d02" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="763a2e09-9714-4d36-85a3-bdd243d64cd9" name="GraphNode" isAbstract="false" isLeaf="false" cachedFullName="Modeling::AttackRecognition::DataModel::GraphNode">
+        <elementDefinition Id="8182b78e-f0fd-4ec2-9536-f0da53b7c5e2" />
       </referencedType>
     </packageHasNamedElement>
   </packagedElements>
