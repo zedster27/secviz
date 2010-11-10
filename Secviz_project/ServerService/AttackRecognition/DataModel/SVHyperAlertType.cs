@@ -2,51 +2,95 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
-
+using Oracle.DataAccess.Client;
 namespace ServerService.DataModel
+
 {
     public class HyperAlertType
     {
-        string[] facts;
-        PredicateNode[] prerequisiteArray;
-        PredicateNode[] consequenccArray;
-        string name;
-
-        void getFactFromDB()
-        {}
-
-        void getPrereqFromDB()
-        {}
-
-        void getConseqFromDB()
-        {}
-
-        void getAllFacts()
-        {}
-
-        string getFactAtIndex(int i)
+        private PredicateNode[] prerequisiteArray;
+        private PredicateNode[] consequenccArray;
+        private string name;
+        private string protocol;
+        private Fact[] facts;
+        public HyperAlertType(string newName)
         {
-            return "";
+            name = newName;
+            facts = getFactFromDB();
+            consequenccArray = getConseqFromDB();
+            prerequisiteArray = getPrereqFromDB();
+        }
+        private Fact[] getFactFromDB()
+        {
+            string oradb = "Data Source=ORCL;User Id=hr;Password=hr;";
+            OracleConnection conn = new OracleConnection(oradb);
+            conn.Open();
+
+            string cmdStr = "select * from HATFact where HyperAlertType=" + name;
+            OracleCommand cmd = new OracleCommand(cmdStr, conn);
+
+            OracleDataReader reader = cmd.ExecuteReader();
+
+            List<Fact> retVal = new List<Fact>();
+            while (reader.Read())
+            {
+                string tempName;
+                string tempType;
+                tempName=reader.GetString(1);
+                tempType=reader.GetString(2);
+                Fact temp = new Fact(tempName,tempType);
+                retVal.Add(temp);
+            }
+            
+            return retVal.ToArray<Fact>();
+           
         }
 
+        private PredicateNode[] getPrereqFromDB()
+        {
+            string oradb = "Data Source=ORCL;User Id=hr;Password=hr;";
+            OracleConnection conn = new OracleConnection(oradb);
+            conn.Open();
+
+            string cmdStr = "select * from HATPrereq where HyperAlertType=" + name;
+            OracleCommand cmd = new OracleCommand(cmdStr, conn);
+
+            OracleDataReader reader = cmd.ExecuteReader();
+
+            return null;
+           
+        }
+        private PredicateNode[] getConseqFromDB()
+        {
+            return null;
+        }
+
+        public Fact[] getFacts()
+        {
+            return facts;
+        }
+        public Fact getFact(int index)
+        {
+            return facts[index];
+        }
         PredicateNode getPrerequisiteAtIndex(int i)
         {
-            return null;
+            return prerequisiteArray[i];
         }
 
-        object getPrerequisiteSet()
+        PredicateNode[] getPrerequisiteSet()
         {
-            return null;
+            return prerequisiteArray;
         }
 
         PredicateNode getConsequenceAtIndex(int i)
         {
-            return null;
+            return consequenccArray[i];
         }
 
-        object getConsequenceSet()
+        PredicateNode[] getConsequenceSet()
         {
-            return null;
+            return prerequisiteArray;
         }
 
     }
