@@ -14,12 +14,12 @@ namespace ServerService.AttackRecognition.DataModel
 
         public int getImpliedArgID(int index)
         {
-            return 0;
+            return this.impliedArgIDArray[index];
         }
 
         public int getImplyingArgID(int index)
         {
-            return 0;
+            return this.implyingArgIDArray[index];
         }
 
         public Implication()
