@@ -2,95 +2,93 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using Oracle.DataAccess.Client;
+using System.Data;
 
 namespace ServerService.DataModel
 {
     public class Alert
     {
-        private int alertID;
-        private String alertType;
-        private DateTime beginTime;
-        private DateTime endTime;
-        private int collectionID;
-
+        private int sensorID { get; set; }
+        private int ID { get; set; }
+        private String alertName { get; set; }
+        private DateTime beginTime { get; set; }
+        private DateTime endTime { get; set; }
+        private String srcIpAddr { get; set; }
+        private String destIpAddr { get; set; }
+        private int srcPort { get; set; }
+        private int destPort { get; set; }
+        
         public Alert()
         {
 
         }
 
-        public Alert(int in_alertID, String in_alertType, DateTime in_beginTime, DateTime in_endTime, int in_collectionID)
-        {            
-
-        }
-
-        public int getAlertID()
-        {
-            return alertID;
-        }
-
-        public void setAlertID(int in_alertID)
-        {
-            alertID = in_alertID;
-        }
-
-        public String getAlertType()
-        {
-            return alertType;
-        }
-
-        public void setAlertType(String in_alertType)
-        {
-            alertType = in_alertType;
-        }
-
-        public String getValue(String attributeName)
+        public List<Alert> getAlertFromDestination(String ip, int port)
         {
             return null;
         }
 
-        public String getValue(int index)
+        public List<Alert> getAlertFromSensor(int sensorID)
         {
             return null;
         }
 
-        public void setValue(String attributeName, String attributeVal)
-        {           
-
+        public List<Alert> getAlertFromSource(String ipAddr, int port)
+        {
+            return null;
         }
 
-        public void setValue(int index, String attributeVal)
+        public List<Alert> getAlertWithInterval(DateTime beginTime, DateTime endTime)
         {
-            
+            return null;
         }
 
-        public DateTime getBeginTime()
+        public Alert getNextAlert()
         {
-            return beginTime;
+            return null;
         }
 
-        public void setBeginTime(DateTime in_beginTime)
+        private List<Alert> loadAlertFromDB()
         {
-            beginTime = in_beginTime;
-        }
+            string oradb = "Data Source=ORCL;User Id=hr;Password=hr;";
+            OracleConnection conn = new OracleConnection(oradb);
+            conn.Open();
 
-        public DateTime getEndTime()
-        {
-            return endTime;
-        }
+            string cmdStr = "select * from alert_info";
+            OracleCommand cmd = new OracleCommand(cmdStr,conn);
 
-        public void setEndTime(DateTime in_endTime)
-        {
-            endTime = in_endTime;
-        }
+            OracleDataReader reader = cmd.ExecuteReader();
 
-        public int getCollectionID()
-        {
-            return collectionID;
-        }
+            List<Alert> retVal = new List<Alert>();
+            while (reader.Read())
+            {
+                Alert temp = new Alert();
+                temp.sensorID = reader.GetInt16(0);
+                temp.ID = reader.GetInt16(1);
+                temp.alertName = reader.GetString(2);
+                temp.beginTime = reader.GetDateTime(3);
+                temp.endTime = reader.GetDateTime(4);
+                if (!reader.IsDBNull(5))
+                {
+                    temp.srcIpAddr = reader.GetString(5);
+                }
+                if (!reader.IsDBNull(6))
+                {
+                    temp.destIpAddr = reader.GetString(6);
+                }
+                if (!reader.IsDBNull(7))
+                {
+                    temp.srcPort = reader.GetInt16(7);
+                }
+                if (!reader.IsDBNull(8))
+                {
+                    temp.destPort = reader.GetInt16(8);
+                }
+                retVal.Add(temp);
+            }
 
-        public void setCollectionID(int in_collectionID)
-        {
-            collectionID = in_collectionID;
+            return retVal;
         }
     }
 }

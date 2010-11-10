@@ -13,7 +13,9 @@ namespace ServerService.AttackRecognition.DataModel
 
         public Argument()
         {
-
+            this.ID = 0;
+            this.Name = "";
+            this.Type = "";
         }
 
         public Argument(int ID, String Type, String Name)
