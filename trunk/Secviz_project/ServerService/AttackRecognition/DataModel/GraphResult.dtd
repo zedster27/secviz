@@ -1,0 +1,13 @@
+<!ELEMENT Graph (Node+)>
+
+<!ELEMENT Node (ConsequentNode*)>
+
+<!ELEMENT ConsequentNode EMPTY>
+
+<!ATTLIST Node Type CDATA #REQUIRED>
+
+<!ATTLIST Node AlertID CDATA #REQUIRED>
+
+<!ATTLIST ConsequentNode Type CDATA #REQUIRED>
+
+<!ATTLIST ConsequentNode AlertID CDATA #REQUIRED>

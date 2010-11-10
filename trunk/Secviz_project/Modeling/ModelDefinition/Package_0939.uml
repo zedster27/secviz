@@ -1463,8 +1463,8 @@
         isActiveClass="false">
         <ownedAttributesInternal>
           <property
-            Id="9058b24a-4b48-45dc-b7c4-549271a4a458"
-            name="fileName"
+            Id="ea241a99-fcc4-4985-a4ec-a243bc955358"
+            name="Nodes"
             isLeaf="false"
             isStatic="false"
             isReadOnly="false"
@@ -1474,10 +1474,10 @@
             aggregation="None"
             isComposite="false">
             <type_NamedElement>
-              <primitiveTypeMoniker
-                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
-                LastKnownName="String"
-                LastKnownLocation="Modeling.uml" />
+              <undefinedTypeMoniker
+                Id="2105a284-7d5a-4c6b-b709-9cde26b134ab"
+                LastKnownName="HashSet&lt;GraphNode&gt;"
+                LastKnownLocation="Package_0939.uml" />
             </type_NamedElement>
           </property>
         </ownedAttributesInternal>
@@ -1485,6 +1485,7 @@
           <operation
             Id="668606d8-bb01-4da0-be6a-e4c3977e3b0c"
             name="GraphResult"
+            visibility="Private"
             isLeaf="false"
             isStatic="false"
             isAbstract="false"
@@ -1493,7 +1494,7 @@
             <ownedParameters>
               <operationHasOwnedParameters>
                 <parameter
-                  Id="74d3e16c-496f-48f7-b173-5cae7fd75b3c"
+                  Id="a3c89850-9b00-439f-8dd6-f40aa35f393b"
                   name="constrain"
                   direction="In"
                   isUnique="false">
@@ -1503,6 +1504,12 @@
                       LastKnownName="String"
                       LastKnownLocation="Modeling.uml" />
                   </type_NamedElement>
+                  <defaultValue>
+                    <literalString
+                      Id="5d5423ca-493d-4987-b263-de5eb02adb78"
+                      name="DefaultValue"
+                      value="&quot;&quot;" />
+                  </defaultValue>
                 </parameter>
               </operationHasOwnedParameters>
             </ownedParameters>
@@ -1511,7 +1518,7 @@
             Id="7de5e53a-380c-4bb7-ae92-421ec18b3bf1"
             name="saveToFile"
             isLeaf="false"
-            isStatic="false"
+            isStatic="true"
             isAbstract="false"
             concurrency="Sequential"
             isQuery="false">
@@ -1529,66 +1536,38 @@
                   </type_NamedElement>
                 </parameter>
               </operationHasOwnedParameters>
-            </ownedParameters>
-          </operation>
-          <operation
-            Id="edf7869f-1081-4c16-b264-3264a779ae5b"
-            name="setResultFile"
-            isLeaf="false"
-            isStatic="false"
-            isAbstract="false"
-            concurrency="Sequential"
-            isQuery="false">
-            <ownedParameters>
               <operationHasOwnedParameters>
                 <parameter
-                  Id="31d9141d-a3d0-462f-99d6-06b88d3e9bdb"
-                  name="file"
+                  Id="6e5c4b59-fd01-4e44-8e41-315922759ac0"
+                  name="fileName"
                   direction="In"
                   isUnique="false">
                   <type_NamedElement>
-                    <primitiveTypeMoniker
-                      Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
-                      LastKnownName="String"
-                      LastKnownLocation="Modeling.uml" />
+                    <undefinedTypeMoniker
+                      Id="f034808c-3c86-4df7-93d9-2c16f09e0c4e"
+                      LastKnownName="string"
+                      LastKnownLocation="Package_0939.uml" />
                   </type_NamedElement>
                 </parameter>
               </operationHasOwnedParameters>
               <operationHasOwnedParameters>
                 <parameter
-                  Id="88571aaa-7dd2-428a-a83b-fa8748163568"
-                  direction="Return"
+                  Id="f961514f-7098-4426-b11f-65ce273f9067"
+                  name="constraint"
+                  direction="In"
                   isUnique="false">
                   <type_NamedElement>
                     <undefinedTypeMoniker
-                      Id="9306849d-44c3-4889-81af-df2863c7f4d9"
-                      LastKnownName="void"
-                      LastKnownLocation="Package_0923.uml" />
+                      Id="f034808c-3c86-4df7-93d9-2c16f09e0c4e"
+                      LastKnownName="string"
+                      LastKnownLocation="Package_0939.uml" />
                   </type_NamedElement>
-                </parameter>
-              </operationHasOwnedParameters>
-            </ownedParameters>
-          </operation>
-          <operation
-            Id="cb525c9a-b58d-4c75-bbfd-e01cf9b6c07e"
-            name="getResultFile"
-            isLeaf="false"
-            isStatic="false"
-            isAbstract="false"
-            concurrency="Sequential"
-            isQuery="false">
-            <ownedParameters>
-              <operationHasOwnedParameters>
-                <parameter
-                  Id="4fc69cb2-952a-4ceb-9082-146457437cca"
-                  direction="Return"
-                  isUnique="false">
-                  <type_NamedElement>
-                    <primitiveTypeMoniker
-                      Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
-                      LastKnownName="String"
-                      LastKnownLocation="Modeling.uml" />
-                  </type_NamedElement>
+                  <defaultValue>
+                    <literalString
+                      Id="c8a4e351-2654-49f1-85bf-76698ca59300"
+                      name="DefaultValue"
+                      value="&quot;&quot;" />
+                  </defaultValue>
                 </parameter>
               </operationHasOwnedParameters>
             </ownedParameters>
@@ -1838,6 +1817,165 @@
       <undefinedType
         Id="7fd4ee01-1b48-4282-acf7-99cc514b7365"
         name="Array&lt;EncodedPredicate&gt;" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="f034808c-3c86-4df7-93d9-2c16f09e0c4e"
+        name="string" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="2105a284-7d5a-4c6b-b709-9cde26b134ab"
+        name="HashSet&lt;GraphNode&gt;" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="8182b78e-f0fd-4ec2-9536-f0da53b7c5e2"
+        name="GraphNode"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <property
+            Id="42ac8daf-9c7c-40f2-ae07-563de8701da4"
+            name="Type"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
+                LastKnownLocation="Modeling.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="bbd3c89d-efa9-4a56-9a5c-0ac5e025d74d"
+            name="AlertID"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
+                LastKnownLocation="Modeling.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="f4d797aa-8bcf-4f45-86ba-cdf443a70683"
+            name="PostNodes"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="aec82ece-782c-4bad-95e9-024664521d02"
+                LastKnownName="List&lt;GraphNode&gt;"
+                LastKnownLocation="Package_0939.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="b92f6631-63d2-45f0-ad28-35d48079b6ca"
+            name="GraphNode"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="7c9b53d8-423a-4549-9371-bba6a7743ce6"
+                  name="type"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                      LastKnownName="String"
+                      LastKnownLocation="Modeling.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="d22aab35-5d67-490f-8f4a-47b684d4b706"
+                  name="alertID"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                      LastKnownName="String"
+                      LastKnownLocation="Modeling.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="99c56ebe-523a-4fe9-bda9-07d2f0fe5262"
+            name="AddPostNode"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="f3e1fa18-db09-49f1-b074-37b08e40a7fe"
+                  name="node"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="8182b78e-f0fd-4ec2-9536-f0da53b7c5e2"
+                      LastKnownName="GraphNode"
+                      LastKnownLocation="Package_0939.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="1be2fd20-8cc9-4377-8dbc-5ee61f9047ae"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="9306849d-44c3-4889-81af-df2863c7f4d9"
+                      LastKnownName="void"
+                      LastKnownLocation="Package_0923.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="aec82ece-782c-4bad-95e9-024664521d02"
+        name="List&lt;GraphNode&gt;" />
     </packageHasNamedElement>
   </packagedElements>
 </package>
