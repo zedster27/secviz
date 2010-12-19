@@ -1,0 +1,8 @@
+Dec 19 03:22:36 mint pulseaudio[2493]: pid.c: Daemon already running.
+Dec 19 03:22:37 mint nautilus: [N-A] Nautilus-Actions Menu Extender 2.30.2 initializing...
+Dec 19 03:22:37 mint nautilus: [N-A] Nautilus-Actions Tracker 2.30.2 initializing...
+Dec 19 03:22:40 mint pulseaudio[2482]: alsa-util.c: Disabling timer-based scheduling because running inside a VM.
+Dec 19 03:22:40 mint pulseaudio[2482]: alsa-util.c: Disabling timer-based scheduling because running inside a VM.
+Dec 19 03:22:40 mint pulseaudio[2482]: alsa-sink.c: ALSA woke us up to write new data to the device, but there was actually nothing to write!
+Dec 19 03:22:40 mint pulseaudio[2482]: alsa-sink.c: Most likely this is a bug in the ALSA driver 'snd_ens1371'. Please report this issue to the ALSA developers.
+Dec 19 03:22:40 mint pulseaudio[2482]: alsa-sink.c: We were woken up with POLLOUT set -- however a subsequent snd_pcm_avail() returned 0 or another value < min_avail.

@@ -1,0 +1,1093 @@
+Dec 19 03:22:22 mint kernel: imklog 4.6.3, log source = /proc/kmsg started.
+Dec 19 03:22:22 mint rsyslogd: [origin software="rsyslogd" swVersion="4.6.3" x-pid="1704" x-info="http://www.rsyslog.com"] (re)start
+Dec 19 03:22:22 mint kernel: [    0.000000] Initializing cgroup subsys cpuset
+Dec 19 03:22:22 mint kernel: [    0.000000] Initializing cgroup subsys cpu
+Dec 19 03:22:22 mint kernel: [    0.000000] Linux version 2.6.32-5-686 (Debian 2.6.32-15) (ben@decadent.org.uk) (gcc version 4.3.5 (Debian 4.3.5-1) ) #1 SMP Tue Jun 1 04:59:47 UTC 2010
+Dec 19 03:22:22 mint kernel: [    0.000000] KERNEL supported cpus:
+Dec 19 03:22:22 mint kernel: [    0.000000]   Intel GenuineIntel
+Dec 19 03:22:22 mint kernel: [    0.000000]   AMD AuthenticAMD
+Dec 19 03:22:22 mint kernel: [    0.000000]   NSC Geode by NSC
+Dec 19 03:22:22 mint kernel: [    0.000000]   Cyrix CyrixInstead
+Dec 19 03:22:22 mint kernel: [    0.000000]   Centaur CentaurHauls
+Dec 19 03:22:22 mint kernel: [    0.000000]   Transmeta GenuineTMx86
+Dec 19 03:22:22 mint kernel: [    0.000000]   Transmeta TransmetaCPU
+Dec 19 03:22:22 mint kernel: [    0.000000]   UMC UMC UMC UMC
+Dec 19 03:22:22 mint kernel: [    0.000000] BIOS-provided physical RAM map:
+Dec 19 03:22:22 mint kernel: [    0.000000]  BIOS-e820: 0000000000000000 - 000000000009f800 (usable)
+Dec 19 03:22:22 mint kernel: [    0.000000]  BIOS-e820: 000000000009f800 - 00000000000a0000 (reserved)
+Dec 19 03:22:22 mint kernel: [    0.000000]  BIOS-e820: 00000000000ca000 - 00000000000cc000 (reserved)
+Dec 19 03:22:22 mint kernel: [    0.000000]  BIOS-e820: 00000000000dc000 - 00000000000e4000 (reserved)
+Dec 19 03:22:22 mint kernel: [    0.000000]  BIOS-e820: 00000000000e8000 - 0000000000100000 (reserved)
+Dec 19 03:22:22 mint kernel: [    0.000000]  BIOS-e820: 0000000000100000 - 000000001fef0000 (usable)
+Dec 19 03:22:22 mint kernel: [    0.000000]  BIOS-e820: 000000001fef0000 - 000000001feff000 (ACPI data)
+Dec 19 03:22:22 mint kernel: [    0.000000]  BIOS-e820: 000000001feff000 - 000000001ff00000 (ACPI NVS)
+Dec 19 03:22:22 mint kernel: [    0.000000]  BIOS-e820: 000000001ff00000 - 0000000020000000 (usable)
+Dec 19 03:22:22 mint kernel: [    0.000000]  BIOS-e820: 00000000e0000000 - 00000000f0000000 (reserved)
+Dec 19 03:22:22 mint kernel: [    0.000000]  BIOS-e820: 00000000fec00000 - 00000000fec10000 (reserved)
+Dec 19 03:22:22 mint kernel: [    0.000000]  BIOS-e820: 00000000fee00000 - 00000000fee01000 (reserved)
+Dec 19 03:22:22 mint kernel: [    0.000000]  BIOS-e820: 00000000fffe0000 - 0000000100000000 (reserved)
+Dec 19 03:22:22 mint kernel: [    0.000000] DMI present.
+Dec 19 03:22:22 mint kernel: [    0.000000] Phoenix BIOS detected: BIOS may corrupt low RAM, working around it.
+Dec 19 03:22:22 mint kernel: [    0.000000] e820 update range: 0000000000000000 - 0000000000010000 (usable) ==> (reserved)
+Dec 19 03:22:22 mint kernel: [    0.000000] last_pfn = 0x20000 max_arch_pfn = 0x100000
+Dec 19 03:22:22 mint kernel: [    0.000000] MTRR default type: uncachable
+Dec 19 03:22:22 mint kernel: [    0.000000] MTRR fixed ranges enabled:
+Dec 19 03:22:22 mint kernel: [    0.000000]   00000-9FFFF write-back
+Dec 19 03:22:22 mint kernel: [    0.000000]   A0000-BFFFF uncachable
+Dec 19 03:22:22 mint kernel: [    0.000000]   C0000-CBFFF write-protect
+Dec 19 03:22:22 mint kernel: [    0.000000]   CC000-EFFFF uncachable
+Dec 19 03:22:22 mint kernel: [    0.000000]   F0000-FFFFF write-protect
+Dec 19 03:22:22 mint kernel: [    0.000000] MTRR variable ranges enabled:
+Dec 19 03:22:22 mint kernel: [    0.000000]   0 base 0000000000 mask FFE0000000 write-back
+Dec 19 03:22:22 mint kernel: [    0.000000]   1 disabled
+Dec 19 03:22:22 mint kernel: [    0.000000]   2 disabled
+Dec 19 03:22:22 mint kernel: [    0.000000]   3 disabled
+Dec 19 03:22:22 mint kernel: [    0.000000]   4 disabled
+Dec 19 03:22:22 mint kernel: [    0.000000]   5 disabled
+Dec 19 03:22:22 mint kernel: [    0.000000]   6 disabled
+Dec 19 03:22:22 mint kernel: [    0.000000]   7 disabled
+Dec 19 03:22:22 mint kernel: [    0.000000] x86 PAT enabled: cpu 0, old 0x0, new 0x7010600070106
+Dec 19 03:22:22 mint kernel: [    0.000000] initial memory mapped : 0 - 01800000
+Dec 19 03:22:22 mint kernel: [    0.000000] init_memory_mapping: 0000000000000000-0000000020000000
+Dec 19 03:22:22 mint kernel: [    0.000000]  0000000000 - 0000400000 page 4k
+Dec 19 03:22:22 mint kernel: [    0.000000]  0000400000 - 0020000000 page 2M
+Dec 19 03:22:22 mint kernel: [    0.000000] kernel direct mapping tables up to 20000000 @ 10000-15000
+Dec 19 03:22:22 mint kernel: [    0.000000] RAMDISK: 1f7f4000 - 1fecf775
+Dec 19 03:22:22 mint kernel: [    0.000000] ACPI: RSDP 000f6940 00024 (v02 PTLTD )
+Dec 19 03:22:22 mint kernel: [    0.000000] ACPI: XSDT 1fef0885 0004C (v01 INTEL  440BX    06040000 VMW  01324272)
+Dec 19 03:22:22 mint kernel: [    0.000000] ACPI: FACP 1fefee98 000F4 (v04 INTEL  440BX    06040000 PTL  000F4240)
+Dec 19 03:22:22 mint kernel: [    0.000000] ACPI: DSDT 1fef0a3d 0E45B (v01 PTLTD  Custom   06040000 MSFT 03000001)
+Dec 19 03:22:22 mint kernel: [    0.000000] ACPI: FACS 1fefffc0 00040
+Dec 19 03:22:22 mint kernel: [    0.000000] ACPI: BOOT 1fef0a15 00028 (v01 PTLTD  $SBFTBL$ 06040000  LTP 00000001)
+Dec 19 03:22:22 mint kernel: [    0.000000] ACPI: APIC 1fef09c5 00050 (v01 PTLTD  ? APIC   06040000  LTP 00000000)
+Dec 19 03:22:22 mint kernel: [    0.000000] ACPI: MCFG 1fef0989 0003C (v01 PTLTD  $PCITBL$ 06040000  LTP 00000001)
+Dec 19 03:22:22 mint kernel: [    0.000000] ACPI: SRAT 1fef0909 00080 (v02 VMWARE MEMPLUG  06040000 VMW  00000001)
+Dec 19 03:22:22 mint kernel: [    0.000000] ACPI: Local APIC address 0xfee00000
+Dec 19 03:22:22 mint kernel: [    0.000000] 0MB HIGHMEM available.
+Dec 19 03:22:22 mint kernel: [    0.000000] 512MB LOWMEM available.
+Dec 19 03:22:22 mint kernel: [    0.000000]   mapped low ram: 0 - 20000000
+Dec 19 03:22:22 mint kernel: [    0.000000]   low ram: 0 - 20000000
+Dec 19 03:22:22 mint kernel: [    0.000000]   node 0 low ram: 00000000 - 20000000
+Dec 19 03:22:22 mint kernel: [    0.000000]   node 0 bootmap 00011000 - 00015000
+Dec 19 03:22:22 mint kernel: [    0.000000] (9 early reservations) ==> bootmem [0000000000 - 0020000000]
+Dec 19 03:22:22 mint kernel: [    0.000000]   #0 [0000000000 - 0000001000]   BIOS data page ==> [0000000000 - 0000001000]
+Dec 19 03:22:22 mint kernel: [    0.000000]   #1 [0000001000 - 0000002000]    EX TRAMPOLINE ==> [0000001000 - 0000002000]
+Dec 19 03:22:22 mint kernel: [    0.000000]   #2 [0000006000 - 0000007000]       TRAMPOLINE ==> [0000006000 - 0000007000]
+Dec 19 03:22:22 mint kernel: [    0.000000]   #3 [0001000000 - 00014c3154]    TEXT DATA BSS ==> [0001000000 - 00014c3154]
+Dec 19 03:22:22 mint kernel: [    0.000000]   #4 [001f7f4000 - 001fecf775]          RAMDISK ==> [001f7f4000 - 001fecf775]
+Dec 19 03:22:22 mint kernel: [    0.000000]   #5 [000009f800 - 0000100000]    BIOS reserved ==> [000009f800 - 0000100000]
+Dec 19 03:22:22 mint kernel: [    0.000000]   #6 [00014c4000 - 00014ca1c0]              BRK ==> [00014c4000 - 00014ca1c0]
+Dec 19 03:22:22 mint kernel: [    0.000000]   #7 [0000010000 - 0000011000]          PGTABLE ==> [0000010000 - 0000011000]
+Dec 19 03:22:22 mint kernel: [    0.000000]   #8 [0000011000 - 0000015000]          BOOTMAP ==> [0000011000 - 0000015000]
+Dec 19 03:22:22 mint kernel: [    0.000000] found SMP MP-table at [c00f69b0] f69b0
+Dec 19 03:22:22 mint kernel: [    0.000000] Zone PFN ranges:
+Dec 19 03:22:22 mint kernel: [    0.000000]   DMA      0x00000010 -> 0x00001000
+Dec 19 03:22:22 mint kernel: [    0.000000]   Normal   0x00001000 -> 0x00020000
+Dec 19 03:22:22 mint kernel: [    0.000000]   HighMem  0x00020000 -> 0x00020000
+Dec 19 03:22:22 mint kernel: [    0.000000] Movable zone start PFN for each node
+Dec 19 03:22:22 mint kernel: [    0.000000] early_node_map[3] active PFN ranges
+Dec 19 03:22:22 mint kernel: [    0.000000]     0: 0x00000010 -> 0x0000009f
+Dec 19 03:22:22 mint kernel: [    0.000000]     0: 0x00000100 -> 0x0001fef0
+Dec 19 03:22:22 mint kernel: [    0.000000]     0: 0x0001ff00 -> 0x00020000
+Dec 19 03:22:22 mint kernel: [    0.000000] On node 0 totalpages: 130943
+Dec 19 03:22:22 mint kernel: [    0.000000] free_area_init_node: node 0, pgdat c13ae680, node_mem_map c14cc200
+Dec 19 03:22:22 mint kernel: [    0.000000]   DMA zone: 32 pages used for memmap
+Dec 19 03:22:22 mint kernel: [    0.000000]   DMA zone: 0 pages reserved
+Dec 19 03:22:22 mint kernel: [    0.000000]   DMA zone: 3951 pages, LIFO batch:0
+Dec 19 03:22:22 mint kernel: [    0.000000]   Normal zone: 992 pages used for memmap
+Dec 19 03:22:22 mint kernel: [    0.000000]   Normal zone: 125968 pages, LIFO batch:31
+Dec 19 03:22:22 mint kernel: [    0.000000] Using APIC driver default
+Dec 19 03:22:22 mint kernel: [    0.000000] ACPI: PM-Timer IO Port: 0x1008
+Dec 19 03:22:22 mint kernel: [    0.000000] ACPI: Local APIC address 0xfee00000
+Dec 19 03:22:22 mint kernel: [    0.000000] ACPI: LAPIC (acpi_id[0x00] lapic_id[0x00] enabled)
+Dec 19 03:22:22 mint kernel: [    0.000000] ACPI: LAPIC_NMI (acpi_id[0x00] high edge lint[0x1])
+Dec 19 03:22:22 mint kernel: [    0.000000] ACPI: IOAPIC (id[0x01] address[0xfec00000] gsi_base[0])
+Dec 19 03:22:22 mint kernel: [    0.000000] IOAPIC[0]: apic_id 1, version 17, address 0xfec00000, GSI 0-23
+Dec 19 03:22:22 mint kernel: [    0.000000] ACPI: INT_SRC_OVR (bus 0 bus_irq 0 global_irq 2 high edge)
+Dec 19 03:22:22 mint kernel: [    0.000000] ACPI: IRQ0 used by override.
+Dec 19 03:22:22 mint kernel: [    0.000000] ACPI: IRQ2 used by override.
+Dec 19 03:22:22 mint kernel: [    0.000000] ACPI: IRQ9 used by override.
+Dec 19 03:22:22 mint kernel: [    0.000000] Using ACPI (MADT) for SMP configuration information
+Dec 19 03:22:22 mint kernel: [    0.000000] SMP: Allowing 1 CPUs, 0 hotplug CPUs
+Dec 19 03:22:22 mint kernel: [    0.000000] nr_irqs_gsi: 24
+Dec 19 03:22:22 mint kernel: [    0.000000] PM: Registered nosave memory: 000000000009f000 - 00000000000a0000
+Dec 19 03:22:22 mint kernel: [    0.000000] PM: Registered nosave memory: 00000000000a0000 - 00000000000ca000
+Dec 19 03:22:22 mint kernel: [    0.000000] PM: Registered nosave memory: 00000000000ca000 - 00000000000cc000
+Dec 19 03:22:22 mint kernel: [    0.000000] PM: Registered nosave memory: 00000000000cc000 - 00000000000dc000
+Dec 19 03:22:22 mint kernel: [    0.000000] PM: Registered nosave memory: 00000000000dc000 - 00000000000e4000
+Dec 19 03:22:22 mint kernel: [    0.000000] PM: Registered nosave memory: 00000000000e4000 - 00000000000e8000
+Dec 19 03:22:22 mint kernel: [    0.000000] PM: Registered nosave memory: 00000000000e8000 - 0000000000100000
+Dec 19 03:22:22 mint kernel: [    0.000000] PM: Registered nosave memory: 000000001fef0000 - 000000001feff000
+Dec 19 03:22:22 mint kernel: [    0.000000] PM: Registered nosave memory: 000000001feff000 - 000000001ff00000
+Dec 19 03:22:22 mint kernel: [    0.000000] Allocating PCI resources starting at 20000000 (gap: 20000000:c0000000)
+Dec 19 03:22:22 mint kernel: [    0.000000] Booting paravirtualized kernel on bare hardware
+Dec 19 03:22:22 mint kernel: [    0.000000] NR_CPUS:32 nr_cpumask_bits:32 nr_cpu_ids:1 nr_node_ids:1
+Dec 19 03:22:22 mint kernel: [    0.000000] PERCPU: Embedded 14 pages/cpu @c1c00000 s34136 r0 d23208 u4194304
+Dec 19 03:22:22 mint kernel: [    0.000000] pcpu-alloc: s34136 r0 d23208 u4194304 alloc=1*4194304
+Dec 19 03:22:22 mint kernel: [    0.000000] pcpu-alloc: [0] 0 
+Dec 19 03:22:22 mint kernel: [    0.000000] Built 1 zonelists in Zone order, mobility grouping on.  Total pages: 129919
+Dec 19 03:22:22 mint kernel: [    0.000000] Kernel command line: boot=live initrd=/casper/initrd.lz live-media-path=/casper quiet splash -- BOOT_IMAGE=/casper/vmlinuz 
+Dec 19 03:22:22 mint kernel: [    0.000000] PID hash table entries: 2048 (order: 1, 8192 bytes)
+Dec 19 03:22:22 mint kernel: [    0.000000] Dentry cache hash table entries: 65536 (order: 6, 262144 bytes)
+Dec 19 03:22:22 mint kernel: [    0.000000] Inode-cache hash table entries: 32768 (order: 5, 131072 bytes)
+Dec 19 03:22:22 mint kernel: [    0.000000] Enabling fast FPU save and restore... done.
+Dec 19 03:22:22 mint kernel: [    0.000000] Enabling unmasked SIMD FPU exception support... done.
+Dec 19 03:22:22 mint kernel: [    0.000000] Initializing CPU#0
+Dec 19 03:22:22 mint kernel: [    0.000000] Initializing HighMem for node 0 (00000000:00000000)
+Dec 19 03:22:22 mint kernel: [    0.000000] Memory: 506792k/524288k available (2490k kernel code, 16520k reserved, 1318k data, 372k init, 0k highmem)
+Dec 19 03:22:22 mint kernel: [    0.000000] virtual kernel memory layout:
+Dec 19 03:22:22 mint kernel: [    0.000000]     fixmap  : 0xffd56000 - 0xfffff000   (2724 kB)
+Dec 19 03:22:22 mint kernel: [    0.000000]     pkmap   : 0xff400000 - 0xff800000   (4096 kB)
+Dec 19 03:22:22 mint kernel: [    0.000000]     vmalloc : 0xe0800000 - 0xff3fe000   ( 491 MB)
+Dec 19 03:22:22 mint kernel: [    0.000000]     lowmem  : 0xc0000000 - 0xe0000000   ( 512 MB)
+Dec 19 03:22:22 mint kernel: [    0.000000]       .init : 0xc13b9000 - 0xc1416000   ( 372 kB)
+Dec 19 03:22:22 mint kernel: [    0.000000]       .data : 0xc126e965 - 0xc13b81e0   (1318 kB)
+Dec 19 03:22:22 mint kernel: [    0.000000]       .text : 0xc1000000 - 0xc126e965   (2490 kB)
+Dec 19 03:22:22 mint kernel: [    0.000000] Checking if this processor honours the WP bit even in supervisor mode...Ok.
+Dec 19 03:22:22 mint kernel: [    0.000000] SLUB: Genslabs=13, HWalign=64, Order=0-3, MinObjects=0, CPUs=1, Nodes=1
+Dec 19 03:22:22 mint kernel: [    0.000000] Hierarchical RCU implementation.
+Dec 19 03:22:22 mint kernel: [    0.000000] NR_IRQS:1280
+Dec 19 03:22:22 mint kernel: [    0.000000] Extended CMOS year: 2000
+Dec 19 03:22:22 mint kernel: [    0.000000] Console: colour VGA+ 80x25
+Dec 19 03:22:22 mint kernel: [    0.000000] console [tty0] enabled
+Dec 19 03:22:22 mint kernel: [    0.000000] TSC freq read from hypervisor : 2666.419 MHz
+Dec 19 03:22:22 mint kernel: [    0.000000] Detected 2666.419 MHz processor.
+Dec 19 03:22:22 mint kernel: [    0.012007] Calibrating delay loop (skipped), value calculated using timer frequency.. 5332.83 BogoMIPS (lpj=10665676)
+Dec 19 03:22:22 mint kernel: [    0.012038] Security Framework initialized
+Dec 19 03:22:22 mint kernel: [    0.012048] SELinux:  Disabled at boot.
+Dec 19 03:22:22 mint kernel: [    0.012060] Mount-cache hash table entries: 512
+Dec 19 03:22:22 mint kernel: [    0.028023] Initializing cgroup subsys ns
+Dec 19 03:22:22 mint kernel: [    0.028034] Initializing cgroup subsys cpuacct
+Dec 19 03:22:22 mint kernel: [    0.028039] Initializing cgroup subsys devices
+Dec 19 03:22:22 mint kernel: [    0.028043] Initializing cgroup subsys freezer
+Dec 19 03:22:22 mint kernel: [    0.028048] Initializing cgroup subsys net_cls
+Dec 19 03:22:22 mint kernel: [    0.032037] CPU: L1 I cache: 32K, L1 D cache: 32K
+Dec 19 03:22:22 mint kernel: [    0.032039] CPU: L2 cache: 6144K
+Dec 19 03:22:22 mint kernel: [    0.032051] mce: CPU supports 0 MCE banks
+Dec 19 03:22:22 mint kernel: [    0.036013] Performance Events: Core2 events, Intel PMU driver.
+Dec 19 03:22:22 mint kernel: [    0.036040] ... version:                2
+Dec 19 03:22:22 mint kernel: [    0.036041] ... bit width:              40
+Dec 19 03:22:22 mint kernel: [    0.036042] ... generic registers:      2
+Dec 19 03:22:22 mint kernel: [    0.036043] ... value mask:             000000ffffffffff
+Dec 19 03:22:22 mint kernel: [    0.036045] ... max period:             000000007fffffff
+Dec 19 03:22:22 mint kernel: [    0.036046] ... fixed-purpose events:   3
+Dec 19 03:22:22 mint kernel: [    0.036047] ... event mask:             0000000700000003
+Dec 19 03:22:22 mint kernel: [    0.036050] Checking 'hlt' instruction... OK.
+Dec 19 03:22:22 mint kernel: [    0.053824] SMP alternatives: switching to UP code
+Dec 19 03:22:22 mint kernel: [    0.107124] Freeing SMP alternatives: 13k freed
+Dec 19 03:22:22 mint kernel: [    0.107129] ACPI: Core revision 20090903
+Dec 19 03:22:22 mint kernel: [    0.116159] Enabling APIC mode:  Flat.  Using 1 I/O APICs
+Dec 19 03:22:22 mint kernel: [    0.117199] ..TIMER: vector=0x30 apic1=0 pin1=2 apic2=-1 pin2=-1
+Dec 19 03:22:22 mint kernel: [    0.157124] CPU0: Intel(R) Core(TM)2 Duo CPU     E8200  @ 2.66GHz stepping 06
+Dec 19 03:22:22 mint kernel: [    0.160001] Brought up 1 CPUs
+Dec 19 03:22:22 mint kernel: [    0.160001] Total of 1 processors activated (5332.83 BogoMIPS).
+Dec 19 03:22:22 mint kernel: [    0.160001] CPU0 attaching NULL sched-domain.
+Dec 19 03:22:22 mint kernel: [    0.160001] devtmpfs: initialized
+Dec 19 03:22:22 mint kernel: [    0.160001] regulator: core version 0.5
+Dec 19 03:22:22 mint kernel: [    0.160001] NET: Registered protocol family 16
+Dec 19 03:22:22 mint kernel: [    0.160001] ACPI: bus type pci registered
+Dec 19 03:22:22 mint kernel: [    0.160001] PCI: MCFG configuration 0: base e0000000 segment 0 buses 0 - 255
+Dec 19 03:22:22 mint kernel: [    0.160001] PCI: MCFG area at e0000000 reserved in E820
+Dec 19 03:22:22 mint kernel: [    0.160001] PCI: Using MMCONFIG for extended config space
+Dec 19 03:22:22 mint kernel: [    0.160001] PCI: Using configuration type 1 for base access
+Dec 19 03:22:22 mint kernel: [    0.160001] bio: create slab <bio-0> at 0
+Dec 19 03:22:22 mint kernel: [    0.160300] ACPI: EC: Look up EC in DSDT
+Dec 19 03:22:22 mint kernel: [    0.202345] ACPI: BIOS _OSI(Linux) query ignored
+Dec 19 03:22:22 mint kernel: [    0.209433] ACPI: Interpreter enabled
+Dec 19 03:22:22 mint kernel: [    0.209451] ACPI: (supports S0 S1 S4 S5)
+Dec 19 03:22:22 mint kernel: [    0.209478] ACPI: Using IOAPIC for interrupt routing
+Dec 19 03:22:22 mint kernel: [    0.291372] ACPI: No dock devices found.
+Dec 19 03:22:22 mint kernel: [    0.292515] ACPI: PCI Root Bridge [PCI0] (0000:00)
+Dec 19 03:22:22 mint kernel: [    0.294616] pci 0000:00:07.1: reg 20 io port: [0x10c0-0x10cf]
+Dec 19 03:22:22 mint kernel: [    0.295251] pci 0000:00:07.3: quirk: region 1000-103f claimed by PIIX4 ACPI
+Dec 19 03:22:22 mint kernel: [    0.295265] pci 0000:00:07.3: quirk: region 1040-104f claimed by PIIX4 SMB
+Dec 19 03:22:22 mint kernel: [    0.295932] pci 0000:00:07.7: reg 10 io port: [0x1080-0x10bf]
+Dec 19 03:22:22 mint kernel: [    0.297516] pci 0000:00:0f.0: reg 10 io port: [0x10d0-0x10df]
+Dec 19 03:22:22 mint kernel: [    0.297566] pci 0000:00:0f.0: reg 14 32bit mmio: [0xd0000000-0xd7ffffff]
+Dec 19 03:22:22 mint kernel: [    0.297613] pci 0000:00:0f.0: reg 18 32bit mmio: [0xd8000000-0xd87fffff]
+Dec 19 03:22:22 mint kernel: [    0.297796] pci 0000:00:0f.0: reg 30 32bit mmio pref: [0x000000-0x007fff]
+Dec 19 03:22:22 mint kernel: [    0.298516] pci 0000:00:10.0: reg 10 io port: [0x1400-0x14ff]
+Dec 19 03:22:22 mint kernel: [    0.298890] pci 0000:00:10.0: reg 14 64bit mmio: [0xd8820000-0xd883ffff]
+Dec 19 03:22:22 mint kernel: [    0.299304] pci 0000:00:10.0: reg 1c 64bit mmio: [0xd8800000-0xd881ffff]
+Dec 19 03:22:22 mint kernel: [    0.299398] pci 0000:00:10.0: reg 30 32bit mmio pref: [0x000000-0x003fff]
+Dec 19 03:22:22 mint kernel: [    0.300802] pci 0000:00:15.0: PME# supported from D0 D3hot D3cold
+Dec 19 03:22:22 mint kernel: [    0.300837] pci 0000:00:15.0: PME# disabled
+Dec 19 03:22:22 mint kernel: [    0.301695] pci 0000:00:15.1: PME# supported from D0 D3hot D3cold
+Dec 19 03:22:22 mint kernel: [    0.301730] pci 0000:00:15.1: PME# disabled
+Dec 19 03:22:22 mint kernel: [    0.302538] pci 0000:00:15.2: PME# supported from D0 D3hot D3cold
+Dec 19 03:22:22 mint kernel: [    0.302573] pci 0000:00:15.2: PME# disabled
+Dec 19 03:22:22 mint kernel: [    0.303381] pci 0000:00:15.3: PME# supported from D0 D3hot D3cold
+Dec 19 03:22:22 mint kernel: [    0.303406] pci 0000:00:15.3: PME# disabled
+Dec 19 03:22:22 mint kernel: [    0.304235] pci 0000:00:15.4: PME# supported from D0 D3hot D3cold
+Dec 19 03:22:22 mint kernel: [    0.304260] pci 0000:00:15.4: PME# disabled
+Dec 19 03:22:22 mint kernel: [    0.305250] pci 0000:00:15.5: PME# supported from D0 D3hot D3cold
+Dec 19 03:22:22 mint kernel: [    0.305276] pci 0000:00:15.5: PME# disabled
+Dec 19 03:22:22 mint kernel: [    0.306086] pci 0000:00:15.6: PME# supported from D0 D3hot D3cold
+Dec 19 03:22:22 mint kernel: [    0.306112] pci 0000:00:15.6: PME# disabled
+Dec 19 03:22:22 mint kernel: [    0.306919] pci 0000:00:15.7: PME# supported from D0 D3hot D3cold
+Dec 19 03:22:22 mint kernel: [    0.306944] pci 0000:00:15.7: PME# disabled
+Dec 19 03:22:22 mint kernel: [    0.307752] pci 0000:00:16.0: PME# supported from D0 D3hot D3cold
+Dec 19 03:22:22 mint kernel: [    0.307777] pci 0000:00:16.0: PME# disabled
+Dec 19 03:22:22 mint kernel: [    0.308588] pci 0000:00:16.1: PME# supported from D0 D3hot D3cold
+Dec 19 03:22:22 mint kernel: [    0.308613] pci 0000:00:16.1: PME# disabled
+Dec 19 03:22:22 mint kernel: [    0.309433] pci 0000:00:16.2: PME# supported from D0 D3hot D3cold
+Dec 19 03:22:22 mint kernel: [    0.309458] pci 0000:00:16.2: PME# disabled
+Dec 19 03:22:22 mint kernel: [    0.310277] pci 0000:00:16.3: PME# supported from D0 D3hot D3cold
+Dec 19 03:22:22 mint kernel: [    0.310302] pci 0000:00:16.3: PME# disabled
+Dec 19 03:22:22 mint kernel: [    0.311118] pci 0000:00:16.4: PME# supported from D0 D3hot D3cold
+Dec 19 03:22:22 mint kernel: [    0.311143] pci 0000:00:16.4: PME# disabled
+Dec 19 03:22:22 mint kernel: [    0.312026] pci 0000:00:16.5: PME# supported from D0 D3hot D3cold
+Dec 19 03:22:22 mint kernel: [    0.312051] pci 0000:00:16.5: PME# disabled
+Dec 19 03:22:22 mint kernel: [    0.312860] pci 0000:00:16.6: PME# supported from D0 D3hot D3cold
+Dec 19 03:22:22 mint kernel: [    0.312885] pci 0000:00:16.6: PME# disabled
+Dec 19 03:22:22 mint kernel: [    0.313693] pci 0000:00:16.7: PME# supported from D0 D3hot D3cold
+Dec 19 03:22:22 mint kernel: [    0.313718] pci 0000:00:16.7: PME# disabled
+Dec 19 03:22:22 mint kernel: [    0.314527] pci 0000:00:17.0: PME# supported from D0 D3hot D3cold
+Dec 19 03:22:22 mint kernel: [    0.314552] pci 0000:00:17.0: PME# disabled
+Dec 19 03:22:22 mint kernel: [    0.315642] pci 0000:00:17.1: PME# supported from D0 D3hot D3cold
+Dec 19 03:22:22 mint kernel: [    0.315668] pci 0000:00:17.1: PME# disabled
+Dec 19 03:22:22 mint kernel: [    0.316502] pci 0000:00:17.2: PME# supported from D0 D3hot D3cold
+Dec 19 03:22:22 mint kernel: [    0.316528] pci 0000:00:17.2: PME# disabled
+Dec 19 03:22:22 mint kernel: [    0.317345] pci 0000:00:17.3: PME# supported from D0 D3hot D3cold
+Dec 19 03:22:22 mint kernel: [    0.317370] pci 0000:00:17.3: PME# disabled
+Dec 19 03:22:22 mint kernel: [    0.318191] pci 0000:00:17.4: PME# supported from D0 D3hot D3cold
+Dec 19 03:22:22 mint kernel: [    0.318217] pci 0000:00:17.4: PME# disabled
+Dec 19 03:22:22 mint kernel: [    0.319141] pci 0000:00:17.5: PME# supported from D0 D3hot D3cold
+Dec 19 03:22:22 mint kernel: [    0.319166] pci 0000:00:17.5: PME# disabled
+Dec 19 03:22:22 mint kernel: [    0.320080] pci 0000:00:17.6: PME# supported from D0 D3hot D3cold
+Dec 19 03:22:22 mint kernel: [    0.320105] pci 0000:00:17.6: PME# disabled
+Dec 19 03:22:22 mint kernel: [    0.320922] pci 0000:00:17.7: PME# supported from D0 D3hot D3cold
+Dec 19 03:22:22 mint kernel: [    0.320947] pci 0000:00:17.7: PME# disabled
+Dec 19 03:22:22 mint kernel: [    0.321752] pci 0000:00:18.0: PME# supported from D0 D3hot D3cold
+Dec 19 03:22:22 mint kernel: [    0.321777] pci 0000:00:18.0: PME# disabled
+Dec 19 03:22:22 mint kernel: [    0.322584] pci 0000:00:18.1: PME# supported from D0 D3hot D3cold
+Dec 19 03:22:22 mint kernel: [    0.322609] pci 0000:00:18.1: PME# disabled
+Dec 19 03:22:22 mint kernel: [    0.323425] pci 0000:00:18.2: PME# supported from D0 D3hot D3cold
+Dec 19 03:22:22 mint kernel: [    0.323450] pci 0000:00:18.2: PME# disabled
+Dec 19 03:22:22 mint kernel: [    0.324318] pci 0000:00:18.3: PME# supported from D0 D3hot D3cold
+Dec 19 03:22:22 mint kernel: [    0.324343] pci 0000:00:18.3: PME# disabled
+Dec 19 03:22:22 mint kernel: [    0.325227] pci 0000:00:18.4: PME# supported from D0 D3hot D3cold
+Dec 19 03:22:22 mint kernel: [    0.325256] pci 0000:00:18.4: PME# disabled
+Dec 19 03:22:22 mint kernel: [    0.326140] pci 0000:00:18.5: PME# supported from D0 D3hot D3cold
+Dec 19 03:22:22 mint kernel: [    0.326165] pci 0000:00:18.5: PME# disabled
+Dec 19 03:22:22 mint kernel: [    0.326972] pci 0000:00:18.6: PME# supported from D0 D3hot D3cold
+Dec 19 03:22:22 mint kernel: [    0.326997] pci 0000:00:18.6: PME# disabled
+Dec 19 03:22:22 mint kernel: [    0.327812] pci 0000:00:18.7: PME# supported from D0 D3hot D3cold
+Dec 19 03:22:22 mint kernel: [    0.327837] pci 0000:00:18.7: PME# disabled
+Dec 19 03:22:22 mint kernel: [    0.329367] pci 0000:02:00.0: reg 20 io port: [0x20c0-0x20df]
+Dec 19 03:22:22 mint kernel: [    0.330131] pci 0000:02:01.0: reg 10 io port: [0x2000-0x207f]
+Dec 19 03:22:22 mint kernel: [    0.330416] pci 0000:02:01.0: reg 30 32bit mmio pref: [0x000000-0x00ffff]
+Dec 19 03:22:22 mint kernel: [    0.331227] pci 0000:02:02.0: reg 10 io port: [0x2080-0x20bf]
+Dec 19 03:22:22 mint kernel: [    0.331860] pci 0000:02:03.0: reg 10 32bit mmio: [0xd8900000-0xd8900fff]
+Dec 19 03:22:22 mint kernel: [    0.332548] pci 0000:00:11.0: transparent bridge
+Dec 19 03:22:22 mint kernel: [    0.332571] pci 0000:00:11.0: bridge io port: [0x2000-0x3fff]
+Dec 19 03:22:22 mint kernel: [    0.332596] pci 0000:00:11.0: bridge 32bit mmio: [0xd8900000-0xd9cfffff]
+Dec 19 03:22:22 mint kernel: [    0.332647] pci 0000:00:11.0: bridge 64bit mmio pref: [0xdc400000-0xdc9fffff]
+Dec 19 03:22:22 mint kernel: [    0.333117] pci 0000:00:15.0: bridge io port: [0x4000-0x4fff]
+Dec 19 03:22:22 mint kernel: [    0.333142] pci 0000:00:15.0: bridge 32bit mmio: [0xd9d00000-0xd9dfffff]
+Dec 19 03:22:22 mint kernel: [    0.333190] pci 0000:00:15.0: bridge 64bit mmio pref: [0xdca00000-0xdcafffff]
+Dec 19 03:22:22 mint kernel: [    0.333662] pci 0000:00:15.1: bridge io port: [0x8000-0x8fff]
+Dec 19 03:22:22 mint kernel: [    0.333687] pci 0000:00:15.1: bridge 32bit mmio: [0xda100000-0xda1fffff]
+Dec 19 03:22:22 mint kernel: [    0.333735] pci 0000:00:15.1: bridge 64bit mmio pref: [0xdce00000-0xdcefffff]
+Dec 19 03:22:22 mint kernel: [    0.334208] pci 0000:00:15.2: bridge io port: [0xc000-0xcfff]
+Dec 19 03:22:22 mint kernel: [    0.334233] pci 0000:00:15.2: bridge 32bit mmio: [0xda500000-0xda5fffff]
+Dec 19 03:22:22 mint kernel: [    0.334280] pci 0000:00:15.2: bridge 64bit mmio pref: [0xdd200000-0xdd2fffff]
+Dec 19 03:22:22 mint kernel: [    0.334771] pci 0000:00:15.3: bridge 32bit mmio: [0xda900000-0xda9fffff]
+Dec 19 03:22:22 mint kernel: [    0.334819] pci 0000:00:15.3: bridge 64bit mmio pref: [0xdd600000-0xdd6fffff]
+Dec 19 03:22:22 mint kernel: [    0.335347] pci 0000:00:15.4: bridge 32bit mmio: [0xdad00000-0xdadfffff]
+Dec 19 03:22:22 mint kernel: [    0.335395] pci 0000:00:15.4: bridge 64bit mmio pref: [0xdda00000-0xddafffff]
+Dec 19 03:22:22 mint kernel: [    0.335888] pci 0000:00:15.5: bridge 32bit mmio: [0xdb100000-0xdb1fffff]
+Dec 19 03:22:22 mint kernel: [    0.335940] pci 0000:00:15.5: bridge 64bit mmio pref: [0xdde00000-0xddefffff]
+Dec 19 03:22:22 mint kernel: [    0.336441] pci 0000:00:15.6: bridge 32bit mmio: [0xdb500000-0xdb5fffff]
+Dec 19 03:22:22 mint kernel: [    0.336489] pci 0000:00:15.6: bridge 64bit mmio pref: [0xde200000-0xde2fffff]
+Dec 19 03:22:22 mint kernel: [    0.336985] pci 0000:00:15.7: bridge 32bit mmio: [0xdb900000-0xdb9fffff]
+Dec 19 03:22:22 mint kernel: [    0.337033] pci 0000:00:15.7: bridge 64bit mmio pref: [0xde600000-0xde6fffff]
+Dec 19 03:22:22 mint kernel: [    0.337496] pci 0000:00:16.0: bridge io port: [0x5000-0x5fff]
+Dec 19 03:22:22 mint kernel: [    0.337522] pci 0000:00:16.0: bridge 32bit mmio: [0xd9e00000-0xd9efffff]
+Dec 19 03:22:22 mint kernel: [    0.337569] pci 0000:00:16.0: bridge 64bit mmio pref: [0xdcb00000-0xdcbfffff]
+Dec 19 03:22:22 mint kernel: [    0.338048] pci 0000:00:16.1: bridge io port: [0x9000-0x9fff]
+Dec 19 03:22:22 mint kernel: [    0.338073] pci 0000:00:16.1: bridge 32bit mmio: [0xda200000-0xda2fffff]
+Dec 19 03:22:22 mint kernel: [    0.338121] pci 0000:00:16.1: bridge 64bit mmio pref: [0xdcf00000-0xdcffffff]
+Dec 19 03:22:22 mint kernel: [    0.338585] pci 0000:00:16.2: bridge io port: [0xd000-0xdfff]
+Dec 19 03:22:22 mint kernel: [    0.338610] pci 0000:00:16.2: bridge 32bit mmio: [0xda600000-0xda6fffff]
+Dec 19 03:22:22 mint kernel: [    0.338657] pci 0000:00:16.2: bridge 64bit mmio pref: [0xdd300000-0xdd3fffff]
+Dec 19 03:22:22 mint kernel: [    0.339153] pci 0000:00:16.3: bridge 32bit mmio: [0xdaa00000-0xdaafffff]
+Dec 19 03:22:22 mint kernel: [    0.339201] pci 0000:00:16.3: bridge 64bit mmio pref: [0xdd700000-0xdd7fffff]
+Dec 19 03:22:22 mint kernel: [    0.339708] pci 0000:00:16.4: bridge 32bit mmio: [0xdae00000-0xdaefffff]
+Dec 19 03:22:22 mint kernel: [    0.339756] pci 0000:00:16.4: bridge 64bit mmio pref: [0xddb00000-0xddbfffff]
+Dec 19 03:22:22 mint kernel: [    0.340333] pci 0000:00:16.5: bridge 32bit mmio: [0xdb200000-0xdb2fffff]
+Dec 19 03:22:22 mint kernel: [    0.340381] pci 0000:00:16.5: bridge 64bit mmio pref: [0xddf00000-0xddffffff]
+Dec 19 03:22:22 mint kernel: [    0.340871] pci 0000:00:16.6: bridge 32bit mmio: [0xdb600000-0xdb6fffff]
+Dec 19 03:22:22 mint kernel: [    0.340923] pci 0000:00:16.6: bridge 64bit mmio pref: [0xde300000-0xde3fffff]
+Dec 19 03:22:22 mint kernel: [    0.341412] pci 0000:00:16.7: bridge 32bit mmio: [0xdba00000-0xdbafffff]
+Dec 19 03:22:22 mint kernel: [    0.341460] pci 0000:00:16.7: bridge 64bit mmio pref: [0xde700000-0xde7fffff]
+Dec 19 03:22:22 mint kernel: [    0.341931] pci 0000:00:17.0: bridge io port: [0x6000-0x6fff]
+Dec 19 03:22:22 mint kernel: [    0.341957] pci 0000:00:17.0: bridge 32bit mmio: [0xd9f00000-0xd9ffffff]
+Dec 19 03:22:22 mint kernel: [    0.342004] pci 0000:00:17.0: bridge 64bit mmio pref: [0xdcc00000-0xdccfffff]
+Dec 19 03:22:22 mint kernel: [    0.342469] pci 0000:00:17.1: bridge io port: [0xa000-0xafff]
+Dec 19 03:22:22 mint kernel: [    0.342494] pci 0000:00:17.1: bridge 32bit mmio: [0xda300000-0xda3fffff]
+Dec 19 03:22:22 mint kernel: [    0.342542] pci 0000:00:17.1: bridge 64bit mmio pref: [0xdd000000-0xdd0fffff]
+Dec 19 03:22:22 mint kernel: [    0.343015] pci 0000:00:17.2: bridge io port: [0xe000-0xefff]
+Dec 19 03:22:22 mint kernel: [    0.343041] pci 0000:00:17.2: bridge 32bit mmio: [0xda700000-0xda7fffff]
+Dec 19 03:22:22 mint kernel: [    0.343088] pci 0000:00:17.2: bridge 64bit mmio pref: [0xdd400000-0xdd4fffff]
+Dec 19 03:22:22 mint kernel: [    0.343575] pci 0000:00:17.3: bridge 32bit mmio: [0xdab00000-0xdabfffff]
+Dec 19 03:22:22 mint kernel: [    0.343623] pci 0000:00:17.3: bridge 64bit mmio pref: [0xdd800000-0xdd8fffff]
+Dec 19 03:22:22 mint kernel: [    0.344184] pci 0000:00:17.4: bridge 32bit mmio: [0xdaf00000-0xdaffffff]
+Dec 19 03:22:22 mint kernel: [    0.344232] pci 0000:00:17.4: bridge 64bit mmio pref: [0xddc00000-0xddcfffff]
+Dec 19 03:22:22 mint kernel: [    0.344722] pci 0000:00:17.5: bridge 32bit mmio: [0xdb300000-0xdb3fffff]
+Dec 19 03:22:22 mint kernel: [    0.344770] pci 0000:00:17.5: bridge 64bit mmio pref: [0xde000000-0xde0fffff]
+Dec 19 03:22:22 mint kernel: [    0.345284] pci 0000:00:17.6: bridge 32bit mmio: [0xdb700000-0xdb7fffff]
+Dec 19 03:22:22 mint kernel: [    0.345332] pci 0000:00:17.6: bridge 64bit mmio pref: [0xde400000-0xde4fffff]
+Dec 19 03:22:22 mint kernel: [    0.345823] pci 0000:00:17.7: bridge 32bit mmio: [0xdbb00000-0xdbbfffff]
+Dec 19 03:22:22 mint kernel: [    0.345871] pci 0000:00:17.7: bridge 64bit mmio pref: [0xde800000-0xde8fffff]
+Dec 19 03:22:22 mint kernel: [    0.346340] pci 0000:00:18.0: bridge io port: [0x7000-0x7fff]
+Dec 19 03:22:22 mint kernel: [    0.346365] pci 0000:00:18.0: bridge 32bit mmio: [0xda000000-0xda0fffff]
+Dec 19 03:22:22 mint kernel: [    0.346413] pci 0000:00:18.0: bridge 64bit mmio pref: [0xdcd00000-0xdcdfffff]
+Dec 19 03:22:22 mint kernel: [    0.346877] pci 0000:00:18.1: bridge io port: [0xb000-0xbfff]
+Dec 19 03:22:22 mint kernel: [    0.346911] pci 0000:00:18.1: bridge 32bit mmio: [0xda400000-0xda4fffff]
+Dec 19 03:22:22 mint kernel: [    0.346959] pci 0000:00:18.1: bridge 64bit mmio pref: [0xdd100000-0xdd1fffff]
+Dec 19 03:22:22 mint kernel: [    0.347426] pci 0000:00:18.2: bridge io port: [0xf000-0xffff]
+Dec 19 03:22:22 mint kernel: [    0.347451] pci 0000:00:18.2: bridge 32bit mmio: [0xda800000-0xda8fffff]
+Dec 19 03:22:22 mint kernel: [    0.347499] pci 0000:00:18.2: bridge 64bit mmio pref: [0xdd500000-0xdd5fffff]
+Dec 19 03:22:22 mint kernel: [    0.348004] pci 0000:00:18.3: bridge 32bit mmio: [0xdac00000-0xdacfffff]
+Dec 19 03:22:22 mint kernel: [    0.348053] pci 0000:00:18.3: bridge 64bit mmio pref: [0xdd900000-0xdd9fffff]
+Dec 19 03:22:22 mint kernel: [    0.348563] pci 0000:00:18.4: bridge 32bit mmio: [0xdb000000-0xdb0fffff]
+Dec 19 03:22:22 mint kernel: [    0.348611] pci 0000:00:18.4: bridge 64bit mmio pref: [0xddd00000-0xdddfffff]
+Dec 19 03:22:22 mint kernel: [    0.349108] pci 0000:00:18.5: bridge 32bit mmio: [0xdb400000-0xdb4fffff]
+Dec 19 03:22:22 mint kernel: [    0.349156] pci 0000:00:18.5: bridge 64bit mmio pref: [0xde100000-0xde1fffff]
+Dec 19 03:22:22 mint kernel: [    0.349643] pci 0000:00:18.6: bridge 32bit mmio: [0xdb800000-0xdb8fffff]
+Dec 19 03:22:22 mint kernel: [    0.349691] pci 0000:00:18.6: bridge 64bit mmio pref: [0xde500000-0xde5fffff]
+Dec 19 03:22:22 mint kernel: [    0.350190] pci 0000:00:18.7: bridge 32bit mmio: [0xdbc00000-0xdbcfffff]
+Dec 19 03:22:22 mint kernel: [    0.350238] pci 0000:00:18.7: bridge 64bit mmio pref: [0xde900000-0xde9fffff]
+Dec 19 03:22:22 mint kernel: [    0.352871] pci_bus 0000:00: on NUMA node 0
+Dec 19 03:22:22 mint kernel: [    0.352880] ACPI: PCI Interrupt Routing Table [\_SB_.PCI0._PRT]
+Dec 19 03:22:22 mint kernel: [    0.566345] ACPI: PCI Interrupt Link [LNKA] (IRQs 3 4 5 6 7 *9 10 11 14 15)
+Dec 19 03:22:22 mint kernel: [    0.566501] ACPI: PCI Interrupt Link [LNKB] (IRQs 3 4 5 6 7 9 10 *11 14 15)
+Dec 19 03:22:22 mint kernel: [    0.566646] ACPI: PCI Interrupt Link [LNKC] (IRQs 3 4 5 6 7 9 *10 11 14 15)
+Dec 19 03:22:22 mint kernel: [    0.566789] ACPI: PCI Interrupt Link [LNKD] (IRQs 3 4 *5 6 7 9 10 11 14 15)
+Dec 19 03:22:22 mint kernel: [    0.567042] vgaarb: device added: PCI:0000:00:0f.0,decodes=io+mem,owns=io+mem,locks=none
+Dec 19 03:22:22 mint kernel: [    0.567052] vgaarb: loaded
+Dec 19 03:22:22 mint kernel: [    0.567508] PCI: Using ACPI for IRQ routing
+Dec 19 03:22:22 mint kernel: [    0.568861] Switching to clocksource tsc
+Dec 19 03:22:22 mint kernel: [    0.571726] pnp: PnP ACPI init
+Dec 19 03:22:22 mint kernel: [    0.571733] ACPI: bus type pnp registered
+Dec 19 03:22:22 mint kernel: [    0.627060] pnp: PnP ACPI: found 13 devices
+Dec 19 03:22:22 mint kernel: [    0.627064] ACPI: ACPI bus type pnp unregistered
+Dec 19 03:22:22 mint kernel: [    0.627077] PnPBIOS: Disabled by ACPI PNP
+Dec 19 03:22:22 mint kernel: [    0.627098] system 00:01: ioport range 0x1000-0x103f has been reserved
+Dec 19 03:22:22 mint kernel: [    0.627100] system 00:01: ioport range 0x1040-0x104f has been reserved
+Dec 19 03:22:22 mint kernel: [    0.627104] system 00:01: ioport range 0xcf0-0xcf1 has been reserved
+Dec 19 03:22:22 mint kernel: [    0.627110] system 00:0c: ioport range 0x1060-0x107f has been reserved
+Dec 19 03:22:22 mint kernel: [    0.627113] system 00:0c: iomem range 0xe0000000-0xefffffff has been reserved
+Dec 19 03:22:22 mint kernel: [    0.627116] system 00:0c: iomem range 0xdbe00000-0xdbffffff has been reserved
+Dec 19 03:22:22 mint kernel: [    0.664433] pci 0000:00:15.3: BAR 13: can't allocate I/O resource [0x10000-0xffff]
+Dec 19 03:22:22 mint kernel: [    0.664438] pci 0000:00:15.4: BAR 13: can't allocate I/O resource [0x10000-0xffff]
+Dec 19 03:22:22 mint kernel: [    0.664442] pci 0000:00:15.5: BAR 13: can't allocate I/O resource [0x10000-0xffff]
+Dec 19 03:22:22 mint kernel: [    0.664446] pci 0000:00:15.6: BAR 13: can't allocate I/O resource [0x10000-0xffff]
+Dec 19 03:22:22 mint kernel: [    0.664450] pci 0000:00:15.7: BAR 13: can't allocate I/O resource [0x10000-0xffff]
+Dec 19 03:22:22 mint kernel: [    0.664453] pci 0000:00:16.3: BAR 13: can't allocate I/O resource [0x10000-0xffff]
+Dec 19 03:22:22 mint kernel: [    0.664457] pci 0000:00:16.4: BAR 13: can't allocate I/O resource [0x10000-0xffff]
+Dec 19 03:22:22 mint kernel: [    0.664461] pci 0000:00:16.5: BAR 13: can't allocate I/O resource [0x10000-0xffff]
+Dec 19 03:22:22 mint kernel: [    0.664465] pci 0000:00:16.6: BAR 13: can't allocate I/O resource [0x10000-0xffff]
+Dec 19 03:22:22 mint kernel: [    0.664468] pci 0000:00:16.7: BAR 13: can't allocate I/O resource [0x10000-0xffff]
+Dec 19 03:22:22 mint kernel: [    0.664472] pci 0000:00:17.3: BAR 13: can't allocate I/O resource [0x10000-0xffff]
+Dec 19 03:22:22 mint kernel: [    0.664476] pci 0000:00:17.4: BAR 13: can't allocate I/O resource [0x10000-0xffff]
+Dec 19 03:22:22 mint kernel: [    0.664480] pci 0000:00:17.5: BAR 13: can't allocate I/O resource [0x10000-0xffff]
+Dec 19 03:22:22 mint kernel: [    0.664484] pci 0000:00:17.6: BAR 13: can't allocate I/O resource [0x10000-0xffff]
+Dec 19 03:22:22 mint kernel: [    0.664487] pci 0000:00:17.7: BAR 13: can't allocate I/O resource [0x10000-0xffff]
+Dec 19 03:22:22 mint kernel: [    0.664491] pci 0000:00:18.3: BAR 13: can't allocate I/O resource [0x10000-0xffff]
+Dec 19 03:22:22 mint kernel: [    0.664495] pci 0000:00:18.4: BAR 13: can't allocate I/O resource [0x10000-0xffff]
+Dec 19 03:22:22 mint kernel: [    0.664499] pci 0000:00:18.5: BAR 13: can't allocate I/O resource [0x10000-0xffff]
+Dec 19 03:22:22 mint kernel: [    0.664502] pci 0000:00:18.6: BAR 13: can't allocate I/O resource [0x10000-0xffff]
+Dec 19 03:22:22 mint kernel: [    0.664506] pci 0000:00:18.7: BAR 13: can't allocate I/O resource [0x10000-0xffff]
+Dec 19 03:22:22 mint kernel: [    0.664511] pci 0000:00:01.0: PCI bridge, secondary bus 0000:01
+Dec 19 03:22:22 mint kernel: [    0.664514] pci 0000:00:01.0:   IO window: disabled
+Dec 19 03:22:22 mint kernel: [    0.664552] pci 0000:00:01.0:   MEM window: disabled
+Dec 19 03:22:22 mint kernel: [    0.664577] pci 0000:00:01.0:   PREFETCH window: disabled
+Dec 19 03:22:22 mint kernel: [    0.664626] pci 0000:00:11.0: PCI bridge, secondary bus 0000:02
+Dec 19 03:22:22 mint kernel: [    0.664641] pci 0000:00:11.0:   IO window: 0x2000-0x3fff
+Dec 19 03:22:22 mint kernel: [    0.664678] pci 0000:00:11.0:   MEM window: 0xd8900000-0xd9cfffff
+Dec 19 03:22:22 mint kernel: [    0.664704] pci 0000:00:11.0:   PREFETCH window: 0x000000dc400000-0x000000dc9fffff
+Dec 19 03:22:22 mint kernel: [    0.664753] pci 0000:00:15.0: PCI bridge, secondary bus 0000:03
+Dec 19 03:22:22 mint kernel: [    0.664767] pci 0000:00:15.0:   IO window: 0x4000-0x4fff
+Dec 19 03:22:22 mint kernel: [    0.664804] pci 0000:00:15.0:   MEM window: 0xd9d00000-0xd9dfffff
+Dec 19 03:22:22 mint kernel: [    0.664830] pci 0000:00:15.0:   PREFETCH window: 0x000000dca00000-0x000000dcafffff
+Dec 19 03:22:22 mint kernel: [    0.664920] pci 0000:00:15.1: PCI bridge, secondary bus 0000:04
+Dec 19 03:22:22 mint kernel: [    0.664936] pci 0000:00:15.1:   IO window: 0x8000-0x8fff
+Dec 19 03:22:22 mint kernel: [    0.664976] pci 0000:00:15.1:   MEM window: 0xda100000-0xda1fffff
+Dec 19 03:22:22 mint kernel: [    0.665002] pci 0000:00:15.1:   PREFETCH window: 0x000000dce00000-0x000000dcefffff
+Dec 19 03:22:22 mint kernel: [    0.665067] pci 0000:00:15.2: PCI bridge, secondary bus 0000:05
+Dec 19 03:22:22 mint kernel: [    0.665083] pci 0000:00:15.2:   IO window: 0xc000-0xcfff
+Dec 19 03:22:22 mint kernel: [    0.665120] pci 0000:00:15.2:   MEM window: 0xda500000-0xda5fffff
+Dec 19 03:22:22 mint kernel: [    0.665146] pci 0000:00:15.2:   PREFETCH window: 0x000000dd200000-0x000000dd2fffff
+Dec 19 03:22:22 mint kernel: [    0.665210] pci 0000:00:15.3: PCI bridge, secondary bus 0000:06
+Dec 19 03:22:22 mint kernel: [    0.665212] pci 0000:00:15.3:   IO window: disabled
+Dec 19 03:22:22 mint kernel: [    0.665250] pci 0000:00:15.3:   MEM window: 0xda900000-0xda9fffff
+Dec 19 03:22:22 mint kernel: [    0.665276] pci 0000:00:15.3:   PREFETCH window: 0x000000dd600000-0x000000dd6fffff
+Dec 19 03:22:22 mint kernel: [    0.665340] pci 0000:00:15.4: PCI bridge, secondary bus 0000:07
+Dec 19 03:22:22 mint kernel: [    0.665342] pci 0000:00:15.4:   IO window: disabled
+Dec 19 03:22:22 mint kernel: [    0.665380] pci 0000:00:15.4:   MEM window: 0xdad00000-0xdadfffff
+Dec 19 03:22:22 mint kernel: [    0.665406] pci 0000:00:15.4:   PREFETCH window: 0x000000dda00000-0x000000ddafffff
+Dec 19 03:22:22 mint kernel: [    0.665473] pci 0000:00:15.5: PCI bridge, secondary bus 0000:08
+Dec 19 03:22:22 mint kernel: [    0.665476] pci 0000:00:15.5:   IO window: disabled
+Dec 19 03:22:22 mint kernel: [    0.665513] pci 0000:00:15.5:   MEM window: 0xdb100000-0xdb1fffff
+Dec 19 03:22:22 mint kernel: [    0.665539] pci 0000:00:15.5:   PREFETCH window: 0x000000dde00000-0x000000ddefffff
+Dec 19 03:22:22 mint kernel: [    0.665603] pci 0000:00:15.6: PCI bridge, secondary bus 0000:09
+Dec 19 03:22:22 mint kernel: [    0.665606] pci 0000:00:15.6:   IO window: disabled
+Dec 19 03:22:22 mint kernel: [    0.665643] pci 0000:00:15.6:   MEM window: 0xdb500000-0xdb5fffff
+Dec 19 03:22:22 mint kernel: [    0.665669] pci 0000:00:15.6:   PREFETCH window: 0x000000de200000-0x000000de2fffff
+Dec 19 03:22:22 mint kernel: [    0.665733] pci 0000:00:15.7: PCI bridge, secondary bus 0000:0a
+Dec 19 03:22:22 mint kernel: [    0.665735] pci 0000:00:15.7:   IO window: disabled
+Dec 19 03:22:22 mint kernel: [    0.665773] pci 0000:00:15.7:   MEM window: 0xdb900000-0xdb9fffff
+Dec 19 03:22:22 mint kernel: [    0.665799] pci 0000:00:15.7:   PREFETCH window: 0x000000de600000-0x000000de6fffff
+Dec 19 03:22:22 mint kernel: [    0.665862] pci 0000:00:16.0: PCI bridge, secondary bus 0000:0b
+Dec 19 03:22:22 mint kernel: [    0.665878] pci 0000:00:16.0:   IO window: 0x5000-0x5fff
+Dec 19 03:22:22 mint kernel: [    0.665915] pci 0000:00:16.0:   MEM window: 0xd9e00000-0xd9efffff
+Dec 19 03:22:22 mint kernel: [    0.665941] pci 0000:00:16.0:   PREFETCH window: 0x000000dcb00000-0x000000dcbfffff
+Dec 19 03:22:22 mint kernel: [    0.666091] pci 0000:00:16.1: PCI bridge, secondary bus 0000:0c
+Dec 19 03:22:22 mint kernel: [    0.666107] pci 0000:00:16.1:   IO window: 0x9000-0x9fff
+Dec 19 03:22:22 mint kernel: [    0.666144] pci 0000:00:16.1:   MEM window: 0xda200000-0xda2fffff
+Dec 19 03:22:22 mint kernel: [    0.666170] pci 0000:00:16.1:   PREFETCH window: 0x000000dcf00000-0x000000dcffffff
+Dec 19 03:22:22 mint kernel: [    0.666234] pci 0000:00:16.2: PCI bridge, secondary bus 0000:0d
+Dec 19 03:22:22 mint kernel: [    0.666249] pci 0000:00:16.2:   IO window: 0xd000-0xdfff
+Dec 19 03:22:22 mint kernel: [    0.666287] pci 0000:00:16.2:   MEM window: 0xda600000-0xda6fffff
+Dec 19 03:22:22 mint kernel: [    0.666312] pci 0000:00:16.2:   PREFETCH window: 0x000000dd300000-0x000000dd3fffff
+Dec 19 03:22:22 mint kernel: [    0.666376] pci 0000:00:16.3: PCI bridge, secondary bus 0000:0e
+Dec 19 03:22:22 mint kernel: [    0.666379] pci 0000:00:16.3:   IO window: disabled
+Dec 19 03:22:22 mint kernel: [    0.666417] pci 0000:00:16.3:   MEM window: 0xdaa00000-0xdaafffff
+Dec 19 03:22:22 mint kernel: [    0.666442] pci 0000:00:16.3:   PREFETCH window: 0x000000dd700000-0x000000dd7fffff
+Dec 19 03:22:22 mint kernel: [    0.666506] pci 0000:00:16.4: PCI bridge, secondary bus 0000:0f
+Dec 19 03:22:22 mint kernel: [    0.666509] pci 0000:00:16.4:   IO window: disabled
+Dec 19 03:22:22 mint kernel: [    0.666546] pci 0000:00:16.4:   MEM window: 0xdae00000-0xdaefffff
+Dec 19 03:22:22 mint kernel: [    0.666572] pci 0000:00:16.4:   PREFETCH window: 0x000000ddb00000-0x000000ddbfffff
+Dec 19 03:22:22 mint kernel: [    0.666636] pci 0000:00:16.5: PCI bridge, secondary bus 0000:10
+Dec 19 03:22:22 mint kernel: [    0.666639] pci 0000:00:16.5:   IO window: disabled
+Dec 19 03:22:22 mint kernel: [    0.666676] pci 0000:00:16.5:   MEM window: 0xdb200000-0xdb2fffff
+Dec 19 03:22:22 mint kernel: [    0.666702] pci 0000:00:16.5:   PREFETCH window: 0x000000ddf00000-0x000000ddffffff
+Dec 19 03:22:22 mint kernel: [    0.666766] pci 0000:00:16.6: PCI bridge, secondary bus 0000:11
+Dec 19 03:22:22 mint kernel: [    0.666768] pci 0000:00:16.6:   IO window: disabled
+Dec 19 03:22:22 mint kernel: [    0.666806] pci 0000:00:16.6:   MEM window: 0xdb600000-0xdb6fffff
+Dec 19 03:22:22 mint kernel: [    0.666832] pci 0000:00:16.6:   PREFETCH window: 0x000000de300000-0x000000de3fffff
+Dec 19 03:22:22 mint kernel: [    0.666895] pci 0000:00:16.7: PCI bridge, secondary bus 0000:12
+Dec 19 03:22:22 mint kernel: [    0.666898] pci 0000:00:16.7:   IO window: disabled
+Dec 19 03:22:22 mint kernel: [    0.666936] pci 0000:00:16.7:   MEM window: 0xdba00000-0xdbafffff
+Dec 19 03:22:22 mint kernel: [    0.666970] pci 0000:00:16.7:   PREFETCH window: 0x000000de700000-0x000000de7fffff
+Dec 19 03:22:22 mint kernel: [    0.667034] pci 0000:00:17.0: PCI bridge, secondary bus 0000:13
+Dec 19 03:22:22 mint kernel: [    0.667049] pci 0000:00:17.0:   IO window: 0x6000-0x6fff
+Dec 19 03:22:22 mint kernel: [    0.667086] pci 0000:00:17.0:   MEM window: 0xd9f00000-0xd9ffffff
+Dec 19 03:22:22 mint kernel: [    0.667113] pci 0000:00:17.0:   PREFETCH window: 0x000000dcc00000-0x000000dccfffff
+Dec 19 03:22:22 mint kernel: [    0.667177] pci 0000:00:17.1: PCI bridge, secondary bus 0000:14
+Dec 19 03:22:22 mint kernel: [    0.667192] pci 0000:00:17.1:   IO window: 0xa000-0xafff
+Dec 19 03:22:22 mint kernel: [    0.667229] pci 0000:00:17.1:   MEM window: 0xda300000-0xda3fffff
+Dec 19 03:22:22 mint kernel: [    0.667255] pci 0000:00:17.1:   PREFETCH window: 0x000000dd000000-0x000000dd0fffff
+Dec 19 03:22:22 mint kernel: [    0.667318] pci 0000:00:17.2: PCI bridge, secondary bus 0000:15
+Dec 19 03:22:22 mint kernel: [    0.667334] pci 0000:00:17.2:   IO window: 0xe000-0xefff
+Dec 19 03:22:22 mint kernel: [    0.667371] pci 0000:00:17.2:   MEM window: 0xda700000-0xda7fffff
+Dec 19 03:22:22 mint kernel: [    0.667397] pci 0000:00:17.2:   PREFETCH window: 0x000000dd400000-0x000000dd4fffff
+Dec 19 03:22:22 mint kernel: [    0.667460] pci 0000:00:17.3: PCI bridge, secondary bus 0000:16
+Dec 19 03:22:22 mint kernel: [    0.667466] pci 0000:00:17.3:   IO window: disabled
+Dec 19 03:22:22 mint kernel: [    0.667504] pci 0000:00:17.3:   MEM window: 0xdab00000-0xdabfffff
+Dec 19 03:22:22 mint kernel: [    0.667530] pci 0000:00:17.3:   PREFETCH window: 0x000000dd800000-0x000000dd8fffff
+Dec 19 03:22:22 mint kernel: [    0.667593] pci 0000:00:17.4: PCI bridge, secondary bus 0000:17
+Dec 19 03:22:22 mint kernel: [    0.667596] pci 0000:00:17.4:   IO window: disabled
+Dec 19 03:22:22 mint kernel: [    0.667634] pci 0000:00:17.4:   MEM window: 0xdaf00000-0xdaffffff
+Dec 19 03:22:22 mint kernel: [    0.667660] pci 0000:00:17.4:   PREFETCH window: 0x000000ddc00000-0x000000ddcfffff
+Dec 19 03:22:22 mint kernel: [    0.667723] pci 0000:00:17.5: PCI bridge, secondary bus 0000:18
+Dec 19 03:22:22 mint kernel: [    0.667726] pci 0000:00:17.5:   IO window: disabled
+Dec 19 03:22:22 mint kernel: [    0.667764] pci 0000:00:17.5:   MEM window: 0xdb300000-0xdb3fffff
+Dec 19 03:22:22 mint kernel: [    0.667790] pci 0000:00:17.5:   PREFETCH window: 0x000000de000000-0x000000de0fffff
+Dec 19 03:22:22 mint kernel: [    0.667853] pci 0000:00:17.6: PCI bridge, secondary bus 0000:19
+Dec 19 03:22:22 mint kernel: [    0.667856] pci 0000:00:17.6:   IO window: disabled
+Dec 19 03:22:22 mint kernel: [    0.667894] pci 0000:00:17.6:   MEM window: 0xdb700000-0xdb7fffff
+Dec 19 03:22:22 mint kernel: [    0.667919] pci 0000:00:17.6:   PREFETCH window: 0x000000de400000-0x000000de4fffff
+Dec 19 03:22:22 mint kernel: [    0.667994] pci 0000:00:17.7: PCI bridge, secondary bus 0000:1a
+Dec 19 03:22:22 mint kernel: [    0.667996] pci 0000:00:17.7:   IO window: disabled
+Dec 19 03:22:22 mint kernel: [    0.668046] pci 0000:00:17.7:   MEM window: 0xdbb00000-0xdbbfffff
+Dec 19 03:22:22 mint kernel: [    0.668072] pci 0000:00:17.7:   PREFETCH window: 0x000000de800000-0x000000de8fffff
+Dec 19 03:22:22 mint kernel: [    0.668136] pci 0000:00:18.0: PCI bridge, secondary bus 0000:1b
+Dec 19 03:22:22 mint kernel: [    0.668152] pci 0000:00:18.0:   IO window: 0x7000-0x7fff
+Dec 19 03:22:22 mint kernel: [    0.668189] pci 0000:00:18.0:   MEM window: 0xda000000-0xda0fffff
+Dec 19 03:22:22 mint kernel: [    0.668215] pci 0000:00:18.0:   PREFETCH window: 0x000000dcd00000-0x000000dcdfffff
+Dec 19 03:22:22 mint kernel: [    0.668278] pci 0000:00:18.1: PCI bridge, secondary bus 0000:1c
+Dec 19 03:22:22 mint kernel: [    0.668294] pci 0000:00:18.1:   IO window: 0xb000-0xbfff
+Dec 19 03:22:22 mint kernel: [    0.668331] pci 0000:00:18.1:   MEM window: 0xda400000-0xda4fffff
+Dec 19 03:22:22 mint kernel: [    0.668357] pci 0000:00:18.1:   PREFETCH window: 0x000000dd100000-0x000000dd1fffff
+Dec 19 03:22:22 mint kernel: [    0.668426] pci 0000:00:18.2: PCI bridge, secondary bus 0000:1d
+Dec 19 03:22:22 mint kernel: [    0.668442] pci 0000:00:18.2:   IO window: 0xf000-0xffff
+Dec 19 03:22:22 mint kernel: [    0.668479] pci 0000:00:18.2:   MEM window: 0xda800000-0xda8fffff
+Dec 19 03:22:22 mint kernel: [    0.668505] pci 0000:00:18.2:   PREFETCH window: 0x000000dd500000-0x000000dd5fffff
+Dec 19 03:22:22 mint kernel: [    0.668571] pci 0000:00:18.3: PCI bridge, secondary bus 0000:1e
+Dec 19 03:22:22 mint kernel: [    0.668574] pci 0000:00:18.3:   IO window: disabled
+Dec 19 03:22:22 mint kernel: [    0.668611] pci 0000:00:18.3:   MEM window: 0xdac00000-0xdacfffff
+Dec 19 03:22:22 mint kernel: [    0.668637] pci 0000:00:18.3:   PREFETCH window: 0x000000dd900000-0x000000dd9fffff
+Dec 19 03:22:22 mint kernel: [    0.668701] pci 0000:00:18.4: PCI bridge, secondary bus 0000:1f
+Dec 19 03:22:22 mint kernel: [    0.668703] pci 0000:00:18.4:   IO window: disabled
+Dec 19 03:22:22 mint kernel: [    0.668741] pci 0000:00:18.4:   MEM window: 0xdb000000-0xdb0fffff
+Dec 19 03:22:22 mint kernel: [    0.668767] pci 0000:00:18.4:   PREFETCH window: 0x000000ddd00000-0x000000dddfffff
+Dec 19 03:22:22 mint kernel: [    0.668830] pci 0000:00:18.5: PCI bridge, secondary bus 0000:20
+Dec 19 03:22:22 mint kernel: [    0.668833] pci 0000:00:18.5:   IO window: disabled
+Dec 19 03:22:22 mint kernel: [    0.668871] pci 0000:00:18.5:   MEM window: 0xdb400000-0xdb4fffff
+Dec 19 03:22:22 mint kernel: [    0.668896] pci 0000:00:18.5:   PREFETCH window: 0x000000de100000-0x000000de1fffff
+Dec 19 03:22:22 mint kernel: [    0.668972] pci 0000:00:18.6: PCI bridge, secondary bus 0000:21
+Dec 19 03:22:22 mint kernel: [    0.668976] pci 0000:00:18.6:   IO window: disabled
+Dec 19 03:22:22 mint kernel: [    0.669014] pci 0000:00:18.6:   MEM window: 0xdb800000-0xdb8fffff
+Dec 19 03:22:22 mint kernel: [    0.669040] pci 0000:00:18.6:   PREFETCH window: 0x000000de500000-0x000000de5fffff
+Dec 19 03:22:22 mint kernel: [    0.669106] pci 0000:00:18.7: PCI bridge, secondary bus 0000:22
+Dec 19 03:22:22 mint kernel: [    0.669109] pci 0000:00:18.7:   IO window: disabled
+Dec 19 03:22:22 mint kernel: [    0.669147] pci 0000:00:18.7:   MEM window: 0xdbc00000-0xdbcfffff
+Dec 19 03:22:22 mint kernel: [    0.669173] pci 0000:00:18.7:   PREFETCH window: 0x000000de900000-0x000000de9fffff
+Dec 19 03:22:22 mint kernel: [    0.669285] pci 0000:00:01.0: setting latency timer to 64
+Dec 19 03:22:22 mint kernel: [    0.669402] pci 0000:00:15.0: setting latency timer to 64
+Dec 19 03:22:22 mint kernel: [    0.669484] pci 0000:00:15.1: setting latency timer to 64
+Dec 19 03:22:22 mint kernel: [    0.669565] pci 0000:00:15.2: setting latency timer to 64
+Dec 19 03:22:22 mint kernel: [    0.669647] pci 0000:00:15.3: setting latency timer to 64
+Dec 19 03:22:22 mint kernel: [    0.669729] pci 0000:00:15.4: setting latency timer to 64
+Dec 19 03:22:22 mint kernel: [    0.669813] pci 0000:00:15.5: setting latency timer to 64
+Dec 19 03:22:22 mint kernel: [    0.669895] pci 0000:00:15.6: setting latency timer to 64
+Dec 19 03:22:22 mint kernel: [    0.669986] pci 0000:00:15.7: setting latency timer to 64
+Dec 19 03:22:22 mint kernel: [    0.670068] pci 0000:00:16.0: setting latency timer to 64
+Dec 19 03:22:22 mint kernel: [    0.670149] pci 0000:00:16.1: setting latency timer to 64
+Dec 19 03:22:22 mint kernel: [    0.670230] pci 0000:00:16.2: setting latency timer to 64
+Dec 19 03:22:22 mint kernel: [    0.670311] pci 0000:00:16.3: setting latency timer to 64
+Dec 19 03:22:22 mint kernel: [    0.670393] pci 0000:00:16.4: setting latency timer to 64
+Dec 19 03:22:22 mint kernel: [    0.670474] pci 0000:00:16.5: setting latency timer to 64
+Dec 19 03:22:22 mint kernel: [    0.670555] pci 0000:00:16.6: setting latency timer to 64
+Dec 19 03:22:22 mint kernel: [    0.670638] pci 0000:00:16.7: setting latency timer to 64
+Dec 19 03:22:22 mint kernel: [    0.670719] pci 0000:00:17.0: setting latency timer to 64
+Dec 19 03:22:22 mint kernel: [    0.670800] pci 0000:00:17.1: setting latency timer to 64
+Dec 19 03:22:22 mint kernel: [    0.670882] pci 0000:00:17.2: setting latency timer to 64
+Dec 19 03:22:22 mint kernel: [    0.670970] pci 0000:00:17.3: setting latency timer to 64
+Dec 19 03:22:22 mint kernel: [    0.671052] pci 0000:00:17.4: setting latency timer to 64
+Dec 19 03:22:22 mint kernel: [    0.671134] pci 0000:00:17.5: setting latency timer to 64
+Dec 19 03:22:22 mint kernel: [    0.671215] pci 0000:00:17.6: setting latency timer to 64
+Dec 19 03:22:22 mint kernel: [    0.671296] pci 0000:00:17.7: setting latency timer to 64
+Dec 19 03:22:22 mint kernel: [    0.671378] pci 0000:00:18.0: setting latency timer to 64
+Dec 19 03:22:22 mint kernel: [    0.671459] pci 0000:00:18.1: setting latency timer to 64
+Dec 19 03:22:22 mint kernel: [    0.671540] pci 0000:00:18.2: setting latency timer to 64
+Dec 19 03:22:22 mint kernel: [    0.671622] pci 0000:00:18.3: setting latency timer to 64
+Dec 19 03:22:22 mint kernel: [    0.671703] pci 0000:00:18.4: setting latency timer to 64
+Dec 19 03:22:22 mint kernel: [    0.671785] pci 0000:00:18.5: setting latency timer to 64
+Dec 19 03:22:22 mint kernel: [    0.671866] pci 0000:00:18.6: setting latency timer to 64
+Dec 19 03:22:22 mint kernel: [    0.671958] pci 0000:00:18.7: setting latency timer to 64
+Dec 19 03:22:22 mint kernel: [    0.671976] pci_bus 0000:00: resource 0 io:  [0x00-0xffff]
+Dec 19 03:22:22 mint kernel: [    0.671979] pci_bus 0000:00: resource 1 mem: [0x000000-0xffffffff]
+Dec 19 03:22:22 mint kernel: [    0.671982] pci_bus 0000:02: resource 0 io:  [0x2000-0x3fff]
+Dec 19 03:22:22 mint kernel: [    0.671986] pci_bus 0000:02: resource 1 mem: [0xd8900000-0xd9cfffff]
+Dec 19 03:22:22 mint kernel: [    0.671989] pci_bus 0000:02: resource 2 pref mem [0xdc400000-0xdc9fffff]
+Dec 19 03:22:22 mint kernel: [    0.671992] pci_bus 0000:02: resource 3 io:  [0x00-0xffff]
+Dec 19 03:22:22 mint kernel: [    0.671995] pci_bus 0000:02: resource 4 mem: [0x000000-0xffffffff]
+Dec 19 03:22:22 mint kernel: [    0.671998] pci_bus 0000:03: resource 0 io:  [0x4000-0x4fff]
+Dec 19 03:22:22 mint kernel: [    0.672000] pci_bus 0000:03: resource 1 mem: [0xd9d00000-0xd9dfffff]
+Dec 19 03:22:22 mint kernel: [    0.672000] pci_bus 0000:03: resource 2 pref mem [0xdca00000-0xdcafffff]
+Dec 19 03:22:22 mint kernel: [    0.672000] pci_bus 0000:04: resource 0 io:  [0x8000-0x8fff]
+Dec 19 03:22:22 mint kernel: [    0.672000] pci_bus 0000:04: resource 1 mem: [0xda100000-0xda1fffff]
+Dec 19 03:22:22 mint kernel: [    0.672000] pci_bus 0000:04: resource 2 pref mem [0xdce00000-0xdcefffff]
+Dec 19 03:22:22 mint kernel: [    0.672000] pci_bus 0000:05: resource 0 io:  [0xc000-0xcfff]
+Dec 19 03:22:22 mint kernel: [    0.672000] pci_bus 0000:05: resource 1 mem: [0xda500000-0xda5fffff]
+Dec 19 03:22:22 mint kernel: [    0.672000] pci_bus 0000:05: resource 2 pref mem [0xdd200000-0xdd2fffff]
+Dec 19 03:22:22 mint kernel: [    0.672000] pci_bus 0000:06: resource 1 mem: [0xda900000-0xda9fffff]
+Dec 19 03:22:22 mint kernel: [    0.672000] pci_bus 0000:06: resource 2 pref mem [0xdd600000-0xdd6fffff]
+Dec 19 03:22:22 mint kernel: [    0.672000] pci_bus 0000:07: resource 1 mem: [0xdad00000-0xdadfffff]
+Dec 19 03:22:22 mint kernel: [    0.672000] pci_bus 0000:07: resource 2 pref mem [0xdda00000-0xddafffff]
+Dec 19 03:22:22 mint kernel: [    0.672000] pci_bus 0000:08: resource 1 mem: [0xdb100000-0xdb1fffff]
+Dec 19 03:22:22 mint kernel: [    0.672000] pci_bus 0000:08: resource 2 pref mem [0xdde00000-0xddefffff]
+Dec 19 03:22:22 mint kernel: [    0.672000] pci_bus 0000:09: resource 1 mem: [0xdb500000-0xdb5fffff]
+Dec 19 03:22:22 mint kernel: [    0.672000] pci_bus 0000:09: resource 2 pref mem [0xde200000-0xde2fffff]
+Dec 19 03:22:22 mint kernel: [    0.672000] pci_bus 0000:0a: resource 1 mem: [0xdb900000-0xdb9fffff]
+Dec 19 03:22:22 mint kernel: [    0.672000] pci_bus 0000:0a: resource 2 pref mem [0xde600000-0xde6fffff]
+Dec 19 03:22:22 mint kernel: [    0.672000] pci_bus 0000:0b: resource 0 io:  [0x5000-0x5fff]
+Dec 19 03:22:22 mint kernel: [    0.672000] pci_bus 0000:0b: resource 1 mem: [0xd9e00000-0xd9efffff]
+Dec 19 03:22:22 mint kernel: [    0.672000] pci_bus 0000:0b: resource 2 pref mem [0xdcb00000-0xdcbfffff]
+Dec 19 03:22:22 mint kernel: [    0.672000] pci_bus 0000:0c: resource 0 io:  [0x9000-0x9fff]
+Dec 19 03:22:22 mint kernel: [    0.672000] pci_bus 0000:0c: resource 1 mem: [0xda200000-0xda2fffff]
+Dec 19 03:22:22 mint kernel: [    0.672000] pci_bus 0000:0c: resource 2 pref mem [0xdcf00000-0xdcffffff]
+Dec 19 03:22:22 mint kernel: [    0.672000] pci_bus 0000:0d: resource 0 io:  [0xd000-0xdfff]
+Dec 19 03:22:22 mint kernel: [    0.672000] pci_bus 0000:0d: resource 1 mem: [0xda600000-0xda6fffff]
+Dec 19 03:22:22 mint kernel: [    0.672000] pci_bus 0000:0d: resource 2 pref mem [0xdd300000-0xdd3fffff]
+Dec 19 03:22:22 mint kernel: [    0.672000] pci_bus 0000:0e: resource 1 mem: [0xdaa00000-0xdaafffff]
+Dec 19 03:22:22 mint kernel: [    0.672000] pci_bus 0000:0e: resource 2 pref mem [0xdd700000-0xdd7fffff]
+Dec 19 03:22:22 mint kernel: [    0.672000] pci_bus 0000:0f: resource 1 mem: [0xdae00000-0xdaefffff]
+Dec 19 03:22:22 mint kernel: [    0.672000] pci_bus 0000:0f: resource 2 pref mem [0xddb00000-0xddbfffff]
+Dec 19 03:22:22 mint kernel: [    0.672000] pci_bus 0000:10: resource 1 mem: [0xdb200000-0xdb2fffff]
+Dec 19 03:22:22 mint kernel: [    0.672000] pci_bus 0000:10: resource 2 pref mem [0xddf00000-0xddffffff]
+Dec 19 03:22:22 mint kernel: [    0.672000] pci_bus 0000:11: resource 1 mem: [0xdb600000-0xdb6fffff]
+Dec 19 03:22:22 mint kernel: [    0.672000] pci_bus 0000:11: resource 2 pref mem [0xde300000-0xde3fffff]
+Dec 19 03:22:22 mint kernel: [    0.672000] pci_bus 0000:12: resource 1 mem: [0xdba00000-0xdbafffff]
+Dec 19 03:22:22 mint kernel: [    0.672000] pci_bus 0000:12: resource 2 pref mem [0xde700000-0xde7fffff]
+Dec 19 03:22:22 mint kernel: [    0.672000] pci_bus 0000:13: resource 0 io:  [0x6000-0x6fff]
+Dec 19 03:22:22 mint kernel: [    0.672000] pci_bus 0000:13: resource 1 mem: [0xd9f00000-0xd9ffffff]
+Dec 19 03:22:22 mint kernel: [    0.672000] pci_bus 0000:13: resource 2 pref mem [0xdcc00000-0xdccfffff]
+Dec 19 03:22:22 mint kernel: [    0.672000] pci_bus 0000:14: resource 0 io:  [0xa000-0xafff]
+Dec 19 03:22:22 mint kernel: [    0.672000] pci_bus 0000:14: resource 1 mem: [0xda300000-0xda3fffff]
+Dec 19 03:22:22 mint kernel: [    0.672000] pci_bus 0000:14: resource 2 pref mem [0xdd000000-0xdd0fffff]
+Dec 19 03:22:22 mint kernel: [    0.672000] pci_bus 0000:15: resource 0 io:  [0xe000-0xefff]
+Dec 19 03:22:22 mint kernel: [    0.672000] pci_bus 0000:15: resource 1 mem: [0xda700000-0xda7fffff]
+Dec 19 03:22:22 mint kernel: [    0.672000] pci_bus 0000:15: resource 2 pref mem [0xdd400000-0xdd4fffff]
+Dec 19 03:22:22 mint kernel: [    0.672000] pci_bus 0000:16: resource 1 mem: [0xdab00000-0xdabfffff]
+Dec 19 03:22:22 mint kernel: [    0.672000] pci_bus 0000:16: resource 2 pref mem [0xdd800000-0xdd8fffff]
+Dec 19 03:22:22 mint kernel: [    0.672000] pci_bus 0000:17: resource 1 mem: [0xdaf00000-0xdaffffff]
+Dec 19 03:22:22 mint kernel: [    0.672000] pci_bus 0000:17: resource 2 pref mem [0xddc00000-0xddcfffff]
+Dec 19 03:22:22 mint kernel: [    0.672000] pci_bus 0000:18: resource 1 mem: [0xdb300000-0xdb3fffff]
+Dec 19 03:22:22 mint kernel: [    0.672000] pci_bus 0000:18: resource 2 pref mem [0xde000000-0xde0fffff]
+Dec 19 03:22:22 mint kernel: [    0.672000] pci_bus 0000:19: resource 1 mem: [0xdb700000-0xdb7fffff]
+Dec 19 03:22:22 mint kernel: [    0.672000] pci_bus 0000:19: resource 2 pref mem [0xde400000-0xde4fffff]
+Dec 19 03:22:22 mint kernel: [    0.672000] pci_bus 0000:1a: resource 1 mem: [0xdbb00000-0xdbbfffff]
+Dec 19 03:22:22 mint kernel: [    0.672000] pci_bus 0000:1a: resource 2 pref mem [0xde800000-0xde8fffff]
+Dec 19 03:22:22 mint kernel: [    0.672000] pci_bus 0000:1b: resource 0 io:  [0x7000-0x7fff]
+Dec 19 03:22:22 mint kernel: [    0.672000] pci_bus 0000:1b: resource 1 mem: [0xda000000-0xda0fffff]
+Dec 19 03:22:22 mint kernel: [    0.672000] pci_bus 0000:1b: resource 2 pref mem [0xdcd00000-0xdcdfffff]
+Dec 19 03:22:22 mint kernel: [    0.672000] pci_bus 0000:1c: resource 0 io:  [0xb000-0xbfff]
+Dec 19 03:22:22 mint kernel: [    0.672000] pci_bus 0000:1c: resource 1 mem: [0xda400000-0xda4fffff]
+Dec 19 03:22:22 mint kernel: [    0.672000] pci_bus 0000:1c: resource 2 pref mem [0xdd100000-0xdd1fffff]
+Dec 19 03:22:22 mint kernel: [    0.672000] pci_bus 0000:1d: resource 0 io:  [0xf000-0xffff]
+Dec 19 03:22:22 mint kernel: [    0.672000] pci_bus 0000:1d: resource 1 mem: [0xda800000-0xda8fffff]
+Dec 19 03:22:22 mint kernel: [    0.672000] pci_bus 0000:1d: resource 2 pref mem [0xdd500000-0xdd5fffff]
+Dec 19 03:22:22 mint kernel: [    0.672000] pci_bus 0000:1e: resource 1 mem: [0xdac00000-0xdacfffff]
+Dec 19 03:22:22 mint kernel: [    0.672000] pci_bus 0000:1e: resource 2 pref mem [0xdd900000-0xdd9fffff]
+Dec 19 03:22:22 mint kernel: [    0.672000] pci_bus 0000:1f: resource 1 mem: [0xdb000000-0xdb0fffff]
+Dec 19 03:22:22 mint kernel: [    0.672000] pci_bus 0000:1f: resource 2 pref mem [0xddd00000-0xdddfffff]
+Dec 19 03:22:22 mint kernel: [    0.672000] pci_bus 0000:20: resource 1 mem: [0xdb400000-0xdb4fffff]
+Dec 19 03:22:22 mint kernel: [    0.672000] pci_bus 0000:20: resource 2 pref mem [0xde100000-0xde1fffff]
+Dec 19 03:22:22 mint kernel: [    0.672000] pci_bus 0000:21: resource 1 mem: [0xdb800000-0xdb8fffff]
+Dec 19 03:22:22 mint kernel: [    0.672000] pci_bus 0000:21: resource 2 pref mem [0xde500000-0xde5fffff]
+Dec 19 03:22:22 mint kernel: [    0.672000] pci_bus 0000:22: resource 1 mem: [0xdbc00000-0xdbcfffff]
+Dec 19 03:22:22 mint kernel: [    0.672000] pci_bus 0000:22: resource 2 pref mem [0xde900000-0xde9fffff]
+Dec 19 03:22:22 mint kernel: [    0.672000] NET: Registered protocol family 2
+Dec 19 03:22:22 mint kernel: [    0.672060] IP route cache hash table entries: 4096 (order: 2, 16384 bytes)
+Dec 19 03:22:22 mint kernel: [    0.672557] TCP established hash table entries: 16384 (order: 5, 131072 bytes)
+Dec 19 03:22:22 mint kernel: [    0.673198] TCP bind hash table entries: 16384 (order: 5, 131072 bytes)
+Dec 19 03:22:22 mint kernel: [    0.673876] TCP: Hash tables configured (established 16384 bind 16384)
+Dec 19 03:22:22 mint kernel: [    0.673880] TCP reno registered
+Dec 19 03:22:22 mint kernel: [    0.673956] NET: Registered protocol family 1
+Dec 19 03:22:22 mint kernel: [    0.673973] pci 0000:00:00.0: Limiting direct PCI/PCI transfers
+Dec 19 03:22:22 mint kernel: [    0.673998] pci 0000:00:0f.0: Boot video device
+Dec 19 03:22:22 mint kernel: [    0.674422] Unpacking initramfs...
+Dec 19 03:22:22 mint kernel: [    1.608161] Freeing initrd memory: 7021k freed
+Dec 19 03:22:22 mint kernel: [    1.608304] Simple Boot Flag at 0x36 set to 0x1
+Dec 19 03:22:22 mint kernel: [    1.608490] audit: initializing netlink socket (disabled)
+Dec 19 03:22:22 mint kernel: [    1.608508] type=2000 audit(1292728934.608:1): initialized
+Dec 19 03:22:22 mint kernel: [    1.608781] HugeTLB registered 4 MB page size, pre-allocated 0 pages
+Dec 19 03:22:22 mint kernel: [    1.609205] VFS: Disk quotas dquot_6.5.2
+Dec 19 03:22:22 mint kernel: [    1.609243] Dquot-cache hash table entries: 1024 (order 0, 4096 bytes)
+Dec 19 03:22:22 mint kernel: [    1.609305] msgmni has been set to 1004
+Dec 19 03:22:22 mint kernel: [    1.609563] alg: No test for stdrng (krng)
+Dec 19 03:22:22 mint kernel: [    1.609600] Block layer SCSI generic (bsg) driver version 0.4 loaded (major 253)
+Dec 19 03:22:22 mint kernel: [    1.609608] io scheduler noop registered
+Dec 19 03:22:22 mint kernel: [    1.609610] io scheduler anticipatory registered
+Dec 19 03:22:22 mint kernel: [    1.609613] io scheduler deadline registered
+Dec 19 03:22:22 mint kernel: [    1.609637] io scheduler cfq registered (default)
+Dec 19 03:22:22 mint kernel: [    1.610627] pcieport 0000:00:15.0: irq 24 for MSI/MSI-X
+Dec 19 03:22:22 mint kernel: [    1.610699] pcieport 0000:00:15.0: setting latency timer to 64
+Dec 19 03:22:22 mint kernel: [    1.612000] pcieport 0000:00:15.1: irq 25 for MSI/MSI-X
+Dec 19 03:22:22 mint kernel: [    1.612103] pcieport 0000:00:15.1: setting latency timer to 64
+Dec 19 03:22:22 mint kernel: [    1.613430] pcieport 0000:00:15.2: irq 26 for MSI/MSI-X
+Dec 19 03:22:22 mint kernel: [    1.613501] pcieport 0000:00:15.2: setting latency timer to 64
+Dec 19 03:22:22 mint kernel: [    1.614793] pcieport 0000:00:15.3: irq 27 for MSI/MSI-X
+Dec 19 03:22:22 mint kernel: [    1.614864] pcieport 0000:00:15.3: setting latency timer to 64
+Dec 19 03:22:22 mint kernel: [    1.616160] pcieport 0000:00:15.4: irq 28 for MSI/MSI-X
+Dec 19 03:22:22 mint kernel: [    1.616230] pcieport 0000:00:15.4: setting latency timer to 64
+Dec 19 03:22:22 mint kernel: [    1.617527] pcieport 0000:00:15.5: irq 29 for MSI/MSI-X
+Dec 19 03:22:22 mint kernel: [    1.617598] pcieport 0000:00:15.5: setting latency timer to 64
+Dec 19 03:22:22 mint kernel: [    1.618973] pcieport 0000:00:15.6: irq 30 for MSI/MSI-X
+Dec 19 03:22:22 mint kernel: [    1.619043] pcieport 0000:00:15.6: setting latency timer to 64
+Dec 19 03:22:22 mint kernel: [    1.620345] pcieport 0000:00:15.7: irq 31 for MSI/MSI-X
+Dec 19 03:22:22 mint kernel: [    1.620416] pcieport 0000:00:15.7: setting latency timer to 64
+Dec 19 03:22:22 mint kernel: [    1.621694] pcieport 0000:00:16.0: irq 32 for MSI/MSI-X
+Dec 19 03:22:22 mint kernel: [    1.621766] pcieport 0000:00:16.0: setting latency timer to 64
+Dec 19 03:22:22 mint kernel: [    1.623049] pcieport 0000:00:16.1: irq 33 for MSI/MSI-X
+Dec 19 03:22:22 mint kernel: [    1.623120] pcieport 0000:00:16.1: setting latency timer to 64
+Dec 19 03:22:22 mint kernel: [    1.624427] pcieport 0000:00:16.2: irq 34 for MSI/MSI-X
+Dec 19 03:22:22 mint kernel: [    1.624498] pcieport 0000:00:16.2: setting latency timer to 64
+Dec 19 03:22:22 mint kernel: [    1.625829] pcieport 0000:00:16.3: irq 35 for MSI/MSI-X
+Dec 19 03:22:22 mint kernel: [    1.625900] pcieport 0000:00:16.3: setting latency timer to 64
+Dec 19 03:22:22 mint kernel: [    1.627181] pcieport 0000:00:16.4: irq 36 for MSI/MSI-X
+Dec 19 03:22:22 mint kernel: [    1.627252] pcieport 0000:00:16.4: setting latency timer to 64
+Dec 19 03:22:22 mint kernel: [    1.628571] pcieport 0000:00:16.5: irq 37 for MSI/MSI-X
+Dec 19 03:22:22 mint kernel: [    1.628642] pcieport 0000:00:16.5: setting latency timer to 64
+Dec 19 03:22:22 mint kernel: [    1.629974] pcieport 0000:00:16.6: irq 38 for MSI/MSI-X
+Dec 19 03:22:22 mint kernel: [    1.630046] pcieport 0000:00:16.6: setting latency timer to 64
+Dec 19 03:22:22 mint kernel: [    1.631335] pcieport 0000:00:16.7: irq 39 for MSI/MSI-X
+Dec 19 03:22:22 mint kernel: [    1.631406] pcieport 0000:00:16.7: setting latency timer to 64
+Dec 19 03:22:22 mint kernel: [    1.632719] pcieport 0000:00:17.0: irq 40 for MSI/MSI-X
+Dec 19 03:22:22 mint kernel: [    1.632801] pcieport 0000:00:17.0: setting latency timer to 64
+Dec 19 03:22:22 mint kernel: [    1.634115] pcieport 0000:00:17.1: irq 41 for MSI/MSI-X
+Dec 19 03:22:22 mint kernel: [    1.634186] pcieport 0000:00:17.1: setting latency timer to 64
+Dec 19 03:22:22 mint kernel: [    1.635484] pcieport 0000:00:17.2: irq 42 for MSI/MSI-X
+Dec 19 03:22:22 mint kernel: [    1.635556] pcieport 0000:00:17.2: setting latency timer to 64
+Dec 19 03:22:22 mint kernel: [    1.636889] pcieport 0000:00:17.3: irq 43 for MSI/MSI-X
+Dec 19 03:22:22 mint kernel: [    1.636960] pcieport 0000:00:17.3: setting latency timer to 64
+Dec 19 03:22:22 mint kernel: [    1.638237] pcieport 0000:00:17.4: irq 44 for MSI/MSI-X
+Dec 19 03:22:22 mint kernel: [    1.638308] pcieport 0000:00:17.4: setting latency timer to 64
+Dec 19 03:22:22 mint kernel: [    1.639605] pcieport 0000:00:17.5: irq 45 for MSI/MSI-X
+Dec 19 03:22:22 mint kernel: [    1.639676] pcieport 0000:00:17.5: setting latency timer to 64
+Dec 19 03:22:22 mint kernel: [    1.641176] pcieport 0000:00:17.6: irq 46 for MSI/MSI-X
+Dec 19 03:22:22 mint kernel: [    1.641248] pcieport 0000:00:17.6: setting latency timer to 64
+Dec 19 03:22:22 mint kernel: [    1.642533] pcieport 0000:00:17.7: irq 47 for MSI/MSI-X
+Dec 19 03:22:22 mint kernel: [    1.642604] pcieport 0000:00:17.7: setting latency timer to 64
+Dec 19 03:22:22 mint kernel: [    1.643921] pcieport 0000:00:18.0: irq 48 for MSI/MSI-X
+Dec 19 03:22:22 mint kernel: [    1.643993] pcieport 0000:00:18.0: setting latency timer to 64
+Dec 19 03:22:22 mint kernel: [    1.645306] pcieport 0000:00:18.1: irq 49 for MSI/MSI-X
+Dec 19 03:22:22 mint kernel: [    1.645378] pcieport 0000:00:18.1: setting latency timer to 64
+Dec 19 03:22:22 mint kernel: [    1.646668] pcieport 0000:00:18.2: irq 50 for MSI/MSI-X
+Dec 19 03:22:22 mint kernel: [    1.646766] pcieport 0000:00:18.2: setting latency timer to 64
+Dec 19 03:22:22 mint kernel: [    1.648069] pcieport 0000:00:18.3: irq 51 for MSI/MSI-X
+Dec 19 03:22:22 mint kernel: [    1.648140] pcieport 0000:00:18.3: setting latency timer to 64
+Dec 19 03:22:22 mint kernel: [    1.649422] pcieport 0000:00:18.4: irq 52 for MSI/MSI-X
+Dec 19 03:22:22 mint kernel: [    1.649492] pcieport 0000:00:18.4: setting latency timer to 64
+Dec 19 03:22:22 mint kernel: [    1.650776] pcieport 0000:00:18.5: irq 53 for MSI/MSI-X
+Dec 19 03:22:22 mint kernel: [    1.650847] pcieport 0000:00:18.5: setting latency timer to 64
+Dec 19 03:22:22 mint kernel: [    1.652160] pcieport 0000:00:18.6: irq 54 for MSI/MSI-X
+Dec 19 03:22:22 mint kernel: [    1.652231] pcieport 0000:00:18.6: setting latency timer to 64
+Dec 19 03:22:22 mint kernel: [    1.653517] pcieport 0000:00:18.7: irq 55 for MSI/MSI-X
+Dec 19 03:22:22 mint kernel: [    1.653588] pcieport 0000:00:18.7: setting latency timer to 64
+Dec 19 03:22:22 mint kernel: [    1.654158] isapnp: Scanning for PnP cards...
+Dec 19 03:22:22 mint kernel: [    2.011468] isapnp: No Plug & Play device found
+Dec 19 03:22:22 mint kernel: [    2.011597] Linux agpgart interface v0.103
+Dec 19 03:22:22 mint kernel: [    2.011653] agpgart-intel 0000:00:00.0: Intel 440BX Chipset
+Dec 19 03:22:22 mint kernel: [    2.012146] agpgart-intel 0000:00:00.0: AGP aperture is 256M @ 0x0
+Dec 19 03:22:22 mint kernel: [    2.012194] Serial: 8250/16550 driver, 4 ports, IRQ sharing enabled
+Dec 19 03:22:22 mint kernel: [    2.012824] serial8250: ttyS0 at I/O 0x3f8 (irq = 4) is a 16550A
+Dec 19 03:22:22 mint kernel: [    2.013364] serial8250: ttyS1 at I/O 0x2f8 (irq = 3) is a 16550A
+Dec 19 03:22:22 mint kernel: [    2.013900] 00:09: ttyS0 at I/O 0x3f8 (irq = 4) is a 16550A
+Dec 19 03:22:22 mint kernel: [    2.014449] 00:0a: ttyS1 at I/O 0x2f8 (irq = 3) is a 16550A
+Dec 19 03:22:22 mint kernel: [    2.014510] PNP: PS/2 Controller [PNP0303:KBC,PNP0f13:MOUS] at 0x60,0x64 irq 1,12
+Dec 19 03:22:22 mint kernel: [    2.547155] serio: i8042 KBD port at 0x60,0x64 irq 1
+Dec 19 03:22:22 mint kernel: [    2.547170] serio: i8042 AUX port at 0x60,0x64 irq 12
+Dec 19 03:22:22 mint kernel: [    2.547266] mice: PS/2 mouse device common for all mice
+Dec 19 03:22:22 mint kernel: [    2.547496] rtc_cmos 00:04: rtc core: registered rtc_cmos as rtc0
+Dec 19 03:22:22 mint kernel: [    2.547555] rtc0: alarms up to one month, y3k, 114 bytes nvram
+Dec 19 03:22:22 mint kernel: [    2.547570] cpuidle: using governor ladder
+Dec 19 03:22:22 mint kernel: [    2.547573] cpuidle: using governor menu
+Dec 19 03:22:22 mint kernel: [    2.547578] No iBFT detected.
+Dec 19 03:22:22 mint kernel: [    2.547626] TCP cubic registered
+Dec 19 03:22:22 mint kernel: [    2.547780] NET: Registered protocol family 10
+Dec 19 03:22:22 mint kernel: [    2.547949] lo: Disabled Privacy Extensions
+Dec 19 03:22:22 mint kernel: [    2.547998] Mobile IPv6
+Dec 19 03:22:22 mint kernel: [    2.548000] NET: Registered protocol family 17
+Dec 19 03:22:22 mint kernel: [    2.548000] Using IPI No-Shortcut mode
+Dec 19 03:22:22 mint kernel: [    2.548000] PM: Resume from disk failed.
+Dec 19 03:22:22 mint kernel: [    2.548000] registered taskstats version 1
+Dec 19 03:22:22 mint kernel: [    2.549972] input: AT Translated Set 2 keyboard as /devices/platform/i8042/serio0/input/input0
+Dec 19 03:22:22 mint kernel: [    2.575619] rtc_cmos 00:04: setting system clock to 2010-12-19 03:22:16 UTC (1292728936)
+Dec 19 03:22:22 mint kernel: [    2.575651] Initalizing network drop monitor service
+Dec 19 03:22:22 mint kernel: [    2.575670] Freeing unused kernel memory: 372k freed
+Dec 19 03:22:22 mint kernel: [    2.576056] Write protecting the kernel text: 2492k
+Dec 19 03:22:22 mint kernel: [    2.576105] Write protecting the kernel read-only data: 916k
+Dec 19 03:22:22 mint kernel: [    2.588127] udev: starting version 158
+Dec 19 03:22:22 mint kernel: [    2.762444] SCSI subsystem initialized
+Dec 19 03:22:22 mint kernel: [    2.822409] pcnet32.c:v1.35 21.Apr.2008 tsbogend@alpha.franken.de
+Dec 19 03:22:22 mint kernel: [    2.822580] pcnet32 0000:02:01.0: PCI INT A -> GSI 19 (level, low) -> IRQ 19
+Dec 19 03:22:22 mint kernel: [    2.822778] pcnet32: PCnet/PCI II 79C970A at 0x2000, 00:0c:29:3a:8a:07 assigned IRQ 19.
+Dec 19 03:22:22 mint kernel: [    2.823354] eth0: registered as PCnet/PCI II 79C970A
+Dec 19 03:22:22 mint kernel: [    2.823439] pcnet32: 1 cards_found.
+Dec 19 03:22:22 mint kernel: [    2.835189] usbcore: registered new interface driver usbfs
+Dec 19 03:22:22 mint kernel: [    2.835219] usbcore: registered new interface driver hub
+Dec 19 03:22:22 mint kernel: [    2.837271] usbcore: registered new device driver usb
+Dec 19 03:22:22 mint kernel: [    2.837785] Floppy drive(s): fd0 is 1.44M
+Dec 19 03:22:22 mint kernel: [    2.840631] ehci_hcd: USB 2.0 'Enhanced' Host Controller (EHCI) Driver
+Dec 19 03:22:22 mint kernel: [    2.840728] ehci_hcd 0000:02:03.0: PCI INT A -> GSI 17 (level, low) -> IRQ 17
+Dec 19 03:22:22 mint kernel: [    2.840786] ehci_hcd 0000:02:03.0: EHCI Host Controller
+Dec 19 03:22:22 mint kernel: [    2.840820] ehci_hcd 0000:02:03.0: new USB bus registered, assigned bus number 1
+Dec 19 03:22:22 mint kernel: [    2.841035] ehci_hcd 0000:02:03.0: cache line size of 32 is not supported
+Dec 19 03:22:22 mint kernel: [    2.841055] ehci_hcd 0000:02:03.0: irq 17, io mem 0xd8900000
+Dec 19 03:22:22 mint kernel: [    2.841218] Fusion MPT base driver 3.04.12
+Dec 19 03:22:22 mint kernel: [    2.841220] Copyright (c) 1999-2008 LSI Corporation
+Dec 19 03:22:22 mint kernel: [    2.842127] Fusion MPT SPI Host driver 3.04.12
+Dec 19 03:22:22 mint kernel: [    2.842171] mptspi 0000:00:10.0: PCI INT A -> GSI 17 (level, low) -> IRQ 17
+Dec 19 03:22:22 mint kernel: [    2.842371] mptbase: ioc0: Initiating bringup
+Dec 19 03:22:22 mint kernel: [    2.856225] ehci_hcd 0000:02:03.0: USB 2.0 started, EHCI 1.00
+Dec 19 03:22:22 mint kernel: [    2.856271] usb usb1: New USB device found, idVendor=1d6b, idProduct=0002
+Dec 19 03:22:22 mint kernel: [    2.856274] usb usb1: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+Dec 19 03:22:22 mint kernel: [    2.856277] usb usb1: Product: EHCI Host Controller
+Dec 19 03:22:22 mint kernel: [    2.856280] usb usb1: Manufacturer: Linux 2.6.32-5-686 ehci_hcd
+Dec 19 03:22:22 mint kernel: [    2.856283] usb usb1: SerialNumber: 0000:02:03.0
+Dec 19 03:22:22 mint kernel: [    2.856354] usb usb1: configuration #1 chosen from 1 choice
+Dec 19 03:22:22 mint kernel: [    2.856382] hub 1-0:1.0: USB hub found
+Dec 19 03:22:22 mint kernel: [    2.856394] hub 1-0:1.0: 6 ports detected
+Dec 19 03:22:22 mint kernel: [    2.858032] FDC 0 is a post-1991 82077
+Dec 19 03:22:22 mint kernel: [    2.860930] uhci_hcd: USB Universal Host Controller Interface driver
+Dec 19 03:22:22 mint kernel: [    2.861003] uhci_hcd 0000:02:00.0: PCI INT A -> GSI 18 (level, low) -> IRQ 18
+Dec 19 03:22:22 mint kernel: [    2.861044] uhci_hcd 0000:02:00.0: UHCI Host Controller
+Dec 19 03:22:22 mint kernel: [    2.861052] uhci_hcd 0000:02:00.0: new USB bus registered, assigned bus number 2
+Dec 19 03:22:22 mint kernel: [    2.861339] uhci_hcd 0000:02:00.0: irq 18, io base 0x000020c0
+Dec 19 03:22:22 mint kernel: [    2.861471] usb usb2: New USB device found, idVendor=1d6b, idProduct=0001
+Dec 19 03:22:22 mint kernel: [    2.861474] usb usb2: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+Dec 19 03:22:22 mint kernel: [    2.861477] usb usb2: Product: UHCI Host Controller
+Dec 19 03:22:22 mint kernel: [    2.861480] usb usb2: Manufacturer: Linux 2.6.32-5-686 uhci_hcd
+Dec 19 03:22:22 mint kernel: [    2.861482] usb usb2: SerialNumber: 0000:02:00.0
+Dec 19 03:22:22 mint kernel: [    2.861531] usb usb2: configuration #1 chosen from 1 choice
+Dec 19 03:22:22 mint kernel: [    2.861554] hub 2-0:1.0: USB hub found
+Dec 19 03:22:22 mint kernel: [    2.861563] hub 2-0:1.0: 2 ports detected
+Dec 19 03:22:22 mint kernel: [    2.864844] libata version 3.00 loaded.
+Dec 19 03:22:22 mint kernel: [    2.920348] ioc0: LSI53C1030 B0: Capabilities={Initiator}
+Dec 19 03:22:22 mint kernel: [    3.081015] scsi0 : ioc0: LSI53C1030 B0, FwRev=01032920h, Ports=1, MaxQ=128, IRQ=17
+Dec 19 03:22:22 mint kernel: [    3.192344] ata_piix 0000:00:07.1: version 2.13
+Dec 19 03:22:22 mint kernel: [    3.193675] scsi 0:0:0:0: Direct-Access     VMware,  VMware Virtual S 1.0  PQ: 0 ANSI: 2
+Dec 19 03:22:22 mint kernel: [    3.193704] scsi target0:0:0: Beginning Domain Validation
+Dec 19 03:22:22 mint kernel: [    3.194388] scsi target0:0:0: Domain Validation skipping write tests
+Dec 19 03:22:22 mint kernel: [    3.194392] scsi target0:0:0: Ending Domain Validation
+Dec 19 03:22:22 mint kernel: [    3.194426] scsi target0:0:0: FAST-40 WIDE SCSI 80.0 MB/s ST (25 ns, offset 127)
+Dec 19 03:22:22 mint kernel: [    3.195712] scsi1 : ata_piix
+Dec 19 03:22:22 mint kernel: [    3.195810] scsi2 : ata_piix
+Dec 19 03:22:22 mint kernel: [    3.195869] ata1: PATA max UDMA/33 cmd 0x1f0 ctl 0x3f6 bmdma 0x10c0 irq 14
+Dec 19 03:22:22 mint kernel: [    3.195872] ata2: PATA max UDMA/33 cmd 0x170 ctl 0x376 bmdma 0x10c8 irq 15
+Dec 19 03:22:22 mint kernel: [    3.391646] ata2.00: ATAPI: VMware Virtual IDE CDROM Drive, 00000001, max UDMA/33
+Dec 19 03:22:22 mint kernel: [    3.392107] ata2.00: configured for UDMA/33
+Dec 19 03:22:22 mint kernel: [    3.392460] scsi 2:0:0:0: CD-ROM            NECVMWar VMware IDE CDR10 1.00 PQ: 0 ANSI: 5
+Dec 19 03:22:22 mint kernel: [    3.398337] sd 0:0:0:0: [sda] 16777216 512-byte logical blocks: (8.58 GB/8.00 GiB)
+Dec 19 03:22:22 mint kernel: [    3.398377] sd 0:0:0:0: [sda] Write Protect is off
+Dec 19 03:22:22 mint kernel: [    3.398380] sd 0:0:0:0: [sda] Mode Sense: 5d 00 00 00
+Dec 19 03:22:22 mint kernel: [    3.398475] sd 0:0:0:0: [sda] Cache data unavailable
+Dec 19 03:22:22 mint kernel: [    3.398479] sd 0:0:0:0: [sda] Assuming drive cache: write through
+Dec 19 03:22:22 mint kernel: [    3.398770] sd 0:0:0:0: [sda] Cache data unavailable
+Dec 19 03:22:22 mint kernel: [    3.398773] sd 0:0:0:0: [sda] Assuming drive cache: write through
+Dec 19 03:22:22 mint kernel: [    3.398848]  sda: unknown partition table
+Dec 19 03:22:22 mint kernel: [    3.399515] sd 0:0:0:0: [sda] Cache data unavailable
+Dec 19 03:22:22 mint kernel: [    3.399518] sd 0:0:0:0: [sda] Assuming drive cache: write through
+Dec 19 03:22:22 mint kernel: [    3.399593] sd 0:0:0:0: [sda] Attached SCSI disk
+Dec 19 03:22:22 mint kernel: [    3.405120] sr0: scsi3-mmc drive: 1x/1x xa/form2 cdda tray
+Dec 19 03:22:22 mint kernel: [    3.405124] Uniform CD-ROM driver Revision: 3.20
+Dec 19 03:22:22 mint kernel: [    3.405373] sr 2:0:0:0: Attached scsi CD-ROM sr0
+Dec 19 03:22:22 mint kernel: [    3.416000] sd 0:0:0:0: Attached scsi generic sg0 type 0
+Dec 19 03:22:22 mint kernel: [    3.416269] sr 2:0:0:0: Attached scsi generic sg1 type 5
+Dec 19 03:22:22 mint kernel: [    3.512287] Uniform Multi-Platform E-IDE driver
+Dec 19 03:22:22 mint kernel: [    3.512762] ide_generic: please use "probe_mask=0x3f" module parameter for probing all legacy ISA IDE ports
+Dec 19 03:22:22 mint kernel: [    3.541066] ISO 9660 Extensions: Microsoft Joliet Level 3
+Dec 19 03:22:22 mint kernel: [    3.542056] ISO 9660 Extensions: RRIP_1991A
+Dec 19 03:22:22 mint kernel: [    3.549720] aufs: module is from the staging directory, the quality is unknown, you have been warned.
+Dec 19 03:22:22 mint kernel: [    3.552877] aufs 2-standalone.tree-32-20100125
+Dec 19 03:22:22 mint kernel: [    3.566700] loop: module loaded
+Dec 19 03:22:22 mint kernel: [    3.628533] squashfs: version 4.0 (2009/01/31) Phillip Lougher
+Dec 19 03:22:22 mint kernel: [    6.157801] udev: starting version 158
+Dec 19 03:22:22 mint kernel: [    6.237175] pci_hotplug: PCI Hot Plug PCI Core version: 0.5
+Dec 19 03:22:22 mint kernel: [    6.250336] shpchp: Standard Hot Plug PCI Controller Driver version: 0.4
+Dec 19 03:22:22 mint kernel: [    6.255290] ACPI: I/O resource piix4_smbus [0x1040-0x1047] conflicts with ACPI region SMB_ [0x1040-0x104b]
+Dec 19 03:22:22 mint kernel: [    6.255428] ACPI: If an ACPI driver is available for this device, you should use it instead of the native driver
+Dec 19 03:22:22 mint kernel: [    6.257352] input: Power Button as /devices/LNXSYSTM:00/LNXPWRBN:00/input/input1
+Dec 19 03:22:22 mint kernel: [    6.257367] ACPI: Power Button [PWRF]
+Dec 19 03:22:22 mint kernel: [    6.360715] ACPI: AC Adapter [ACAD] (on-line)
+Dec 19 03:22:22 mint kernel: [    6.472933] processor LNXCPU:00: registered as cooling_device0
+Dec 19 03:22:22 mint kernel: [    6.477867] input: PC Speaker as /devices/platform/pcspkr/input/input2
+Dec 19 03:22:22 mint kernel: [    6.539737] input: ImPS/2 Generic Wheel Mouse as /devices/platform/i8042/serio1/input/input3
+Dec 19 03:22:22 mint kernel: [    6.546750] parport_pc 00:08: reported by Plug and Play ACPI
+Dec 19 03:22:22 mint kernel: [    6.547075] parport0: PC-style at 0x378, irq 7 [PCSPP,TRISTATE]
+Dec 19 03:22:22 mint kernel: [    6.745013] ENS1371 0000:02:02.0: PCI INT A -> GSI 16 (level, low) -> IRQ 16
+Dec 19 03:22:22 mint kernel: [    8.136365] fuse init (API version 7.13)
+Dec 19 03:22:22 mint acpid: Deprecated /proc/acpi/event was not found.  Trying netlink and the input layer...
+Dec 19 03:22:22 mint acpid: starting up with netlink and the input layer
+Dec 19 03:22:22 mint acpid: skipping conf file /etc/acpi/events/.
+Dec 19 03:22:22 mint acpid: skipping conf file /etc/acpi/events/..
+Dec 19 03:22:22 mint acpid: 1 rule loaded
+Dec 19 03:22:22 mint acpid: waiting for events: event logging is off
+Dec 19 03:22:22 mint /usr/sbin/cron[1785]: (CRON) INFO (pidfile fd = 3)
+Dec 19 03:22:22 mint /usr/sbin/cron[1789]: (CRON) STARTUP (fork ok)
+Dec 19 03:22:22 mint /usr/sbin/cron[1789]: (CRON) INFO (Running @reboot jobs)
+Dec 19 03:22:22 mint NetworkManager[1848]: <info> NetworkManager (version 0.8.1) is starting...
+Dec 19 03:22:22 mint NetworkManager[1848]: <info> Read config file /etc/NetworkManager/nm-system-settings.conf
+Dec 19 03:22:22 mint NetworkManager[1848]: <info> trying to start the modem manager...
+Dec 19 03:22:22 mint NetworkManager[1848]:    SCPlugin-Ifupdown: init!
+Dec 19 03:22:22 mint NetworkManager[1848]:    SCPlugin-Ifupdown: update_system_hostname
+Dec 19 03:22:22 mint NetworkManager[1848]:    SCPluginIfupdown: management mode: unmanaged
+Dec 19 03:22:22 mint NetworkManager[1848]:    SCPlugin-Ifupdown: devices added (path: /sys/devices/pci0000:00/0000:00:11.0/0000:02:01.0/net/eth0, iface: eth0)
+Dec 19 03:22:22 mint NetworkManager[1848]:    SCPlugin-Ifupdown: device added (path: /sys/devices/pci0000:00/0000:00:11.0/0000:02:01.0/net/eth0, iface: eth0): no ifupdown configuration found.
+Dec 19 03:22:22 mint NetworkManager[1848]:    SCPlugin-Ifupdown: devices added (path: /sys/devices/virtual/net/lo, iface: lo)
+Dec 19 03:22:22 mint NetworkManager[1848]:    SCPlugin-Ifupdown: device added (path: /sys/devices/virtual/net/lo, iface: lo): no ifupdown configuration found.
+Dec 19 03:22:22 mint NetworkManager[1848]:    SCPlugin-Ifupdown: end _init.
+Dec 19 03:22:22 mint NetworkManager[1848]: <info> Loaded plugin ifupdown: (C) 2008 Canonical Ltd.  To report bugs please use the NetworkManager mailing list.
+Dec 19 03:22:22 mint NetworkManager[1848]: <info> Loaded plugin keyfile: (c) 2007 - 2008 Red Hat, Inc.  To report bugs please use the NetworkManager mailing list.
+Dec 19 03:22:22 mint NetworkManager[1848]:    Ifupdown: get unmanaged devices count: 0
+Dec 19 03:22:22 mint NetworkManager[1848]:    SCPlugin-Ifupdown: (152527592) ... get_connections.
+Dec 19 03:22:22 mint NetworkManager[1848]:    SCPlugin-Ifupdown: (152527592) ... get_connections (managed=false): return empty list.
+Dec 19 03:22:22 mint NetworkManager[1848]:    Ifupdown: get unmanaged devices count: 0
+Dec 19 03:22:22 mint modem-manager: ModemManager (version 0.4) starting...
+Dec 19 03:22:22 mint NetworkManager[1848]: <info> WiFi enabled by radio killswitch; enabled by state file
+Dec 19 03:22:22 mint NetworkManager[1848]: <info> WWAN enabled by radio killswitch; enabled by state file
+Dec 19 03:22:22 mint NetworkManager[1848]: <info> WiMAX enabled by radio killswitch; enabled by state file
+Dec 19 03:22:22 mint NetworkManager[1848]: <info> Networking is enabled by state file
+Dec 19 03:22:22 mint NetworkManager[1848]: <info> (eth0): carrier is OFF
+Dec 19 03:22:22 mint modem-manager: Loaded plugin AnyData
+Dec 19 03:22:22 mint modem-manager: Loaded plugin Generic
+Dec 19 03:22:22 mint modem-manager: Loaded plugin Gobi
+Dec 19 03:22:22 mint modem-manager: Loaded plugin Option High-Speed
+Dec 19 03:22:22 mint modem-manager: Loaded plugin Huawei
+Dec 19 03:22:22 mint modem-manager: Loaded plugin Longcheer
+Dec 19 03:22:22 mint NetworkManager[1848]: <info> (eth0): new Ethernet device (driver: 'pcnet32' ifindex: 2)
+Dec 19 03:22:22 mint NetworkManager[1848]: <info> (eth0): exported as /org/freedesktop/NetworkManager/Devices/0
+Dec 19 03:22:22 mint NetworkManager[1848]: <info> (eth0): now managed
+Dec 19 03:22:22 mint NetworkManager[1848]: <info> (eth0): device state change: 1 -> 2 (reason 2)
+Dec 19 03:22:22 mint NetworkManager[1848]: <info> (eth0): bringing up device.
+Dec 19 03:22:23 mint kernel: [    8.997142] eth0: link up
+Dec 19 03:22:23 mint modem-manager: Loaded plugin Ericsson MBM
+Dec 19 03:22:23 mint modem-manager: Loaded plugin MotoC
+Dec 19 03:22:23 mint modem-manager: Loaded plugin Nokia
+Dec 19 03:22:23 mint modem-manager: Loaded plugin Novatel
+Dec 19 03:22:23 mint modem-manager: Loaded plugin Option
+Dec 19 03:22:23 mint modem-manager: Loaded plugin Sierra
+Dec 19 03:22:23 mint modem-manager: Loaded plugin SimTech
+Dec 19 03:22:23 mint modem-manager: Loaded plugin ZTE
+Dec 19 03:22:23 mint modem-manager: (tty/ttyS2): port's parent platform driver is not whitelisted
+Dec 19 03:22:23 mint modem-manager: (tty/ttyS3): port's parent platform driver is not whitelisted
+Dec 19 03:22:23 mint modem-manager: (tty/ttyS0): could not get port's parent device
+Dec 19 03:22:23 mint modem-manager: (tty/ttyS1): could not get port's parent device
+Dec 19 03:22:23 mint NetworkManager[1848]: <info> (eth0): preparing device.
+Dec 19 03:22:23 mint NetworkManager[1848]: <info> (eth0): deactivating device (reason: 2).
+Dec 19 03:22:23 mint NetworkManager[1848]: <info> Added default wired connection 'Auto eth0' for /sys/devices/pci0000:00/0000:00:11.0/0000:02:01.0/net/eth0
+Dec 19 03:22:23 mint NetworkManager[1848]: <info> (eth0): carrier now ON (device state 2)
+Dec 19 03:22:23 mint NetworkManager[1848]: <info> (eth0): device state change: 2 -> 3 (reason 40)
+Dec 19 03:22:23 mint NetworkManager[1848]: <warn> bluez error getting default adapter: The name org.bluez was not provided by any .service files
+Dec 19 03:22:23 mint NetworkManager[1848]: <info> modem-manager is now available
+Dec 19 03:22:23 mint NetworkManager[1848]: <info> Trying to start the supplicant...
+Dec 19 03:22:23 mint NetworkManager[1848]: <info> Activation (eth0) starting connection 'Auto eth0'
+Dec 19 03:22:23 mint NetworkManager[1848]: <info> (eth0): device state change: 3 -> 4 (reason 0)
+Dec 19 03:22:23 mint NetworkManager[1848]: <info> Activation (eth0) Stage 1 of 5 (Device Prepare) scheduled...
+Dec 19 03:22:23 mint NetworkManager[1848]: <info> Activation (eth0) Stage 1 of 5 (Device Prepare) started...
+Dec 19 03:22:23 mint NetworkManager[1848]: <info> Activation (eth0) Stage 2 of 5 (Device Configure) scheduled...
+Dec 19 03:22:23 mint NetworkManager[1848]: <info> Activation (eth0) Stage 1 of 5 (Device Prepare) complete.
+Dec 19 03:22:23 mint NetworkManager[1848]: <info> Activation (eth0) Stage 2 of 5 (Device Configure) starting...
+Dec 19 03:22:23 mint NetworkManager[1848]: <info> (eth0): device state change: 4 -> 5 (reason 0)
+Dec 19 03:22:23 mint NetworkManager[1848]: <info> Activation (eth0) Stage 2 of 5 (Device Configure) successful.
+Dec 19 03:22:23 mint NetworkManager[1848]: <info> Activation (eth0) Stage 3 of 5 (IP Configure Start) scheduled.
+Dec 19 03:22:23 mint NetworkManager[1848]: <info> Activation (eth0) Stage 2 of 5 (Device Configure) complete.
+Dec 19 03:22:23 mint NetworkManager[1848]: <info> Activation (eth0) Stage 3 of 5 (IP Configure Start) started...
+Dec 19 03:22:23 mint NetworkManager[1848]: <info> (eth0): device state change: 5 -> 7 (reason 0)
+Dec 19 03:22:23 mint NetworkManager[1848]: <info> Activation (eth0) Beginning DHCPv4 transaction (timeout in 45 seconds)
+Dec 19 03:22:23 mint NetworkManager[1848]: <info> dhclient started with pid 1858
+Dec 19 03:22:23 mint NetworkManager[1848]: <info> Activation (eth0) Stage 3 of 5 (IP Configure Start) complete.
+Dec 19 03:22:23 mint dhclient: Internet Systems Consortium DHCP Client 4.1.1-P1
+Dec 19 03:22:23 mint dhclient: Copyright 2004-2010 Internet Systems Consortium.
+Dec 19 03:22:23 mint dhclient: All rights reserved.
+Dec 19 03:22:23 mint dhclient: For info, please visit https://www.isc.org/software/dhcp/
+Dec 19 03:22:23 mint dhclient: 
+Dec 19 03:22:23 mint NetworkManager[1848]: <info> (eth0): DHCPv4 state changed nbi -> preinit
+Dec 19 03:22:23 mint dhclient: Listening on LPF/eth0/00:0c:29:3a:8a:07
+Dec 19 03:22:23 mint dhclient: Sending on   LPF/eth0/00:0c:29:3a:8a:07
+Dec 19 03:22:23 mint dhclient: Sending on   Socket/fallback
+Dec 19 03:22:24 mint dhclient: DHCPDISCOVER on eth0 to 255.255.255.255 port 67 interval 5
+Dec 19 03:22:24 mint acpid: client connected from 1959[106:115]
+Dec 19 03:22:24 mint acpid: 1 client rule loaded
+Dec 19 03:22:24 mint avahi-daemon[1990]: Found user 'avahi' (UID 104) and group 'avahi' (GID 107).
+Dec 19 03:22:24 mint avahi-daemon[1990]: Successfully dropped root privileges.
+Dec 19 03:22:24 mint avahi-daemon[1990]: avahi-daemon 0.6.26 starting up.
+Dec 19 03:22:24 mint avahi-daemon[1990]: Successfully called chroot().
+Dec 19 03:22:24 mint avahi-daemon[1990]: Successfully dropped remaining capabilities.
+Dec 19 03:22:24 mint avahi-daemon[1991]: chroot.c: open() failed: No such file or directory
+Dec 19 03:22:24 mint avahi-daemon[1990]: Failed to open /etc/resolv.conf: Invalid argument
+Dec 19 03:22:24 mint avahi-daemon[1990]: No service file found in /etc/avahi/services.
+Dec 19 03:22:24 mint avahi-daemon[1990]: Joining mDNS multicast group on interface eth0.IPv6 with address fe80::20c:29ff:fe3a:8a07.
+Dec 19 03:22:25 mint avahi-daemon[1990]: New relevant interface eth0.IPv6 for mDNS.
+Dec 19 03:22:25 mint avahi-daemon[1990]: Network interface enumeration completed.
+Dec 19 03:22:25 mint avahi-daemon[1990]: Registering new address record for fe80::20c:29ff:fe3a:8a07 on eth0.*.
+Dec 19 03:22:25 mint avahi-daemon[1990]: Registering HINFO record with values 'I686'/'LINUX'.
+Dec 19 03:22:25 mint bluetoothd[2006]: Bluetooth deamon 4.66
+Dec 19 03:22:25 mint bluetoothd[2006]: Starting SDP server
+Dec 19 03:22:25 mint kernel: [   11.445150] Bluetooth: Core ver 2.15
+Dec 19 03:22:25 mint kernel: [   11.445195] NET: Registered protocol family 31
+Dec 19 03:22:25 mint kernel: [   11.445196] Bluetooth: HCI device and connection manager initialized
+Dec 19 03:22:25 mint kernel: [   11.445198] Bluetooth: HCI socket layer initialized
+Dec 19 03:22:25 mint kernel: [   11.540610] Bluetooth: L2CAP ver 2.14
+Dec 19 03:22:25 mint kernel: [   11.540612] Bluetooth: L2CAP socket layer initialized
+Dec 19 03:22:25 mint bluetoothd[2006]: Starting experimental netlink support
+Dec 19 03:22:25 mint bluetoothd[2006]: Failed to find Bluetooth netlink family
+Dec 19 03:22:25 mint bluetoothd[2006]: Failed to init netlink plugin
+Dec 19 03:22:25 mint kernel: [   11.628119] Bluetooth: BNEP (Ethernet Emulation) ver 1.3
+Dec 19 03:22:25 mint kernel: [   11.628122] Bluetooth: BNEP filters: protocol multicast
+Dec 19 03:22:25 mint bluetoothd[2006]: bridge pan0 created
+Dec 19 03:22:25 mint kernel: [   11.666988] Bridge firewalling registered
+Dec 19 03:22:25 mint modem-manager: (net/pan0): could not get port's parent device
+Dec 19 03:22:25 mint NetworkManager[1848]:    SCPlugin-Ifupdown: devices added (path: /sys/devices/virtual/net/pan0, iface: pan0)
+Dec 19 03:22:25 mint NetworkManager[1848]:    SCPlugin-Ifupdown: device added (path: /sys/devices/virtual/net/pan0, iface: pan0): no ifupdown configuration found.
+Dec 19 03:22:25 mint NetworkManager[1848]: <warn> /sys/devices/virtual/net/pan0: couldn't determine device driver; ignoring...
+Dec 19 03:22:25 mint kernel: [   11.746487] Bluetooth: SCO (Voice Link) ver 0.6
+Dec 19 03:22:25 mint kernel: [   11.746489] Bluetooth: SCO socket layer initialized
+Dec 19 03:22:25 mint kernel: [   11.792386] lp0: using parport0 (interrupt-driven).
+Dec 19 03:22:25 mint kernel: [   11.809919] ppdev: user-space parallel port driver
+Dec 19 03:22:25 mint acpid: client connected from 1995[0:0]
+Dec 19 03:22:25 mint acpid: 1 client rule loaded
+Dec 19 03:22:26 mint avahi-daemon[1990]: Server startup complete. Host name is mint.local. Local service cookie is 3444209810.
+Dec 19 03:22:29 mint dhclient: DHCPDISCOVER on eth0 to 255.255.255.255 port 67 interval 8
+Dec 19 03:22:31 mint polkitd[2428]: started daemon version 0.96 using authority implementation `local' version `0.96'
+Dec 19 03:22:33 mint kernel: [   19.848399] eth0: no IPv6 routers present
+Dec 19 03:22:36 mint pulseaudio[2493]: pid.c: Daemon already running.
+Dec 19 03:22:37 mint dhclient: DHCPDISCOVER on eth0 to 255.255.255.255 port 67 interval 8
+Dec 19 03:22:37 mint nautilus: [N-A] Nautilus-Actions Menu Extender 2.30.2 initializing...
+Dec 19 03:22:37 mint nautilus: [N-A] Nautilus-Actions Tracker 2.30.2 initializing...
+Dec 19 03:22:40 mint pulseaudio[2482]: alsa-util.c: Disabling timer-based scheduling because running inside a VM.
+Dec 19 03:22:40 mint pulseaudio[2482]: alsa-util.c: Disabling timer-based scheduling because running inside a VM.
+Dec 19 03:22:40 mint pulseaudio[2482]: alsa-sink.c: ALSA woke us up to write new data to the device, but there was actually nothing to write!
+Dec 19 03:22:40 mint pulseaudio[2482]: alsa-sink.c: Most likely this is a bug in the ALSA driver 'snd_ens1371'. Please report this issue to the ALSA developers.
+Dec 19 03:22:40 mint pulseaudio[2482]: alsa-sink.c: We were woken up with POLLOUT set -- however a subsequent snd_pcm_avail() returned 0 or another value < min_avail.
+Dec 19 03:22:45 mint dhclient: DHCPDISCOVER on eth0 to 255.255.255.255 port 67 interval 15
+Dec 19 03:23:00 mint dhclient: DHCPDISCOVER on eth0 to 255.255.255.255 port 67 interval 15
+Dec 19 03:23:09 mint NetworkManager[1848]: <warn> (eth0): DHCPv4 request timed out.
+Dec 19 03:23:09 mint NetworkManager[1848]: <info> (eth0): canceled DHCP transaction, DHCP client pid 1858
+Dec 19 03:23:09 mint NetworkManager[1848]: <info> Activation (eth0) Stage 4 of 5 (IP4 Configure Timeout) scheduled...
+Dec 19 03:23:09 mint NetworkManager[1848]: <info> Activation (eth0) Stage 4 of 5 (IP4 Configure Timeout) started...
+Dec 19 03:23:09 mint NetworkManager[1848]: <info> Activation (eth0) Stage 5 of 5 (IP Configure Commit) scheduled...
+Dec 19 03:23:09 mint NetworkManager[1848]: <info> Activation (eth0) Stage 4 of 5 (IP4 Configure Timeout) complete.
+Dec 19 03:23:09 mint NetworkManager[1848]: <info> Activation (eth0) Stage 5 of 5 (IP Configure Commit) started...
+Dec 19 03:23:09 mint NetworkManager[1848]: <info> Activation (eth0) Stage 5 of 5 (IP Configure Commit) failed (no IP configuration found)
+Dec 19 03:23:09 mint NetworkManager[1848]: <info> (eth0): device state change: 7 -> 9 (reason 5)
+Dec 19 03:23:09 mint NetworkManager[1848]: <info> Marking connection 'Auto eth0' invalid.
+Dec 19 03:23:09 mint NetworkManager[1848]: <warn> Activation (eth0) failed.
+Dec 19 03:23:09 mint NetworkManager[1848]: <info> Activation (eth0) Stage 5 of 5 (IP Configure Commit) complete.
+Dec 19 03:23:09 mint NetworkManager[1848]: <info> (eth0): device state change: 9 -> 3 (reason 0)
+Dec 19 03:23:09 mint NetworkManager[1848]: <info> (eth0): deactivating device (reason: 0).
+Dec 19 03:51:27 mint kernel: [ 1753.576459] end_request: I/O error, dev fd0, sector 0
+Dec 19 03:52:23 mint NetworkManager[1848]: <info> Saved default wired connection 'Auto eth0' to persistent storage
+Dec 19 03:53:09 mint NetworkManager[1848]: <info> (eth0): carrier now OFF (device state 3)
+Dec 19 03:53:09 mint NetworkManager[1848]: <info> (eth0): device state change: 3 -> 2 (reason 40)
+Dec 19 03:53:09 mint NetworkManager[1848]: <info> (eth0): deactivating device (reason: 40).
+Dec 19 03:53:09 mint kernel: [ 1856.000147] eth0: link down
+Dec 19 03:53:13 mint NetworkManager[1848]: <info> (eth0): carrier now ON (device state 2)
+Dec 19 03:53:13 mint NetworkManager[1848]: <info> (eth0): device state change: 2 -> 3 (reason 40)
+Dec 19 03:53:13 mint kernel: [ 1860.000288] eth0: link up
+Dec 19 03:53:24 mint NetworkManager[1848]: user_connection_updated_cb: assertion `old_connection != NULL' failed
+Dec 19 03:53:24 mint NetworkManager[1848]: <info> Activation (eth0) starting connection 'Auto Ethernet'
+Dec 19 03:53:24 mint NetworkManager[1848]: <info> (eth0): device state change: 3 -> 4 (reason 0)
+Dec 19 03:53:24 mint NetworkManager[1848]: <info> Activation (eth0) Stage 1 of 5 (Device Prepare) scheduled...
+Dec 19 03:53:24 mint NetworkManager[1848]: <info> Activation (eth0) Stage 1 of 5 (Device Prepare) started...
+Dec 19 03:53:24 mint NetworkManager[1848]: <info> Activation (eth0) Stage 2 of 5 (Device Configure) scheduled...
+Dec 19 03:53:24 mint NetworkManager[1848]: <info> Activation (eth0) Stage 1 of 5 (Device Prepare) complete.
+Dec 19 03:53:24 mint NetworkManager[1848]: <info> Activation (eth0) Stage 2 of 5 (Device Configure) starting...
+Dec 19 03:53:24 mint NetworkManager[1848]: <info> (eth0): device state change: 4 -> 5 (reason 0)
+Dec 19 03:53:24 mint NetworkManager[1848]: <info> Activation (eth0) Stage 2 of 5 (Device Configure) successful.
+Dec 19 03:53:24 mint NetworkManager[1848]: <info> Activation (eth0) Stage 3 of 5 (IP Configure Start) scheduled.
+Dec 19 03:53:24 mint NetworkManager[1848]: <info> Activation (eth0) Stage 2 of 5 (Device Configure) complete.
+Dec 19 03:53:24 mint NetworkManager[1848]: <info> Activation (eth0) Stage 3 of 5 (IP Configure Start) started...
+Dec 19 03:53:24 mint NetworkManager[1848]: <info> (eth0): device state change: 5 -> 7 (reason 0)
+Dec 19 03:53:24 mint NetworkManager[1848]: <info> Activation (eth0) Beginning DHCPv4 transaction (timeout in 45 seconds)
+Dec 19 03:53:24 mint NetworkManager[1848]: <info> dhclient started with pid 2823
+Dec 19 03:53:24 mint NetworkManager[1848]: <info> Activation (eth0) Stage 3 of 5 (IP Configure Start) complete.
+Dec 19 03:53:24 mint dhclient: Internet Systems Consortium DHCP Client 4.1.1-P1
+Dec 19 03:53:24 mint dhclient: Copyright 2004-2010 Internet Systems Consortium.
+Dec 19 03:53:24 mint dhclient: All rights reserved.
+Dec 19 03:53:24 mint dhclient: For info, please visit https://www.isc.org/software/dhcp/
+Dec 19 03:53:24 mint dhclient: 
+Dec 19 03:53:24 mint NetworkManager[1848]: <info> (eth0): DHCPv4 state changed nbi -> preinit
+Dec 19 03:53:24 mint dhclient: Listening on LPF/eth0/00:0c:29:3a:8a:07
+Dec 19 03:53:24 mint dhclient: Sending on   LPF/eth0/00:0c:29:3a:8a:07
+Dec 19 03:53:24 mint dhclient: Sending on   Socket/fallback
+Dec 19 03:53:28 mint dhclient: DHCPDISCOVER on eth0 to 255.255.255.255 port 67 interval 8
+Dec 19 03:53:36 mint dhclient: DHCPDISCOVER on eth0 to 255.255.255.255 port 67 interval 11
+Dec 19 03:53:36 mint dhclient: DHCPOFFER from 192.168.1.1
+Dec 19 03:53:36 mint dhclient: DHCPREQUEST on eth0 to 255.255.255.255 port 67
+Dec 19 03:53:36 mint dhclient: DHCPACK from 192.168.1.1
+Dec 19 03:53:36 mint NetworkManager[1848]: <info> (eth0): DHCPv4 state changed preinit -> bound
+Dec 19 03:53:36 mint NetworkManager[1848]: <info> Activation (eth0) Stage 4 of 5 (IP4 Configure Get) scheduled...
+Dec 19 03:53:36 mint NetworkManager[1848]: <info> Activation (eth0) Stage 4 of 5 (IP4 Configure Get) started...
+Dec 19 03:53:36 mint NetworkManager[1848]: <info>   address 192.168.1.34
+Dec 19 03:53:36 mint NetworkManager[1848]: <info>   prefix 24 (255.255.255.0)
+Dec 19 03:53:36 mint NetworkManager[1848]: <info>   gateway 192.168.1.1
+Dec 19 03:53:36 mint NetworkManager[1848]: <info>   hostname 'dhcppc1'
+Dec 19 03:53:36 mint NetworkManager[1848]: <info>   nameserver '192.168.1.1'
+Dec 19 03:53:36 mint NetworkManager[1848]: <info> Activation (eth0) Stage 5 of 5 (IP Configure Commit) scheduled...
+Dec 19 03:53:36 mint NetworkManager[1848]: <info> Activation (eth0) Stage 4 of 5 (IP4 Configure Get) complete.
+Dec 19 03:53:36 mint NetworkManager[1848]: <info> Activation (eth0) Stage 5 of 5 (IP Configure Commit) started...
+Dec 19 03:53:36 mint avahi-daemon[1990]: Joining mDNS multicast group on interface eth0.IPv4 with address 192.168.1.34.
+Dec 19 03:53:36 mint dhclient: bound to 192.168.1.34 -- renewal in 105593 seconds.
+Dec 19 03:53:36 mint avahi-daemon[1990]: New relevant interface eth0.IPv4 for mDNS.
+Dec 19 03:53:36 mint avahi-daemon[1990]: Registering new address record for 192.168.1.34 on eth0.IPv4.
+Dec 19 03:53:37 mint NetworkManager[1848]: <info> (eth0): device state change: 7 -> 8 (reason 0)
+Dec 19 03:53:37 mint NetworkManager[1848]: <info> Policy set 'Auto Ethernet' (eth0) as default for IPv4 routing and DNS.
+Dec 19 03:53:37 mint NetworkManager[1848]: <info> Activation (eth0) successful, device activated.
+Dec 19 03:53:37 mint NetworkManager[1848]: <info> Activation (eth0) Stage 5 of 5 (IP Configure Commit) complete.

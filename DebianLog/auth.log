@@ -1,0 +1,27 @@
+Dec 19 03:22:27 mint login[2118]: pam_unix(login:session): session opened for user mint by (uid=0)
+Dec 19 03:22:27 mint login[2119]: pam_unix(login:session): session opened for user mint by (uid=0)
+Dec 19 03:22:27 mint login[2123]: pam_unix(login:session): session opened for user mint by (uid=0)
+Dec 19 03:22:27 mint login[2121]: pam_unix(login:session): session opened for user mint by (uid=0)
+Dec 19 03:22:27 mint login[2122]: pam_unix(login:session): session opened for user mint by (uid=0)
+Dec 19 03:22:27 mint login[2120]: pam_unix(login:session): session opened for user mint by (uid=0)
+Dec 19 03:22:28 mint gdm-session-worker[2295]: pam_unix(gdm3-autologin:session): session opened for user mint by (uid=0)
+Dec 19 03:22:28 mint gdm-session-worker[2295]: pam_ck_connector(gdm3-autologin:session): nox11 mode, ignoring PAM_TTY :0
+Dec 19 03:22:35 mint polkitd(authority=local): Registered Authentication Agent for session /org/freedesktop/ConsoleKit/Session7 (system bus name :1.33 [/usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1], object path /org/gnome/PolicyKit1/AuthenticationAgent, locale en_US.UTF-8)
+Dec 19 03:34:27 mint sudo:     mint : TTY=unknown ; PWD=/home/mint ; USER=root ; COMMAND=/usr/bin/gedit file:///var/log/auth.log
+Dec 19 03:35:22 mint sudo:     mint : TTY=unknown ; PWD=/home/mint ; USER=root ; COMMAND=/usr/bin/gedit file:///var/log/syslog
+Dec 19 03:37:46 mint sudo:     mint : TTY=unknown ; PWD=/home/mint ; USER=root ; COMMAND=/usr/bin/gedit file:///var/log/messages
+Dec 19 03:38:07 mint sudo:     mint : TTY=unknown ; PWD=/home/mint ; USER=root ; COMMAND=/usr/bin/gedit file:///var/log/faillog
+Dec 19 03:39:04 mint sudo:     mint : TTY=unknown ; PWD=/home/mint ; USER=root ; COMMAND=/usr/bin/gedit file:///var/log/ConsoleKit/history
+Dec 19 03:44:01 mint sudo:     mint : TTY=unknown ; PWD=/home/mint ; USER=root ; COMMAND=/usr/bin/gedit file:///var/log/auth.log
+Dec 19 03:44:39 mint sudo:     mint : TTY=unknown ; PWD=/home/mint ; USER=root ; COMMAND=/usr/bin/gedit file:///var/log/mail.log
+Dec 19 03:44:45 mint sudo:     mint : TTY=unknown ; PWD=/home/mint ; USER=root ; COMMAND=/usr/bin/gedit file:///var/log/mail.err
+Dec 19 03:45:25 mint sudo:     mint : TTY=unknown ; PWD=/home/mint ; USER=root ; COMMAND=/usr/bin/gedit file:///var/log/daemon.log
+Dec 19 03:46:47 mint sudo:     mint : TTY=unknown ; PWD=/home/mint ; USER=root ; COMMAND=/usr/bin/gedit file:///var/log/user.log
+Dec 19 03:47:18 mint sudo:     mint : TTY=unknown ; PWD=/home/mint ; USER=root ; COMMAND=/usr/bin/gedit file:///var/log/messages
+Dec 19 03:47:44 mint sudo:     mint : TTY=unknown ; PWD=/home/mint ; USER=root ; COMMAND=/usr/bin/gedit file:///var/log/syslog
+Dec 19 03:49:32 mint sudo:     mint : TTY=unknown ; PWD=/home/mint ; USER=root ; COMMAND=/usr/bin/gedit file:///var/log/kern.log
+Dec 19 03:52:03 mint sudo:     mint : TTY=unknown ; PWD=/home/mint ; USER=root ; COMMAND=/usr/lib/linuxmint/mintUpdate/mintUpdate.py show 2475
+Dec 19 03:55:15 mint sudo:     mint : TTY=unknown ; PWD=/home/mint ; USER=root ; COMMAND=/usr/bin/gedit file:///home/mint/Desktop/faillog
+Dec 19 03:56:02 mint sudo:     mint : TTY=unknown ; PWD=/home/mint ; USER=root ; COMMAND=/usr/bin/gedit file:///var/log/syslog
+Dec 19 03:56:30 mint sudo:     mint : TTY=unknown ; PWD=/home/mint ; USER=root ; COMMAND=/usr/bin/gedit file:///var/log/user.log
+Dec 19 03:57:26 mint sudo:     mint : TTY=unknown ; PWD=/home/mint ; USER=root ; COMMAND=/usr/bin/gedit file:///var/log/auth.log

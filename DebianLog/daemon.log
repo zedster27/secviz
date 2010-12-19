@@ -1,0 +1,189 @@
+Dec 19 03:22:22 mint acpid: Deprecated /proc/acpi/event was not found.  Trying netlink and the input layer...
+Dec 19 03:22:22 mint acpid: starting up with netlink and the input layer
+Dec 19 03:22:22 mint acpid: skipping conf file /etc/acpi/events/.
+Dec 19 03:22:22 mint acpid: skipping conf file /etc/acpi/events/..
+Dec 19 03:22:22 mint acpid: 1 rule loaded
+Dec 19 03:22:22 mint acpid: waiting for events: event logging is off
+Dec 19 03:22:22 mint NetworkManager[1848]: <info> NetworkManager (version 0.8.1) is starting...
+Dec 19 03:22:22 mint NetworkManager[1848]: <info> Read config file /etc/NetworkManager/nm-system-settings.conf
+Dec 19 03:22:22 mint NetworkManager[1848]: <info> trying to start the modem manager...
+Dec 19 03:22:22 mint NetworkManager[1848]:    SCPlugin-Ifupdown: init!
+Dec 19 03:22:22 mint NetworkManager[1848]:    SCPlugin-Ifupdown: update_system_hostname
+Dec 19 03:22:22 mint NetworkManager[1848]:    SCPluginIfupdown: management mode: unmanaged
+Dec 19 03:22:22 mint NetworkManager[1848]:    SCPlugin-Ifupdown: devices added (path: /sys/devices/pci0000:00/0000:00:11.0/0000:02:01.0/net/eth0, iface: eth0)
+Dec 19 03:22:22 mint NetworkManager[1848]:    SCPlugin-Ifupdown: device added (path: /sys/devices/pci0000:00/0000:00:11.0/0000:02:01.0/net/eth0, iface: eth0): no ifupdown configuration found.
+Dec 19 03:22:22 mint NetworkManager[1848]:    SCPlugin-Ifupdown: devices added (path: /sys/devices/virtual/net/lo, iface: lo)
+Dec 19 03:22:22 mint NetworkManager[1848]:    SCPlugin-Ifupdown: device added (path: /sys/devices/virtual/net/lo, iface: lo): no ifupdown configuration found.
+Dec 19 03:22:22 mint NetworkManager[1848]:    SCPlugin-Ifupdown: end _init.
+Dec 19 03:22:22 mint NetworkManager[1848]: <info> Loaded plugin ifupdown: (C) 2008 Canonical Ltd.  To report bugs please use the NetworkManager mailing list.
+Dec 19 03:22:22 mint NetworkManager[1848]: <info> Loaded plugin keyfile: (c) 2007 - 2008 Red Hat, Inc.  To report bugs please use the NetworkManager mailing list.
+Dec 19 03:22:22 mint NetworkManager[1848]:    Ifupdown: get unmanaged devices count: 0
+Dec 19 03:22:22 mint NetworkManager[1848]:    SCPlugin-Ifupdown: (152527592) ... get_connections.
+Dec 19 03:22:22 mint NetworkManager[1848]:    SCPlugin-Ifupdown: (152527592) ... get_connections (managed=false): return empty list.
+Dec 19 03:22:22 mint NetworkManager[1848]:    Ifupdown: get unmanaged devices count: 0
+Dec 19 03:22:22 mint modem-manager: ModemManager (version 0.4) starting...
+Dec 19 03:22:22 mint NetworkManager[1848]: <info> WiFi enabled by radio killswitch; enabled by state file
+Dec 19 03:22:22 mint NetworkManager[1848]: <info> WWAN enabled by radio killswitch; enabled by state file
+Dec 19 03:22:22 mint NetworkManager[1848]: <info> WiMAX enabled by radio killswitch; enabled by state file
+Dec 19 03:22:22 mint NetworkManager[1848]: <info> Networking is enabled by state file
+Dec 19 03:22:22 mint NetworkManager[1848]: <info> (eth0): carrier is OFF
+Dec 19 03:22:22 mint modem-manager: Loaded plugin AnyData
+Dec 19 03:22:22 mint modem-manager: Loaded plugin Generic
+Dec 19 03:22:22 mint modem-manager: Loaded plugin Gobi
+Dec 19 03:22:22 mint modem-manager: Loaded plugin Option High-Speed
+Dec 19 03:22:22 mint modem-manager: Loaded plugin Huawei
+Dec 19 03:22:22 mint modem-manager: Loaded plugin Longcheer
+Dec 19 03:22:22 mint NetworkManager[1848]: <info> (eth0): new Ethernet device (driver: 'pcnet32' ifindex: 2)
+Dec 19 03:22:22 mint NetworkManager[1848]: <info> (eth0): exported as /org/freedesktop/NetworkManager/Devices/0
+Dec 19 03:22:22 mint NetworkManager[1848]: <info> (eth0): now managed
+Dec 19 03:22:22 mint NetworkManager[1848]: <info> (eth0): device state change: 1 -> 2 (reason 2)
+Dec 19 03:22:22 mint NetworkManager[1848]: <info> (eth0): bringing up device.
+Dec 19 03:22:23 mint modem-manager: Loaded plugin Ericsson MBM
+Dec 19 03:22:23 mint modem-manager: Loaded plugin MotoC
+Dec 19 03:22:23 mint modem-manager: Loaded plugin Nokia
+Dec 19 03:22:23 mint modem-manager: Loaded plugin Novatel
+Dec 19 03:22:23 mint modem-manager: Loaded plugin Option
+Dec 19 03:22:23 mint modem-manager: Loaded plugin Sierra
+Dec 19 03:22:23 mint modem-manager: Loaded plugin SimTech
+Dec 19 03:22:23 mint modem-manager: Loaded plugin ZTE
+Dec 19 03:22:23 mint modem-manager: (tty/ttyS2): port's parent platform driver is not whitelisted
+Dec 19 03:22:23 mint modem-manager: (tty/ttyS3): port's parent platform driver is not whitelisted
+Dec 19 03:22:23 mint modem-manager: (tty/ttyS0): could not get port's parent device
+Dec 19 03:22:23 mint modem-manager: (tty/ttyS1): could not get port's parent device
+Dec 19 03:22:23 mint NetworkManager[1848]: <info> (eth0): preparing device.
+Dec 19 03:22:23 mint NetworkManager[1848]: <info> (eth0): deactivating device (reason: 2).
+Dec 19 03:22:23 mint NetworkManager[1848]: <info> Added default wired connection 'Auto eth0' for /sys/devices/pci0000:00/0000:00:11.0/0000:02:01.0/net/eth0
+Dec 19 03:22:23 mint NetworkManager[1848]: <info> (eth0): carrier now ON (device state 2)
+Dec 19 03:22:23 mint NetworkManager[1848]: <info> (eth0): device state change: 2 -> 3 (reason 40)
+Dec 19 03:22:23 mint NetworkManager[1848]: <warn> bluez error getting default adapter: The name org.bluez was not provided by any .service files
+Dec 19 03:22:23 mint NetworkManager[1848]: <info> modem-manager is now available
+Dec 19 03:22:23 mint NetworkManager[1848]: <info> Trying to start the supplicant...
+Dec 19 03:22:23 mint NetworkManager[1848]: <info> Activation (eth0) starting connection 'Auto eth0'
+Dec 19 03:22:23 mint NetworkManager[1848]: <info> (eth0): device state change: 3 -> 4 (reason 0)
+Dec 19 03:22:23 mint NetworkManager[1848]: <info> Activation (eth0) Stage 1 of 5 (Device Prepare) scheduled...
+Dec 19 03:22:23 mint NetworkManager[1848]: <info> Activation (eth0) Stage 1 of 5 (Device Prepare) started...
+Dec 19 03:22:23 mint NetworkManager[1848]: <info> Activation (eth0) Stage 2 of 5 (Device Configure) scheduled...
+Dec 19 03:22:23 mint NetworkManager[1848]: <info> Activation (eth0) Stage 1 of 5 (Device Prepare) complete.
+Dec 19 03:22:23 mint NetworkManager[1848]: <info> Activation (eth0) Stage 2 of 5 (Device Configure) starting...
+Dec 19 03:22:23 mint NetworkManager[1848]: <info> (eth0): device state change: 4 -> 5 (reason 0)
+Dec 19 03:22:23 mint NetworkManager[1848]: <info> Activation (eth0) Stage 2 of 5 (Device Configure) successful.
+Dec 19 03:22:23 mint NetworkManager[1848]: <info> Activation (eth0) Stage 3 of 5 (IP Configure Start) scheduled.
+Dec 19 03:22:23 mint NetworkManager[1848]: <info> Activation (eth0) Stage 2 of 5 (Device Configure) complete.
+Dec 19 03:22:23 mint NetworkManager[1848]: <info> Activation (eth0) Stage 3 of 5 (IP Configure Start) started...
+Dec 19 03:22:23 mint NetworkManager[1848]: <info> (eth0): device state change: 5 -> 7 (reason 0)
+Dec 19 03:22:23 mint NetworkManager[1848]: <info> Activation (eth0) Beginning DHCPv4 transaction (timeout in 45 seconds)
+Dec 19 03:22:23 mint NetworkManager[1848]: <info> dhclient started with pid 1858
+Dec 19 03:22:23 mint NetworkManager[1848]: <info> Activation (eth0) Stage 3 of 5 (IP Configure Start) complete.
+Dec 19 03:22:23 mint dhclient: Internet Systems Consortium DHCP Client 4.1.1-P1
+Dec 19 03:22:23 mint dhclient: Copyright 2004-2010 Internet Systems Consortium.
+Dec 19 03:22:23 mint dhclient: All rights reserved.
+Dec 19 03:22:23 mint dhclient: For info, please visit https://www.isc.org/software/dhcp/
+Dec 19 03:22:23 mint dhclient: 
+Dec 19 03:22:23 mint NetworkManager[1848]: <info> (eth0): DHCPv4 state changed nbi -> preinit
+Dec 19 03:22:23 mint dhclient: Listening on LPF/eth0/00:0c:29:3a:8a:07
+Dec 19 03:22:23 mint dhclient: Sending on   LPF/eth0/00:0c:29:3a:8a:07
+Dec 19 03:22:23 mint dhclient: Sending on   Socket/fallback
+Dec 19 03:22:24 mint dhclient: DHCPDISCOVER on eth0 to 255.255.255.255 port 67 interval 5
+Dec 19 03:22:24 mint acpid: client connected from 1959[106:115]
+Dec 19 03:22:24 mint acpid: 1 client rule loaded
+Dec 19 03:22:24 mint avahi-daemon[1990]: Found user 'avahi' (UID 104) and group 'avahi' (GID 107).
+Dec 19 03:22:24 mint avahi-daemon[1990]: Successfully dropped root privileges.
+Dec 19 03:22:24 mint avahi-daemon[1990]: avahi-daemon 0.6.26 starting up.
+Dec 19 03:22:24 mint avahi-daemon[1990]: Successfully called chroot().
+Dec 19 03:22:24 mint avahi-daemon[1990]: Successfully dropped remaining capabilities.
+Dec 19 03:22:24 mint avahi-daemon[1991]: chroot.c: open() failed: No such file or directory
+Dec 19 03:22:24 mint avahi-daemon[1990]: Failed to open /etc/resolv.conf: Invalid argument
+Dec 19 03:22:24 mint avahi-daemon[1990]: No service file found in /etc/avahi/services.
+Dec 19 03:22:24 mint avahi-daemon[1990]: Joining mDNS multicast group on interface eth0.IPv6 with address fe80::20c:29ff:fe3a:8a07.
+Dec 19 03:22:25 mint avahi-daemon[1990]: New relevant interface eth0.IPv6 for mDNS.
+Dec 19 03:22:25 mint avahi-daemon[1990]: Network interface enumeration completed.
+Dec 19 03:22:25 mint avahi-daemon[1990]: Registering new address record for fe80::20c:29ff:fe3a:8a07 on eth0.*.
+Dec 19 03:22:25 mint avahi-daemon[1990]: Registering HINFO record with values 'I686'/'LINUX'.
+Dec 19 03:22:25 mint bluetoothd[2006]: Bluetooth deamon 4.66
+Dec 19 03:22:25 mint bluetoothd[2006]: Starting SDP server
+Dec 19 03:22:25 mint bluetoothd[2006]: Starting experimental netlink support
+Dec 19 03:22:25 mint bluetoothd[2006]: Failed to find Bluetooth netlink family
+Dec 19 03:22:25 mint bluetoothd[2006]: Failed to init netlink plugin
+Dec 19 03:22:25 mint bluetoothd[2006]: bridge pan0 created
+Dec 19 03:22:25 mint modem-manager: (net/pan0): could not get port's parent device
+Dec 19 03:22:25 mint NetworkManager[1848]:    SCPlugin-Ifupdown: devices added (path: /sys/devices/virtual/net/pan0, iface: pan0)
+Dec 19 03:22:25 mint NetworkManager[1848]:    SCPlugin-Ifupdown: device added (path: /sys/devices/virtual/net/pan0, iface: pan0): no ifupdown configuration found.
+Dec 19 03:22:25 mint NetworkManager[1848]: <warn> /sys/devices/virtual/net/pan0: couldn't determine device driver; ignoring...
+Dec 19 03:22:25 mint acpid: client connected from 1995[0:0]
+Dec 19 03:22:25 mint acpid: 1 client rule loaded
+Dec 19 03:22:26 mint avahi-daemon[1990]: Server startup complete. Host name is mint.local. Local service cookie is 3444209810.
+Dec 19 03:22:29 mint dhclient: DHCPDISCOVER on eth0 to 255.255.255.255 port 67 interval 8
+Dec 19 03:22:31 mint polkitd[2428]: started daemon version 0.96 using authority implementation `local' version `0.96'
+Dec 19 03:22:37 mint dhclient: DHCPDISCOVER on eth0 to 255.255.255.255 port 67 interval 8
+Dec 19 03:22:45 mint dhclient: DHCPDISCOVER on eth0 to 255.255.255.255 port 67 interval 15
+Dec 19 03:23:00 mint dhclient: DHCPDISCOVER on eth0 to 255.255.255.255 port 67 interval 15
+Dec 19 03:23:09 mint NetworkManager[1848]: <warn> (eth0): DHCPv4 request timed out.
+Dec 19 03:23:09 mint NetworkManager[1848]: <info> (eth0): canceled DHCP transaction, DHCP client pid 1858
+Dec 19 03:23:09 mint NetworkManager[1848]: <info> Activation (eth0) Stage 4 of 5 (IP4 Configure Timeout) scheduled...
+Dec 19 03:23:09 mint NetworkManager[1848]: <info> Activation (eth0) Stage 4 of 5 (IP4 Configure Timeout) started...
+Dec 19 03:23:09 mint NetworkManager[1848]: <info> Activation (eth0) Stage 5 of 5 (IP Configure Commit) scheduled...
+Dec 19 03:23:09 mint NetworkManager[1848]: <info> Activation (eth0) Stage 4 of 5 (IP4 Configure Timeout) complete.
+Dec 19 03:23:09 mint NetworkManager[1848]: <info> Activation (eth0) Stage 5 of 5 (IP Configure Commit) started...
+Dec 19 03:23:09 mint NetworkManager[1848]: <info> Activation (eth0) Stage 5 of 5 (IP Configure Commit) failed (no IP configuration found)
+Dec 19 03:23:09 mint NetworkManager[1848]: <info> (eth0): device state change: 7 -> 9 (reason 5)
+Dec 19 03:23:09 mint NetworkManager[1848]: <info> Marking connection 'Auto eth0' invalid.
+Dec 19 03:23:09 mint NetworkManager[1848]: <warn> Activation (eth0) failed.
+Dec 19 03:23:09 mint NetworkManager[1848]: <info> Activation (eth0) Stage 5 of 5 (IP Configure Commit) complete.
+Dec 19 03:23:09 mint NetworkManager[1848]: <info> (eth0): device state change: 9 -> 3 (reason 0)
+Dec 19 03:23:09 mint NetworkManager[1848]: <info> (eth0): deactivating device (reason: 0).
+Dec 19 03:52:23 mint NetworkManager[1848]: <info> Saved default wired connection 'Auto eth0' to persistent storage
+Dec 19 03:53:09 mint NetworkManager[1848]: <info> (eth0): carrier now OFF (device state 3)
+Dec 19 03:53:09 mint NetworkManager[1848]: <info> (eth0): device state change: 3 -> 2 (reason 40)
+Dec 19 03:53:09 mint NetworkManager[1848]: <info> (eth0): deactivating device (reason: 40).
+Dec 19 03:53:13 mint NetworkManager[1848]: <info> (eth0): carrier now ON (device state 2)
+Dec 19 03:53:13 mint NetworkManager[1848]: <info> (eth0): device state change: 2 -> 3 (reason 40)
+Dec 19 03:53:24 mint NetworkManager[1848]: user_connection_updated_cb: assertion `old_connection != NULL' failed
+Dec 19 03:53:24 mint NetworkManager[1848]: <info> Activation (eth0) starting connection 'Auto Ethernet'
+Dec 19 03:53:24 mint NetworkManager[1848]: <info> (eth0): device state change: 3 -> 4 (reason 0)
+Dec 19 03:53:24 mint NetworkManager[1848]: <info> Activation (eth0) Stage 1 of 5 (Device Prepare) scheduled...
+Dec 19 03:53:24 mint NetworkManager[1848]: <info> Activation (eth0) Stage 1 of 5 (Device Prepare) started...
+Dec 19 03:53:24 mint NetworkManager[1848]: <info> Activation (eth0) Stage 2 of 5 (Device Configure) scheduled...
+Dec 19 03:53:24 mint NetworkManager[1848]: <info> Activation (eth0) Stage 1 of 5 (Device Prepare) complete.
+Dec 19 03:53:24 mint NetworkManager[1848]: <info> Activation (eth0) Stage 2 of 5 (Device Configure) starting...
+Dec 19 03:53:24 mint NetworkManager[1848]: <info> (eth0): device state change: 4 -> 5 (reason 0)
+Dec 19 03:53:24 mint NetworkManager[1848]: <info> Activation (eth0) Stage 2 of 5 (Device Configure) successful.
+Dec 19 03:53:24 mint NetworkManager[1848]: <info> Activation (eth0) Stage 3 of 5 (IP Configure Start) scheduled.
+Dec 19 03:53:24 mint NetworkManager[1848]: <info> Activation (eth0) Stage 2 of 5 (Device Configure) complete.
+Dec 19 03:53:24 mint NetworkManager[1848]: <info> Activation (eth0) Stage 3 of 5 (IP Configure Start) started...
+Dec 19 03:53:24 mint NetworkManager[1848]: <info> (eth0): device state change: 5 -> 7 (reason 0)
+Dec 19 03:53:24 mint NetworkManager[1848]: <info> Activation (eth0) Beginning DHCPv4 transaction (timeout in 45 seconds)
+Dec 19 03:53:24 mint NetworkManager[1848]: <info> dhclient started with pid 2823
+Dec 19 03:53:24 mint NetworkManager[1848]: <info> Activation (eth0) Stage 3 of 5 (IP Configure Start) complete.
+Dec 19 03:53:24 mint dhclient: Internet Systems Consortium DHCP Client 4.1.1-P1
+Dec 19 03:53:24 mint dhclient: Copyright 2004-2010 Internet Systems Consortium.
+Dec 19 03:53:24 mint dhclient: All rights reserved.
+Dec 19 03:53:24 mint dhclient: For info, please visit https://www.isc.org/software/dhcp/
+Dec 19 03:53:24 mint dhclient: 
+Dec 19 03:53:24 mint NetworkManager[1848]: <info> (eth0): DHCPv4 state changed nbi -> preinit
+Dec 19 03:53:24 mint dhclient: Listening on LPF/eth0/00:0c:29:3a:8a:07
+Dec 19 03:53:24 mint dhclient: Sending on   LPF/eth0/00:0c:29:3a:8a:07
+Dec 19 03:53:24 mint dhclient: Sending on   Socket/fallback
+Dec 19 03:53:28 mint dhclient: DHCPDISCOVER on eth0 to 255.255.255.255 port 67 interval 8
+Dec 19 03:53:36 mint dhclient: DHCPDISCOVER on eth0 to 255.255.255.255 port 67 interval 11
+Dec 19 03:53:36 mint dhclient: DHCPOFFER from 192.168.1.1
+Dec 19 03:53:36 mint dhclient: DHCPREQUEST on eth0 to 255.255.255.255 port 67
+Dec 19 03:53:36 mint dhclient: DHCPACK from 192.168.1.1
+Dec 19 03:53:36 mint NetworkManager[1848]: <info> (eth0): DHCPv4 state changed preinit -> bound
+Dec 19 03:53:36 mint NetworkManager[1848]: <info> Activation (eth0) Stage 4 of 5 (IP4 Configure Get) scheduled...
+Dec 19 03:53:36 mint NetworkManager[1848]: <info> Activation (eth0) Stage 4 of 5 (IP4 Configure Get) started...
+Dec 19 03:53:36 mint NetworkManager[1848]: <info>   address 192.168.1.34
+Dec 19 03:53:36 mint NetworkManager[1848]: <info>   prefix 24 (255.255.255.0)
+Dec 19 03:53:36 mint NetworkManager[1848]: <info>   gateway 192.168.1.1
+Dec 19 03:53:36 mint NetworkManager[1848]: <info>   hostname 'dhcppc1'
+Dec 19 03:53:36 mint NetworkManager[1848]: <info>   nameserver '192.168.1.1'
+Dec 19 03:53:36 mint NetworkManager[1848]: <info> Activation (eth0) Stage 5 of 5 (IP Configure Commit) scheduled...
+Dec 19 03:53:36 mint NetworkManager[1848]: <info> Activation (eth0) Stage 4 of 5 (IP4 Configure Get) complete.
+Dec 19 03:53:36 mint NetworkManager[1848]: <info> Activation (eth0) Stage 5 of 5 (IP Configure Commit) started...
+Dec 19 03:53:36 mint avahi-daemon[1990]: Joining mDNS multicast group on interface eth0.IPv4 with address 192.168.1.34.
+Dec 19 03:53:36 mint dhclient: bound to 192.168.1.34 -- renewal in 105593 seconds.
+Dec 19 03:53:36 mint avahi-daemon[1990]: New relevant interface eth0.IPv4 for mDNS.
+Dec 19 03:53:36 mint avahi-daemon[1990]: Registering new address record for 192.168.1.34 on eth0.IPv4.
+Dec 19 03:53:37 mint NetworkManager[1848]: <info> (eth0): device state change: 7 -> 8 (reason 0)
+Dec 19 03:53:37 mint NetworkManager[1848]: <info> Policy set 'Auto Ethernet' (eth0) as default for IPv4 routing and DNS.
+Dec 19 03:53:37 mint NetworkManager[1848]: <info> Activation (eth0) successful, device activated.
+Dec 19 03:53:37 mint NetworkManager[1848]: <info> Activation (eth0) Stage 5 of 5 (IP Configure Commit) complete.
