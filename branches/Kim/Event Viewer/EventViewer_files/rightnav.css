@@ -1,0 +1,27 @@
+#seealso {
+	MARGIN-RIGHT: 7px
+}
+.seealsosection {
+	
+}
+.seealsosection H3 {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 2px; MARGIN: 0px 7px 0px 0px; FONT: bold 11px Verdana, Arial, Helvetica, sans-serif; PADDING-TOP: 0px; BORDER-BOTTOM: #000 1px solid
+}
+.seealsosection P {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 5px; MARGIN: 0px 7px 0px 0px; PADDING-TOP: 5px; BORDER-BOTTOM: #ccc 1px solid
+}
+.seealsosection P.last {
+	BORDER-BOTTOM-COLOR: #c00; MARGIN: 0px 7px 14px 0px
+}
+#seealso A:link {
+	COLOR: #c00; TEXT-DECORATION: none
+}
+#seealso A:hover {
+	COLOR: #c00; TEXT-DECORATION: none
+}
+#seealso A:visited {
+	COLOR: #c00; TEXT-DECORATION: none
+}
+#complementarysolutions {
+	FONT-WEIGHT: bold
+}

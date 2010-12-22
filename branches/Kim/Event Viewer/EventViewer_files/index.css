@@ -1,0 +1,345 @@
+#centerhead {
+	PADDING-RIGHT: 0px; BACKGROUND-POSITION: right top; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; WIDTH: auto; PADDING-TOP: 0px; BACKGROUND-REPEAT: no-repeat; BACKGROUND-COLOR: #ffffff; 
+}
+#wireline H3 {
+	BACKGROUND-COLOR: #4d669a
+}
+#wireline .linkshead {
+	BACKGROUND-COLOR: #4d669a
+}
+#mobility H3 {
+	BACKGROUND-COLOR: #69f
+}
+#mobility .linkshead {
+	BACKGROUND-COLOR: #69f
+}
+#convergence H3 {
+	BACKGROUND-COLOR: #006231
+}
+#convergence .linkshead {
+	BACKGROUND-COLOR: #006231
+}
+#threegdesc {
+	DISPLAY: none
+}
+#highspeeddatadesc {
+	DISPLAY: none
+}
+#milifedesc {
+	DISPLAY: none
+}
+#messagingdesc {
+	DISPLAY: none
+}
+#mobileossdesc {
+	DISPLAY: none
+}
+#accessdesc {
+	DISPLAY: none
+}
+#circuitpacketdesc {
+	DISPLAY: none
+}
+#datanetworkingdesc {
+	DISPLAY: none
+}
+#opticaldesc {
+	DISPLAY: none
+}
+#ossnopsdesc {
+	DISPLAY: none
+}
+#voipdesc {
+	DISPLAY: none
+}
+#convergencedesc {
+	DISPLAY: none
+}
+#deploymentdesc {
+	DISPLAY: none
+}
+#maintenancedesc {
+	DISPLAY: none
+}
+#netconsultdesc {
+	DISPLAY: none
+}
+#networkmandesc {
+	DISPLAY: none
+}
+#remotedesc {
+	DISPLAY: none
+}
+#securitydesc {
+	DISPLAY: none
+}
+#messagingWLINEdesc {
+	DISPLAY: none
+}
+#messagingINTdesc {
+	DISPLAY: none
+}
+#transportsolutionsdesc {
+	DISPLAY: none
+}
+#appsdesc {
+	DISPLAY: none
+}
+#acuitydesc {
+	DISPLAY: none
+}
+.TitleStory{	
+FONT-WEIGHT: bold; FONT-SIZE: 12pt; COLOR: #cc0000; FONT-FAMILY: Verdana, Arial, sans-serif
+}
+.datetime {	font-size: 9px;	color: #666666;
+}
+
+
+.zone_focus
+{
+	PADDING-LEFT: 3px; FONT-WEIGHT: bold; FONT-SIZE: 8pt;  PADDING-BOTTOM: 2px; CURSOR: hand; COLOR: #ffffff; LINE-HEIGHT: 16px; PADDING-TOP: 2px;  
+	FONT-FAMILY: Verdana, Helvetica, Geneva, Swiss;TEXT-DECORATION: none
+}
+.views_story
+{
+	PADDING-LEFT: 3px; FONT-WEIGHT: bold; FONT-SIZE: 7.5pt;  PADDING-BOTTOM: 2px; CURSOR: hand; COLOR: #006633; LINE-HEIGHT: 16px; PADDING-TOP: 2px;  
+	FONT-FAMILY: Verdana, Helvetica, Geneva, Swiss;TEXT-DECORATION: none
+}
+.zone_picturefocus
+{
+	PADDING-LEFT: 5px; FONT-WEIGHT: bold; FONT-SIZE: 7.5pt;  PADDING-BOTTOM: 2px; CURSOR: hand; COLOR: #006633; LINE-HEIGHT: 16px; PADDING-TOP: 2px;  
+	FONT-FAMILY: Verdana, Helvetica, Geneva, Swiss;TEXT-DECORATION: none; background: #D8D8D8
+}
+.style_boder_image
+{
+	border: 1px solid #006633 #006633 #006633 #006633
+}
+.style_boder_table
+{
+	BORDER-RIGHT:1px solid; BORDER-TOP:1px solid; BORDER-LEFT:1px solid; BORDER-BOTTOM:1px solid; BORDER-COLLAPSE:collapse
+}
+
+.style_content_picturefocus
+{
+	font:10px,Verdana, Arial, Helvetica, sans-serif;text-decoration:none;color:#006633;
+}
+
+
+.RSSFeedMenu
+{
+	PADDING-LEFT: 3px; FONT-WEIGHT: bold; FONT-SIZE: 7.5pt;  PADDING-BOTTOM: 2px; CURSOR: hand; COLOR: #ffffff; LINE-HEIGHT: 16px; PADDING-TOP: 2px;  
+	FONT-FAMILY: Verdana, Helvetica, Geneva, Swiss; BACKGROUND-IMAGE: url(/Templates/ONMS3C/Images/rss_feed.gif); TEXT-DECORATION: none
+}
+.TopMenu_ParentHome
+{
+	PADDING-LEFT: 3px; FONT-WEIGHT: bold; FONT-SIZE: 7.5pt;  PADDING-BOTTOM: 2px; CURSOR: hand; COLOR: #ffffff; LINE-HEIGHT: 16px; PADDING-TOP: 2px;  
+	FONT-FAMILY: Verdana, Helvetica, Geneva, Swiss; background-color: #CC0000; TEXT-DECORATION: none
+}
+.Menu_NavBar 
+{
+	/*PADDING-LEFT: 4px;  BACKGROUND: #d8d8d8; FONT-WEIGHT: normal*/
+	FONT-WEIGHT: bold; FONT-SIZE: 7.5pt; CURSOR: hand; COLOR:  #006633; LINE-HEIGHT: 16px; PADDING-TOP: 2px; PADDING-LEFT: 3px; PADDING-BOTTOM: 2px; 
+	FONT-FAMILY: Verdana, Helvetica, Geneva, Swiss; BACKGROUND-IMAGE: url(/Templates/ONMS3C/Images/bgmenu_off.gif); TEXT-DECORATION: none
+}
+.Menu_NavBarHover 
+{
+	PADDING-LEFT: 3px; FONT-WEIGHT: bold; FONT-SIZE: 7.5pt;  PADDING-BOTTOM: 2px; CURSOR: hand; COLOR: #ffffff; LINE-HEIGHT: 16px; PADDING-TOP:	2px; 
+	FONT-FAMILY: Verdana, Helvetica, Geneva, Swiss; BACKGROUND-IMAGE: url(/Templates/ONMS3C/Images/bgmenu_on.gif); TEXT-DECORATION: none
+}
+.Menu_NavBarHomePage {
+	PADDING-LEFT: 3px; FONT-WEIGHT: bold; FONT-SIZE: 7.5pt;  PADDING-BOTTOM: 2px; CURSOR: hand; COLOR: #ffffff; LINE-HEIGHT: 16px; PADDING-TOP:	2px; 
+	FONT-FAMILY: Verdana, Helvetica, Geneva, Swiss; BACKGROUND-IMAGE: url(/Templates/ONMS3C/Images/bgmenu_off.gif); TEXT-DECORATION: none
+}
+.Menu_NavBarHomePageHover {
+	PADDING-LEFT: 3px; FONT-WEIGHT: bold; FONT-SIZE: 7.5pt;  PADDING-BOTTOM: 2px; CURSOR: hand; COLOR: #ffffff; LINE-HEIGHT: 16px; PADDING-TOP:	2px; 
+	FONT-FAMILY: Verdana, Helvetica, Geneva, Swiss; BACKGROUND-IMAGE: url(/Templates/ONMS3C/Images/bgmenu_on.gif); TEXT-DECORATION: none
+}
+.Menu_NavBarHilighted {
+	PADDING-LEFT: 3px; FONT-WEIGHT: bold; FONT-SIZE: 7.5pt;  PADDING-BOTTOM: 2px; CURSOR: hand; COLOR: #ffffff; LINE-HEIGHT: 16px; PADDING-TOP: 2px;  
+	FONT-FAMILY: Verdana, Helvetica, Geneva, Swiss; BACKGROUND-IMAGE: url(/Templates/ONMS3C/Images/bgmenu_on.gif); TEXT-DECORATION: none
+}
+.Menu_SubNavBarHilighted {
+	PADDING-LEFT: 3px;  FONT-WEIGHT: bold; FONT-SIZE: 7.5pt;  PADDING-BOTTOM: 2px; CURSOR: hand; COLOR: #ffffff; LINE-HEIGHT: 16px;	PADDING-TOP: 2px; 
+	FONT-FAMILY: Verdana, Helvetica, Geneva, Swiss; BACKGROUND-IMAGE: url(/Templates/ONMS3C/Images/bgmenu_on.gif); TEXT-DECORATION: none
+}
+.Menu_SubNavBar {
+	PADDING-LEFT: 3px; FONT-WEIGHT: normal; FONT-SIZE: 7.5pt;  PADDING-BOTTOM: 2px; CURSOR: hand; COLOR: #006633; LINE-HEIGHT: 16px; PADDING-TOP: 2px; 
+	FONT-FAMILY: Verdana, Helvetica, Geneva, Swiss; BACKGROUND-IMAGE: url(/Templates/ONMS3C/Images/bgmenu_off.gif); TEXT-DECORATION: none
+}
+.Menu_SubNavBarHover {
+	PADDING-LEFT: 3px; FONT-WEIGHT: normal; FONT-SIZE: 7.5pt;  PADDING-BOTTOM: 2px; CURSOR: hand; COLOR: #006633; LINE-HEIGHT: 16px; PADDING-TOP: 2px; 
+	FONT-FAMILY: Verdana, Helvetica, Geneva, Swiss; BACKGROUND-IMAGE: url(/Templates/ONMS3C/Images/bgmenu_on.gif); TEXT-DECORATION: none
+}
+.Menu_SubNavBar1 {
+	PADDING-LEFT: 8px; FONT-WEIGHT: normal; FONT-SIZE: 7.5pt;  PADDING-BOTTOM: 2px; CURSOR: hand; COLOR: #006633; LINE-HEIGHT: 16px; PADDING-TOP: 2px; 
+	FONT-FAMILY: Verdana, Helvetica, Geneva, Swiss; BACKGROUND-IMAGE: url(/Templates/ONMS3C/Images/bgmenu_off.gif); TEXT-DECORATION: none
+}
+.Menu_SubNavBarHover1 {
+	PADDING-LEFT: 8px; FONT-WEIGHT: normal; FONT-SIZE: 7.5pt;  PADDING-BOTTOM: 2px; CURSOR: hand; COLOR: #ffffff; LINE-HEIGHT: 16px; PADDING-TOP: 
+	2px; FONT-FAMILY: Verdana, Helvetica, Geneva, Swiss; BACKGROUND-IMAGE: url(/Templates/ONMS3C/Images/bgmenu_on.gif); TEXT-DECORATION: none
+}
+.Menu_SubNavBarHilighted1 {
+	PADDING-LEFT: 8px; FONT-WEIGHT: normal; FONT-SIZE: 7.5pt;  PADDING-BOTTOM: 2px; CURSOR: hand; COLOR: #ffffff; LINE-HEIGHT: 16px; PADDING-TOP: 
+	2px; FONT-FAMILY: Verdana, Helvetica, Geneva, Swiss; BACKGROUND-IMAGE: url(/Templates/ONMS3C/Images/bgmenu_on.gif); TEXT-DECORATION: none
+}
+.Menu_SubNavBar2 {
+	PADDING-LEFT: 8px; FONT-WEIGHT: normal; FONT-SIZE: 7.5pt;  PADDING-BOTTOM: 2px; CURSOR: hand; COLOR: #006633; LINE-HEIGHT: 16px; PADDING-TOP: 
+	2px; FONT-FAMILY: Verdana, Helvetica, Geneva, Swiss; BACKGROUND-IMAGE: url(/Templates/ONMS3C/Images/bgmenu_off.gif); TEXT-DECORATION: none
+}
+.Menu_SubNavBarHover2 {
+	PADDING-LEFT: 8px; FONT-WEIGHT: normal; FONT-SIZE: 7.5pt;  PADDING-BOTTOM: 2px; CURSOR: hand; COLOR: #ffffff; LINE-HEIGHT: 16px; PADDING-TOP: 
+	2px; FONT-FAMILY: Verdana, Helvetica, Geneva, Swiss; BACKGROUND-IMAGE: url(/Templates/ONMS3C/Images/bgmenu_on.gif); TEXT-DECORATION: none
+}
+.Menu_SubNavBarHilighted2 {
+	PADDING-LEFT: 8px; FONT-WEIGHT: normal; FONT-SIZE: 7.5pt;  PADDING-BOTTOM: 2px; CURSOR: hand; COLOR: #ffffff; LINE-HEIGHT: 16px; PADDING-TOP: 
+	2px; FONT-FAMILY: Verdana, Helvetica, Geneva, Swiss; BACKGROUND-IMAGE: url(/Templates/ONMS3C/Images/bgmenu_on.gif); TEXT-DECORATION: none
+}
+.Menu_SubNavBar3 {
+	PADDING-LEFT: 17px; FONT-WEIGHT: bold; FONT-SIZE: 8pt; PADDING-BOTTOM: 2px; CURSOR: hand; COLOR: white; PADDING-TOP: 2px; 
+
+FONT-FAMILY: Arial, Helvetica, Geneva, Swiss; BACKGROUND-COLOR: #2a3c2c; TEXT-DECORATION: none
+}
+.Menu_SubNavBarHover3 {
+	PADDING-LEFT: 17px; FONT-WEIGHT: bold; FONT-SIZE: 8pt; PADDING-BOTTOM: 2px; CURSOR: hand; COLOR: white; PADDING-TOP: 2px; 
+
+FONT-FAMILY: Arial, Helvetica, Geneva, Swiss, SunSans-Regular; BACKGROUND-COLOR: #407080; TEXT-DECORATION: none
+}
+.Menu_SubNavBarHilighted3 {
+	PADDING-LEFT: 17px; FONT-WEIGHT: bold; FONT-SIZE: 8pt; PADDING-BOTTOM: 2px; CURSOR: hand; COLOR: white; PADDING-TOP: 2px; FONT-FAMILY: 
+
+Arial, Helvetica, Geneva, Swiss; BACKGROUND-COLOR: #835900; TEXT-DECORATION: none
+}
+.Menu_SubNavBar4 {
+	PADDING-LEFT: 24px; FONT-WEIGHT: bold; FONT-SIZE: 8pt; PADDING-BOTTOM: 2px; CURSOR: hand; COLOR: white; PADDING-TOP: 2px; 
+
+FONT-FAMILY: Arial, Helvetica, Geneva, Swiss; BACKGROUND-COLOR: #2a3c2c; TEXT-DECORATION: none
+}
+.Menu_SubNavBarHover4 {
+	PADDING-LEFT: 24px; FONT-WEIGHT: bold; FONT-SIZE: 8pt; PADDING-BOTTOM: 2px; CURSOR: hand; COLOR: white; PADDING-TOP: 2px; 
+
+FONT-FAMILY: Arial, Helvetica, Geneva, Swiss, SunSans-Regular; BACKGROUND-COLOR: #407080; TEXT-DECORATION: none
+}
+.Menu_SubNavBarHilighted4 {
+	PADDING-LEFT: 24px; FONT-WEIGHT: bold; FONT-SIZE: 8pt; PADDING-BOTTOM: 2px; CURSOR: hand; COLOR: white; PADDING-TOP: 2px; FONT-FAMILY: 
+
+Arial, Helvetica, Geneva, Swiss; BACKGROUND-COLOR: #835900; TEXT-DECORATION: none
+}
+.Menu_SubNavBar5 {
+	PADDING-LEFT: 31px; FONT-WEIGHT: bold; FONT-SIZE: 8pt; PADDING-BOTTOM: 2px; CURSOR: hand; COLOR: white; PADDING-TOP: 2px; 
+
+FONT-FAMILY: Arial, Helvetica, Geneva, Swiss; BACKGROUND-COLOR: #2a3c2c; TEXT-DECORATION: none
+}
+.Menu_SubNavBarHover5 {
+	PADDING-LEFT: 31px; FONT-WEIGHT: bold; FONT-SIZE: 8pt; PADDING-BOTTOM: 2px; CURSOR: hand; COLOR: white; PADDING-TOP: 2px; 
+
+FONT-FAMILY: Arial, Helvetica, Geneva, Swiss, SunSans-Regular; BACKGROUND-COLOR: #407080; TEXT-DECORATION: none
+}
+.Menu_SubNavBarHilighted5 {
+	PADDING-LEFT: 31px; FONT-WEIGHT: bold; FONT-SIZE: 8pt; PADDING-BOTTOM: 2px; CURSOR: hand; COLOR: white; PADDING-TOP: 2px; FONT-FAMILY: 
+
+Arial, Helvetica, Geneva, Swiss; BACKGROUND-COLOR: #835900; TEXT-DECORATION: none
+}
+.Menu_SubNavBar6 {
+	PADDING-LEFT: 38px; FONT-WEIGHT: bold; FONT-SIZE: 8pt; PADDING-BOTTOM: 2px; CURSOR: hand; COLOR: white; PADDING-TOP: 2px; 
+
+FONT-FAMILY: Arial, Helvetica, Geneva, Swiss; BACKGROUND-COLOR: #2a3c2c; TEXT-DECORATION: none
+}
+.Menu_SubNavBarHover6 {
+	PADDING-LEFT: 38px; FONT-WEIGHT: bold; FONT-SIZE: 8pt; PADDING-BOTTOM: 2px; CURSOR: hand; COLOR: white; PADDING-TOP: 2px; 
+
+FONT-FAMILY: Arial, Helvetica, Geneva, Swiss, SunSans-Regular; BACKGROUND-COLOR: #407080; TEXT-DECORATION: none
+}
+.Menu_SubNavBarHilighted6 {
+	PADDING-LEFT: 38px; FONT-WEIGHT: bold; FONT-SIZE: 8pt; PADDING-BOTTOM: 2px; CURSOR: hand; COLOR: white; PADDING-TOP: 2px; FONT-FAMILY: 
+
+Arial, Helvetica, Geneva, Swiss; BACKGROUND-COLOR: #835900; TEXT-DECORATION: none
+}
+.MenuGroup
+{
+  font-family: Verdana; 
+  font-size:7.5pt;
+  font:bold;
+  color:#006633;
+  border:none;
+  border-right:0px;
+  border-bottom:0px;
+  border-left:0px;
+  border-top:0px;
+  border-style:window-inset;
+  border-color: #006633;
+  padding:5px;
+  padding-left:5px;
+  padding-right:5px;
+  background-image: url(/Templates/ONMS3C/images/home/c_menu_background.gif);
+}
+.MenuGroupOver
+{
+  font-family: Verdana; 
+  font-size:7.2pt;
+  font:bold;
+  color:#ffffff;
+  padding:5px;
+  padding-left:5px;
+  padding-right:5px;  
+  cursor:hand;
+  background-color: #006633;
+  /*background-image: url(/Templates/ONMS3C/images/home/c_menu2_background.gif);*/
+}
+
+.MenuItem 
+{
+  font-family: Verdana; 
+  font-size:7.5pt;
+  color:#006633;  
+  font:bold;  
+  border-width: 1px;
+  border-style: solid;
+  border-color: #666666;
+  padding:5px;
+  padding-left:5px;
+  padding-right:20px;  
+  cursor: hand;
+  background-image: url(/Templates/ONMS3C/images/home/c_menu_item_background.gif);
+}
+.MenuItemOver 
+{
+  font-family: Verdana; 
+  font-size:7.5pt;
+  font:bold;
+  color:#ffffff;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #666666;
+  padding:5px;
+  padding-left:5px;
+  padding-right:20px;  
+  cursor:hand;
+  background-color: #006633;
+  /*background-image: url(/Templates/ONMS3C/images/home/c_menu2_background.gif);*/
+}
+
+/*  */
+
+
+.paneCenter 
+{
+	
+    width: 100%;
+    height: 60px;
+    background-image: url(Images/paneCenter.gif);
+    background-color: #fafaf7;
+    float: left;
+    background-repeat: no-repeat;
+    padding-top: 2px;
+
+}
+
+
+.paneDetails_Text 
+{
+    font: normal 11px Verdana, Helvetica;
+    color: #798048;
+    padding-top: 2px;
+    padding-left: 5px;
+}
+
