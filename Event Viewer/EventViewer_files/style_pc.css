@@ -1,0 +1,192 @@
+.dummy {
+	
+}
+TD {
+	FONT-SIZE: 8pt; COLOR: #000000; FONT-FAMILY: Verdana, Arial, sans-serif
+}
+A:hover {
+	TEXT-DECORATION: underline
+}
+.BH1 {
+	FONT-WEIGHT: bold; FONT-SIZE: 15pt; MARGIN-BOTTOM: 8px; COLOR: #cc0000; FONT-FAMILY: Palatino Linotype, Book Antiqua, Georgia, Times New Roman, serif; TEXT-DECORATION: none
+}
+.BH2 {
+	FONT-SIZE: 12pt; COLOR: #000000; FONT-FAMILY: Verdana, Arial, sans-serif; TEXT-DECORATION: none
+}
+.E1 {
+	FONT-WEIGHT: bold; FONT-SIZE: 8pt; COLOR: #cc9933; FONT-FAMILY: Verdana, Arial, sans-serif
+}
+.E2 {
+	FONT-WEIGHT: bold; FONT-SIZE: 10pt; COLOR: #ffffff; FONT-FAMILY: Verdana, Arial, sans-serif
+}
+.F1 {
+	FONT-WEIGHT: bold; FONT-SIZE: 8pt; COLOR: #999966; FONT-FAMILY: Verdana, Arial, sans-serif
+}
+.F2 {
+	FONT-WEIGHT: bold; FONT-SIZE: 8pt; COLOR: #ffffff; FONT-FAMILY: Verdana, Arial, sans-serif
+}
+.F3 {
+	FONT-SIZE: 8pt; COLOR: #999999; FONT-FAMILY: Verdana, Arial, sans-serif
+}
+.F4 {
+	FONT-SIZE: 8pt; COLOR: #999966; FONT-FAMILY: Verdana, Arial, sans-serif
+}
+.F5 {
+	FONT-WEIGHT: bold; FONT-SIZE: 8pt; COLOR: #999999; FONT-FAMILY: Verdana, Arial, sans-serif; TEXT-DECORATION: none
+}
+.F6 {
+	FONT-SIZE: 8pt; COLOR: #999999; FONT-FAMILY: Verdana, Arial, sans-serif; TEXT-DECORATION: none
+}
+.F7 {
+	FONT-SIZE: 7.5pt; COLOR: #727272; FONT-FAMILY: Verdana, Arial, sans-serif; TEXT-DECORATION: none
+}
+.F8 {
+	FONT-SIZE: 7.5pt; COLOR: #000000; FONT-FAMILY: Verdana, Arial, sans-serif; TEXT-DECORATION: none
+}
+.F9 {
+	FONT-SIZE: 8pt; COLOR: #000000; FONT-FAMILY: Verdana, Arial, sans-serif; TEXT-DECORATION: none
+}
+.H1 {
+	FONT-WEIGHT: bold; FONT-SIZE: 10pt; COLOR: #666666; FONT-FAMILY: Verdana, Arial, sans-serif
+}
+.H2 {
+	FONT-WEIGHT: bold; FONT-SIZE: 8pt; COLOR: #666666; FONT-FAMILY: Verdana, Arial, sans-serif
+}
+.H3 {
+	FONT-WEIGHT: bold; FONT-SIZE: 8pt; COLOR: #000000; FONT-FAMILY: Verdana, Arial, sans-serif
+}
+.H4 {
+	FONT-WEIGHT: bold; FONT-SIZE: 8pt; COLOR: #666666; LINE-HEIGHT: 11pt; FONT-FAMILY: Verdana, Arial, sans-serif
+}
+.H5 {
+	FONT-WEIGHT: bold; FONT-SIZE: 8pt; COLOR: #999966; LINE-HEIGHT: 14pt; FONT-FAMILY: Verdana, Arial, sans-serif
+}
+.H6 {
+	PADDING-RIGHT: 15px; PADDING-LEFT: 15px; FONT-SIZE: 8pt; COLOR: #666666; LINE-HEIGHT: 14pt; FONT-FAMILY: Verdana, Arial, sans-serif
+}
+.H1A {
+	FONT-WEIGHT: bold; FONT-SIZE: 12pt; COLOR: #666666; FONT-FAMILY: Verdana, Arial, sans-serif; TEXT-DECORATION: none
+}
+.H1B {
+	FONT-WEIGHT: bold; FONT-SIZE: 12pt; COLOR: #000000; FONT-FAMILY: Verdana, Arial, sans-serif; TEXT-DECORATION: none
+}
+.H3R {
+	FONT-WEIGHT: bold; FONT-SIZE: 10pt; COLOR: #cc0000; FONT-FAMILY: Verdana, Arial, sans-serif; TEXT-DECORATION: none
+}
+.H3b {
+	FONT-WEIGHT: bold; FONT-SIZE: 10pt; COLOR: #000000; FONT-FAMILY: Verdana, Arial, sans-serif; TEXT-DECORATION: none
+}
+.L1 {
+	FONT-WEIGHT: bold; FONT-SIZE: 8pt; COLOR: #cc0000; FONT-FAMILY: Verdana, Arial, sans-serif; TEXT-DECORATION: none
+}
+.L2 {
+	FONT-WEIGHT: bold; FONT-SIZE: 8pt; COLOR: #cc0000; FONT-FAMILY: Verdana, Arial, sans-serif; TEXT-DECORATION: none
+}
+.L3 {
+	FONT-SIZE: 8pt; COLOR: #cc0000; FONT-FAMILY: Verdana, Arial, sans-serif; TEXT-DECORATION: underline
+}
+.L4 {
+	FONT-WEIGHT: bold; FONT-SIZE: 8pt; COLOR: #330066; FONT-FAMILY: Verdana, Arial, sans-serif
+}
+.L5 {
+	FONT-SIZE: 8pt; COLOR: #cc0000; FONT-FAMILY: Verdana, Arial, sans-serif; TEXT-DECORATION: none
+}
+.M1 {
+	FONT-WEIGHT: bold; FONT-SIZE: 8pt; COLOR: #99cc33; FONT-FAMILY: Verdana, Arial, sans-serif
+}
+.N1 {
+	FONT-WEIGHT: bold; FONT-SIZE: 7.5pt; COLOR: #ffffff; FONT-FAMILY: Verdana, Arial, sans-serif; TEXT-DECORATION: none
+}
+.N1a {
+	FONT-WEIGHT: bold; FONT-SIZE: 7.5pt; COLOR: #d8d8d8; FONT-FAMILY: Verdana, Arial, sans-serif; TEXT-DECORATION: none
+}
+.N2 {
+	FONT-WEIGHT: bold; FONT-SIZE: 7.5pt; COLOR: #cc0000; FONT-FAMILY: Verdana, Arial, sans-serif; TEXT-DECORATION: none
+}
+.N2a {
+	FONT-WEIGHT: bold; FONT-SIZE: 7.5pt; COLOR: #727272; FONT-FAMILY: Verdana, Arial, sans-serif; TEXT-DECORATION: none
+}
+.N3 {
+	FONT-WEIGHT: bold; FONT-SIZE: 8pt; COLOR: #000000; FONT-FAMILY: Verdana, Arial, sans-serif; TEXT-DECORATION: none
+}
+.N5 {
+	FONT-SIZE: 7.5pt; COLOR: #cc0000; FONT-FAMILY: Verdana, Arial, sans-serif; TEXT-DECORATION: none
+}
+.N5a {
+	FONT-WEIGHT: bold; FONT-SIZE: 7.5pt; COLOR: #808080; FONT-FAMILY: Verdana, Arial, sans-serif; TEXT-DECORATION: none
+}
+.S1 {
+	FONT-SIZE: 8pt; WIDTH: 152px; COLOR: #000000; FONT-FAMILY: Verdana, Arial, sans-serif
+}
+.S2 {
+	FONT-SIZE: 8pt; WIDTH: 70px; COLOR: #000000; FONT-FAMILY: Verdana, Arial, sans-serif
+}
+.S3 {
+	FONT-SIZE: 8pt; WIDTH: 235px; COLOR: #000000; FONT-FAMILY: Verdana, Arial, sans-serif
+}
+.S4 {
+	FONT-SIZE: 8pt; WIDTH: 115px; COLOR: #000000; FONT-FAMILY: Verdana, Arial, sans-serif
+}
+.S5 {
+	FONT-SIZE: 8pt; WIDTH: 80px; COLOR: #000000; FONT-FAMILY: Verdana, Arial, sans-serif
+}
+.S6 {
+	FONT-SIZE: 8pt; WIDTH: 40px; COLOR: #000000; FONT-FAMILY: Verdana, Arial, sans-serif
+}
+.S7 {
+	FONT-SIZE: 8pt; WIDTH: 140px; COLOR: #000000; FONT-FAMILY: Verdana, Arial, sans-serif
+}
+.T1 {
+	FONT-SIZE: 8pt; COLOR: #000000; FONT-FAMILY: Verdana, Arial, sans-serif
+}
+.T2 {
+	FONT-SIZE: 8pt; COLOR: #999999; LINE-HEIGHT: 16pt; FONT-FAMILY: Verdana, Arial, sans-serif
+}
+.T3 {
+	FONT-SIZE: 8pt; COLOR: #000000; FONT-FAMILY: Verdana, Arial, sans-serif
+}
+.T6 {
+	FONT-WEIGHT: bold; FONT-SIZE: 10pt; COLOR: #000000; FONT-FAMILY: Verdana, Arial, sans-serif; TEXT-DECORATION: none
+}
+.T1B {
+	FONT-SIZE: 12pt; COLOR: #000000; FONT-FAMILY: Verdana, Arial, sans-serif; TEXT-DECORATION: none
+}
+.T1BR {
+	FONT-WEIGHT: bold; FONT-SIZE: 11pt; COLOR: #cccccc; FONT-FAMILY: Verdana, Arial, sans-serif; TEXT-DECORATION: none
+}
+.SH1 {
+	FONT-SIZE: 8pt; COLOR: #000000; FONT-FAMILY: Verdana, Arial, sans-serif
+}
+.V20 {
+	LINE-HEIGHT: 20px
+}
+.V14 {
+	LINE-HEIGHT: 14px
+}
+.V2 {
+	LINE-HEIGHT: 2px
+}
+.BackEnd { 
+color: #00005c; 
+font-size: 9pt; 
+font-family: Verdana, Arial, Helvetica, Geneva, Swiss, SunSans-Regular; 
+background-color: #f7fafa; 
+text-align: left; 
+padding-left:10px; 
+border-width: 1px;
+border-spacing: ;
+border-style: solid;
+border-collapse: collapse;
+} 
+.AproductCSS { 
+color: #00005c; 
+font-size: 9pt; 
+font-family: Verdana, Arial, Helvetica, Geneva, Swiss, SunSans-Regular; 
+background-color: #f7fafa; 
+text-align: left; 
+padding-left:10px; 
+border-width: 1px;
+border-spacing: ;
+border-style: solid;
+border-collapse: collapse;
+} 

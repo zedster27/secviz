@@ -1,0 +1,43 @@
+#wireline { BORDER-RIGHT: #4d669a 1px solid; BORDER-TOP: #4d669a 1px solid; FLOAT: right; BORDER-LEFT: #4d669a 1px solid; WIDTH: 49%; BORDER-BOTTOM: #4d669a 1px solid }
+#mobility { BORDER-RIGHT: #69f 1px solid; BORDER-TOP: #69f 1px solid; FLOAT: left; BORDER-LEFT: #69f 1px solid; WIDTH: 49%; BORDER-BOTTOM: #69f 1px solid }
+#convergence { CLEAR: both; BORDER-RIGHT: #FFFFFF 1px solid; BORDER-TOP: #FFFFFF 1px solid; BORDER-LEFT: #FFFFFF 1px solid; BORDER-BOTTOM: #FFFFFF 1px solid }
+.linkshead H3 A:link { COLOR: #fff; TEXT-DECORATION: none }
+.linkshead H3 A:visited { COLOR: #fff; TEXT-DECORATION: none }
+.linkshead H3 A:hover { COLOR: #fff; TEXT-DECORATION: underline }
+a.sanpham{ font-size:11px; text-decoration:underline; color:#000000; }
+a.sanpham_001{font-size:10px; text-decoration:none; font-weight:bold }
+a.sanpham_002{font-size:11px; text-decoration:none; font-weight:bold }
+a.sanpham_003{font-size:9px; text-decoration:none; font-weight:bold }
+a.sanpham_005{font-size:10px; text-decoration:none;}
+.sanpham_004{
+	background-image:url(/temp/nut.gif);
+	background-repeat:no-repeat;
+	background-position:3px 8px;
+	padding: 5px 2px 2px 10px;
+}
+.viewlarger {LEFT: 1px; VISIBILITY: hidden; POSITION: absolute; TOP: 1px}
+.view {LEFT: 1px; VISIBILITY: visible; POSITION: absolute; TOP: 1px}
+#bottomnav { MARGIN-LEFT: 10px }
+#bottomnav A { BORDER-RIGHT: #fff 1px solid; PADDING-RIGHT: 23px; DISPLAY: block; PADDING-LEFT: 23px; FONT-WEIGHT: bold; FONT-SIZE: 11px; FLOAT: left; PADDING-BOTTOM: 4px; MARGIN: 0px 0px 5px; COLOR: #fff; PADDING-TOP: 4px; FONT-STYLE: normal; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; BACKGROUND-COLOR: #000066; TEXT-ALIGN: center; TEXT-DECORATION: none }
+A.Paging {
+font:10px,Verdana, Arial, Helvetica, sans-serif;text-decoration:none;color:#6d6921;
+}
+A.Paging:hover {
+font:bold 10px,Verdana, Arial, Helvetica, sans-serif;text-decoration:underline;color:#6d6921;
+}
+.ProductPagingLinkBold {
+font:bold 10px,Verdana, Arial, Helvetica, sans-serif;COLOR: #6d6921 ; TEXT-DECORATION: none
+}
+A.ProductPagingLinkBold {
+font:bold 10px,Verdana, Arial, Helvetica, sans-serif;text-decoration:none;color:#6d6921;
+}
+A.ProductPagingLinkBold:hover {
+font:bold 10px,Verdana, Arial, Helvetica, sans-serif;text-decoration:underline;color:#6d6921;
+}
+A.ProductPagingLinkBold:visited {
+font:bold 10px,Verdana, Arial, Helvetica, sans-serif;text-decoration:none;color:#6d6921;
+}
+A.ProductPagingLinkSelectedBold {
+font:bold 10px,Verdana, Arial, Helvetica, sans-serif;text-decoration:none;color:#FF0000;
+
+}

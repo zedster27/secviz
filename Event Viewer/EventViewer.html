@@ -1,0 +1,778 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+
+	
+		<title id="Story_Title">Log hệ thống - Phần 2 (Event Viewer)  - Log he thong - Phan 2 (Event Viewer)  - www.3c.com.vn - www.3c.com.vn</title>
+		<meta name="verify-v1" content="RKrMwZPgceLvpQXpyAkydvkc92bxZlZzHkP7SncLoHw=">
+		<meta content="Microsoft Visual Studio .NET 7.1" name="GENERATOR">
+		<meta content="C#" name="CODE_LANGUAGE">
+		<meta content="JavaScript" name="vs_defaultClientScript">
+		<meta content="http://schemas.microsoft.com/intellisense/ie5" name="vs_targetSchema">
+		<link href="EventViewer_files/leftnav.css" type="text/css" rel="stylesheet">
+		<link href="EventViewer_files/rightnav.css" type="text/css" rel="stylesheet">
+		<link href="EventViewer_files/landing.css" type="text/css" rel="stylesheet">
+		<link href="EventViewer_files/landingns.css" type="text/css" rel="stylesheet">
+		<link href="EventViewer_files/index.css" type="text/css" rel="stylesheet">
+		<link href="EventViewer_files/style_pc.css" type="text/css" rel="stylesheet">
+		<link href="EventViewer_files/s3c.css" type="text/css" rel="stylesheet">
+		
+		<script src="EventViewer_files/ga.js" async="" type="text/javascript"></script><script language="javascript" src="EventViewer_files/common.js"></script>
+		<link href="http://www.3c.com.vn/Templates/ONMS3C/images/favicon.ico" rel="shortcut icon">
+		<link href="http://www.3c.com.vn/Templates/ONMS3C/images/animated_favicon1.gif" type="image/gif" rel="icon">
+		<script type="text/javascript">
+
+			var _gaq = _gaq || [];
+			_gaq.push(['_setAccount', 'UA-1901079-1']);
+			_gaq.push(['_trackPageview']);
+
+			(function() {
+				var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+				ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+				var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+			})();
+
+			</script>			
+	</head><body leftmargin="0" topmargin="0" text="#000000" vlink="#000080" alink="#ff0000" bgcolor="#ffffff" link="#000080" marginheight="0" marginwidth="0">
+
+
+		<form name="frms3c" method="post" action="Story.aspx?lang=vn&amp;zoneparent=5&amp;ID=21094" id="frms3c">
+<input name="__VIEWSTATE" value="dDwtMTc4NDk3ODcxMDt0PDtsPGk8MT47aTwzPjs+O2w8dDxwPGw8aW5uZXJodG1sOz47bDxMb2cgaOG7hyB0aOG7kW5nIC0gUGjhuqduIDIgKEV2ZW50IFZpZXdlcikgIC0gTG9nIGhlIHRob25nIC0gUGhhbiAyIChFdmVudCBWaWV3ZXIpICAtIHd3dy4zYy5jb20udm4gLSB3d3cuM2MuY29tLnZuOz4+Ozs+O3Q8O2w8aTwxPjtpPDY+O2k8OT47aTwxMT47aTwxMz47aTwxNT47aTwxNz47aTwxOT47aTwyMT47aTwyMz47aTwyNT47aTwzNT47aTwzOT47aTw0MT47aTw0Mz47aTw0NT47aTw0Nz47aTw0OT47aTw1Nz47aTw2Mz47aTw2NT47PjtsPHQ8O2w8aTwxPjs+O2w8dDw7bDxpPDA+Oz47bDx0PDtsPGk8MD47PjtsPHQ8O2w8aTwwPjtpPDI+O2k8Mz47aTw0Pjs+O2w8dDw7bDxpPDE+Oz47bDx0PEAwPDtAMDxAMDxwPHA8bDxUZXh0O05hdmlnYXRlVXJsOz47bDxUcmFuZyBjaOG7pzsvP2xhbmc9dm47Pj47Pjs7PjtAMDxwPHA8bDxUZXh0O05hdmlnYXRlVXJsOz47bDxUaGnhur90IGLhu4sgQ05UVDsvU3Rvcnkvdm4vdGhpZXRiaWNudHQvdGhpZXRiaWNudHQvMjAwNy81LzE1MTg3Lmh0bWw7Pj47Pjs7PjtAMDxwPHA8bDxUZXh0O05hdmlnYXRlVXJsOz47bDxQaOG6p24gbeG7gW0gJiBnaeG6o2kgcGjDoXA7L1pvbmUvdm4vcGhhbm1lbXZhZ2lhaXBoYXAvcGhhbm1lbXZhZ2lhaXBoYXAuaHRtbDs+Pjs+Ozs+O0AwPHA8cDxsPFRleHQ7TmF2aWdhdGVVcmw7PjtsPEThu4tjaCB24bulIENOVFQ7L1pvbmUvdm4vZGljaHZ1Y2h1eWVubmdoaWVwL2RpY2h2dWNodXllbm5naGllcC5odG1sOz4+Oz47Oz47QDA8cDxwPGw8VGV4dDtOYXZpZ2F0ZVVybDs+O2w8S2nhur9uIHRo4bupYyAmIGPDtG5nIGPhu6U7L1pvbmUvdm4vaG90cm9raGFjaGhhbmcvaG90cm9raGFjaGhhbmcuaHRtbDs+Pjs+Ozs+O0AwPHA8cDxsPFRleHQ7TmF2aWdhdGVVcmw7PjtsPFRpbiB04bupYyAmIHPhu7Ega2nhu4duOy9ab25lL3ZuL3RpbnR1Y3Zhc3VraWVuL3RpbnR1Y3Zhc3VraWVuLmh0bWw7Pj47Pjs7PjtAMDxwPHA8bDxUZXh0O05hdmlnYXRlVXJsOz47bDxUaW4gUiZEOy9ab25lL3ZuL25naGllbmN1dXZhcGhhdHRyaWVuL25naGllbmN1dXZhcGhhdHRyaWVuLmh0bWw7Pj47Pjs7PjtAMDxwPHA8bDxUZXh0O05hdmlnYXRlVXJsOz47bDxUaW4gM0M7L1pvbmUvdm4vdGludHVjdmFzdWtpZW4vdGludHVjM2MuaHRtbDs+Pjs+Ozs+O0AwPHA8cDxsPFRleHQ7TmF2aWdhdGVVcmw7PjtsPEdp4bubaSB0aGnhu4d1IDNDOy9TdG9yeS92bi9naW9pdGhpZXVjaHVuZy9hYm91dDNjLzIwMDcvMS82OTkyLmh0bWw7Pj47PjtAMDxAMDxwPHA8bDxUZXh0O05hdmlnYXRlVXJsOz47bDxHaeG7m2kgdGhp4buHdSAzQzsvU3Rvcnkvdm4vZ2lvaXRoaWV1Y2h1bmcvYWJvdXQzYy8yMDA3LzEvNjk5Mi5odG1sOz4+Oz47Oz47QDA8cDxwPGw8VGV4dDtOYXZpZ2F0ZVVybDs+O2w8xJDhu5FpIHTDoWMgY+G7p2EgM0M7L1N0b3J5L3ZuL2dpb2l0aGlldWNodW5nL2RvaXRhYy8yMDA3LzEvNzA0Ny5odG1sOz4+Oz47Oz47Pjs+Oz47PjtsPGk8MD47aTwxPjtpPDI+O2k8Mz47aTw0PjtpPDU+O2k8Nj47aTw3PjtpPDg+Oz47bDx0PHA8cDxsPFRleHQ7TmF2aWdhdGVVcmw7PjtsPFRyYW5nIGNo4bunOy8/bGFuZz12bjs+Pjs+Ozs+O3Q8cDxwPGw8VGV4dDtOYXZpZ2F0ZVVybDs+O2w8VGhp4bq/dCBi4buLIENOVFQ7L1N0b3J5L3ZuL3RoaWV0YmljbnR0L3RoaWV0YmljbnR0LzIwMDcvNS8xNTE4Ny5odG1sOz4+Oz47Oz47dDxwPHA8bDxUZXh0O05hdmlnYXRlVXJsOz47bDxQaOG6p24gbeG7gW0gJiBnaeG6o2kgcGjDoXA7L1pvbmUvdm4vcGhhbm1lbXZhZ2lhaXBoYXAvcGhhbm1lbXZhZ2lhaXBoYXAuaHRtbDs+Pjs+Ozs+O3Q8cDxwPGw8VGV4dDtOYXZpZ2F0ZVVybDs+O2w8ROG7i2NoIHbhu6UgQ05UVDsvWm9uZS92bi9kaWNodnVjaHV5ZW5uZ2hpZXAvZGljaHZ1Y2h1eWVubmdoaWVwLmh0bWw7Pj47Pjs7Pjt0PHA8cDxsPFRleHQ7TmF2aWdhdGVVcmw7PjtsPEtp4bq/biB0aOG7qWMgJiBjw7RuZyBj4bulOy9ab25lL3ZuL2hvdHJva2hhY2hoYW5nL2hvdHJva2hhY2hoYW5nLmh0bWw7Pj47Pjs7Pjt0PHA8cDxsPFRleHQ7TmF2aWdhdGVVcmw7PjtsPFRpbiB04bupYyAmIHPhu7Ega2nhu4duOy9ab25lL3ZuL3RpbnR1Y3Zhc3VraWVuL3RpbnR1Y3Zhc3VraWVuLmh0bWw7Pj47Pjs7Pjt0PHA8cDxsPFRleHQ7TmF2aWdhdGVVcmw7PjtsPFRpbiBSJkQ7L1pvbmUvdm4vbmdoaWVuY3V1dmFwaGF0dHJpZW4vbmdoaWVuY3V1dmFwaGF0dHJpZW4uaHRtbDs+Pjs+Ozs+O3Q8cDxwPGw8VGV4dDtOYXZpZ2F0ZVVybDs+O2w8VGluIDNDOy9ab25lL3ZuL3RpbnR1Y3Zhc3VraWVuL3RpbnR1YzNjLmh0bWw7Pj47Pjs7Pjt0PHA8cDxsPFRleHQ7TmF2aWdhdGVVcmw7PjtsPEdp4bubaSB0aGnhu4d1IDNDOy9TdG9yeS92bi9naW9pdGhpZXVjaHVuZy9hYm91dDNjLzIwMDcvMS82OTkyLmh0bWw7Pj47PjtsPGk8MD47aTwxPjs+O2w8dDxwPHA8bDxUZXh0O05hdmlnYXRlVXJsOz47bDxHaeG7m2kgdGhp4buHdSAzQzsvU3Rvcnkvdm4vZ2lvaXRoaWV1Y2h1bmcvYWJvdXQzYy8yMDA3LzEvNjk5Mi5odG1sOz4+Oz47Oz47dDxwPHA8bDxUZXh0O05hdmlnYXRlVXJsOz47bDzEkOG7kWkgdMOhYyBj4bunYSAzQzsvU3Rvcnkvdm4vZ2lvaXRoaWV1Y2h1bmcvZG9pdGFjLzIwMDcvMS83MDQ3Lmh0bWw7Pj47Pjs7Pjs+Pjs+Pjs+Pjt0PDtsPGk8MT47PjtsPHQ8cDxwPGw8SW1hZ2VVcmw7PjtsPC90ZW1wbGF0ZXMvb25tczNjL2ltYWdlcy9ob21lL2NvbnRhY3RfdXMuZ2lmOz4+Oz47Oz47Pj47dDw7bDxpPDE+Oz47bDx0PHA8cDxsPEltYWdlVXJsOz47bDwvVGVtcGxhdGVzL09OTVMzQy9pbWFnZXMvaG9tZS9zaXRlbWFwX3ZuLmdpZjs+Pjs+Ozs+Oz4+O3Q8O2w8aTwwPjs+O2w8dDxwPHA8bDxJbWFnZVVybDs+O2w8L3RlbXBsYXRlcy9vbm1zM2MvaW1hZ2VzL2hvbWUvbGFuZ3VhZ2VzX2VuLmdpZjs+Pjs+Ozs+Oz4+Oz4+Oz4+Oz4+Oz4+O3Q8O2w8aTwxPjs+O2w8dDxwPGw8d2lkdGg7Y2xhc3M7Ymdjb2xvcjs+O2w8MTYwO3N0eWxlX2JvZGVyX3RhYmxlOyNEOEQ4RDg7Pj47bDxpPDI+O2k8Mz47aTw0PjtpPDU+O2k8Nj47aTw3Pjs+O2w8dDw7bDxpPDA+Oz47bDx0PHA8bDx2YWxpZ247PjtsPHRvcDs+Pjs7Pjs+Pjt0PDtsPGk8MD47PjtsPHQ8cDxsPHZhbGlnbjs+O2w8dG9wOz4+Ozs+Oz4+O3Q8O2w8aTwwPjs+O2w8dDxwPGw8dmFsaWduOz47bDx0b3A7Pj47Oz47Pj47dDw7bDxpPDA+Oz47bDx0PHA8bDx2YWxpZ247PjtsPHRvcDs+Pjs7Pjs+Pjt0PDtsPGk8MD47PjtsPHQ8cDxsPHZhbGlnbjs+O2w8dG9wOz4+Ozs+Oz4+O3Q8O2w8aTwwPjs+O2w8dDxwPGw8dmFsaWduOz47bDx0b3A7Pj47Oz47Pj47Pj47Pj47dDxwPGw8aW5uZXJodG1sOz47bDxI4buHIHRo4buRbmc7Pj47Oz47dDxwPGw8VmlzaWJsZTs+O2w8bzxmPjs+Pjs7Pjt0PHA8bDxWaXNpYmxlOz47bDxvPGY+Oz4+Ozs+O3Q8cDxsPHNyYzs+O2w8L1RlbXBsYXRlcy9PTk1TM0MvSW1hZ2VzL3ByaW50LmdpZjs+Pjs7Pjt0PHA8bDxocmVmOz47bDwvcHJpbnRDb250ZW50LmFzcHg/SUQ9MjEwOTQ7Pj47Oz47dDxwPGw8c3JjOz47bDwvVGVtcGxhdGVzL09OTVMzQy9JbWFnZXMvc2VuZC5naWY7Pj47Oz47dDxwPGw8aHJlZjs+O2w8L0VtYWlsdG9GcmllbmQuYXNweD9uZXdfdXJsPWh0dHA6Ly93d3cuM2MuY29tLnZuL1N0b3J5L3ZuL2hvdHJva2hhY2hoYW5nL3RyYW9kb2lraW5obmdoaWVtL2xlZ2hldGhvbmcvMjAwNy84LzIxMDk0Lmh0bWw7Pj47Oz47dDxwPGw8aW5uZXJodG1sOz47bDwoVGjhu6kgQuG6qXksIDA0LzA4LzIwMDctOToxOCBBTSk7Pj47Oz47dDxwPGw8aW5uZXJodG1sOz47bDxMb2cgaOG7hyB0aOG7kW5nIC0gUGjhuqduIDIgKEV2ZW50IFZpZXdlcikgOz4+Ozs+O3Q8cDxsPGRpc2FibGVkOz47bDxkaXNhYmxlZDs+Pjs7Pjt0PHA8bDxWaXNpYmxlOz47bDxvPGY+Oz4+Ozs+O3Q8cDxsPGlubmVyaHRtbDs+O2w8XDx1bFw+XDwvdWxcPjs+Pjs7Pjt0PHA8bDxWaXNpYmxlOz47bDxvPHQ+Oz4+Ozs+O3Q8cDxsPGlubmVyaHRtbDs+O2w8XDx1bFw+XDxsaVw+XDxhIGNsYXNzPSdzYW5waGFtXzAwMScgaHJlZj0nL1N0b3J5L3ZuL2hvdHJva2hhY2hoYW5nL3RyYW9kb2lraW5obmdoaWVtL2xlZ2hldGhvbmcvMjAxMC8yLzYwMzgwLmh0bWwnXD5HaeG7m2kgdGhp4buHdSB24buBIEFwcExvY2tlciDigJMgUGjhuqduIDMgXDwvYVw+Jm5ic3BcOyBcPHNwYW4gY2xhc3M9ZGF0ZXRpbWVcPigwNC8wMilcPC9zcGFuXD5cPC9saVw+XDxsaVw+XDxhIGNsYXNzPSdzYW5waGFtXzAwMScgaHJlZj0nL1N0b3J5L3ZuL2hvdHJva2hhY2hoYW5nL3RyYW9kb2lraW5obmdoaWVtL2xlZ2hldGhvbmcvMjAxMC8yLzYwMjc3Lmh0bWwnXD4xMCB24bqlbiDEkeG7gSBraGkgcGjDoXQgdHJp4buDbiBjaGnhur9uIGzGsOG7o2MgYmFja3VwIHRyw6puIGjhu4cgdGjhu5FuZyBuaGnhu4F1IG7hu4FuIHThuqNuZ1w8L2FcPiZuYnNwXDsgXDxzcGFuIGNsYXNzPWRhdGV0aW1lXD4oMDIvMDIpXDwvc3Bhblw+XDwvbGlcPlw8bGlcPlw8YSBjbGFzcz0nc2FucGhhbV8wMDEnIGhyZWY9Jy9TdG9yeS92bi9ob3Ryb2toYWNoaGFuZy90cmFvZG9pa2luaG5naGllbS9sZWdoZXRob25nLzIwMTAvMi82MDIxOS5odG1sJ1w+R2nhu5tpIHRoaeG7h3UgduG7gSBBcHBMb2NrZXIg4oCTIFBo4bqnbiAyXDwvYVw+Jm5ic3BcOyBcPHNwYW4gY2xhc3M9ZGF0ZXRpbWVcPigwMS8wMilcPC9zcGFuXD5cPC9saVw+XDxsaVw+XDxhIGNsYXNzPSdzYW5waGFtXzAwMScgaHJlZj0nL1N0b3J5L3ZuL2hvdHJva2hhY2hoYW5nL3RyYW9kb2lraW5obmdoaWVtL2xlZ2hldGhvbmcvMjAxMC8xLzYwMDgzLmh0bWwnXD5HaeG7m2kgdGhp4buHdSB24buBIEFwcExvY2tlciDigJMgUGjhuqduIDFcPC9hXD4mbmJzcFw7IFw8c3BhbiBjbGFzcz1kYXRldGltZVw+KDI4LzAxKVw8L3NwYW5cPlw8L2xpXD5cPGxpXD5cPGEgY2xhc3M9J3NhbnBoYW1fMDAxJyBocmVmPScvU3Rvcnkvdm4vaG90cm9raGFjaGhhbmcvdHJhb2RvaWtpbmhuZ2hpZW0vbGVnaGV0aG9uZy8yMDEwLzEvNTk2NjMuaHRtbCdcPljDs2EgbeG7jWkgdOG6rXAgdGluIHThuqFtIHRo4budaSwgY29va2llcyB2w6AgY2FjaGUgY+G7p2EgaOG7hyB0aOG7kW5nIHbhu5tpIGPDtG5nIGPhu6UgUG9ydGFibGUgXDwvYVw+Jm5ic3BcOyBcPHNwYW4gY2xhc3M9ZGF0ZXRpbWVcPigxMS8wMSlcPC9zcGFuXD5cPC9saVw+XDxsaVw+XDxhIGNsYXNzPSdzYW5waGFtXzAwMScgaHJlZj0nL1N0b3J5L3ZuL2hvdHJva2hhY2hoYW5nL3RyYW9kb2lraW5obmdoaWVtL2xlZ2hldGhvbmcvMjAxMC8xLzU5NTMyLmh0bWwnXD5H4buhIGLhu48gaOG7hyDEkWnhu4F1IGjDoG5oIGPFqSB0cm9uZyBjaOG6vyDEkeG7mSBEdWFsIEJvb3QgduG7m2kgV2luZG93cyA3IOKAkyBQaOG6p24gMiBcPC9hXD4mbmJzcFw7IFw8c3BhbiBjbGFzcz1kYXRldGltZVw+KDA0LzAxKVw8L3NwYW5cPlw8L2xpXD5cPGxpXD5cPGEgY2xhc3M9J3NhbnBoYW1fMDAxJyBocmVmPScvU3Rvcnkvdm4vaG90cm9raGFjaGhhbmcvdHJhb2RvaWtpbmhuZ2hpZW0vbGVnaGV0aG9uZy8yMDA5LzEyLzU5NTA0Lmh0bWwnXD5H4buhIGLhu48gaOG7hyDEkWnhu4F1IGjDoG5oIGPFqSB0cm9uZyBjaOG6vyDEkeG7mSBEdWFsIEJvb3QgduG7m2kgV2luZG93cyA3IOKAkyBQaOG6p24gMVw8L2FcPiZuYnNwXDsgXDxzcGFuIGNsYXNzPWRhdGV0aW1lXD4oMzEvMTIpXDwvc3Bhblw+XDwvbGlcPlw8bGlcPlw8YSBjbGFzcz0nc2FucGhhbV8wMDEnIGhyZWY9Jy9TdG9yeS92bi9ob3Ryb2toYWNoaGFuZy90cmFvZG9pa2luaG5naGllbS9sZWdoZXRob25nLzIwMDkvMTIvNTkzODcuaHRtbCdcPuKAnMSQb8yBbmcgYsSDbmfigJ0gaMOqzKMgdGjDtMyBbmcgdsahzIFpIFJldHVybmlsIFZpcnR1YWwgU3lzdGVtIDIwMTBcPC9hXD4mbmJzcFw7IFw8c3BhbiBjbGFzcz1kYXRldGltZVw+KDI1LzEyKVw8L3NwYW5cPlw8L2xpXD5cPGxpXD5cPGEgY2xhc3M9J3NhbnBoYW1fMDAxJyBocmVmPScvU3Rvcnkvdm4vaG90cm9raGFjaGhhbmcvdHJhb2RvaWtpbmhuZ2hpZW0vbGVnaGV0aG9uZy8yMDA5LzEyLzU4OTk1Lmh0bWwnXD5RdWHMiW4gbHnMgSB2YcyAIGfGocyDIGJvzIkgY2HMgWMgcGjDosyAbiBtw6rMgG0gdHLDqm4gaMOqzKMgdGjDtMyBbmcgXDwvYVw+Jm5ic3BcOyBcPHNwYW4gY2xhc3M9ZGF0ZXRpbWVcPigxMC8xMilcPC9zcGFuXD5cPC9saVw+XDxsaVw+XDxhIGNsYXNzPSdzYW5waGFtXzAwMScgaHJlZj0nL1N0b3J5L3ZuL2hvdHJva2hhY2hoYW5nL3RyYW9kb2lraW5obmdoaWVtL2xlZ2hldGhvbmcvMjAwOS8xMS81ODcxMC5odG1sJ1w+S2nhu4NtIHRyYSBo4buHIHRo4buRbmcgcGjhuqduIGPhu6luZyB0csOqbiBQQyB24bubaSBTcGVjY3lcPC9hXD4mbmJzcFw7IFw8c3BhbiBjbGFzcz1kYXRldGltZVw+KDI3LzExKVw8L3NwYW5cPlw8L2xpXD5cPC91bFw+Oz4+Ozs+O3Q8cDxsPFZpc2libGU7PjtsPG88dD47Pj47Oz47dDxwPGw8aW5uZXJodG1sOz47bDxcPHVsXD5cPGxpXD5cPGEgY2xhc3M9J3NhbnBoYW1fMDAxJyBocmVmPScvU3Rvcnkvdm4vaG90cm9raGFjaGhhbmcvdHJhb2RvaWtpbmhuZ2hpZW0vbGVnaGV0aG9uZy8yMDA3LzgvMjEwNDEuaHRtbCdcPkxvZyBo4buHIHRo4buRbmcgLSBQaOG6p24gMSAoU3lzdGVtIE1vbml0b3IpIFw8L2FcPiZuYnNwXDtcPHNwYW4gY2xhc3M9ZGF0ZXRpbWVcPigwMy8wOClcPC9zcGFuXD5cPC9saVw+XDxsaVw+XDxhIGNsYXNzPSdzYW5waGFtXzAwMScgaHJlZj0nL1N0b3J5L3ZuL2hvdHJva2hhY2hoYW5nL3RyYW9kb2lraW5obmdoaWVtL2xlZ2hldGhvbmcvMjAwNy84LzIwOTYxLmh0bWwnXD5LaMOzYSBt4buNaSDhu5UgxJHEqWEgdHJvbmcgaOG7hyB0aOG7kW5nIHbhu5tpIEhpZGUgYW5kIFByb3RlY3QgYW55IERyaXZlc1w8L2FcPiZuYnNwXDtcPHNwYW4gY2xhc3M9ZGF0ZXRpbWVcPigwMy8wOClcPC9zcGFuXD5cPC9saVw+XDxsaVw+XDxhIGNsYXNzPSdzYW5waGFtXzAwMScgaHJlZj0nL1N0b3J5L3ZuL2hvdHJva2hhY2hoYW5nL3RyYW9kb2lraW5obmdoaWVtL2xlZ2hldGhvbmcvMjAwNy83LzE5OTM3Lmh0bWwnXD5EZWVwIEZyZWV6ZSBFbnRlciBwaOG7pWMgaOG7k2kgbcOheSB0cm9uZyBt4buZdCBnacOieVw8L2FcPiZuYnNwXDtcPHNwYW4gY2xhc3M9ZGF0ZXRpbWVcPigyMy8wNylcPC9zcGFuXD5cPC9saVw+XDxsaVw+XDxhIGNsYXNzPSdzYW5waGFtXzAwMScgaHJlZj0nL1N0b3J5L3ZuL2hvdHJva2hhY2hoYW5nL3RyYW9kb2lraW5obmdoaWVtL2xlZ2hldGhvbmcvMjAwNy83LzE5NjYzLmh0bWwnXD5C4bqjbyBt4bqtdCBo4buHIHRo4buRbmcgYuG6sW5nIFVTQiBmbGFzaCBkcml2ZVw8L2FcPiZuYnNwXDtcPHNwYW4gY2xhc3M9ZGF0ZXRpbWVcPigxOS8wNylcPC9zcGFuXD5cPC9saVw+XDxsaVw+XDxhIGNsYXNzPSdzYW5waGFtXzAwMScgaHJlZj0nL1N0b3J5L3ZuL2hvdHJva2hhY2hoYW5nL3RyYW9kb2lraW5obmdoaWVtL2xlZ2hldGhvbmcvMjAwNy82LzE4MzE1Lmh0bWwnXD5MxrB1IHRy4buvIHRvw6BuIGLhu5kgaOG7hyB0aOG7kW5nIFdpbmRvd3MgWFAgYuG6sW5nIEF1dG9tYXRpYyBTeXN0ZW0gUmVjb3ZlcnlcPC9hXD4mbmJzcFw7XDxzcGFuIGNsYXNzPWRhdGV0aW1lXD4oMjgvMDYpXDwvc3Bhblw+XDwvbGlcPlw8bGlcPlw8YSBjbGFzcz0nc2FucGhhbV8wMDEnIGhyZWY9Jy9TdG9yeS92bi9ob3Ryb2toYWNoaGFuZy90cmFvZG9pa2luaG5naGllbS9sZWdoZXRob25nLzIwMDcvNi8xODI0Ny5odG1sJ1w+S2jDtGkgcGjhu6VjIHBhc3N3b3JkIHRyb25nIEJJT1MgKFBo4bqnbiAxKSBcPC9hXD4mbmJzcFw7XDxzcGFuIGNsYXNzPWRhdGV0aW1lXD4oMjgvMDYpXDwvc3Bhblw+XDwvbGlcPlw8bGlcPlw8YSBjbGFzcz0nc2FucGhhbV8wMDEnIGhyZWY9Jy9TdG9yeS92bi9ob3Ryb2toYWNoaGFuZy90cmFvZG9pa2luaG5naGllbS9sZWdoZXRob25nLzIwMDcvNi8xODEzOS5odG1sJ1w+IEtow7RpIHBo4bulYyBwYXNzd29yZCB0cm9uZyBCSU9TIChQaOG6p24gMSlcPC9hXD4mbmJzcFw7XDxzcGFuIGNsYXNzPWRhdGV0aW1lXD4oMjcvMDYpXDwvc3Bhblw+XDwvbGlcPlw8bGlcPlw8YSBjbGFzcz0nc2FucGhhbV8wMDEnIGhyZWY9Jy9TdG9yeS92bi9ob3Ryb2toYWNoaGFuZy90cmFvZG9pa2luaG5naGllbS9sZWdoZXRob25nLzIwMDcvNi8xODA5NC5odG1sJ1w+SGFpIG3hurlvIG5o4buPIHTEg25nIHThu5FjIGjhu4cgdGjhu5FuZyB24bubaSBSZWdpc3RyeVw8L2FcPiZuYnNwXDtcPHNwYW4gY2xhc3M9ZGF0ZXRpbWVcPigyNi8wNilcPC9zcGFuXD5cPC9saVw+XDxsaVw+XDxhIGNsYXNzPSdzYW5waGFtXzAwMScgaHJlZj0nL1N0b3J5L3ZuL2hvdHJva2hhY2hoYW5nL3RyYW9kb2lraW5obmdoaWVtL2xlZ2hldGhvbmcvMjAwNy82LzE2ODAyLmh0bWwnXD5E4buNbiBk4bq5cCBjw6FjIHThuq1wIHRpbiByw6FjLCBj4bqjaSB0aGnhu4duIGjhu4cgdGjhu5FuZyB24bubaSBaYXBwaXQgU3lzdGVtIENsZWFuZXIgMS4xMVw8L2FcPiZuYnNwXDtcPHNwYW4gY2xhc3M9ZGF0ZXRpbWVcPigxMy8wNilcPC9zcGFuXD5cPC9saVw+XDxsaVw+XDxhIGNsYXNzPSdzYW5waGFtXzAwMScgaHJlZj0nL1N0b3J5L3ZuL2hvdHJva2hhY2hoYW5nL3RyYW9kb2lraW5obmdoaWVtL2xlZ2hldGhvbmcvMjAwNy82LzE1ODQwLmh0bWwnXD5UxINuZyB0deG7lWkgdGjhu40gaOG7hyB0aOG7kW5nIHbhu5tpIFN5c3RlbSBMaWZlR3VhcmQgMlw8L2FcPiZuYnNwXDtcPHNwYW4gY2xhc3M9ZGF0ZXRpbWVcPigwMi8wNilcPC9zcGFuXD5cPC9saVw+XDwvdWxcPjs+Pjs7Pjt0PDtsPGk8MT47PjtsPHQ8cDxsPHdpZHRoO2NsYXNzO2JnY29sb3I7PjtsPDE4MDtzdHlsZV9ib2Rlcl90YWJsZTsjRDhEOEQ4Oz4+O2w8aTwyPjtpPDM+O2k8ND47aTw1PjtpPDY+O2k8Nz47aTw4PjtpPDk+O2k8MTA+O2k8MTE+O2k8MTI+Oz47bDx0PDtsPGk8MD47PjtsPHQ8cDxsPHZhbGlnbjs+O2w8dG9wOz4+Ozs+Oz4+O3Q8O2w8aTwwPjs+O2w8dDxwPGw8dmFsaWduOz47bDx0b3A7Pj47Oz47Pj47dDw7bDxpPDA+Oz47bDx0PHA8bDx2YWxpZ247PjtsPHRvcDs+Pjs7Pjs+Pjt0PDtsPGk8MD47PjtsPHQ8cDxsPHZhbGlnbjs+O2w8dG9wOz4+Ozs+Oz4+O3Q8O2w8aTwwPjs+O2w8dDxwPGw8dmFsaWduOz47bDx0b3A7Pj47Oz47Pj47dDw7bDxpPDA+Oz47bDx0PHA8bDx2YWxpZ247PjtsPHRvcDs+Pjs7Pjs+Pjt0PDtsPGk8MD47PjtsPHQ8cDxsPHZhbGlnbjs+O2w8dG9wOz4+Ozs+Oz4+O3Q8O2w8aTwwPjs+O2w8dDxwPGw8dmFsaWduOz47bDx0b3A7Pj47Oz47Pj47dDw7bDxpPDA+Oz47bDx0PHA8bDx2YWxpZ247PjtsPHRvcDs+Pjs7Pjs+Pjt0PDtsPGk8MD47PjtsPHQ8cDxsPHZhbGlnbjs+O2w8dG9wOz4+Ozs+Oz4+O3Q8O2w8aTwwPjs+O2w8dDxwPGw8dmFsaWduOz47bDx0b3A7Pj47Oz47Pj47Pj47Pj47dDw7bDxpPDE+Oz47bDx0PHA8bDxWaXNpYmxlOz47bDxvPGY+Oz4+Ozs+Oz4+O3Q8cDxwPGw8VmlzaWJsZTs+O2w8bzxmPjs+Pjs+Ozs+Oz4+Oz4+O2w8SGVhZGVyMTpCYXJNZW51MTptbnVCYXJNZW51O0hlYWRlcjE6QmFyTWVudTE6aW1nQm50Q29udGFjdDtIZWFkZXIxOkJhck1lbnUxOmltZ0JudFNpdGVtYXA7SGVhZGVyMTpCYXJNZW51MTppbWdCbnRMYW5ndWFnZXM7Pj4Wq3DUjx/jShnWXmZ0WPljpvMRCQ==" type="hidden">
+
+			<table width="990" align="center" border="0" cellpadding="0" cellspacing="0">
+				<tbody>
+					<tr>
+						<td>
+							<table width="100%" border="0" cellpadding="0" cellspacing="0">
+								<tbody><tr>
+									<td>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+	<tbody><tr>
+		<td>
+			<table id="Header1_BarMenu1_tblBarMenu" width="100%" border="0" cellpadding="0" cellspacing="0">
+	<tbody><tr>
+		<td width="90%">
+			<div style="z-index: 1000;" id="Header1_BarMenu1_mnuBarMenu" class="menu RadMenu_ivory ">
+			<script type="text/javascript" src="EventViewer_files/RadMenu.js"></script><span id="Header1_BarMenu1_mnuBarMenuStyleSheetHolder" style="display: none;"></span><script type="text/javascript">RadControlsNamespace.AppendStyleSheet(false, 'Header1_BarMenu1_mnuBarMenu', '/RadControls/Menu/Scripts/4_0_0/menu.css');</script><link rel="stylesheet" type="text/css" href="EventViewer_files/menu.css"><script type="text/javascript">RadControlsNamespace.AppendStyleSheet(false, 'Header1_BarMenu1_mnuBarMenu', '/RadControls/Menu/Skins/ivory/styles.css');</script><link rel="stylesheet" type="text/css" href="EventViewer_files/styles.css"><ul class="horizontal rootGroup">
+				<li class="item first"><a href="http://www.3c.com.vn/?lang=vn" id="Header1_BarMenu1_mnuBarMenu_m0" class="link "><span class="text">Trang chủ</span></a></li><li class="item"><a href="http://www.3c.com.vn/Story/vn/thietbicntt/thietbicntt/2007/5/15187.html" id="Header1_BarMenu1_mnuBarMenu_m1" class="link "><span class="text">Thiết bị CNTT</span></a></li><li class="item"><a href="http://www.3c.com.vn/Zone/vn/phanmemvagiaiphap/phanmemvagiaiphap.html" id="Header1_BarMenu1_mnuBarMenu_m2" class="link "><span class="text">Phần mềm &amp; giải pháp</span></a></li><li class="item"><a href="http://www.3c.com.vn/Zone/vn/dichvuchuyennghiep/dichvuchuyennghiep.html" id="Header1_BarMenu1_mnuBarMenu_m3" class="link "><span class="text">Dịch vụ CNTT</span></a></li><li class="item"><a href="http://www.3c.com.vn/Zone/vn/hotrokhachhang/hotrokhachhang.html" id="Header1_BarMenu1_mnuBarMenu_m4" class="link "><span class="text">Kiến thức &amp; công cụ</span></a></li><li class="item"><a href="http://www.3c.com.vn/Zone/vn/tintucvasukien/tintucvasukien.html" id="Header1_BarMenu1_mnuBarMenu_m5" class="link "><span class="text">Tin tức &amp; sự kiện</span></a></li><li class="item"><a href="http://www.3c.com.vn/Zone/vn/nghiencuuvaphattrien/nghiencuuvaphattrien.html" id="Header1_BarMenu1_mnuBarMenu_m6" class="link "><span class="text">Tin R&amp;D</span></a></li><li class="item"><a href="http://www.3c.com.vn/Zone/vn/tintucvasukien/tintuc3c.html" id="Header1_BarMenu1_mnuBarMenu_m7" class="link "><span class="text">Tin 3C</span></a></li><li style="" class="item last"><a href="http://www.3c.com.vn/Story/vn/gioithieuchung/about3c/2007/1/6992.html" id="Header1_BarMenu1_mnuBarMenu_m8" class="link "><span class="text expandTop">Giới thiệu 3C</span></a><div style="z-index: 18; display: none; overflow: hidden; height: 0px; width: 0px; top: 18px; left: 0px;" class="slide">
+					<ul style="z-index: 18; display: block; top: -91px;" class="vertical group level1">
+						<li class="item first"><a style="width: 100px;" href="http://www.3c.com.vn/Story/vn/gioithieuchung/about3c/2007/1/6992.html" id="Header1_BarMenu1_mnuBarMenu_m8_m0" class="link "><span class="text">Giới thiệu 3C</span></a></li><li class="item last"><a style="width: 100px;" href="http://www.3c.com.vn/Story/vn/gioithieuchung/doitac/2007/1/7047.html" id="Header1_BarMenu1_mnuBarMenu_m8_m1" class="link "><span class="text">Đối tác của 3C</span></a></li>
+					</ul>
+				</div></li>
+			</ul><input id="Header1_BarMenu1_mnuBarMenu_Hidden" name="Header1:BarMenu1:mnuBarMenu" type="hidden"><script type="text/javascript">window["Header1_BarMenu1_mnuBarMenu"] = new RadMenu("Header1_BarMenu1_mnuBarMenu");window["Header1_BarMenu1_mnuBarMenu"].Initialize({"Skin":"ivory"},{"Header1_BarMenu1_mnuBarMenu_m0":{"NavigateAfterClick":true},"Header1_BarMenu1_mnuBarMenu_m1":{"NavigateAfterClick":true},"Header1_BarMenu1_mnuBarMenu_m2":{"NavigateAfterClick":true},"Header1_BarMenu1_mnuBarMenu_m3":{"NavigateAfterClick":true},"Header1_BarMenu1_mnuBarMenu_m4":{"NavigateAfterClick":true},"Header1_BarMenu1_mnuBarMenu_m5":{"NavigateAfterClick":true},"Header1_BarMenu1_mnuBarMenu_m6":{"NavigateAfterClick":true},"Header1_BarMenu1_mnuBarMenu_m7":{"NavigateAfterClick":true},"Header1_BarMenu1_mnuBarMenu_m8":{"NavigateAfterClick":true},"Header1_BarMenu1_mnuBarMenu_m8_m0":{"NavigateAfterClick":true},"Header1_BarMenu1_mnuBarMenu_m8_m1":{"NavigateAfterClick":true}});</script>
+		</div>
+		</td>
+		<td width="100%"><spacer type="block" width="1" height="1"></td>
+		<td><a href="#"><input name="Header1:BarMenu1:imgBntContact" id="Header1_BarMenu1_imgBntContact" src="EventViewer_files/contact_us.gif" alt="" type="image" border="0"></a></td>
+		<td><a href="#"><input name="Header1:BarMenu1:imgBntSitemap" id="Header1_BarMenu1_imgBntSitemap" src="EventViewer_files/sitemap_vn.gif" alt="" type="image" border="0"></a></td>
+		<td width="100%"><input name="Header1:BarMenu1:imgBntLanguages" id="Header1_BarMenu1_imgBntLanguages" src="EventViewer_files/languages_en.gif" alt="" type="image" border="0"></td>
+	</tr>
+	<tr>
+		<td colspan="6" bgcolor="#16387c" height="1"><spacer type="block" width="1" height="1"></td>
+	</tr>
+	<tr>
+		<td colspan="6" bgcolor="#cccccc" height="2"><spacer type="block" width="1" height="2"></td>
+	</tr>
+</tbody></table>
+
+
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<table width="100%" border="0" cellpadding="0" cellspacing="0">
+				<tbody><tr>
+					<td width="180"><a href="http://www.3c.com.vn/"><img alt="Computer - Communication - Control. 3C INC" src="EventViewer_files/logo.gif" width="145" border="0" height="95"></a></td>
+					<td><img alt="" src="EventViewer_files/spacer.gif" width="8" height="1"></td>
+					<td valign="middle" align="center">
+						
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+	<tbody><tr>
+		<td></td>
+	</tr>
+	<tr>
+		<td align="center">
+			<a target="_blank" href="http://www.3c.com.vn/Zone/vn/dichvuchuyennghiep/dichvuweb.html">
+<img alt="" src="EventViewer_files/banner_thietkeweb468x60.gif" width="468" border="0"></a></td>
+	</tr>
+</tbody></table>
+&nbsp;</td>
+					<td><img alt="" src="EventViewer_files/spacer.gif" width="8" height="1"></td>
+					<td width="180" align="right" height="78">
+						<!------ END Search ------>
+					</td>
+				</tr>
+			</tbody></table>
+		</td>
+	</tr>
+	<tr>
+		<td height="4"></td>
+	</tr>
+</tbody></table>
+</td>
+								</tr>
+							</tbody></table>
+						</td>
+					</tr>
+					
+					
+					<tr>
+						<td>
+							<table border="0" cellpadding="0" cellspacing="0">
+								<tbody><tr>
+									<td id="leftnav" valign="top" width="163" align="left">
+										<table width="163" border="0" cellpadding="0" cellspacing="0">
+											<tbody><tr>
+												<td width="163">
+<table id="Menu1_tblMenu" width="100%" bgcolor="#ffffff" cellpadding="0" cellspacing="0">
+	<tbody><tr>
+		<td height="10"></td>
+	</tr>
+	<tr>
+		<td><div id="Menu1_zoneMenu" style="width: 160px;">
+			<table id="Menu1_zoneMenug1" onmouseout="aspnm_groupMsOut('Menu1_zoneMenug1', null, null, 0, event);" width="160px" border="0" cellpadding="0" cellspacing="0">
+				<tbody><tr>
+					<td class="TopMenu_ParentHome" onmousedown="" onclick="aspnm_hideAllGroups();document.location.href='/Zone/vn/hotrokhachhang/hotrokhachhang.html';" id="Menu1_zoneMenui1" style="cursor: default; border-style: none;">KIẾN THỨC &amp; CÔNG CỤ</td>
+				</tr><tr>
+					<td class="Menu_NavBar" onmouseover="this.className='Menu_NavBarHover';" onmouseout="this.className='Menu_NavBar';" onmousedown="" onclick="aspnm_hideAllGroups();document.location.href='/Zone/vn/hotrokhachhang/softwaredownload.html';" id="Menu1_zoneMenui2" style="cursor: default; border-style: none;">Software Download</td>
+				</tr><tr>
+					<td class="Menu_NavBar" onmouseover="this.className='Menu_NavBarHover';" onmouseout="this.className='Menu_NavBar';" onmousedown="" onclick="aspnm_hideAllGroups();document.location.href='/Zone/vn/hotrokhachhang/cauhoithuonggap.html';" id="Menu1_zoneMenui3" style="cursor: default; border-style: none;">Câu hỏi thường gặp</td>
+				</tr><tr>
+					<td class="Menu_NavBar" onmouseover="this.className='Menu_NavBarHover';" onmouseout="this.className='Menu_NavBar';" onmousedown="" onclick="aspnm_hideAllGroups();document.location.href='/Zone/vn/hotrokhachhang/traodoikinhnghiem.html';" id="Menu1_zoneMenui4" style="cursor: default; border-style: none;">Trao đổi kinh nghiệm</td>
+				</tr><tr>
+					<td class="Menu_SubNavBar1" onmouseover="this.className='Menu_SubNavBarHover1';" onmouseout="this.className='Menu_SubNavBar1';" onmousedown="" onclick="aspnm_hideAllGroups();document.location.href='/Zone/vn/hotrokhachhang/windows.html';" id="Menu1_zoneMenui5" style="cursor: default; border-style: none;">Windows</td>
+				</tr><tr>
+					<td class="Menu_SubNavBarHilighted1" onmouseover="this.className='Menu_SubNavBarHilighted1';" onmouseout="this.className='Menu_SubNavBarHilighted1';" onmousedown="" onclick="aspnm_hideAllGroups();document.location.href='/Zone/vn/hotrokhachhang/leghethong.html';" id="Menu1_zoneMenui6" style="cursor: default; border-style: none;">Hệ thống</td>
+				</tr><tr>
+					<td class="Menu_SubNavBar1" onmouseover="this.className='Menu_SubNavBarHover1';" onmouseout="this.className='Menu_SubNavBar1';" onmousedown="" onclick="aspnm_hideAllGroups();document.location.href='/Zone/vn/hotrokhachhang/leginan.html';" id="Menu1_zoneMenui7" style="cursor: default; border-style: none;">In ấn</td>
+				</tr><tr>
+					<td class="Menu_SubNavBar1" onmouseover="this.className='Menu_SubNavBarHover1';" onmouseout="this.className='Menu_SubNavBar1';" onmousedown="" onclick="aspnm_hideAllGroups();document.location.href='/Zone/vn/hotrokhachhang/leginternet.html';" id="Menu1_zoneMenui8" style="cursor: default; border-style: none;">Internet</td>
+				</tr><tr>
+					<td class="Menu_SubNavBar1" onmouseover="this.className='Menu_SubNavBarHover1';" onmouseout="this.className='Menu_SubNavBar1';" onmousedown="" onclick="aspnm_hideAllGroups();document.location.href='/Zone/vn/hotrokhachhang/legmangvatruyenthong.html';" id="Menu1_zoneMenui9" style="cursor: default; border-style: none;">Mạng &amp; truyền thông</td>
+				</tr><tr>
+					<td class="Menu_SubNavBar1" onmouseover="this.className='Menu_SubNavBarHover1';" onmouseout="this.className='Menu_SubNavBar1';" onmousedown="" onclick="aspnm_hideAllGroups();document.location.href='/Zone/vn/hotrokhachhang/leglaptrinh.html';" id="Menu1_zoneMenui10" style="cursor: default; border-style: none;">Lập trình</td>
+				</tr><tr>
+					<td class="Menu_SubNavBar1" onmouseover="this.className='Menu_SubNavBarHover1';" onmouseout="this.className='Menu_SubNavBar1';" onmousedown="" onclick="aspnm_hideAllGroups();document.location.href='/Zone/vn/hotrokhachhang/legungdungvanphong.html';" id="Menu1_zoneMenui11" style="cursor: default; border-style: none;">Ứng dụng văn phòng</td>
+				</tr><tr>
+					<td class="Menu_SubNavBar1" onmouseover="this.className='Menu_SubNavBarHover1';" onmouseout="this.className='Menu_SubNavBar1';" onmousedown="" onclick="aspnm_hideAllGroups();document.location.href='/Zone/vn/hotrokhachhang/legcosodulieu.html';" id="Menu1_zoneMenui12" style="cursor: default; border-style: none;">Cơ sở dữ liệu</td>
+				</tr><tr>
+					<td class="Menu_SubNavBar1" onmouseover="this.className='Menu_SubNavBarHover1';" onmouseout="this.className='Menu_SubNavBar1';" onmousedown="" onclick="aspnm_hideAllGroups();document.location.href='/Zone/vn/hotrokhachhang/legphancung.html';" id="Menu1_zoneMenui13" style="cursor: default; border-style: none;">Phần cứng</td>
+				</tr><tr>
+					<td class="Menu_SubNavBar1" onmouseover="this.className='Menu_SubNavBarHover1';" onmouseout="this.className='Menu_SubNavBar1';" onmousedown="" onclick="aspnm_hideAllGroups();document.location.href='/Zone/vn/hotrokhachhang/legmultimedia.html';" id="Menu1_zoneMenui14" style="cursor: default; border-style: none;">Multimedia</td>
+				</tr><tr>
+					<td class="Menu_SubNavBar1" onmouseover="this.className='Menu_SubNavBarHover1';" onmouseout="this.className='Menu_SubNavBar1';" onmousedown="" onclick="aspnm_hideAllGroups();document.location.href='/Zone/vn/hotrokhachhang/legtiengviet.html';" id="Menu1_zoneMenui15" style="cursor: default; border-style: none;">Tiếng Việt</td>
+				</tr><tr>
+					<td class="Menu_SubNavBar1" onmouseover="this.className='Menu_SubNavBarHover1';" onmouseout="this.className='Menu_SubNavBar1';" onmousedown="" onclick="aspnm_hideAllGroups();document.location.href='/Zone/vn/hotrokhachhang/leganninhmang.html';" id="Menu1_zoneMenui16" style="cursor: default; border-style: none;">An ninh mạng</td>
+				</tr><tr>
+					<td class="Menu_SubNavBar1" onmouseover="this.className='Menu_SubNavBarHover1';" onmouseout="this.className='Menu_SubNavBar1';" onmousedown="" onclick="aspnm_hideAllGroups();document.location.href='/Zone/vn/hotrokhachhang/leggames.html';" id="Menu1_zoneMenui17" style="cursor: default; border-style: none;">Games</td>
+				</tr><tr>
+					<td class="Menu_SubNavBar1" onmouseover="this.className='Menu_SubNavBarHover1';" onmouseout="this.className='Menu_SubNavBar1';" onmousedown="" onclick="aspnm_hideAllGroups();document.location.href='/Zone/vn/hotrokhachhang/legdohoamaytinh.html';" id="Menu1_zoneMenui18" style="cursor: default; border-style: none;">Đồ hoạ máy tính</td>
+				</tr><tr>
+					<td class="Menu_SubNavBar1" onmouseover="this.className='Menu_SubNavBarHover1';" onmouseout="this.className='Menu_SubNavBar1';" onmousedown="" onclick="aspnm_hideAllGroups();document.location.href='/Zone/vn/hotrokhachhang/legmailserver.html';" id="Menu1_zoneMenui19" style="cursor: default; border-style: none;">Mail Server</td>
+				</tr><tr>
+					<td class="Menu_SubNavBar1" onmouseover="this.className='Menu_SubNavBarHover1';" onmouseout="this.className='Menu_SubNavBar1';" onmousedown="" onclick="aspnm_hideAllGroups();document.location.href='/Zone/vn/hotrokhachhang/legkhac.html';" id="Menu1_zoneMenui20" style="cursor: default; border-style: none;">Khác</td>
+				</tr><tr>
+					<td class="Menu_NavBar" onmouseover="this.className='Menu_NavBarHover';" onmouseout="this.className='Menu_NavBar';" onmousedown="" onclick="aspnm_hideAllGroups();document.location.href='/Zone/vn/hotrokhachhang/banhoitoitraloi.html';" id="Menu1_zoneMenui21" style="cursor: default; border-style: none;">Bạn hỏi 3C trả lời</td>
+				</tr><tr>
+					<td class="Menu_NavBar" onmouseover="this.className='Menu_NavBarHover';" onmouseout="this.className='Menu_NavBar';" onmousedown="" onclick="aspnm_hideAllGroups();document.location.href='/Zone/vn/hotrokhachhang/kienthucmaytinh.html';" id="Menu1_zoneMenui22" style="cursor: default; border-style: none;">Kiến thức máy tính</td>
+				</tr><tr>
+					<td class="Menu_NavBar" onmouseover="this.className='Menu_NavBarHover';" onmouseout="this.className='Menu_NavBar';" onmousedown="" onclick="aspnm_hideAllGroups();document.location.href='/Zone/vn/hotrokhachhang/kienthucmang.html';" id="Menu1_zoneMenui23" style="cursor: default; border-style: none;">Kiến thức mạng</td>
+				</tr><tr>
+					<td class="Menu_NavBar" onmouseover="this.className='Menu_NavBarHover';" onmouseout="this.className='Menu_NavBar';" onmousedown="" onclick="aspnm_hideAllGroups();document.location.href='/Zone/vn/hotrokhachhang/huongdancaidat.html';" id="Menu1_zoneMenui24" style="cursor: default; border-style: none;">Hướng dẫn cài đặt</td>
+				</tr><tr>
+					<td class="Menu_NavBar" onmouseover="this.className='Menu_NavBarHover';" onmouseout="this.className='Menu_NavBar';" onmousedown="" onclick="aspnm_hideAllGroups();document.location.href='/Zone/vn/hotrokhachhang/huongdanlapdat.html';" id="Menu1_zoneMenui25" style="cursor: default; border-style: none;">Hướng dẫn lắp đặt</td>
+				</tr><tr>
+					<td class="Menu_NavBar" onmouseover="this.className='Menu_NavBarHover';" onmouseout="this.className='Menu_NavBar';" onmousedown="" onclick="aspnm_hideAllGroups();document.location.href='/Zone/vn/hotrokhachhang/Thuthuatngaythuong.html';" id="Menu1_zoneMenui26" style="cursor: default; border-style: none;">Thủ thuật thường ngày</td>
+				</tr><tr>
+					<td class="Menu_NavBar" onmouseover="this.className='Menu_NavBarHover';" onmouseout="this.className='Menu_NavBar';" onmousedown="" onclick="aspnm_hideAllGroups();document.location.href='/Zone/vn/hotrokhachhang/anninhbaomat.html';" id="Menu1_zoneMenui27" style="cursor: default; border-style: none;">An ninh bảo mật</td>
+				</tr><tr>
+					<td class="Menu_NavBar" onmouseover="this.className='Menu_NavBarHover';" onmouseout="this.className='Menu_NavBar';" onmousedown="" onclick="aspnm_hideAllGroups();document.location.href='/Zone/vn/hotrokhachhang/thuongmaidientu.html';" id="Menu1_zoneMenui28" style="cursor: default; border-style: none;">Thương mại điện tử</td>
+				</tr><tr>
+					<td class="Menu_NavBar" onmouseover="this.className='Menu_NavBarHover';" onmouseout="this.className='Menu_NavBar';" onmousedown="" onclick="aspnm_hideAllGroups();document.location.href='/Zone/vn/hotrokhachhang/quickaccess.html';" id="Menu1_zoneMenui29" style="cursor: default; border-style: none;">Quick Access</td>
+				</tr><tr>
+					<td class="Menu_NavBar" onmouseover="this.className='Menu_NavBarHover';" onmouseout="this.className='Menu_NavBar';" onmousedown="" onclick="aspnm_hideAllGroups();document.location.href='/Zone/vn/hotrokhachhang/hoctap.html';" id="Menu1_zoneMenui30" style="cursor: default; border-style: none;">Đề thi - Bài giải</td>
+				</tr><tr>
+					<td class="Menu_NavBar" onmouseover="this.className='Menu_NavBarHover';" onmouseout="this.className='Menu_NavBar';" onmousedown="" onclick="aspnm_hideAllGroups();document.location.href='/Zone/vn/hotrokhachhang/gocMobile.html';" id="Menu1_zoneMenui31" style="cursor: default; border-style: none;">Góc Mobile</td>
+				</tr><tr>
+					<td id="Menu1_zoneMenui32"><a href="javascript:aspnm_hideAllGroups();document.location.href='/rss/vn/hotrokhachhang.rss';"><img src="EventViewer_files/rss_feed.gif" alt="" border="0"></a></td>
+				</tr>
+			</tbody></table><table style="position: absolute; top: 0px; left: 0px; visibility: hidden;"><tbody><tr><td></td></tr></tbody></table><script language="javascript" type="text/javascript">
+//<![CDATA[
+function aspnm_itemMsOver(item,aspnm_m,expandDirection,horAdj,verAdj,expandDelay){var aspnm_a=0;var aspnm_d=0;var aspnm_e=document.getElementById(item);var aspnm_i=document.getElementById(aspnm_m);switch(expandDirection){case'belowleft':aspnm_a=aspnm_g(aspnm_e);aspnm_d=aspnm_h(aspnm_e)+aspnm_e.offsetHeight;break;case'belowright':aspnm_a=aspnm_g(aspnm_e)+aspnm_e.offsetWidth-aspnm_i.offsetWidth;aspnm_d=aspnm_h(aspnm_e)+aspnm_e.offsetHeight;break;case'aboveleft':aspnm_a=aspnm_g(aspnm_e);aspnm_d=aspnm_h(aspnm_e)-aspnm_i.offsetHeight;break;case'aboveright':aspnm_a=aspnm_g(aspnm_e)+aspnm_e.offsetWidth-aspnm_i.offsetWidth;aspnm_d=aspnm_h(aspnm_e)-aspnm_i.offsetHeight;break;case'rightdown':aspnm_a=aspnm_g(aspnm_e)+aspnm_e.offsetWidth;aspnm_d=aspnm_h(aspnm_e);break;case'rightup':aspnm_a=aspnm_g(aspnm_e)+aspnm_e.offsetWidth;aspnm_d=aspnm_h(aspnm_e)-aspnm_i.offsetHeight+aspnm_e.offsetHeight;break;case'leftdown':aspnm_a=aspnm_g(aspnm_e)-aspnm_i.offsetWidth;aspnm_d=aspnm_h(aspnm_e);break;case'leftup':aspnm_a=aspnm_g(aspnm_e)-aspnm_i.offsetWidth;aspnm_d=aspnm_h(aspnm_e)-aspnm_i.offsetHeight+aspnm_e.offsetHeight;break;default:aspnm_a=aspnm_g(aspnm_e)+aspnm_e.offsetWidth;aspnm_d=aspnm_h(aspnm_e);break;};aspnm_a+=horAdj;if(verAdj<0){aspnm_d+=verAdj;};aspnm_i.style.left=aspnm_a+'px';aspnm_i.style.top=aspnm_d+'px';aspnm_expand(aspnm_m);};function aspnm_itemMsOut(item,group,aspnm_m,expandDelay,evt){if(!evt){return;};if(!aspnm_m||!item){return;};if(aspnm_ao(document.getElementById(item),aspnm_ak(evt))){return;};if(aspnm_ao(document.getElementById(aspnm_m),aspnm_ak(evt))){return;};aspnm_collapse(aspnm_m);};function aspnm_groupMsOver(group){};function aspnm_groupMsOut(group,parentItem,parentGroup,expandDelay,evt){if(aspnm_ao(document.getElementById(group),aspnm_ak(evt))){return;};var aspnm_m=aspnm_expandedObjects[aspnm_expandCount];if(aspnm_m==group){aspnm_m=null;};if(aspnm_m&&aspnm_ao(document.getElementById(aspnm_m),aspnm_ak(evt))){return;};if(aspnm_ao(document.getElementById(parentItem),aspnm_ak(evt))){return;};if(aspnm_ao(document.getElementById(parentGroup),aspnm_ak(evt))){aspnm_collapse(group);aspnm_collapse(aspnm_m);}else{aspnm_collapseAll();};};function aspnm_expand(group){var aspnm_cb=document.getElementById(group);if(aspnm_cb.style.visibility!='visible'){aspnm_zx(group);aspnm_cb.style.visibility='visible';aspnm_expandCount++;aspnm_expandedObjects[aspnm_expandCount]=group;};};function aspnm_collapse(group){var aspnm_cb=document.getElementById(group);if(group!=null&&group){if(aspnm_cb.style.visibility!='hidden'){aspnm_cb.style.visibility='hidden';aspnm_expandCount--;};};if(!(aspnm_contextUp)&&aspnm_expandCount==0){aspnm_l();};};function aspnm_collapseAll(){for(var aspnm_bf=aspnm_expandCount;aspnm_bf>=1;aspnm_bf--){var aspnm_cb=document.getElementById(aspnm_expandedObjects[aspnm_bf]);aspnm_cb.style.visibility='hidden';};aspnm_expandCount=0;if(!(aspnm_contextUp)&&aspnm_expandCount==0){aspnm_l();};};function aspnm_hideAllGroups(){aspnm_collapseAll();};function aspnm_ax(objName,evt){if(!objName){return false;};var aspnm_bn=document.getElementById(objName);if(!aspnm_bn){return false;};var aspnm_bn=document.getElementById(objName);var aspnm_cf=aspnm_g(aspnm_bn)-1;var aspnm_cp=aspnm_h(aspnm_bn)-1;var aspnm_cx=aspnm_cf+aspnm_bn.offsetWidth+1;var aspnm_co=aspnm_cp+aspnm_bn.offsetHeight+1;return((evt.pageX>aspnm_cf)&&(evt.pageX<aspnm_cx)&&(evt.pageY>aspnm_cp)&&(evt.pageY<aspnm_co));};function aspnm_g(element){var x=0;do{if(element.style.position=='absolute'){return x+element.offsetLeft;}else{x+=element.offsetLeft;if(element.offsetParent){if(element.offsetParent.tagName=='TABLE'&&!aspnm_safari&&!aspnm_konqueror){if(parseInt(element.offsetParent.border)>0){x+=1;};};};};}while((element=element.offsetParent));return(aspnm_konqueror?x+aspnm_bw():x);};function aspnm_h(element){var y=0;do{if(element.style.position=='absolute'){return y+element.offsetTop;}else{y+=element.offsetTop;if(element.offsetParent){if(element.offsetParent.tagName=='TABLE'&&!aspnm_safari&&!aspnm_konqueror){if(parseInt(element.offsetParent.border)>0){y+=1;};};};};}while((element=element.offsetParent));return(aspnm_konqueror?y+aspnm_bv():y);};function aspnm_zx(group){if(document.getElementsByTagName){var aspnm_v=document.getElementsByTagName('select');if(aspnm_hideSelectElems){for(var aspnm_bf=0;aspnm_bf<aspnm_v.length;aspnm_bf++){if(aspnm_ap(document.getElementById(group),aspnm_v[aspnm_bf])){aspnm_v[aspnm_bf].style.visibility='hidden';};};};};};function aspnm_ap(obj1,obj2){var aspnm_ct=true;var aspnm_by=aspnm_g(obj1);var aspnm_ch=aspnm_h(obj1);var aspnm_cs=aspnm_by+obj1.offsetWidth;var aspnm_cl=aspnm_ch+obj1.offsetHeight;var aspnm_bx=aspnm_g(obj2);var aspnm_cg=aspnm_h(obj2);var aspnm_cr=aspnm_bx+obj2.offsetWidth;var aspnm_ck=aspnm_cg+obj2.offsetHeight;if(aspnm_cs<=aspnm_bx||aspnm_cl<=aspnm_cg||aspnm_by>=aspnm_cr||aspnm_ch>=aspnm_ck){aspnm_ct=false;};return aspnm_ct;};function aspnm_l(){if(document.getElementsByTagName){var aspnm_v=document.getElementsByTagName('select');if(aspnm_hideSelectElems){for(var aspnm_bf=0;aspnm_bf<aspnm_v.length;aspnm_bf++){aspnm_v[aspnm_bf].style.visibility='inherit';};};};};function aspnm_positionMenu(menu,alignment,offsetX,offsetY){if(aspnm_ab){return false;};var aspnm_n=window.pageXOffset;var aspnm_s=window.pageYOffset;var aspnm_aa=window.innerWidth;var aspnm_aj=window.innerHeight;var aspnm_z=menu.offsetWidth;var aspnm_ad=menu.offsetHeight;var aspnm_a=0;var aspnm_d=0;switch(alignment){case'topleft':aspnm_a=aspnm_n;aspnm_d=aspnm_s;break;case'topmiddle':aspnm_a=(aspnm_aa-aspnm_z)/2+aspnm_n;aspnm_d=aspnm_s;break;case'topright':aspnm_a=aspnm_aa+aspnm_n-aspnm_z;aspnm_d=aspnm_s;break;case'bottomleft':aspnm_a=aspnm_n;aspnm_d=aspnm_aj+aspnm_s-aspnm_ad;break;case'bottommiddle':aspnm_a=(aspnm_aa-aspnm_z)/2+aspnm_n;aspnm_d=aspnm_aj+aspnm_s-aspnm_ad;break;case'bottomright':aspnm_a=aspnm_aa+aspnm_n-aspnm_z;aspnm_d=aspnm_aj+aspnm_s-aspnm_ad;break;default:aspnm_a=aspnm_aa+aspnm_n;aspnm_d=aspnm_aj+aspnm_s;break;};aspnm_a+=offsetX;aspnm_d+=offsetY;menu.style.left=aspnm_a;menu.style.top=aspnm_d;};function aspnm_ak(evt){if(evt.toElement!=null){return evt.toElement;};if(evt.type=="mouseover"){return evt.aspnm_dc;};if(evt.type=="mouseout"){return evt.relatedTarget;};return null;};function aspnm_di(evt){if(evt.toElement!=null){return evt.fromElement;};if(evt.type=="mouseover"){return evt.relatedTarget;};if(evt.type=="mouseout"){return evt.aspnm_dc;};return null;};function aspnm_ao(outerNode,aspnm_bp){if(aspnm_bp==null||outerNode==null){return false;};if(aspnm_bp==outerNode){return true;}while(aspnm_bp.parentNode){aspnm_bp=aspnm_bp.parentNode;if(aspnm_bp==outerNode){return true;};};return false;};function aspnm_bw(){if(aspnm_marginX==null){aspnm_marginX=aspnm_cz();};return aspnm_marginX;};function aspnm_bv(){if(aspnm_marginY==null){aspnm_marginY=aspnm_cy();};return aspnm_marginY;};function aspnm_cz(){if(!isNaN(parseInt(document.body.style.marginLeft))){return parseInt(document.body.style.marginLeft);};if(!isNaN(parseInt(document.body.style.margin))){return parseInt(document.body.style.margin);};if(!isNaN(parseInt(document.body.leftMargin))){return parseInt(document.body.leftMargin);};return 10;};function aspnm_cy(){if(!isNaN(parseInt(document.body.style.marginTop))){return parseInt(document.body.style.marginTop);};if(!isNaN(parseInt(document.body.style.margin))){return parseInt(document.body.style.margin);};if(!isNaN(parseInt(document.body.topMargin))){return parseInt(document.body.topMargin);};return 10;};function aspnm_registerOnKeyDownListener(){aspnm_documentOnKeyDown=document.onkeydown;document.onkeydown=aspnm_at;};function aspnm_at(event){for(var aspnm_bf=0;aspnm_bf<aspnm_accessKeys.length;aspnm_bf++){if(aspnm_accessKeys[aspnm_bf][0]==event.keyCode&&aspnm_accessKeys[aspnm_bf][1]==event.altKey&&aspnm_accessKeys[aspnm_bf][2]==event.ctrlKey&&aspnm_accessKeys[aspnm_bf][3]==event.shiftKey){aspnm_av(document.getElementById(aspnm_accessKeys[aspnm_bf][4]));event.cancelBubble=true;event.keyCode=0;return false;};};if(aspnm_documentOnKeyDown!=null){return aspnm_documentOnKeyDown();};return true;};function aspnm_av(item){if(item.onclick){item.onclick();}else if(item.children[0].tagName=="A"&&item.children[0].href!=null&&item.children[0].href!=""){eval(item.children[0].href);};};
+
+//]]>
+</script>
+<script language="javascript" type="text/javascript">
+//<![CDATA[
+
+// ASP.NET Menu global variables ------------------------------------------------------------------
+if (aspnm_accessKeys == null) // it is important to initialize this variable only once
+{
+  var aspnm_accessKeys = new Array();     // array of keyboard shortcuts
+}
+var aspnm_hideSelectElems = true;       // whether to hide HTML select elements 
+var aspnm_overlayWindowed = false;      // whether to overlay windowed controls
+var aspnm_safari = false;               // whether the browser is Safari
+var aspnm_konqueror = false;            // whether the browser is Konqueror
+var aspnm_documentOnKeyDown = null;       // document.onkeydown handler
+var aspnm_expandedObjects = new Array();  // array of expanded groups 
+var aspnm_expandCount = 0;                // expanded group count 
+var aspnm_dragging = false;           // whether the menu is being moved 
+var aspnm_marginX = null;             // Left page margin in pixels (only matters on Konqueror)
+var aspnm_marginY = null;             // Top page margin in pixels (only matters on Konqueror)
+var aspnm_contextUp = false;          // whether a context menu is up
+
+//]]>
+</script>
+<script language="javascript" type="text/javascript">
+//<![CDATA[
+
+if (document.forms.length>0)
+  document.forms[0].insertBefore(document.getElementById("Menu1_zoneMenusubgs"),this.firstChild);
+else
+  document.body.insertBefore(document.getElementById("Menu1_zoneMenusubgs"),this.firstChild);
+
+//]]>
+</script>
+
+		</div></td>
+	</tr>
+</tbody></table>
+
+</td>
+											</tr>
+										</tbody></table>
+										
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+	<tbody><tr>
+		<td></td>
+	</tr>
+	<tr>
+		<td align="center">
+			<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tbody><tr>
+	<td style="border: 1px solid rgb(0, 102, 51);" width="100%" align="center">
+	<!-- Start script Adv -->
+
+<form action="http://www.google.com.vn/cse" id="cse-search-box">
+  <div>
+    <input name="cx" value="partner-pub-7743029381915794:arqmuc-xatr" type="hidden">
+    <input name="ie" value="UTF-8" type="hidden">
+    <input style="border: 1px solid rgb(126, 157, 185); padding: 2px; background: url(&quot;http://www.google.com/cse/intl/vi/images/google_custom_search_watermark.gif&quot;) no-repeat scroll left center rgb(255, 255, 255);" name="q" size="20" type="text">
+    <input name="sa" value="Tìm kiếm" type="submit">
+
+  </div>
+<input value="www.3c.com.vn/Story/vn/hotrokhachhang/traodoikinhnghiem/leghethong/2007/8/21094.html" name="siteurl" type="hidden"><input value="www.3c.com.vn/Story/vn/hotrokhachhang/traodoikinhnghiem/leghethong/2007/8/21094.html" name="siteurl" type="hidden"></form>
+
+<script type="text/javascript" src="EventViewer_files/brand"></script>
+
+
+	<!-- End script Adv -->
+	</td>
+</tr>
+<tr>
+	<td height="3"></td>
+</tr>
+</tbody></table></td>
+	</tr>
+</tbody></table>
+
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+	<tbody><tr>
+		<td height="5"></td>
+	</tr>
+</tbody></table>
+<table id="StoryViews1_tblStoryViews" class="style_boder_table" width="160" bgcolor="#d8d8d8" border="0" cellpadding="0" cellspacing="0">
+	<tbody><tr>
+		<td>
+		</td>
+	</tr>
+	<tr>
+		<td width="99%" height="25"><span class="zone_picturefocus">Nhiều người quan tâm</span></td>
+	</tr>
+	<tr>
+		<td valign="top" width="100%" align="left" bgcolor="#efefef" height="63"><span id="StoryViews1_zoneTeaser"><a class="sanpham_003" href="http://www.3c.com.vn/Story/vn/hotrokhachhang/traodoikinhnghiem/leghethong/2007/12/32960.html">Tăng cường “sức đề kháng” của hệ thống</a></span></td>
+	</tr>
+	<tr>
+		<td valign="top" width="100%" align="left" height="63"><span id="StoryViews1_zoneTeaser"><a class="sanpham_003" href="http://www.3c.com.vn/Story/vn/hotrokhachhang/traodoikinhnghiem/leghethong/2008/1/33577.html">Laptop bị cài keylogger</a></span></td>
+	</tr>
+	<tr>
+		<td valign="top" width="100%" align="left" bgcolor="#efefef" height="63"><span id="StoryViews1_zoneTeaser"><a class="sanpham_003" href="http://www.3c.com.vn/Story/vn/hotrokhachhang/traodoikinhnghiem/leghethong/2008/1/33202.html">Một cách tối ưu định dạng File System NTFS</a></span></td>
+	</tr>
+	<tr>
+		<td valign="top" width="100%" align="left" height="63"><a href="http://www.3c.com.vn/Story/vn/hotrokhachhang/traodoikinhnghiem/leghethong/2007/7/19937.html"><img src="EventViewer_files/deepfreeze.jpg" class="style_boder_image" vspace="5" width="50" align="Left" border="0" height="50" hspace="5"></a><span id="StoryViews1_zoneTeaser"><a class="sanpham_003" href="http://www.3c.com.vn/Story/vn/hotrokhachhang/traodoikinhnghiem/leghethong/2007/7/19937.html">Deep Freeze Enter phục hồi máy trong một giây</a></span></td>
+	</tr>
+	<tr>
+		<td valign="top" width="100%" align="left" bgcolor="#efefef" height="63"><a href="http://www.3c.com.vn/Story/vn/hotrokhachhang/traodoikinhnghiem/leghethong/2009/4/53647.html"><img src="EventViewer_files/28-ghost6.jpg" class="style_boder_image" vspace="5" width="50" align="Left" border="0" height="50" hspace="5"></a><span id="StoryViews1_zoneTeaser"><a class="sanpham_003" href="http://www.3c.com.vn/Story/vn/hotrokhachhang/traodoikinhnghiem/leghethong/2009/4/53647.html">Bản Ghost tốt nhất bạn cần có</a></span></td>
+	</tr>
+	<tr>
+		<td valign="top" width="100%" align="left" height="63"><a href="http://www.3c.com.vn/Story/vn/hotrokhachhang/traodoikinhnghiem/leghethong/2007/2/7791.html"><img src="EventViewer_files/hd6.jpg" class="style_boder_image" vspace="5" width="50" align="Left" border="0" height="50" hspace="5"></a><span id="StoryViews1_zoneTeaser"><a class="sanpham_003" href="http://www.3c.com.vn/Story/vn/hotrokhachhang/traodoikinhnghiem/leghethong/2007/2/7791.html">Chia sẻ ổ đĩa và thư mục trong mạng LAN</a></span></td>
+	</tr>
+</tbody></table>
+
+<img src="EventViewer_files/Counter_002.xml" alt="" width="1" border="0" height="1"></td>
+									<td><img alt="" src="EventViewer_files/spacer.gif" width="6" height="1"></td>
+									<td id="centerwell" valign="top" width="100%">
+										<table width="100%" border="0" cellpadding="0" cellspacing="0">
+											<tbody><tr>
+												<td>
+													<h1 id="titleZone">Hệ thống</h1>
+													
+													
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<hr width="100%" color="#006600" size="1">
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<table width="64%" border="0" cellpadding="2" cellspacing="2">
+														<tbody><tr>
+															<td width="16"><img src="EventViewer_files/print.gif" id="imgPrint" width="16" height="16"></td>
+															<td><a href="http://www.3c.com.vn/printContent.aspx?ID=21094" id="ahrefPrint" class="sanpham_001">In bài này</a></td>
+															<td width="16"><img src="EventViewer_files/send.gif" id="imgEmail4Freind" width="16" height="8"></td>
+															<td><a href="http://www.3c.com.vn/EmailtoFriend.aspx?new_url=http://www.3c.com.vn/Story/vn/hotrokhachhang/traodoikinhnghiem/leghethong/2007/8/21094.html" id="ahrefEmail4Freind" class="sanpham_001">Gửi bài viết 
+																	này cho bạn bè</a></td>
+														</tr>
+													</tbody></table>
+												</td>
+											</tr>
+											<tr>
+												<td id="spandatetime" class="datetime">(Thứ Bẩy, 04/08/2007-9:18 AM)</td>
+
+											</tr>
+											<tr>
+												<td id="spanstoryTitle" class="TitleStory">Log hệ thống - Phần 2 (Event Viewer) </td>
+
+											</tr>
+											<tr>
+												<td height="10"></td>
+											</tr>
+											<tr>
+												<td><span id="tdStoryTeaser" class="detail"><img src="EventViewer_files/vne000430.gif" vspace="4" width="211" align="Left" border="0" height="158" hspace="4"><span id="StoryTeaser" class="detail">Quản
+ lý hệ thống mạng không thể thiếu phần giám sát hệ thống, ngoài việc bạn
+ ghi lại các tiến trình trong hệ thống bạn còn phải biết điều chỉnh 
+thiết lập chỉ ghi lại những yếu tố cần thiết. Chẳng hạn một máy chủ File
+ Server bạn chỉ cần giám quá trình truy cập tài nguyên, máy chủ Active 
+Directory giám sát quá trình log on vào hệ thống. </span></span></td>
+											</tr>
+											<tr>
+												<td><span id="tdStoryPrice" class="detail"></span></td>
+											</tr>
+											<tr>
+												<td height="5"></td>
+											</tr>
+											<tr>
+												<td><div id="tbLinkDownload" class="detail">
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<td><span id="tdStoryBody" class="detail"><p id="Story_Body" class="detail"></p><p align="justify">Trong phần hai của bài viết tôi sẽ giới thiệu với các bạn công một công cụ ghi lại các event của hệ thống đó là Event Viewer.</p>
+<p align="justify">Event viewer là một công cụ tích hợp trong Windows 
+cho phép bạn xem lại các sự kiện đã xảy ra trong hệ thống một cách chi 
+tiết với nhiều tham số cụ thể như: user, time, computer, services… Các 
+sự kiện rời rạc được lọc lại thành những sự kiện giống nhau giúp chúng 
+ta lấy được những thông tin cần thiết một cách nhanh nhất.</p>
+<p align="justify">Trong Event viewer đã phân vùng các sự kiện riêng 
+biệt cho từng ứng dụng, một máy chủ cài đặt mặc định sẽ có ba phân vùng 
+trong event viewer:</p>
+<p align="justify">Application</p>
+<p align="justify">Security</p>
+<p align="justify">System</p>
+<p align="justify"><img alt="" src="EventViewer_files/vne000431.jpg"></p>
+<p align="justify">Hình 1: Event viewer chia các vùng log riêng biệt cho các ứng dụng.</p>
+<p align="justify">Application log</p>
+<p align="justify">Application log ghi lại sự kiện của các ứng dụng khác
+ từ các nhà sản xuất khác như symantec hay các ứng dụng mail…Thường 
+thiết lập trong application là mặc định của các ứng dụng nên chúng ta 
+chỉ có thể đọc nó mà không thiết lập được.</p>
+<p align="justify"><img alt="" src="EventViewer_files/vne000432.jpg"></p>
+<p align="justify">Hình 2: các sự kiện được lưu lại trong application log</p>
+<p align="justify">Trong ví dụ trên application log chỉ được phần mềm symantec sử dụng.</p>
+<p align="justify">Security log.</p>
+<p align="justify">Đây là một trong những log quan trọng nhất trong hệ 
+thống, nó ghi lại toàn bộ các thiết lập audit trong group policy. Nhưng 
+trong các thiết lập group policy quan trọng nhất là thiết lập giám sát 
+quá trình login vào hệ thống, truy cập dữ liệu.</p>
+<p align="justify"><img alt="" src="EventViewer_files/vne000433.jpg"></p>
+<p align="justify">Hình 3: thiết lập audit trong group policy</p>
+<p align="justify">Trong thiết lập này tôi chỉ thiết lập giám sát quá 
+trình truy cập login log-off hệ thống. Nếu với thiết lập như trên toàn 
+bộ người dùng logon hay logoff vào hệ thống đều được ghi lại sau khi 
+thiết lập trong group policy các bạn nên logoff hoặc restart lại máy bởi
+ các thông tin chỉnh trong group policy bản chất là chỉnh các thông số 
+trong registry.</p>
+<p align="justify">Giờ tôi logoff ra và login vào sẽ thấy ghi lại trong security log.</p>
+<p align="justify"><img alt="" src="EventViewer_files/vne000434.jpg"></p>
+<p align="justify">Hình 4: xem lại event logon vào hệ thống của các user</p>
+<p align="justify">Sau khi logon vào máy tính mở event viewer ra xem và 
+tôi phát hiện ra hệ thống đã lưu lại username: vangtrang computer: 
+vnexperts, event: success audit, time: 8:10:06PM</p>
+<p align="justify">Vậy ý nghĩa của việc xem lại log này là gì: bạn hãy 
+tưởng tượng một dữ liệu trong máy của bạn đã bị mất và trong log ghi lại
+ là đã được xoá lúc 12h đêm vậy bạn cần quy trách nhiệm đó cho ai, bạn 
+cần biết trong thời điểm đó những ai đang online và logon, logoff trong 
+thời gian đó.</p>
+<p align="justify">Thiết lập giám sát một folder dữ liệu quan trọng, với
+ yêu cầu đặt ra là giám sát toàn bộ các quá trình truy cập các action cụ
+ thể với folder này. Trong ổ E có thư mục quan trọng VNEDATA việc cần 
+thiết của bạn là đưa ra các thiết lập giám sát toàn bộ truy cập vào 
+folder này.</p>
+<p align="justify">Bước 1: thiết lập audit object access trong group policy ở cả chế đọ success và fails</p>
+<p align="justify"><img alt="" src="EventViewer_files/vne000435.jpg"></p>
+<p align="justify">Hình 5: thiết lập audit object access</p>
+<p align="justify">Với thiết lập trong group policy có nghĩa bạn chỉ 
+enable tính năng cho phép hệ thống ghi lại mà thôi, mặc định hệ thống 
+sau khi thiết lập này sẽ ghi lại event với các đối tượng hệ thống như 
+registry… Còn muốn một quá trình truy cập vào folder mà được lưu lại thì
+ phải thiết lập trên folder đó.</p>
+<p align="justify">Bước 2: thiết lập audit trên foder.</p>
+<p align="justify">Chuột phải vào folder chọn properties sang tab 
+security chọn advanced, chuyển sang tab audit chọn trong cửa sổ add 
+chúng ta add group với tên là everyone (everyone là một system group 
+trong Windows).</p>
+<p align="justify"><img alt="" src="EventViewer_files/vne000436.jpg"></p>
+<p align="justify">Hình 6: thiết lập audit toàn bộ các event truy cập vào folder:</p>
+<p align="justify">Sau khi thiết lập bạn restart lại máy và thử truy cập
+ vào folder này xem trong event viewer có ghi các sự kiện với folder này
+ không.</p>
+<p align="justify"><img alt="" src="EventViewer_files/vne000437.jpg"></p>
+<p align="justify">Hình 7: Xem lại audit object acces</p>
+<p align="justify">Nhìn vào event ta nhận thấy vào lúc 8:36:42 PM user 
+với tên là vangtrang từ máy tính có tên VNEXPERTS đã bị failure trong 
+quá trình truy cập vào folder E:\VNEDATA. Ứng dụng của tính năng audit 
+và xem lại các event cho ta phát hiện những kẻ truy cập bất hợp pháp và 
+quy trách nhiệm cụ thể cho những kẻ phá hoại.</p>
+<p align="justify">System Log:</p>
+<p align="justify">System log được thiết lập mặc định của hệ thống giúp chúng ta xem lại các sự kiện:</p>
+<p align="justify">Bật, tắt, pause, disable, enable các services của hệ thống.</p>
+<p align="justify">Ví như một service bật bị lỗi trong thời điểm nào nó sẽ ghi lại trong system log của event viewer.</p>
+<p align="justify"><img alt="" src="EventViewer_files/vne000438.jpg"></p>
+<p align="justify">Hình 8: Xem một event trong system log</p>
+<p align="justify">Với thông event service với tên là Server đã bị lỗi do trong mạng LAN có máy tính trùng tên hoặc trùng địa chỉ IP.</p>
+<p align="justify">Log Properties</p>
+<p align="justify">Log properties giúp chúng ta cấu hình dung lượng file
+ log, cách xoá các event cũ đi như thế nào, và những tính năng lọc các 
+sự kiện.</p>
+<p align="justify"><img alt="" src="EventViewer_files/vne000439.jpg"></p>
+<p align="justify">Hình 9: Tab General của system properties</p>
+<p align="justify">Đây là thiết lập cho security properties: Với file log tên là gì và ở đâu: C:\Windows\System32\Config\SecEvent.Evt</p>
+<p align="justify">Dung lượng tối đa cho file log này là 512 KB bạn có 
+thể cấu hình lại to hơn hoặc nhỏ hơn, nếu dung lượng file long lớn hơn 
+512 KB hệ thống sẽ tự xoá các sự kiện cũ theo thuật toán First in First 
+out – (vào trước vào thì ra trước).</p>
+<p align="justify">Nếu dung lượng chưa được 512KB nhưng với thiết lập mặc định các event sẽ bị xoá sau 7 ngày.</p>
+<p align="justify"><img alt="" src="EventViewer_files/vne000440.jpg"></p>
+<p align="justify">Hình 10: tab filter của system properties</p>
+<p align="justify">Trong tab này với khi chưa cấu hình lọc mặc định sẽ 
+hiển thị toàn bộ các sự kiện bạn có thể lọc chỉ hiển thị theo "event 
+types: như information, waring, erro, success audit, hay failure audit"</p>
+<p align="justify">Hoặc có thể thiết lập lọc các sự kiện theo thời gian và ID của các sự kiện</p>
+<p align="justify">Kết luận.</p>
+<p align="justify">Event viewer là một tool quan trọng trong việc giám 
+sát hệ thống dựa vào công cụ này người quản trị sẽ phát hiện ra những kẻ
+ truy cập bất hợp pháp vào những thời điểm cụ thể, với tính năng lọc 
+giúp bạn giới hạn những sự kiện cần thiết giám sát.</p><em>Theo vnexperts<br><br><img style="width: 39px; height: 19px;" alt="" src="EventViewer_files/icon_newn.gif" width="31" height="12"></em><font face="Tahoma"><font size="2">&nbsp;&nbsp;&nbsp; </font>
+<div class="MsoNormal" style="margin: 6pt 0cm; line-height: 150%;"><b style=""><span style="font-size: 10pt; color: blue; line-height: 150%; font-family: Tahoma;"><span style="font-size: 10pt; color: blue; line-height: 150%; font-family: Tahoma;"><font color="#0000ff">3Cdotcom</font></span><b style=""><span style="font-size: 10pt; line-height: 150%; font-family: Tahoma;"><span style=""><font color="#000000">&nbsp;&nbsp; </font></span></span></b></span></b><b style=""><span style="font-size: 10pt; line-height: 150%; font-family: Tahoma;"><i style=""><span style="color: rgb(255, 102, 0);"><font color="#ff0000">“@netmail: E-mail dung lượng lớn cho mỗi người"</font></span></i></span></b><i style=""><span style="font-size: 10pt; line-height: 150%; font-family: Tahoma;"> </span></i><span style="font-size: 10pt; line-height: 150%; font-family: Tahoma;"><span style="">&nbsp;</span><span style=""><a href="http://www.3cdotcom.vn/" target="_blank"><b><u><font style="background-color: rgb(247, 250, 250);" color="#800080">www.3cdotcom.vn</font></u></b></a></span></span></div></font><p></p></span></td>
+											</tr>
+											<tr>
+												<td><div id="tbKeywords" class="detail" disabled="disabled"></div>
+												</td>
+											</tr>
+											<tr>
+												<td width="100%" align="center">
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+	<tbody><tr>
+		<td></td>
+	</tr>
+	<tr>
+		<td align="center">
+			<form action="http://www.google.com.vn/cse" id="cse-search-box">
+  <div>
+    <input name="cx" value="partner-pub-7743029381915794:phvuid-wpnr" type="hidden">
+    <input name="q" size="31" type="text">
+    <input name="sa" value="Tìm kiếm" type="submit">
+  </div>
+</form>
+<script type="text/javascript" src="EventViewer_files/brand_002"></script><table id="table1" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF" width="468" border="0" cellpadding="0" cellspacing="0" height="60">
+	<tbody><tr>
+		<td width="212">
+		<p align="center"><font color="#008000"><b>
+		<a href="http://www.3c.com.vn/Story/vn/hotrokhachhang/banhoitoitraloi/2008/2/35233.html">
+		<font color="#008000">Download Portable IDM </font></a></b></font><br>
+		PM download file trên mạng cực nhanh, nhỏ gọn, miễn phí</p></td>
+		<td>
+		<p align="center"><b><font color="#008000">&nbsp;&nbsp;
+		<a href="http://www.3c.com.vn/Story/vn/hotrokhachhang/softwaredownload/toolandsoftware/2008/12/49072.html">
+		<font color="#008000">Download Winrar 3.80</font></a></font></b><br>
+		PM nén và giải nén file xuất sắc. Chương trình nhỏ gọn, dễ sử dụng.</p></td>
+	</tr>
+</tbody></table></td>
+	</tr>
+</tbody></table>
+</td>
+											</tr>
+											<tr>
+												<td height="10"></td>
+											</tr>
+											<tr>
+												
+											</tr>
+											<tr>
+												<td id="tdeventlistrelated" class="sanpham_001"><ul></ul></td>
+
+											</tr>
+											<tr>
+												<td height="10"></td>
+											</tr>
+											<tr>
+												<td id="tdcontentnewertitle" class="seealsosection"><strong>[ Các bài 
+														mới ]</strong></td>
+
+											</tr>
+											<tr>
+												<td id="tdcontentnewer" class="sanpham_001"><ul><li><a class="sanpham_001" href="http://www.3c.com.vn/Story/vn/hotrokhachhang/traodoikinhnghiem/leghethong/2010/2/60380.html">Giới thiệu về AppLocker – Phần 3 </a>&nbsp; <span class="datetime">(04/02)</span></li><li><a class="sanpham_001" href="http://www.3c.com.vn/Story/vn/hotrokhachhang/traodoikinhnghiem/leghethong/2010/2/60277.html">10 vấn đề khi phát triển chiến lược backup trên hệ thống nhiều nền tảng</a>&nbsp; <span class="datetime">(02/02)</span></li><li><a class="sanpham_001" href="http://www.3c.com.vn/Story/vn/hotrokhachhang/traodoikinhnghiem/leghethong/2010/2/60219.html">Giới thiệu về AppLocker – Phần 2</a>&nbsp; <span class="datetime">(01/02)</span></li><li><a class="sanpham_001" href="http://www.3c.com.vn/Story/vn/hotrokhachhang/traodoikinhnghiem/leghethong/2010/1/60083.html">Giới thiệu về AppLocker – Phần 1</a>&nbsp; <span class="datetime">(28/01)</span></li><li><a class="sanpham_001" href="http://www.3c.com.vn/Story/vn/hotrokhachhang/traodoikinhnghiem/leghethong/2010/1/59663.html">Xóa mọi tập tin tạm thời, cookies và cache của hệ thống với công cụ Portable </a>&nbsp; <span class="datetime">(11/01)</span></li><li><a class="sanpham_001" href="http://www.3c.com.vn/Story/vn/hotrokhachhang/traodoikinhnghiem/leghethong/2010/1/59532.html">Gỡ bỏ hệ điều hành cũ trong chế độ Dual Boot với Windows 7 – Phần 2 </a>&nbsp; <span class="datetime">(04/01)</span></li><li><a class="sanpham_001" href="http://www.3c.com.vn/Story/vn/hotrokhachhang/traodoikinhnghiem/leghethong/2009/12/59504.html">Gỡ bỏ hệ điều hành cũ trong chế độ Dual Boot với Windows 7 – Phần 1</a>&nbsp; <span class="datetime">(31/12)</span></li><li><a class="sanpham_001" href="http://www.3c.com.vn/Story/vn/hotrokhachhang/traodoikinhnghiem/leghethong/2009/12/59387.html">“Đóng băng” hệ thống với Returnil Virtual System 2010</a>&nbsp; <span class="datetime">(25/12)</span></li><li><a class="sanpham_001" href="http://www.3c.com.vn/Story/vn/hotrokhachhang/traodoikinhnghiem/leghethong/2009/12/58995.html">Quản lý và gỡ bỏ các phần mềm trên hệ thống </a>&nbsp; <span class="datetime">(10/12)</span></li><li><a class="sanpham_001" href="http://www.3c.com.vn/Story/vn/hotrokhachhang/traodoikinhnghiem/leghethong/2009/11/58710.html">Kiểm tra hệ thống phần cứng trên PC với Speccy</a>&nbsp; <span class="datetime">(27/11)</span></li></ul></td>
+
+											</tr>
+											<tr>
+												<td height="5"></td>
+											</tr>
+											<tr>
+												<td id="tdcontentdeploytitle" class="seealsosection"><strong>[ Các bài 
+														đã đăng ]</strong></td>
+
+											</tr>
+											<tr>
+												<td id="tdcontentdeploy" class="sanpham_001"><ul><li><a class="sanpham_001" href="http://www.3c.com.vn/Story/vn/hotrokhachhang/traodoikinhnghiem/leghethong/2007/8/21041.html">Log hệ thống - Phần 1 (System Monitor) </a>&nbsp;<span class="datetime">(03/08)</span></li><li><a class="sanpham_001" href="http://www.3c.com.vn/Story/vn/hotrokhachhang/traodoikinhnghiem/leghethong/2007/8/20961.html">Khóa mọi ổ đĩa trong hệ thống với Hide and Protect any Drives</a>&nbsp;<span class="datetime">(03/08)</span></li><li><a class="sanpham_001" href="http://www.3c.com.vn/Story/vn/hotrokhachhang/traodoikinhnghiem/leghethong/2007/7/19937.html">Deep Freeze Enter phục hồi máy trong một giây</a>&nbsp;<span class="datetime">(23/07)</span></li><li><a class="sanpham_001" href="http://www.3c.com.vn/Story/vn/hotrokhachhang/traodoikinhnghiem/leghethong/2007/7/19663.html">Bảo mật hệ thống bằng USB flash drive</a>&nbsp;<span class="datetime">(19/07)</span></li><li><a class="sanpham_001" href="http://www.3c.com.vn/Story/vn/hotrokhachhang/traodoikinhnghiem/leghethong/2007/6/18315.html">Lưu trữ toàn bộ hệ thống Windows XP bằng Automatic System Recovery</a>&nbsp;<span class="datetime">(28/06)</span></li><li><a class="sanpham_001" href="http://www.3c.com.vn/Story/vn/hotrokhachhang/traodoikinhnghiem/leghethong/2007/6/18247.html">Khôi phục password trong BIOS (Phần 1) </a>&nbsp;<span class="datetime">(28/06)</span></li><li><a class="sanpham_001" href="http://www.3c.com.vn/Story/vn/hotrokhachhang/traodoikinhnghiem/leghethong/2007/6/18139.html"> Khôi phục password trong BIOS (Phần 1)</a>&nbsp;<span class="datetime">(27/06)</span></li><li><a class="sanpham_001" href="http://www.3c.com.vn/Story/vn/hotrokhachhang/traodoikinhnghiem/leghethong/2007/6/18094.html">Hai mẹo nhỏ tăng tốc hệ thống với Registry</a>&nbsp;<span class="datetime">(26/06)</span></li><li><a class="sanpham_001" href="http://www.3c.com.vn/Story/vn/hotrokhachhang/traodoikinhnghiem/leghethong/2007/6/16802.html">Dọn dẹp các tập tin rác, cải thiện hệ thống với Zappit System Cleaner 1.11</a>&nbsp;<span class="datetime">(13/06)</span></li><li><a class="sanpham_001" href="http://www.3c.com.vn/Story/vn/hotrokhachhang/traodoikinhnghiem/leghethong/2007/6/15840.html">Tăng tuổi thọ hệ thống với System LifeGuard 2</a>&nbsp;<span class="datetime">(02/06)</span></li></ul></td>
+
+											</tr>
+											<tr>
+												<td id="tdFeedback"></td>
+
+											</tr>
+											<tr>
+												<td id="tdSendFeedback"></td>
+
+											</tr>
+										</tbody></table>
+									</td>
+									<td><img alt="" src="EventViewer_files/spacer.gif" width="8" height="1"></td>
+									<td id="seealso" valign="top" width="180">
+										<table width="100%" border="0" cellpadding="0" cellspacing="0">
+											<tbody><tr>
+												<td width="100%"></td>
+											</tr>
+										</tbody></table>
+										<table width="100%" border="0" cellpadding="0" cellspacing="0">
+											<tbody><tr>
+												<td width="100%"></td>
+											</tr>
+											<tr width="100%" align="center">
+												<td>
+													
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+	<tbody><tr>
+		<td height="6"></td>
+	</tr>
+	<tr>
+		<td align="center">
+			<table width="100%" border="0" cellpadding="3" cellspacing="0">
+<tbody><tr>
+	<td style="border: 1px solid rgb(0, 102, 51);" width="100%" align="center">
+	<!-- Start script Adv -->
+	
+	<p>
+<b>
+<a href="http://www.3c.com.vn/Story/vn/hotrokhachhang/softwaredownload/antivirus/2007/3/9776.html">
+<span style="color: rgb(255, 0, 0);">
+</span></a><a href="http://www.3c.com.vn/Zone/vn/hotrokhachhang/softwaredownload.html">
+<font color="#ff0000">Các phần mềm ưa thích<br>
+&nbsp;nhất trên 3c.com.vn</font></a><a href="http://www.3c.com.vn/Zone/vn/hotrokhachhang/softwaredownload.html"><font color="#ff0000"><!-- End script Adv --></font></a></b></p>
+	</td>
+</tr>
+<tr>
+	<td height="3"></td>
+</tr>
+</tbody></table><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td valign="middle" width="100%" align="center"><a href="http://www.3c.com.vn/Controls/AdManager/Click.aspx?AdID=245" target="_blank"><img src="EventViewer_files/thegioiweb_newDong.gif" alt="" width="180" border="0"></a></td></tr></tbody></table></td>
+	</tr>
+</tbody></table></td>
+											</tr>
+											<tr width="100%" align="center">
+												<td>
+													
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+	<tbody><tr>
+		<td height="5"></td>
+	</tr>
+</tbody></table>
+<table id="TopNewsest1_tblStoryNewsest" class="style_boder_table" width="180" bgcolor="#d8d8d8" border="0" cellpadding="0" cellspacing="0">
+	<tbody><tr>
+		<td><font></font>
+		</td>
+	</tr>
+	<tr>
+		<td width="99%" height="25"><span class="zone_picturefocus">Bài mới cập nhật</span></td>
+	</tr>
+	<tr>
+		<td class="sanpham_004" valign="top" width="100%" bgcolor="#efefef"><span id="TopNewsest1_zoneTeaser"><a class="sanpham_005" href="http://www.3c.com.vn/Story/vn/hotrokhachhang/ebooks/ebksachcnttkhac/2010/12/62625.html">Nguyên tắc trong thiết kế website</a></span></td>
+	</tr>
+	<tr>
+		<td class="sanpham_004" valign="top" width="100%"><span id="TopNewsest1_zoneTeaser"><a class="sanpham_005" href="http://www.3c.com.vn/Story/vn/hotrokhachhang/ebooks/ebksachcnttkhac/2010/12/62624.html">Công cụ vẽ Drawing</a></span></td>
+	</tr>
+	<tr>
+		<td class="sanpham_004" valign="top" width="100%" bgcolor="#efefef"><span id="TopNewsest1_zoneTeaser"><a class="sanpham_005" href="http://www.3c.com.vn/Story/vn/hotrokhachhang/ebooks/ebksachcnttkhac/2010/12/62623.html">Bản giao hưởng vũ trụ</a></span></td>
+	</tr>
+	<tr>
+		<td class="sanpham_004" valign="top" width="100%"><span id="TopNewsest1_zoneTeaser"><a class="sanpham_005" href="http://www.3c.com.vn/Story/vn/hotrokhachhang/ebooks/ebksachcnttkhac/2010/12/62622.html">Màu sắc trong thiết kế website</a></span></td>
+	</tr>
+	<tr>
+		<td class="sanpham_004" valign="top" width="100%" bgcolor="#efefef"><span id="TopNewsest1_zoneTeaser"><a class="sanpham_005" href="http://www.3c.com.vn/Story/vn/hotrokhachhang/ebooks/ebksachcnttkhac/2010/12/62621.html">Bài tập flash</a></span></td>
+	</tr>
+	<tr>
+		<td class="sanpham_004" valign="top" width="100%"><span id="TopNewsest1_zoneTeaser"><a class="sanpham_005" href="http://www.3c.com.vn/Story/vn/hotrokhachhang/ebooks/ebksachcnttkhac/2010/12/62620.html">Giáo trình flash 5.0</a></span></td>
+	</tr>
+	<tr>
+		<td class="sanpham_004" valign="top" width="100%" bgcolor="#efefef"><span id="TopNewsest1_zoneTeaser"><a class="sanpham_005" href="http://www.3c.com.vn/Story/vn/hotrokhachhang/ebooks/ebksachcnttkhac/2010/12/62619.html">Tổng hợp các hiệu ứng chữ trong photoshop</a></span></td>
+	</tr>
+	<tr>
+		<td class="sanpham_004" valign="top" width="100%"><span id="TopNewsest1_zoneTeaser"><a class="sanpham_005" href="http://www.3c.com.vn/Story/vn/hotrokhachhang/ebooks/ebksachcnttkhac/2010/12/62618.html">Giáo trình photoshop cs2</a></span></td>
+	</tr>
+	<tr>
+		<td class="sanpham_004" valign="top" width="100%" bgcolor="#efefef"><span id="TopNewsest1_zoneTeaser"><a class="sanpham_005" href="http://www.3c.com.vn/Story/vn/hotrokhachhang/ebooks/ebksachcnttkhac/2010/12/62617.html">Giáo trình Autocard 3D</a></span></td>
+	</tr>
+	<tr>
+		<td class="sanpham_004" valign="top" width="100%"><span id="TopNewsest1_zoneTeaser"><a class="sanpham_005" href="http://www.3c.com.vn/Story/vn/hotrokhachhang/ebooks/ebksachcnttkhac/2010/12/62616.html">Giáo trình Microsoft Silverlight </a></span></td>
+	</tr>
+	<tr>
+		<td class="sanpham_004" valign="top" width="100%" bgcolor="#efefef"><span id="TopNewsest1_zoneTeaser"><a class="sanpham_005" href="http://www.3c.com.vn/Story/vn/hotrokhachhang/cauhoithuonggap/2010/12/62615.html">Máy tính thường đứng và chạy chậm</a></span></td>
+	</tr>
+</tbody></table>
+
+</td>
+											</tr>
+											<tr width="100%" align="center">
+												<td>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+	<tbody><tr>
+		<td height="6"></td>
+	</tr>
+	<tr>
+		<td align="center">
+			<table border="1" cellpadding="0" cellspacing="0">
+<tbody><tr style="font-size: 11px; font-weight: bold; background-color: rgb(215, 229, 255); text-align: center;">
+<td style="padding: 7px;"><a href="http://www.3c.com.vn/Story/vn/hotrokhachhang/traodoikinhnghiem/leghethong/2007/8/@" style="color: red;">Download miễn phí các phần mềm hay nhất. Hãy truy cập ngay: 3ce.vn</a></td>
+</tr>
+</tbody></table></td>
+	</tr>
+</tbody></table>
+</td>
+											</tr>
+											<tr width="100%" align="center">
+												<td>
+<script language="javascript" src="EventViewer_files/poll.js"></script>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+	<tbody><tr>
+		<td width="100%" align="center">
+			
+		</td>
+	</tr>
+</tbody></table>
+</td>
+											</tr>
+											<tr width="100%" align="center">
+												<td>
+													
+<table width="100%" align="center" border="0" cellpadding="0" cellspacing="0">
+	<tbody><tr>
+		<td height="5"></td>
+	</tr>
+	<tr>
+		<td>
+			
+		</td>
+	</tr>
+</tbody></table>
+</td>
+											</tr>
+											<tr width="100%" align="center">
+												<td></td>
+											</tr>
+										</tbody></table>
+									</td>
+								</tr>
+							</tbody></table>
+						</td>
+					</tr>
+					<tr>
+						<td class="V20">&nbsp;</td>
+					</tr>
+					<tr>
+						<td class="V20">&nbsp;</td>
+					</tr>
+					<tr>
+						<td class="V20">&nbsp;</td>
+					</tr>
+					<tr>
+						<td align="left">
+<table width="100%" align="center" border="0" cellpadding="0" cellspacing="0">
+	<tbody>
+		<tr>
+			<td width="100%" align="center">
+				
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+	<tbody><tr>
+		<td></td>
+	</tr>
+	<tr>
+		<td align="center">
+			</td>
+	</tr>
+</tbody></table>
+
+			</td>
+		</tr>
+	</tbody>
+</table> <!--- include footer --->
+<table id="bottomnav" width="100%" align="center" border="0" cellpadding="0" cellspacing="0">
+	<tbody>
+		<tr>
+			<td width="100%" bgcolor="#000066" height="2">
+			</td>
+		</tr>
+	</tbody>
+</table> <!--- include footer --->
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+	<tbody>
+		<tr>
+			<td class="V20"><img src="EventViewer_files/Counter.xml" alt="" width="1" border="0" height="1"></td>
+		</tr>
+		<tr>
+			<td class="T1" align="center">Đơn vị chủ quản:<strong> CÔNG TY MÁY TÍNH - TRUYỀN THÔNG - ĐIỀU KHIỂN 3C ( 3C, Inc)</strong>
+				<br>
+				Số 6 - Láng Hạ - Ba Ðình - Hà Nội; Tel: 84.4.38312695; Fax: 84.4.38311925<br>
+				Chịu trách nhiệm chính: Ông Phạm Duy Hiển - Giám Đốc Trung Tâm.<br>
+				Giấy phép hoạt động số 92/GP-TTĐT do Bộ Thông tin và Truyền Thông cấp ngày 06/05/2010.<br>
+				® Ghi rõ nguồn "www.3c.com.vn" khi bạn phát hành lại thông tin từ website này.</td>
+		</tr>
+		<tr>
+			<td colspan="3" height="10"><spacer type="block" width="1" height="1"></td>
+		</tr>
+		<tr>
+			<td id="Footer1_tdhitcounter" class="contenthot"></td>
+
+		</tr>
+	</tbody>
+</table>
+</td>
+					</tr>
+				</tbody>
+			</table><div id="Menu1_zoneMenusubgs">
+
+			</div>
+		
+
+	</form></body></html>
