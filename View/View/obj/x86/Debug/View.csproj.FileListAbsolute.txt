@@ -1,0 +1,17 @@
+D:\CSharpProject\View\View\bin\Debug\View.exe
+D:\CSharpProject\View\View\bin\Debug\View.pdb
+D:\CSharpProject\View\View\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\CSharpProject\View\View\obj\x86\Debug\MainWindow.baml
+D:\CSharpProject\View\View\obj\x86\Debug\MainWindow.g.cs
+D:\CSharpProject\View\View\obj\x86\Debug\App.g.cs
+D:\CSharpProject\View\View\obj\x86\Debug\View_MarkupCompile.cache
+D:\CSharpProject\View\View\obj\x86\Debug\View.g.resources
+D:\CSharpProject\View\View\obj\x86\Debug\View.Properties.Resources.resources
+D:\CSharpProject\View\View\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\CSharpProject\View\View\obj\x86\Debug\GenerateResource.write.1.tlog
+D:\CSharpProject\View\View\obj\x86\Debug\View.exe
+D:\CSharpProject\View\View\obj\x86\Debug\View.pdb
+D:\CSharpProject\View\View\obj\x86\Debug\KnowledgeBase.baml
+D:\CSharpProject\View\View\obj\x86\Debug\RawAlert.baml
+D:\CSharpProject\View\View\obj\x86\Debug\KnowledgeBase.g.cs
+D:\CSharpProject\View\View\obj\x86\Debug\RawAlert.g.cs

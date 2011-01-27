@@ -1,0 +1,13 @@
+D:\CSharpProject\KnowledgeBaseCreation\KnowledgeBaseCreation\bin\Debug\KnowledgeBaseCreation.exe
+D:\CSharpProject\KnowledgeBaseCreation\KnowledgeBaseCreation\bin\Debug\KnowledgeBaseCreation.pdb
+D:\CSharpProject\KnowledgeBaseCreation\KnowledgeBaseCreation\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\CSharpProject\KnowledgeBaseCreation\KnowledgeBaseCreation\obj\x86\Debug\MainWindow.baml
+D:\CSharpProject\KnowledgeBaseCreation\KnowledgeBaseCreation\obj\x86\Debug\MainWindow.g.cs
+D:\CSharpProject\KnowledgeBaseCreation\KnowledgeBaseCreation\obj\x86\Debug\App.g.cs
+D:\CSharpProject\KnowledgeBaseCreation\KnowledgeBaseCreation\obj\x86\Debug\KnowledgeBaseCreation_MarkupCompile.cache
+D:\CSharpProject\KnowledgeBaseCreation\KnowledgeBaseCreation\obj\x86\Debug\KnowledgeBaseCreation.g.resources
+D:\CSharpProject\KnowledgeBaseCreation\KnowledgeBaseCreation\obj\x86\Debug\KnowledgeBaseCreation.Properties.Resources.resources
+D:\CSharpProject\KnowledgeBaseCreation\KnowledgeBaseCreation\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\CSharpProject\KnowledgeBaseCreation\KnowledgeBaseCreation\obj\x86\Debug\GenerateResource.write.1.tlog
+D:\CSharpProject\KnowledgeBaseCreation\KnowledgeBaseCreation\obj\x86\Debug\KnowledgeBaseCreation.exe
+D:\CSharpProject\KnowledgeBaseCreation\KnowledgeBaseCreation\obj\x86\Debug\KnowledgeBaseCreation.pdb

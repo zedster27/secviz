@@ -1,0 +1,10 @@
+﻿<Window x:Class="View.RawAlert"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="RawAlert" Height="300" Width="583">
+    <Grid>
+        <Button Content="Delete Alert" Margin="0,0,458,238" Height="23" Name="btDeleteAlert" Width="102" />
+        <DataGrid AutoGenerateColumns="True" 
+                  Height="223" HorizontalAlignment="Right" Name="ExploitTableViewGrid" VerticalAlignment="Bottom" Width="561" />
+    </Grid>
+</Window>
