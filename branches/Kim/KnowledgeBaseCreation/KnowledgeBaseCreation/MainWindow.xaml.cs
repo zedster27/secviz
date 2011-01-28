@@ -27,12 +27,10 @@ namespace KnowledgeBaseCreation
         public MainWindow()
         {
             InitializeComponent();
-            
             tbHost.Text = "localhost";
-            btRun.IsEnabled = false;
         }
 
-        private string file = null;
+        KnowledgeBaseCreator creator = null;
 
         private string browseFile()
         {
@@ -48,15 +46,6 @@ namespace KnowledgeBaseCreation
             dialog.ShowDialog();
             return dialog.FileName;
         }
-
-        private void addPredicate()
-        {
-            XmlDocument doc = new XmlDocument();
-            doc.Load(file);
-            XmlNodeReader reader = new XmlNodeReader(doc.SelectSingleNode("Predicates"));
-            
-           
-        }
         
         private void btLoadDataBrowse_Click(object sender, RoutedEventArgs e)
         {
@@ -64,171 +53,33 @@ namespace KnowledgeBaseCreation
             str = browseFile();
             if (str == null)
                 return;
-            file = str;
+            tbDataPath.Text  = str;
         }
 
         private void btRun_Click(object sender, RoutedEventArgs e)
         {
-            if (file == null)
-                return;
-            string connString = "Data Source=" + tbHost.Text + ":" + tbPort.Text + "/" + tbDatabaseName.Text + ";"
-                                + "User Id=" + tbUserName.Text + ";" + "Password=" + tbPassword.Text + ";";
-            OracleConnection conn = null;
-            try
-            {
-                conn = new OracleConnection(connString);
-                conn.Open();
-                OracleCommand cmd = new OracleCommand();
-                cmd.Connection = conn;
-
-
-
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-            finally
-            {
-                conn.Dispose();
-            }
+            if (creator == null)
+                creator = new KnowledgeBaseCreator();
+            creator.SetDatabaseName(tbDatabaseName.Text);
+            creator.SetHost(tbHost.Text);
+            creator.SetPassword(tbPassword.Text);
+            creator.SetPort(tbPort.Text);
+            creator.SetUsername(tbUserName.Text);
+            creator.SetKnowledgeBaseFile(tbDataPath.Text);
+            creator.AddKnowledgeBase();
         }
 
         private void btCreate_Click(object sender, RoutedEventArgs e)
         {
-            string connString = "Data Source=" + tbHost.Text + ":" + tbPort.Text + "/" + tbDatabaseName.Text + ";"
-                                + "User Id=" + tbUserName.Text + ";" + "Password=" + tbPassword.Text + ";";
-            OracleConnection conn = null;
-            try
-            {
-                conn = new OracleConnection(connString);
-                conn.Open();
-                OracleCommand cmd = new OracleCommand();
-                cmd.Connection = conn;
+            if (creator == null)
+                creator = new KnowledgeBaseCreator();
+            creator.SetDatabaseName(tbDatabaseName.Text);
+            creator.SetHost(tbHost.Text);      
+            creator.SetPassword(tbPassword.Text);
+            creator.SetPort(tbPort.Text);
+            creator.SetUsername(tbUserName.Text);
 
-                string query;
-                
-                query = "create table predicate" +
-                               "(" +
-                                  "PredicateName varchar(100) unique," +
-                                  "ArgId varchar(10) unique," +
-                                  "ArgPos varchar(10)," +
-                                  "ArgAttr varchar(10)," +
-                                  "ArgName varchar(10)," +
-                                  "primary key (PredicateName, ArgId)" +
-                               ")";
-                cmd.CommandText = query;
-                cmd.CommandType = CommandType.Text;
-                cmd.ExecuteReader();
-
-                query = "create table HyperAlertType" +
-                        "(" +
-                            "HyperAlertTypeName varchar(100)," +
-                            "primary key (HyperAlertTypeName)" +
-                        ")";
-                cmd.CommandText = query;
-                cmd.CommandType = CommandType.Text;
-                cmd.ExecuteReader();
-
-                query = "create table Fact" +
-                        "(" +
-                            "FactName varchar(100)," +
-                            "FactType varchar(100)," +
-                            "primary key (FactName)" +
-                        ")";
-                cmd.CommandText = query;
-                cmd.CommandType = CommandType.Text;
-                cmd.ExecuteReader();
-
-                query = "create table Protocol" +
-                        "(" +
-                            "ProtocolName varchar(100)," +
-                            "primary key (ProtocolName)" +
-                        ")";
-                cmd.CommandText = query;
-                cmd.CommandType = CommandType.Text;
-                cmd.ExecuteReader();
-
-                query = "create table Implication" +
-                        "(" +
-                        "ImplyingName varchar(100)," +
-                        "ImpliedName varchar(100)," +
-                        "ImplyingArg varchar(10)," +
-                        "ImpliedArg varchar(10)," +
-                        "primary key (ImplyingName, ImpliedName, ImplyingArg, ImpliedArg)," +
-                        "foreign key (ImplyingName) references Predicate(PredicateName)," +
-                        "foreign key (ImpliedName) references Predicate(PredicateName)," +
-                        "foreign key (ImplyingArg) references Predicate(ArgId)," +
-                        "foreign key (ImpliedArg) references Predicate(ArgId)" +
-                        ")";
-                cmd.CommandText = query;
-                cmd.CommandType = CommandType.Text;
-                cmd.ExecuteReader();
-
-                query = "create table HasFact" +
-                        "(" +
-                            "HyperAlertTypeName varchar(100)," +
-                            "FactName varchar(100),"+
-                            "primary key (HyperAlertTypeName, FactName)," +
-                            "foreign key (HyperAlertTypeName) references HyperAlertType(HyperAlertTypeName),"+
-                            "foreign key (FactName) references Fact(FactName)"+
-                        ")";
-                cmd.CommandText = query;
-                cmd.CommandType = CommandType.Text;
-                cmd.ExecuteReader();
-
-                query = "create table HasProtocol" +
-                        "(" +
-                            "HyperAlertTypeName varchar(100)," +
-                            "ProtocolName varchar(100)," +
-                            "primary key (HyperAlertTypeName, ProtocolName)," +
-                            "foreign key (HyperAlertTypeName) references HyperAlertType(HyperAlertTypeName)," +
-                            "foreign key (ProtocolName) references Protocol(ProtocolName)" +
-                        ")";
-                cmd.CommandText = query;
-                cmd.CommandType = CommandType.Text;
-                cmd.ExecuteReader();
-
-                query = "create table Prerequisite" +
-                        "(" +
-                            "HyperAlertTypeName varchar(100)," +
-                            "PredicateName varchar(100)," +
-                            "ArgID varchar(10)," +
-                            "primary key (HyperAlertTypeName, PredicateName, ArgID)," +
-                            "foreign key (HyperAlertTypeName) references HyperAlertType(HyperAlertTypeName)," +
-                            "foreign key (PredicateName) references Predicate(PredicateName)," +
-                            "foreign key (ArgId) references Predicate(ArgId)" +
-                        ")";
-                cmd.CommandText = query;
-                cmd.CommandType = CommandType.Text;
-                cmd.ExecuteReader();
-
-                query = "create table Consequence" +
-                        "(" +
-                            "HyperAlertTypeName varchar(100)," +
-                            "PredicateName varchar(100)," +
-                            "ArgID varchar(10)," +
-                            "primary key (HyperAlertTypeName, PredicateName, ArgID)," +
-                            "foreign key (HyperAlertTypeName) references HyperAlertType(HyperAlertTypeName)," +
-                            "foreign key (PredicateName) references Predicate(PredicateName)," +
-                            "foreign key (ArgId) references Predicate(ArgId)" +
-                        ")";
-                cmd.CommandText = query;
-                cmd.CommandType = CommandType.Text;
-                cmd.ExecuteReader();
-
-                MessageBox.Show("All tables are created");
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-            finally
-            {
-                conn.Dispose();
-            }
-
-            
+            creator.CreateTable();
         }
     }
 }

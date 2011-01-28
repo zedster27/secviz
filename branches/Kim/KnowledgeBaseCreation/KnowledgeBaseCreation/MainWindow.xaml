@@ -4,7 +4,7 @@
         Title="MainWindow" Height="390" Width="501">
     <Grid>
         <Label Content="Knowledge Base File" Height="28" HorizontalAlignment="Left" Margin="12,0,0,0" Name="labelFilePath" VerticalAlignment="Top" Width="142" />
-        <TextBox Height="23" HorizontalAlignment="Left" Margin="12,41,0,0" Name="tbDataPath" VerticalAlignment="Top" Width="155" Text="" IsReadOnly="True"/>
+        <TextBox Height="23" HorizontalAlignment="Left" Margin="12,41,0,0" Name="tbDataPath" VerticalAlignment="Top" Width="155" Text="" IsReadOnly="True" IsEnabled="True" />
         <Button Content="Browse" Height="23" HorizontalAlignment="Left" Margin="235,41,0,0" Name="btLoadDataBrowse" VerticalAlignment="Top" Width="74" Click="btLoadDataBrowse_Click" />
         <TextBox Height="23" HorizontalAlignment="Left" IsReadOnly="False" Margin="12,112,0,0" Name="tbHost" Text="" VerticalAlignment="Top" Width="155" />
         <TextBox Height="23" HorizontalAlignment="Left" Margin="12,199,0,0" Name="tbPort" VerticalAlignment="Top" Width="155" Text="" IsReadOnly="False"/>
