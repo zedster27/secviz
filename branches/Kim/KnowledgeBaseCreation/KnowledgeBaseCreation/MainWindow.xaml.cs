@@ -27,7 +27,7 @@ namespace KnowledgeBaseCreation
         public MainWindow()
         {
             InitializeComponent();
-            tbHost.Text = "localhost";
+            tbHost.Text = "localhost";           
         }
 
         KnowledgeBaseCreator creator = null;

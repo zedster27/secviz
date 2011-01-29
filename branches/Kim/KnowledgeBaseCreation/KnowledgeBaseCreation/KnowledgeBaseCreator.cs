@@ -60,7 +60,7 @@ namespace KnowledgeBaseCreation
             OracleConnection conn = null;
             try
             {
-                conn = new OracleConnection(connString);
+                conn = DatabaseConnection.getDatabaseConnection(connString);
                 conn.Open();
                 OracleCommand cmd = new OracleCommand();
                 cmd.Connection = conn;
@@ -81,7 +81,6 @@ namespace KnowledgeBaseCreation
                                   "ArgId varchar(10)," +
                                   "ArgPos varchar(10)," +
                                   "ArgAttr varchar(100)," +
-                                  "ArgName varchar(100)," +
                                   "primary key (ArgId)" +
                                ")";
                 cmd.CommandText = query;
@@ -172,8 +171,9 @@ namespace KnowledgeBaseCreation
                         "(" +
                             "HyperAlertTypeName varchar(100)," +
                             "PredicateName varchar(100)," +
-                            "ArgID varchar(10)," +
-                            "primary key (HyperAlertTypeName, PredicateName, ArgID)," +
+                            "ArgId varchar(10)," + 
+                            "ArgName varchar(100)," +
+                            "primary key (HyperAlertTypeName, PredicateName, ArgId, ArgName)," +
                             "foreign key (HyperAlertTypeName) references HyperAlertType(HyperAlertTypeName)," +
                             "foreign key (PredicateName) references Predicate(PredicateName)," +
                             "foreign key (ArgId) references Argument(ArgId)" +
@@ -186,8 +186,9 @@ namespace KnowledgeBaseCreation
                         "(" +
                             "HyperAlertTypeName varchar(100)," +
                             "PredicateName varchar(100)," +
-                            "ArgID varchar(10)," +
-                            "primary key (HyperAlertTypeName, PredicateName, ArgID)," +
+                            "ArgId varchar(10)," +
+                            "ArgName varchar(100)," +
+                            "primary key (HyperAlertTypeName, PredicateName, ArgId, ArgName)," +
                             "foreign key (HyperAlertTypeName) references HyperAlertType(HyperAlertTypeName)," +
                             "foreign key (PredicateName) references Predicate(PredicateName)," +
                             "foreign key (ArgId) references Argument(ArgId)" +
@@ -196,6 +197,7 @@ namespace KnowledgeBaseCreation
                 cmd.CommandType = CommandType.Text;
                 cmd.ExecuteReader();
 
+                cmd.Dispose();
                 MessageBox.Show("All tables are created");
             }
             catch (Exception ex)
@@ -213,10 +215,10 @@ namespace KnowledgeBaseCreation
             string connString = "Data Source=" + host + ":" + port + "/" + databaseName + ";"
                                 + "User Id=" + username + ";" + "Password=" + password + ";";
             OracleConnection conn = null;
-
+          
             try
             {
-                conn = new OracleConnection(connString);
+                conn = DatabaseConnection.getDatabaseConnection(connString);
                 conn.Open();
                 OracleCommand cmd = new OracleCommand();
                 cmd.Connection = conn;
@@ -228,19 +230,38 @@ namespace KnowledgeBaseCreation
                 string id = null;
                 string pos = null;
                 string attr = null;
+                string argName = null;
                 string implyingName = null;
                 string impliedName = null;
                 string implyingArg = null;
                 string impliedArg = null;
-                
+                string hyperAlertTypeName = null;
+                string factName = null;
+                string factType = null;
+                string protocolName = null;
+
+                OracleDataReader rd = null;
+
                 int implyPart = 0;
 
                 int count = 0;
 
                 int part = 0;
 
+                int preOrCon = 0;
+
                 while (reader.Read())
                 {
+                    if (count > 1000)
+                    {
+                        count = 0;
+                        cmd.Dispose();
+                        conn.Dispose();
+                        conn = DatabaseConnection.getDatabaseConnection(connString);
+                        conn.Open();
+                        cmd = new OracleCommand();
+                        cmd.Connection = conn;
+                    }
                     switch (reader.NodeType)
                     {
                         case XmlNodeType.Element:
@@ -251,20 +272,25 @@ namespace KnowledgeBaseCreation
                                     break;
                                 case "Predicate":
                                     if (part == 1)
-                                    {
+                                    {                                        
                                         reader.MoveToNextAttribute();
                                         predicateName = reader.Value;
+                                        count++;
                                         query = "insert into Predicate " +
                                                 "values('" + predicateName + "')";
                                         cmd.CommandText = query;
                                         cmd.CommandType = CommandType.Text;
                                         cmd.ExecuteReader();
                                     }
-                                    break;
-                                case "Arg":
-                                    if (part == 1)
+                                    else if (part == 3)
                                     {
-                                        
+                                        reader.MoveToNextAttribute();
+                                        predicateName = reader.Value;
+                                    }
+                                    break;
+                                case "Arg":                                    
+                                    if (part == 1)
+                                    {                                        
                                         reader.MoveToNextAttribute();
                                         id = reader.Value;
                                         
@@ -273,17 +299,36 @@ namespace KnowledgeBaseCreation
                                         
                                         reader.MoveToNextAttribute();
                                         attr = reader.Value;
-                                        
-                                        query = "insert into Argument(ArgId, ArgPos, ArgAttr) " +
+                                        count++;
+                                        query = "insert into Argument " +
                                                 "values('" + id + "','" + pos + "','" + attr + "')";
                                         cmd.CommandText = query;
                                         cmd.CommandType = CommandType.Text;
                                         cmd.ExecuteReader();
-
+                                        count++;
                                         query = "insert into HasArgument " +
                                                 "values('" + predicateName + "','" + id + "')";
                                         cmd.CommandText = query;
                                         cmd.CommandType = CommandType.Text;                                    
+                                        cmd.ExecuteReader();
+                                    }
+                                    else if (part == 3)
+                                    {                                        
+                                        reader.MoveToNextAttribute();
+                                        id = reader.Value;
+                                        reader.MoveToNextAttribute();
+                                        argName = reader.Value;
+
+                                        count++;
+                                        if (preOrCon == 0)
+                                        {
+                                            query = "insert into Prerequisite " +
+                                                    "values('" + hyperAlertTypeName + "','" + predicateName + "','" + id + "','" + argName + "')";
+                                        }
+                                        else query = "insert into Consequence " +
+                                                    "values('" + hyperAlertTypeName + "','" + predicateName + "','" + id + "','" + argName + "')";
+                                        cmd.CommandText = query;
+                                        cmd.CommandType = CommandType.Text;
                                         cmd.ExecuteReader();
                                     }
 
@@ -301,11 +346,10 @@ namespace KnowledgeBaseCreation
                                     reader.MoveToNextAttribute();
                                     implyingArg = reader.Value;
                                     break;
-                                case "ImpliedArg":
-                                    count++;
+                                case "ImpliedArg":                                   
                                     reader.MoveToNextAttribute();
                                     impliedArg = reader.Value;
-
+                                    count++;
                                     query = "insert into Implication " +
                                             "values('" + implyingName + "','" + impliedName + "','" + implyingArg + "','" + impliedArg + "')";
                                     cmd.CommandText = query;
@@ -315,6 +359,81 @@ namespace KnowledgeBaseCreation
                                     break;
                                 case "HyperAlertTypes":
                                     part = 3;
+                                    break;
+                                case "HyperAlertType":                                    
+                                    reader.MoveToNextAttribute();
+                                    hyperAlertTypeName = reader.Value;                                    
+                                    count++;
+                                    query = "insert into HyperAlertType " +
+                                            "values('" + hyperAlertTypeName + "')";
+                                    cmd.CommandText = query;
+                                    cmd.CommandType = CommandType.Text;
+                                    cmd.ExecuteReader();
+                                    break;
+                                case "Fact":                                    
+                                    reader.MoveToNextAttribute();
+                                    factName = reader.Value;
+                                    reader.MoveToNextAttribute();
+                                    factType = reader.Value;
+
+                                    count++;
+                                    query = "select count(*) from (" +
+                                            "select FactName from Fact where FactName = '" + factName + "')";
+                                    cmd.CommandText = query;
+                                    cmd.CommandType = CommandType.Text;
+                                    rd = cmd.ExecuteReader();
+                                        
+                                    rd.Read();                                    
+                                    if (Convert.ToInt32(rd.GetValue(0)) == 0)
+                                    {
+                                        count++;
+                                        query = "insert into Fact " +
+                                                "values('" + factName + "','" + factType + "')";
+                                        cmd.CommandText = query;
+                                        cmd.CommandType = CommandType.Text;
+                                        cmd.ExecuteReader();
+                                    }
+
+                                    count++;
+                                    query = "insert into HasFact " +
+                                            "values('" + hyperAlertTypeName + "','" + factName + "')";
+                                    cmd.CommandText = query;
+                                    cmd.CommandType = CommandType.Text;
+                                    cmd.ExecuteReader();
+                                    break;
+                                case "Protocol":                                    
+                                    reader.MoveToNextAttribute();
+                                    protocolName = reader.Value;
+                                    count++;
+                                    query = "select count(*) from (" +
+                                            "select ProtocolName from Protocol where ProtocolName = '" + protocolName + "')";
+                                    cmd.CommandText = query;
+                                    cmd.CommandType = CommandType.Text;
+                                    rd = cmd.ExecuteReader();
+                                    
+                                    rd.Read();
+                                    if (Convert.ToInt32(rd.GetValue(0)) == 0)
+                                    {
+                                        count++;
+                                        query = "insert into Protocol " +
+                                                "values('" + protocolName + "')";
+                                        cmd.CommandText = query;
+                                        cmd.CommandType = CommandType.Text;
+                                        cmd.ExecuteReader();
+                                    }
+
+                                    count++;
+                                    query = "insert into HasProtocol " +
+                                            "values('" + hyperAlertTypeName + "','" + protocolName + "')";
+                                    cmd.CommandText = query;
+                                    cmd.CommandType = CommandType.Text;
+                                    cmd.ExecuteReader();
+                                    break;
+                                case "Prerequisite":
+                                    preOrCon = 0;
+                                    break;
+                                case "Consequence":
+                                    preOrCon = 1;
                                     break;
                                 default:
                                     break;
@@ -333,12 +452,11 @@ namespace KnowledgeBaseCreation
                     }
                 }
 
-               
                 MessageBox.Show("Knowledge Base is created successfully");
 
             }
             catch (Exception ex)
-            {
+            {                
                 MessageBox.Show(ex.Message);
             }
             finally
@@ -346,8 +464,5 @@ namespace KnowledgeBaseCreation
                 conn.Dispose();
             }
         }
-
-
-
     }
 }
