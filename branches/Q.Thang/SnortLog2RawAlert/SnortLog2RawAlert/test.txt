@@ -1,0 +1,400 @@
+[**] [1:384:5] ICMP PING [**]
+[Classification: Misc activity] [Priority: 3] 
+02/08-08:24:30.140117 192.168.1.2 -> 192.168.1.3
+ICMP TTL:128 TOS:0x0 ID:410 IpLen:20 DgmLen:60
+Type:8  Code:0  ID:512   Seq:4352  ECHO
+
+[**] [1:382:7] ICMP PING Windows [**]
+[Classification: Misc activity] [Priority: 3] 
+02/08-08:24:30.140117 192.168.1.2 -> 192.168.1.3
+ICMP TTL:128 TOS:0x0 ID:410 IpLen:20 DgmLen:60
+Type:8  Code:0  ID:512   Seq:4352  ECHO
+[Xref => http://www.whitehats.com/info/IDS169]
+
+[**] [1:408:5] ICMP Echo Reply [**]
+[Classification: Misc activity] [Priority: 3] 
+02/08-08:24:30.140146 192.168.1.3 -> 192.168.1.2
+ICMP TTL:128 TOS:0x0 ID:127 IpLen:20 DgmLen:60
+Type:0  Code:0  ID:512  Seq:4352  ECHO REPLY
+
+[**] [1:384:5] ICMP PING [**]
+[Classification: Misc activity] [Priority: 3] 
+02/08-08:24:31.132846 192.168.1.2 -> 192.168.1.3
+ICMP TTL:128 TOS:0x0 ID:411 IpLen:20 DgmLen:60
+Type:8  Code:0  ID:512   Seq:4608  ECHO
+
+[**] [1:382:7] ICMP PING Windows [**]
+[Classification: Misc activity] [Priority: 3] 
+02/08-08:24:31.132846 192.168.1.2 -> 192.168.1.3
+ICMP TTL:128 TOS:0x0 ID:411 IpLen:20 DgmLen:60
+Type:8  Code:0  ID:512   Seq:4608  ECHO
+[Xref => http://www.whitehats.com/info/IDS169]
+
+[**] [1:408:5] ICMP Echo Reply [**]
+[Classification: Misc activity] [Priority: 3] 
+02/08-08:24:31.132884 192.168.1.3 -> 192.168.1.2
+ICMP TTL:128 TOS:0x0 ID:128 IpLen:20 DgmLen:60
+Type:0  Code:0  ID:512  Seq:4608  ECHO REPLY
+
+[**] [1:384:5] ICMP PING [**]
+[Classification: Misc activity] [Priority: 3] 
+02/08-08:24:32.139918 192.168.1.2 -> 192.168.1.3
+ICMP TTL:128 TOS:0x0 ID:412 IpLen:20 DgmLen:60
+Type:8  Code:0  ID:512   Seq:4864  ECHO
+
+[**] [1:382:7] ICMP PING Windows [**]
+[Classification: Misc activity] [Priority: 3] 
+02/08-08:24:32.139918 192.168.1.2 -> 192.168.1.3
+ICMP TTL:128 TOS:0x0 ID:412 IpLen:20 DgmLen:60
+Type:8  Code:0  ID:512   Seq:4864  ECHO
+[Xref => http://www.whitehats.com/info/IDS169]
+
+[**] [1:408:5] ICMP Echo Reply [**]
+[Classification: Misc activity] [Priority: 3] 
+02/08-08:24:32.139948 192.168.1.3 -> 192.168.1.2
+ICMP TTL:128 TOS:0x0 ID:129 IpLen:20 DgmLen:60
+Type:0  Code:0  ID:512  Seq:4864  ECHO REPLY
+
+[**] [1:384:5] ICMP PING [**]
+[Classification: Misc activity] [Priority: 3] 
+02/08-08:24:33.144620 192.168.1.2 -> 192.168.1.3
+ICMP TTL:128 TOS:0x0 ID:413 IpLen:20 DgmLen:60
+Type:8  Code:0  ID:512   Seq:5120  ECHO
+
+[**] [1:382:7] ICMP PING Windows [**]
+[Classification: Misc activity] [Priority: 3] 
+02/08-08:24:33.144620 192.168.1.2 -> 192.168.1.3
+ICMP TTL:128 TOS:0x0 ID:413 IpLen:20 DgmLen:60
+Type:8  Code:0  ID:512   Seq:5120  ECHO
+[Xref => http://www.whitehats.com/info/IDS169]
+
+[**] [1:408:5] ICMP Echo Reply [**]
+[Classification: Misc activity] [Priority: 3] 
+02/08-08:24:33.144665 192.168.1.3 -> 192.168.1.2
+ICMP TTL:128 TOS:0x0 ID:130 IpLen:20 DgmLen:60
+Type:0  Code:0  ID:512  Seq:5120  ECHO REPLY
+
+[**] [1:384:5] ICMP PING [**]
+[Classification: Misc activity] [Priority: 3] 
+02/08-08:24:42.171654 192.168.1.3 -> 192.168.1.2
+ICMP TTL:128 TOS:0x0 ID:131 IpLen:20 DgmLen:60
+Type:8  Code:0  ID:768   Seq:1280  ECHO
+
+[**] [1:382:7] ICMP PING Windows [**]
+[Classification: Misc activity] [Priority: 3] 
+02/08-08:24:42.171654 192.168.1.3 -> 192.168.1.2
+ICMP TTL:128 TOS:0x0 ID:131 IpLen:20 DgmLen:60
+Type:8  Code:0  ID:768   Seq:1280  ECHO
+[Xref => http://www.whitehats.com/info/IDS169]
+
+[**] [1:408:5] ICMP Echo Reply [**]
+[Classification: Misc activity] [Priority: 3] 
+02/08-08:24:42.172055 192.168.1.2 -> 192.168.1.3
+ICMP TTL:128 TOS:0x0 ID:414 IpLen:20 DgmLen:60
+Type:0  Code:0  ID:768  Seq:1280  ECHO REPLY
+
+[**] [1:384:5] ICMP PING [**]
+[Classification: Misc activity] [Priority: 3] 
+02/08-08:24:43.171911 192.168.1.3 -> 192.168.1.2
+ICMP TTL:128 TOS:0x0 ID:132 IpLen:20 DgmLen:60
+Type:8  Code:0  ID:768   Seq:1536  ECHO
+
+[**] [1:382:7] ICMP PING Windows [**]
+[Classification: Misc activity] [Priority: 3] 
+02/08-08:24:43.171911 192.168.1.3 -> 192.168.1.2
+ICMP TTL:128 TOS:0x0 ID:132 IpLen:20 DgmLen:60
+Type:8  Code:0  ID:768   Seq:1536  ECHO
+[Xref => http://www.whitehats.com/info/IDS169]
+
+[**] [1:408:5] ICMP Echo Reply [**]
+[Classification: Misc activity] [Priority: 3] 
+02/08-08:24:43.172182 192.168.1.2 -> 192.168.1.3
+ICMP TTL:128 TOS:0x0 ID:415 IpLen:20 DgmLen:60
+Type:0  Code:0  ID:768  Seq:1536  ECHO REPLY
+
+[**] [1:384:5] ICMP PING [**]
+[Classification: Misc activity] [Priority: 3] 
+02/08-08:24:44.171933 192.168.1.3 -> 192.168.1.2
+ICMP TTL:128 TOS:0x0 ID:133 IpLen:20 DgmLen:60
+Type:8  Code:0  ID:768   Seq:1792  ECHO
+
+[**] [1:382:7] ICMP PING Windows [**]
+[Classification: Misc activity] [Priority: 3] 
+02/08-08:24:44.171933 192.168.1.3 -> 192.168.1.2
+ICMP TTL:128 TOS:0x0 ID:133 IpLen:20 DgmLen:60
+Type:8  Code:0  ID:768   Seq:1792  ECHO
+[Xref => http://www.whitehats.com/info/IDS169]
+
+[**] [1:408:5] ICMP Echo Reply [**]
+[Classification: Misc activity] [Priority: 3] 
+02/08-08:24:44.197713 192.168.1.2 -> 192.168.1.3
+ICMP TTL:128 TOS:0x0 ID:416 IpLen:20 DgmLen:60
+Type:0  Code:0  ID:768  Seq:1792  ECHO REPLY
+
+[**] [1:384:5] ICMP PING [**]
+[Classification: Misc activity] [Priority: 3] 
+02/08-08:24:45.172905 192.168.1.3 -> 192.168.1.2
+ICMP TTL:128 TOS:0x0 ID:134 IpLen:20 DgmLen:60
+Type:8  Code:0  ID:768   Seq:2048  ECHO
+
+[**] [1:382:7] ICMP PING Windows [**]
+[Classification: Misc activity] [Priority: 3] 
+02/08-08:24:45.172905 192.168.1.3 -> 192.168.1.2
+ICMP TTL:128 TOS:0x0 ID:134 IpLen:20 DgmLen:60
+Type:8  Code:0  ID:768   Seq:2048  ECHO
+[Xref => http://www.whitehats.com/info/IDS169]
+
+[**] [1:408:5] ICMP Echo Reply [**]
+[Classification: Misc activity] [Priority: 3] 
+02/08-08:24:45.173269 192.168.1.2 -> 192.168.1.3
+ICMP TTL:128 TOS:0x0 ID:417 IpLen:20 DgmLen:60
+Type:0  Code:0  ID:768  Seq:2048  ECHO REPLY
+
+[**] [1:384:5] ICMP PING [**]
+[Classification: Misc activity] [Priority: 3] 
+02/08-08:25:08.126504 192.168.1.2 -> 192.168.1.3
+ICMP TTL:128 TOS:0x0 ID:418 IpLen:20 DgmLen:60
+Type:8  Code:0  ID:512   Seq:5376  ECHO
+
+[**] [1:382:7] ICMP PING Windows [**]
+[Classification: Misc activity] [Priority: 3] 
+02/08-08:25:08.126504 192.168.1.2 -> 192.168.1.3
+ICMP TTL:128 TOS:0x0 ID:418 IpLen:20 DgmLen:60
+Type:8  Code:0  ID:512   Seq:5376  ECHO
+[Xref => http://www.whitehats.com/info/IDS169]
+
+[**] [1:408:5] ICMP Echo Reply [**]
+[Classification: Misc activity] [Priority: 3] 
+02/08-08:25:08.126534 192.168.1.3 -> 192.168.1.2
+ICMP TTL:128 TOS:0x0 ID:135 IpLen:20 DgmLen:60
+Type:0  Code:0  ID:512  Seq:5376  ECHO REPLY
+
+[**] [1:384:5] ICMP PING [**]
+[Classification: Misc activity] [Priority: 3] 
+02/08-08:25:09.131351 192.168.1.2 -> 192.168.1.3
+ICMP TTL:128 TOS:0x0 ID:419 IpLen:20 DgmLen:60
+Type:8  Code:0  ID:512   Seq:5632  ECHO
+
+[**] [1:382:7] ICMP PING Windows [**]
+[Classification: Misc activity] [Priority: 3] 
+02/08-08:25:09.131351 192.168.1.2 -> 192.168.1.3
+ICMP TTL:128 TOS:0x0 ID:419 IpLen:20 DgmLen:60
+Type:8  Code:0  ID:512   Seq:5632  ECHO
+[Xref => http://www.whitehats.com/info/IDS169]
+
+[**] [1:408:5] ICMP Echo Reply [**]
+[Classification: Misc activity] [Priority: 3] 
+02/08-08:25:09.131380 192.168.1.3 -> 192.168.1.2
+ICMP TTL:128 TOS:0x0 ID:136 IpLen:20 DgmLen:60
+Type:0  Code:0  ID:512  Seq:5632  ECHO REPLY
+
+[**] [1:384:5] ICMP PING [**]
+[Classification: Misc activity] [Priority: 3] 
+02/08-08:25:10.122139 192.168.1.2 -> 192.168.1.3
+ICMP TTL:128 TOS:0x0 ID:420 IpLen:20 DgmLen:60
+Type:8  Code:0  ID:512   Seq:5888  ECHO
+
+[**] [1:382:7] ICMP PING Windows [**]
+[Classification: Misc activity] [Priority: 3] 
+02/08-08:25:10.122139 192.168.1.2 -> 192.168.1.3
+ICMP TTL:128 TOS:0x0 ID:420 IpLen:20 DgmLen:60
+Type:8  Code:0  ID:512   Seq:5888  ECHO
+[Xref => http://www.whitehats.com/info/IDS169]
+
+[**] [1:408:5] ICMP Echo Reply [**]
+[Classification: Misc activity] [Priority: 3] 
+02/08-08:25:10.122177 192.168.1.3 -> 192.168.1.2
+ICMP TTL:128 TOS:0x0 ID:137 IpLen:20 DgmLen:60
+Type:0  Code:0  ID:512  Seq:5888  ECHO REPLY
+
+[**] [1:384:5] ICMP PING [**]
+[Classification: Misc activity] [Priority: 3] 
+02/08-08:25:11.121969 192.168.1.2 -> 192.168.1.3
+ICMP TTL:128 TOS:0x0 ID:421 IpLen:20 DgmLen:60
+Type:8  Code:0  ID:512   Seq:6144  ECHO
+
+[**] [1:382:7] ICMP PING Windows [**]
+[Classification: Misc activity] [Priority: 3] 
+02/08-08:25:11.121969 192.168.1.2 -> 192.168.1.3
+ICMP TTL:128 TOS:0x0 ID:421 IpLen:20 DgmLen:60
+Type:8  Code:0  ID:512   Seq:6144  ECHO
+[Xref => http://www.whitehats.com/info/IDS169]
+
+[**] [1:408:5] ICMP Echo Reply [**]
+[Classification: Misc activity] [Priority: 3] 
+02/08-08:25:11.122004 192.168.1.3 -> 192.168.1.2
+ICMP TTL:128 TOS:0x0 ID:138 IpLen:20 DgmLen:60
+Type:0  Code:0  ID:512  Seq:6144  ECHO REPLY
+
+[**] [1:365:8] ICMP PING undefined code [**]
+[Classification: Misc activity] [Priority: 3] 
+02/08-08:25:44.296701 192.168.1.2 -> 192.168.1.3
+ICMP TTL:58 TOS:0x0 ID:53389 IpLen:20 DgmLen:148 DF
+Type:8  Code:9  ID:36960   Seq:295  ECHO
+
+[**] [1:408:5] ICMP Echo Reply [**]
+[Classification: Misc activity] [Priority: 3] 
+02/08-08:25:44.296732 192.168.1.3 -> 192.168.1.2
+ICMP TTL:128 TOS:0x0 ID:1166 IpLen:20 DgmLen:148 DF
+Type:0  Code:0  ID:36960  Seq:295  ECHO REPLY
+
+[**] [1:384:5] ICMP PING [**]
+[Classification: Misc activity] [Priority: 3] 
+02/08-08:25:44.326717 192.168.1.2 -> 192.168.1.3
+ICMP TTL:54 TOS:0x4 ID:7854 IpLen:20 DgmLen:178
+Type:8  Code:0  ID:36961   Seq:296  ECHO
+
+[**] [1:408:5] ICMP Echo Reply [**]
+[Classification: Misc activity] [Priority: 3] 
+02/08-08:25:44.326755 192.168.1.3 -> 192.168.1.2
+ICMP TTL:128 TOS:0x0 ID:1167 IpLen:20 DgmLen:178
+Type:0  Code:0  ID:36961  Seq:296  ECHO REPLY
+
+[**] [1:1390:8] SHELLCODE x86 inc ebx NOOP [**]
+[Classification: Executable Code was Detected] [Priority: 1] 
+02/08-08:25:44.370821 192.168.1.2:55388 -> 192.168.1.3:41230
+UDP TTL:60 TOS:0x0 ID:4162 IpLen:20 DgmLen:328
+Len: 300
+
+[**] [1:402:8] ICMP Destination Unreachable Port Unreachable [**]
+[Classification: Misc activity] [Priority: 3] 
+02/08-08:25:44.370864 192.168.1.3 -> 192.168.1.2
+ICMP TTL:128 TOS:0x0 ID:1168 IpLen:20 DgmLen:176
+Type:3  Code:3  DESTINATION UNREACHABLE: PORT UNREACHABLE
+** ORIGINAL DATAGRAM DUMP:
+192.168.1.2:55388 -> 192.168.1.3:41230
+UDP TTL:60 TOS:0x0 ID:4162 IpLen:20 DgmLen:328
+Len: 300  Csum: 38747
+(120 more bytes of original packet)
+** END OF DUMP
+[Xref => http://cve.mitre.org/cgi-bin/cvename.cgi?name=2005-0068][Xref => http://cve.mitre.org/cgi-bin/cvename.cgi?name=2004-0790]
+
+[**] [1:1390:8] SHELLCODE x86 inc ebx NOOP [**]
+[Classification: Executable Code was Detected] [Priority: 1] 
+02/08-08:25:44.370864 192.168.1.3 -> 192.168.1.2
+ICMP TTL:128 TOS:0x0 ID:1168 IpLen:20 DgmLen:176
+Type:3  Code:3  DESTINATION UNREACHABLE: PORT UNREACHABLE
+** ORIGINAL DATAGRAM DUMP:
+192.168.1.2:55388 -> 192.168.1.3:41230
+UDP TTL:60 TOS:0x0 ID:4162 IpLen:20 DgmLen:328
+Len: 300  Csum: 38747
+(120 more bytes of original packet)
+** END OF DUMP
+
+[**] [1:402:8] ICMP Destination Unreachable Port Unreachable [**]
+[Classification: Misc activity] [Priority: 3] 
+02/08-08:26:07.106555 192.168.1.3 -> 192.168.1.2
+ICMP TTL:128 TOS:0x0 ID:1237 IpLen:20 DgmLen:70
+Type:3  Code:3  DESTINATION UNREACHABLE: PORT UNREACHABLE
+** ORIGINAL DATAGRAM DUMP:
+192.168.1.2:1118 -> 192.168.1.3:22323
+UDP TTL:128 TOS:0x0 ID:539 IpLen:20 DgmLen:42
+Len: 14  Csum: 18916
+(14 more bytes of original packet)
+** END OF DUMP
+[Xref => http://cve.mitre.org/cgi-bin/cvename.cgi?name=2005-0068][Xref => http://cve.mitre.org/cgi-bin/cvename.cgi?name=2004-0790]
+
+[**] [1:402:8] ICMP Destination Unreachable Port Unreachable [**]
+[Classification: Misc activity] [Priority: 3] 
+02/08-08:26:07.109620 192.168.1.3 -> 192.168.1.2
+ICMP TTL:128 TOS:0x0 ID:1238 IpLen:20 DgmLen:70
+Type:3  Code:3  DESTINATION UNREACHABLE: PORT UNREACHABLE
+** ORIGINAL DATAGRAM DUMP:
+192.168.1.2:1119 -> 192.168.1.3:47026
+UDP TTL:128 TOS:0x0 ID:540 IpLen:20 DgmLen:42
+Len: 14  Csum: 19658
+(14 more bytes of original packet)
+** END OF DUMP
+[Xref => http://cve.mitre.org/cgi-bin/cvename.cgi?name=2005-0068][Xref => http://cve.mitre.org/cgi-bin/cvename.cgi?name=2004-0790]
+
+[**] [1:17322:1] SHELLCODE x86 OS agnostic fnstenv geteip dword xor decoder [**]
+[Classification: Executable Code was Detected] [Priority: 1] 
+02/08-08:29:59.748575 192.168.1.2:1122 -> 192.168.1.3:80
+TCP TTL:128 TOS:0x0 ID:553 IpLen:20 DgmLen:1500 DF
+***A**** Seq: 0xD02AB2D4  Ack: 0xCF19AAFA  Win: 0xFFFF  TcpLen: 20
+
+[**] [1:17322:1] SHELLCODE x86 OS agnostic fnstenv geteip dword xor decoder [**]
+[Classification: Executable Code was Detected] [Priority: 1] 
+02/08-08:30:02.819217 192.168.1.2:1124 -> 192.168.1.3:80
+TCP TTL:128 TOS:0x0 ID:564 IpLen:20 DgmLen:1500 DF
+***A**** Seq: 0x54F03C97  Ack: 0x7DB1AAD7  Win: 0xFFFF  TcpLen: 20
+
+[**] [1:17322:1] SHELLCODE x86 OS agnostic fnstenv geteip dword xor decoder [**]
+[Classification: Executable Code was Detected] [Priority: 1] 
+02/08-08:30:05.907972 192.168.1.2:1125 -> 192.168.1.3:80
+TCP TTL:128 TOS:0x0 ID:575 IpLen:20 DgmLen:1500 DF
+***A**** Seq: 0x4F68D7E8  Ack: 0x6708816E  Win: 0xFFFF  TcpLen: 20
+
+[**] [1:17322:1] SHELLCODE x86 OS agnostic fnstenv geteip dword xor decoder [**]
+[Classification: Executable Code was Detected] [Priority: 1] 
+02/08-08:30:08.953570 192.168.1.2:1126 -> 192.168.1.3:80
+TCP TTL:128 TOS:0x0 ID:586 IpLen:20 DgmLen:1500 DF
+***A**** Seq: 0xF12D0A52  Ack: 0x15F40AD9  Win: 0xFFFF  TcpLen: 20
+
+[**] [1:396:7] ICMP Destination Unreachable Fragmentation Needed and DF bit was set [**]
+[Classification: Misc activity] [Priority: 3] 
+02/08-08:34:25.538004 192.168.1.1 -> 192.168.1.3
+ICMP TTL:64 TOS:0xC0 ID:52836 IpLen:20 DgmLen:576
+Type:3  Code:4  DESTINATION UNREACHABLE: FRAGMENTATION NEEDED, DF SET
+NEXT LINK MTU: 1492
+** ORIGINAL DATAGRAM DUMP:
+192.168.1.3:1071 -> 207.46.210.107:80
+TCP TTL:127 TOS:0x0 ID:1469 IpLen:20 DgmLen:1498 DF
+Seq: 0x814AC4F3
+(520 more bytes of original packet)
+** END OF DUMP
+[Xref => http://cve.mitre.org/cgi-bin/cvename.cgi?name=2005-0068][Xref => http://cve.mitre.org/cgi-bin/cvename.cgi?name=2004-0790]
+
+[**] [1:396:7] ICMP Destination Unreachable Fragmentation Needed and DF bit was set [**]
+[Classification: Misc activity] [Priority: 3] 
+02/08-08:34:26.642721 192.168.1.1 -> 192.168.1.3
+ICMP TTL:64 TOS:0xC0 ID:52837 IpLen:20 DgmLen:576
+Type:3  Code:4  DESTINATION UNREACHABLE: FRAGMENTATION NEEDED, DF SET
+NEXT LINK MTU: 1492
+** ORIGINAL DATAGRAM DUMP:
+192.168.1.3:1073 -> 65.55.13.240:80
+TCP TTL:127 TOS:0x0 ID:1496 IpLen:20 DgmLen:1497 DF
+Seq: 0x1C11921E
+(520 more bytes of original packet)
+** END OF DUMP
+[Xref => http://cve.mitre.org/cgi-bin/cvename.cgi?name=2005-0068][Xref => http://cve.mitre.org/cgi-bin/cvename.cgi?name=2004-0790]
+
+[**] [1:17322:1] SHELLCODE x86 OS agnostic fnstenv geteip dword xor decoder [**]
+[Classification: Executable Code was Detected] [Priority: 1] 
+02/08-08:38:52.485255 192.168.1.2:1129 -> 192.168.1.3:80
+TCP TTL:128 TOS:0x0 ID:714 IpLen:20 DgmLen:1500 DF
+***A**** Seq: 0x395462C3  Ack: 0x9E4C9206  Win: 0xFFFF  TcpLen: 20
+
+[**] [1:17322:1] SHELLCODE x86 OS agnostic fnstenv geteip dword xor decoder [**]
+[Classification: Executable Code was Detected] [Priority: 1] 
+02/08-08:38:55.519371 192.168.1.2:1131 -> 192.168.1.3:80
+TCP TTL:128 TOS:0x0 ID:725 IpLen:20 DgmLen:1500 DF
+***A**** Seq: 0x90E804F2  Ack: 0xA08ABFF  Win: 0xFFFF  TcpLen: 20
+
+[**] [1:17322:1] SHELLCODE x86 OS agnostic fnstenv geteip dword xor decoder [**]
+[Classification: Executable C
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ode was Detected] [Priority: 1] 
+02/08-08:38:58.556347 192.168.1.2:1132 -> 192.168.1.3:80
+TCP TTL:128 TOS:0x0 ID:736 IpLen:20 DgmLen:1500 DF
+***A**** Seq: 0x1A2F5C18  Ack: 0x474C0E94  Win: 0xFFFF  TcpLen: 20
+
+[**] [1:17322:1] SHELLCODE x86 OS agnostic fnstenv geteip dword xor decoder [**]
+[Classification: Executable Code was Detected] [Priority: 1] 
+02/08-08:39:01.605998 192.168.1.2:1133 -> 192.168.1.3:80
+TCP TTL:128 TOS:0x0 ID:747 IpLen:20 DgmLen:1500 DF
+***A**** Seq: 0xE2C3EFBC  Ack: 0xC58C8461  Win: 0xFFFF  TcpLen: 20
+
