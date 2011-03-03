@@ -22,10 +22,14 @@ namespace SecVizUserControl
         public MainWindow()
         {
             InitializeComponent();
-            TabItem item = new TabItem("A");
+            TabItem item = new TabItem("A");           
             item.AddButton("A.1");
             item.AddButton("A.2");
-            
+            item.AddButton("A.3");
+            item.IsSelected = true;
+            //item.Margin = new Thickness(0, 0, this.Width - item.Width, this.Height - item.Height);
+
+
             mainGrid.Children.Add(item);
         }
     }

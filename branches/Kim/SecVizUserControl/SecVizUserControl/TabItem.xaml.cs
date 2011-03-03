@@ -23,32 +23,44 @@ namespace SecVizUserControl
         {
             InitializeComponent();
             IsSelected = false;
-            this.BorderBrush = Brushes.Blue;
+            NumOfButton = 0;
 
             this.Width = BUTTON_WIDTH + 30;
             this.Height = BUTTON_HEIGHT;
             main_button.Width = BUTTON_WIDTH;
             main_button.Height = BUTTON_HEIGHT;
             main_button.Content = nameOfMainButton;
-            buttonList = new List<Button>();
+            buttonList = new List<Button>();        
         }
         public void AddButton(string name)
         {
+            //plus the height
+            this.Height += BUTTON_HEIGHT;
+
+            //change position of main button
+            main_button.Margin = new Thickness(0, 0, 30, (NumOfButton + 1) * BUTTON_HEIGHT);
+
+            //change position of previous child button
+            int i = 0;
+            foreach (Button tempButton in buttonList)
+            {
+                tempButton.Margin = new Thickness(30, (i + 1) * BUTTON_HEIGHT, 0, (NumOfButton - i) * BUTTON_HEIGHT);
+                i++;
+            }
+
+            //create new button
             Button newButton = new Button();
             newButton.Width = BUTTON_WIDTH;
             newButton.Height = BUTTON_HEIGHT;
             newButton.Content = name;
             newButton.Margin = new Thickness(30, 
                                              (NumOfButton+1) * BUTTON_HEIGHT, 
-                                             BUTTON_WIDTH + 30,
-                                             (NumOfButton + 2) * BUTTON_HEIGHT);
-            newButton.Visibility = Visibility.Collapsed;
-
+                                             0,
+                                             0);            
             buttonList.Add(newButton);
-
-            this.Height += BUTTON_HEIGHT;
+            
             mainItemGrid.Children.Add(newButton);           
-
+            
             NumOfButton++;
         }
         private List<Button> buttonList = null;
@@ -60,7 +72,21 @@ namespace SecVizUserControl
 
         private void main_button_Click(object sender, RoutedEventArgs e)
         {
-
+            IsSelected = !IsSelected;
+            if (IsSelected == true)
+            {
+                foreach (Button tempButton in buttonList)
+                {
+                    tempButton.Visibility = Visibility.Visible;
+                }
+            }
+            else
+            {
+                foreach (Button tempButton in buttonList)
+                {
+                    tempButton.Visibility = Visibility.Hidden;
+                }
+            }
         }
     }
 }
