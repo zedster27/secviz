@@ -22,15 +22,24 @@ namespace SecVizUserControl
         public MainWindow()
         {
             InitializeComponent();
-            TabItem item = new TabItem("A");           
-            item.AddButton("A.1");
-            item.AddButton("A.2");
-            item.AddButton("A.3");
-            item.IsSelected = true;
-            //item.Margin = new Thickness(0, 0, this.Width - item.Width, this.Height - item.Height);
+            TabItem item = new TabItem("A");
+            item.AddItem("A.1");
+            item.AddItem("A.2");
+            item.AddItem("A.3");
+            item.AddItem("A.4");
+            item.AddItem("A.5");
 
+            item.BorderBrush = Brushes.Black;
 
+            item.HorizontalAlignment = HorizontalAlignment.Left;
+            item.VerticalAlignment = VerticalAlignment.Top;
             mainGrid.Children.Add(item);
+
+            //Node newNode = new Node(200, 100, "abc", "xxx", new DateTime(), new DateTime());
+            //mainGrid.Children.Add(newNode);
+            
+
+
         }
     }
 }
