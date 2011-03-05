@@ -29,11 +29,20 @@ namespace SecVizUserControl
             item.AddItem("A.4");
             item.AddItem("A.5");
 
+            TabItem item1 = new TabItem("A");
+            item1.AddItem("A.1");
+            item1.AddItem("A.2");
+            item1.AddItem("A.3");
+            item1.AddItem("A.4");
+            item1.AddItem("A.5");
+
             item.BorderBrush = Brushes.Black;
 
             item.HorizontalAlignment = HorizontalAlignment.Left;
             item.VerticalAlignment = VerticalAlignment.Top;
-            mainGrid.Children.Add(item);
+            abc.Children.Add(item);
+            xyz.Children.Add(item1);
+            //mainGrid.Children.Add(item);
 
             //Node newNode = new Node(200, 100, "abc", "xxx", new DateTime(), new DateTime());
             //mainGrid.Children.Add(newNode);
