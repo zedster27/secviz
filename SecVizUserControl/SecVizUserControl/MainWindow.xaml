@@ -1,9 +1,21 @@
 ﻿<Window x:Class="SecVizUserControl.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:cust="clr-namespace:SecVizUserControl"
         Title="MainWindow" Height="350" Width="525">
     <Grid Name="mainGrid">
-        
+        <TabControl Height="311" HorizontalAlignment="Left" Name="tabControl1" VerticalAlignment="Top" Width="503" TabStripPlacement="Left">
+            <TabItem Name="tabItem1">
+                <TabItem.Header>
+                    <Grid Name="abc"></Grid>
+                </TabItem.Header>
+                <Grid />
+            </TabItem>
+            <TabItem Name="tabItem2">
+                <TabItem.Header>
+                    <Grid Name="xyz"></Grid>
+                </TabItem.Header>
+                <Grid />
+            </TabItem>
+        </TabControl>
     </Grid>
 </Window>
