@@ -23,8 +23,8 @@ create table HATConseq (
 );
 create table Protocol (
       HyperAlertType varchar2(50) not null,
-      Protocol varchar2(50),
-      constraint Protocol_pk primary key (HyperAlertType)
+      Protocol varchar2(50) not null,
+      constraint Protocol_pk primary key (HyperAlertType,Protocol)
 );
 create table Implication (
       P_Arg_ID int not null,
@@ -34,8 +34,9 @@ create table Implication (
 create table Predicate (
     Predicate varchar2(50) not null,
     Arg_ID int ,
+	ArgPos int not null,
     ArgType varchar2(50) ,
-    constraint Predicate_pk primary key (Predicate)
+    constraint Predicate_pk primary key (Predicate,ArgPos)
 );
 create table Alert_Info (
    SensorID int not null ,
@@ -89,13 +90,13 @@ ALTER TABLE HATFact ADD
       REFERENCES Protocol(HyperAlertType) ;
 alter table HATPrereq add (
 constraint fk1_HATPrereq foreign key (HyperAlertType) references Protocol(HyperAlertType),
-constraint fk2_HATPrereq foreign key (Predicate) references Predicate(Predicate) 
+constraint fk2_HATPrereq foreign key (Predicate,ArgPos) references Predicate(Predicate,ArgPos) 
 );
 alter table Predicate add 
 constraint u_Predicate unique ( Arg_ID) ;
 alter table HATConseq add (
    constraint fk1_HATConseq foreign key (HyperAlertType) references Protocol(HyperAlertType),
-   constraint fk2_HATConseq foreign key (Predicate) references Predicate(Predicate),
+   constraint fk2_HATConseq foreign key (Predicate,ArgPos) references Predicate(Predicate,ArgPos),
    constraint fk3_HATConseq foreign key (Arg_ID) references Predicate(Arg_ID)
 );
 alter table Implication add (
@@ -112,3 +113,32 @@ alter table ConseqSet add
   constraint fk_ConseqSet foreign key (HyperAlertID) references HyperAlert(HyperAlertID);
 alter table PrereqSet add
  constraint fk_PrereqSet foreign key (HyperAlertID) references HyperAlert(HyperAlertID);
+
+ drop table HATFact  cascade constraints;
+drop table HATPrereq cascade constraints;
+drop table HATConseq cascade constraints;
+drop table Protocol cascade constraints;
+drop table Implication cascade constraints;
+drop table Predicate cascade constraints;
+drop table Alert_Info cascade constraints;
+drop table HyperAlertMapping cascade constraints;
+drop table CorrelatedAlerts cascade constraints;
+drop table HyperAlert cascade constraints;
+drop table ConseqSet cascade constraints;
+drop table PrereqSet cascade constraints;
+ 
+ INSERT INTO HATFact (HyperAlertType, FactName, FactType)
+    VALUES ('RPC portmap sadmind request TCP',  'SrcIPAddress', 'varchar(15)');
+INSERT INTO HATFact (HyperAlertType, FactName, FactType)
+    VALUES ('RPC portmap sadmind request TCP',  'SrcPort', 'int');
+INSERT INTO HATFact (HyperAlertType, FactName, FactType)
+  VALUES ('RPC portmap sadmind request TCP',  'DestIPAddress', 'varchar(15)');
+INSERT INTO HATFact (HyperAlertType, FactName, FactType)
+  VALUES ('RPC portmap sadmind request TCP',  'DestPort', 'int');
+  
+ Insert Into Protocol (HyperAlertType, Protocol) Values 
+   ('RPC portmap sadmind request TCP', 'SADMIND');
+Insert Into Protocol (HyperAlertType, Protocol) Values 
+   ('RPC portmap sadmind request TCP', 'RPC');
+Insert Into Protocol (HyperAlertType, Protocol) Values 
+   ('RPC portmap sadmind request TCP', 'Portmap'); 
