@@ -14,12 +14,16 @@ using System.Windows.Shapes;
 
 namespace SecVizUserControl
 {    
+    public delegate void MainButtonClickDelegate(int mainButtonIndex);
+    public delegate void ChildButtonClickDelegate(int mainButtonIndex, int childButtonIndex);
     /// <summary>
     /// Interaction logic for TabItem.xaml
     /// </summary>
     public partial class TabItem : UserControl
     {
-        public TabItem(string nameOfMainButton)
+        public MainButtonClickDelegate MainButtonDelegate;
+        public ChildButtonClickDelegate ChildButtonDelegate;
+        public TabItem()
         {
             InitializeComponent();
             this.Width = ITEM_WIDTH + ITEM_HEIGHT;
@@ -30,11 +34,23 @@ namespace SecVizUserControl
             
             mainItemGrid.Height = ITEM_HEIGHT;
             mainItemGrid.Width = ITEM_WIDTH + ITEM_HEIGHT;
-            main_button.Content = nameOfMainButton;
+            
             NumOfItem = 0;
             IsSelected = false;
             SelectedButton = -1;
         }
+        /// <summary>
+        /// set the content of the main button
+        /// </summary>
+        /// <param name="name"></param>
+        public void SetMainButtonName(string name)
+        {
+            main_button.Content = name;
+        }
+        /// <summary>
+        /// add new child button
+        /// </summary>
+        /// <param name="name"></param>
         public void AddItem(string name)
         {
             NumOfItem++;
@@ -49,9 +65,15 @@ namespace SecVizUserControl
         public int SelectedButton;
         public int NumOfItem;
         public bool IsSelected;
+        //the index of this tabItem in the list of tabItem in UserInterface
+        public int Index;
         private const double ITEM_WIDTH = 120;
         private const double ITEM_HEIGHT = 30;
-
+        /// <summary>
+        /// handler of event click on main button
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void main_button_Click(object sender, RoutedEventArgs e)
         {
             IsSelected = !IsSelected;
@@ -67,11 +89,18 @@ namespace SecVizUserControl
                 mainItemGrid.Height = ITEM_HEIGHT;
                 main_listView.Visibility = Visibility.Hidden;
             }
-        }
+            this.MainButtonDelegate(Index);
 
+        }
+        /// <summary>
+        /// handler of event click on child button
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void main_listView_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-
+            SelectedButton = main_listView.SelectedIndex;
+            this.ChildButtonDelegate(this.Index, SelectedButton);
         }
 
     }
