@@ -6,8 +6,8 @@
              mc:Ignorable="d" 
              d:DesignHeight="60" d:DesignWidth="150">
     <Grid Name="mainItemGrid" Height="60" Width="150">
-        <Button Content="main" Name="main_button" Width="120" Height="30" Click="main_button_Click" HorizontalAlignment="Left" VerticalAlignment="Top"/>
-        <ListView Name="main_listView" Height="30"  Width="120" HorizontalAlignment="Right" VerticalAlignment="Bottom" SelectionChanged="main_listView_SelectionChanged" ScrollViewer.VerticalScrollBarVisibility="Disabled">            
+        <Button Content="main" Name="main_button" Width="150" Height="30" Click="main_button_Click" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <ListView Name="main_listView" Height="30"  Width="120" ScrollViewer.VerticalScrollBarVisibility="Disabled" MouseLeftButtonUp="main_listView_MouseLeftButtonUp" Margin="30,30,0,0">            
         </ListView>
     </Grid>
 </UserControl>
