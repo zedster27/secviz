@@ -29,7 +29,9 @@ namespace SecVizUserControl
             this.Width = ITEM_WIDTH + ITEM_HEIGHT;
             this.Height = ITEM_HEIGHT;
             main_listView.Width = ITEM_WIDTH;
-            main_listView.Height = 0;
+            main_listView.Height = ITEM_HEIGHT;
+            main_listView.Margin = new Thickness(ITEM_HEIGHT, ITEM_HEIGHT, 0, -ITEM_HEIGHT);
+
             main_listView.Visibility = Visibility.Hidden;
             
             mainItemGrid.Height = ITEM_HEIGHT;
@@ -91,17 +93,11 @@ namespace SecVizUserControl
             }
             this.MainButtonDelegate(Index);
 
-        }
-        /// <summary>
-        /// handler of event click on child button
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void main_listView_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        }          
+        private void main_listView_MouseLeftButtonUp(object sender, MouseButtonEventArgs e)
         {
-            SelectedButton = main_listView.SelectedIndex;
+            SelectedButton = main_listView.SelectedIndex;            
             this.ChildButtonDelegate(this.Index, SelectedButton);
         }
-
     }
 }
