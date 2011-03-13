@@ -36,27 +36,31 @@ namespace SecVizUserControl
             mainGrid.Width = 1000;
             mainGrid.Height = 600;
 
-            UserInterface ui = new UserInterface(3);
-            ui.SetMainButtonName(0, "A");
-            ui.SetMainButtonName(1, "B");
-            ui.SetMainButtonName(2, "C");
+            UserInterface ui = new UserInterface(4);
+            ui.SetMainButtonName(0, "Scan");
+            ui.SetMainButtonName(1, "Knowledge Base");
+            ui.SetMainButtonName(2, "Information");
+            ui.SetMainButtonName(2, "Protection");
 
-            ui.SetNumOfChildButton(0, 3);
-            ui.SetNumOfChildButton(1, 2);
-            ui.SetNumOfChildButton(2, 3);
+            ui.SetNumOfChildButton(0, 2);
+            ui.SetNumOfChildButton(1, 3);
+            ui.SetNumOfChildButton(2, 2);
+            ui.SetNumOfChildButton(3, 2);
 
-            ui.AddChildButton(0, "A.0");
-            ui.AddChildButton(0, "A.1");
-            ui.AddChildButton(0, "A.2");
+            ui.AddChildButton(0, "Alerts");
+            ui.AddChildButton(0, "Attack Graph");            
 
-            ui.AddChildButton(1, "B.0");
-            ui.AddChildButton(1, "B.1");            
+            ui.AddChildButton(1, "Predicate");
+            ui.AddChildButton(1, "Implication");
+            ui.AddChildButton(1, "Hyper Alert Type");
 
-            ui.AddChildButton(2, "C.0");
-            ui.AddChildButton(2, "C.1");
-            ui.AddChildButton(2, "C.2");
+            ui.AddChildButton(2, "Topology");
+            ui.AddChildButton(2, "Configuration");
 
-            AddLabel(ui.TabItemGridList[0].MainGrid, "GRID BUTTON A");
+            ui.AddChildButton(3, "Rules");
+            ui.AddChildButton(3, "Commands");
+            
+            /*AddLabel(ui.TabItemGridList[0].MainGrid, "GRID BUTTON A");
             AddLabel(ui.TabItemGridList[1].MainGrid, "GRID BUTTON B");
             AddLabel(ui.TabItemGridList[2].MainGrid, "GRID BUTTON C");
 
@@ -69,10 +73,10 @@ namespace SecVizUserControl
 
             AddLabel(ui.TabItemGridList[2].ChildGridList[0], "GRID BUTTON C.0");
             AddLabel(ui.TabItemGridList[2].ChildGridList[1], "GRID BUTTON C.1");
-            AddLabel(ui.TabItemGridList[2].ChildGridList[2], "GRID BUTTON C.2");
+            AddLabel(ui.TabItemGridList[2].ChildGridList[2], "GRID BUTTON C.2");*/
 
             ui.FinalizeUI();            
-            mainGrid.Children.Add(ui);           
+            uiGrid.Children.Add(ui);           
         }
     }
 }
