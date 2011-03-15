@@ -2,9 +2,9 @@
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:cust="clr-namespace:SecVizUserControl"
-        Title="MainWindow" Height="630" Width="1000">
+        Title="MainWindow" Height="700" Width="1019">
     <Grid Name="mainGrid" Height="630" Width="1000">
-        <Menu Height="30" HorizontalAlignment="Left" Name="menu1" VerticalAlignment="Top" Width="1000">
+        <Menu Height="30" HorizontalAlignment="Left" Name="menu" VerticalAlignment="Top" Width="1000">
             <MenuItem Header="File"/>
             <MenuItem Header="Tools"/>
             <MenuItem Header="Help"/>
