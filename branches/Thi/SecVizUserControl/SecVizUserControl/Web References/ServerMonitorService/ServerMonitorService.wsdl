@@ -1,0 +1,582 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="ScanServerVuln">
+        <s:complexType />
+      </s:element>
+      <s:element name="ScanServerVulnResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ScanServerVulnResult" type="tns:ArrayOfVulnerability" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfVulnerability">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="Vulnerability" nillable="true" type="tns:Vulnerability" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Vulnerability">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="ID" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="Name" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Description" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Severity" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetRawAlerts">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetRawAlertsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetRawAlertsResult" type="tns:ArrayOfRawAlert" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfRawAlert">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="RawAlert" nillable="true" type="tns:RawAlert" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="RawAlert">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="messageID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="analyzerID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="createTime" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="detectTime" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="sourceNetworkAddress" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="sourcePort" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="targetNetworkAddress" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="targetPort" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="assessmentImpact" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="alertName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="MessageID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="AnalyzerID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CreateTime" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="DetectTime" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="SourceNetworkAddress" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="SourcePort" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="TargetNetworkAddress" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="TargetPort" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="AssessmentImpact" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="AlertName" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetAlertsWithinInterval">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="start" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="end" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAlertsWithinIntervalResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetAlertsWithinIntervalResult" type="tns:ArrayOfRawAlert" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetServerNetworkTraffic">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetServerNetworkTrafficResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetServerNetworkTrafficResult" type="s:base64Binary" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetKBPredicates">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetKBPredicatesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetKBPredicatesResult" type="tns:ArrayOfKBPredicate" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfKBPredicate">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="KBPredicate" nillable="true" type="tns:KBPredicate" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="KBPredicate">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="PredicateName" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="PredicateID" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="NumOfFacts" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="ArgID" type="tns:ArrayOfInt" />
+          <s:element minOccurs="0" maxOccurs="1" name="ArgPos" type="tns:ArrayOfInt" />
+          <s:element minOccurs="0" maxOccurs="1" name="ArgAttr" type="tns:ArrayOfString" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfInt">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="int" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfString">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="string" nillable="true" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetKBHyperAlertTypes">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetKBHyperAlertTypesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetKBHyperAlertTypesResult" type="tns:ArrayOfKBHyperAlertType" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfKBHyperAlertType">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="KBHyperAlertType" nillable="true" type="tns:KBHyperAlertType" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="KBHyperAlertType">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Facts" type="tns:ArrayOfString" />
+          <s:element minOccurs="0" maxOccurs="1" name="Prerequisites" type="tns:ArrayOfKBPredicate" />
+          <s:element minOccurs="0" maxOccurs="1" name="Consequences" type="tns:ArrayOfKBPredicate" />
+          <s:element minOccurs="0" maxOccurs="1" name="Name" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetKBImplications">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetKBImplicationsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetKBImplicationsResult" type="tns:ArrayOfKBImplication" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfKBImplication">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="KBImplication" nillable="true" type="tns:KBImplication" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="KBImplication">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="ImplyingName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ImpliedName" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="NumArgMap" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="ImplyingArg" type="tns:ArrayOfInt" />
+          <s:element minOccurs="0" maxOccurs="1" name="ImpliedArg" type="tns:ArrayOfInt" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetHyperAlertType">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="hatname" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetHyperAlertTypeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetHyperAlertTypeResult" type="tns:ArrayOfKBHyperAlertType" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddHyperAlertType">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="hyperalert" type="tns:KBHyperAlertType" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddHyperAlertTypeResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="AddImplication">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="implication" type="tns:KBImplication" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddImplicationResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="AddPredicate">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pred" type="tns:KBPredicate" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddPredicateResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="AddNewAlert">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="msg" type="s:base64Binary" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddNewAlertResponse">
+        <s:complexType />
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="ScanServerVulnSoapIn">
+    <wsdl:part name="parameters" element="tns:ScanServerVuln" />
+  </wsdl:message>
+  <wsdl:message name="ScanServerVulnSoapOut">
+    <wsdl:part name="parameters" element="tns:ScanServerVulnResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetRawAlertsSoapIn">
+    <wsdl:part name="parameters" element="tns:GetRawAlerts" />
+  </wsdl:message>
+  <wsdl:message name="GetRawAlertsSoapOut">
+    <wsdl:part name="parameters" element="tns:GetRawAlertsResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetAlertsWithinIntervalSoapIn">
+    <wsdl:part name="parameters" element="tns:GetAlertsWithinInterval" />
+  </wsdl:message>
+  <wsdl:message name="GetAlertsWithinIntervalSoapOut">
+    <wsdl:part name="parameters" element="tns:GetAlertsWithinIntervalResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetServerNetworkTrafficSoapIn">
+    <wsdl:part name="parameters" element="tns:GetServerNetworkTraffic" />
+  </wsdl:message>
+  <wsdl:message name="GetServerNetworkTrafficSoapOut">
+    <wsdl:part name="parameters" element="tns:GetServerNetworkTrafficResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetKBPredicatesSoapIn">
+    <wsdl:part name="parameters" element="tns:GetKBPredicates" />
+  </wsdl:message>
+  <wsdl:message name="GetKBPredicatesSoapOut">
+    <wsdl:part name="parameters" element="tns:GetKBPredicatesResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetKBHyperAlertTypesSoapIn">
+    <wsdl:part name="parameters" element="tns:GetKBHyperAlertTypes" />
+  </wsdl:message>
+  <wsdl:message name="GetKBHyperAlertTypesSoapOut">
+    <wsdl:part name="parameters" element="tns:GetKBHyperAlertTypesResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetKBImplicationsSoapIn">
+    <wsdl:part name="parameters" element="tns:GetKBImplications" />
+  </wsdl:message>
+  <wsdl:message name="GetKBImplicationsSoapOut">
+    <wsdl:part name="parameters" element="tns:GetKBImplicationsResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetHyperAlertTypeSoapIn">
+    <wsdl:part name="parameters" element="tns:GetHyperAlertType" />
+  </wsdl:message>
+  <wsdl:message name="GetHyperAlertTypeSoapOut">
+    <wsdl:part name="parameters" element="tns:GetHyperAlertTypeResponse" />
+  </wsdl:message>
+  <wsdl:message name="AddHyperAlertTypeSoapIn">
+    <wsdl:part name="parameters" element="tns:AddHyperAlertType" />
+  </wsdl:message>
+  <wsdl:message name="AddHyperAlertTypeSoapOut">
+    <wsdl:part name="parameters" element="tns:AddHyperAlertTypeResponse" />
+  </wsdl:message>
+  <wsdl:message name="AddImplicationSoapIn">
+    <wsdl:part name="parameters" element="tns:AddImplication" />
+  </wsdl:message>
+  <wsdl:message name="AddImplicationSoapOut">
+    <wsdl:part name="parameters" element="tns:AddImplicationResponse" />
+  </wsdl:message>
+  <wsdl:message name="AddPredicateSoapIn">
+    <wsdl:part name="parameters" element="tns:AddPredicate" />
+  </wsdl:message>
+  <wsdl:message name="AddPredicateSoapOut">
+    <wsdl:part name="parameters" element="tns:AddPredicateResponse" />
+  </wsdl:message>
+  <wsdl:message name="AddNewAlertSoapIn">
+    <wsdl:part name="parameters" element="tns:AddNewAlert" />
+  </wsdl:message>
+  <wsdl:message name="AddNewAlertSoapOut">
+    <wsdl:part name="parameters" element="tns:AddNewAlertResponse" />
+  </wsdl:message>
+  <wsdl:portType name="ServerMonitorServiceSoap">
+    <wsdl:operation name="ScanServerVuln">
+      <wsdl:input message="tns:ScanServerVulnSoapIn" />
+      <wsdl:output message="tns:ScanServerVulnSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetRawAlerts">
+      <wsdl:input message="tns:GetRawAlertsSoapIn" />
+      <wsdl:output message="tns:GetRawAlertsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAlertsWithinInterval">
+      <wsdl:input message="tns:GetAlertsWithinIntervalSoapIn" />
+      <wsdl:output message="tns:GetAlertsWithinIntervalSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetServerNetworkTraffic">
+      <wsdl:input message="tns:GetServerNetworkTrafficSoapIn" />
+      <wsdl:output message="tns:GetServerNetworkTrafficSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetKBPredicates">
+      <wsdl:input message="tns:GetKBPredicatesSoapIn" />
+      <wsdl:output message="tns:GetKBPredicatesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetKBHyperAlertTypes">
+      <wsdl:input message="tns:GetKBHyperAlertTypesSoapIn" />
+      <wsdl:output message="tns:GetKBHyperAlertTypesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetKBImplications">
+      <wsdl:input message="tns:GetKBImplicationsSoapIn" />
+      <wsdl:output message="tns:GetKBImplicationsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetHyperAlertType">
+      <wsdl:input message="tns:GetHyperAlertTypeSoapIn" />
+      <wsdl:output message="tns:GetHyperAlertTypeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AddHyperAlertType">
+      <wsdl:input message="tns:AddHyperAlertTypeSoapIn" />
+      <wsdl:output message="tns:AddHyperAlertTypeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AddImplication">
+      <wsdl:input message="tns:AddImplicationSoapIn" />
+      <wsdl:output message="tns:AddImplicationSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AddPredicate">
+      <wsdl:input message="tns:AddPredicateSoapIn" />
+      <wsdl:output message="tns:AddPredicateSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AddNewAlert">
+      <wsdl:input message="tns:AddNewAlertSoapIn" />
+      <wsdl:output message="tns:AddNewAlertSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="ServerMonitorServiceSoap" type="tns:ServerMonitorServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="ScanServerVuln">
+      <soap:operation soapAction="http://tempuri.org/ScanServerVuln" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRawAlerts">
+      <soap:operation soapAction="http://tempuri.org/GetRawAlerts" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAlertsWithinInterval">
+      <soap:operation soapAction="http://tempuri.org/GetAlertsWithinInterval" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetServerNetworkTraffic">
+      <soap:operation soapAction="http://tempuri.org/GetServerNetworkTraffic" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetKBPredicates">
+      <soap:operation soapAction="http://tempuri.org/GetKBPredicates" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetKBHyperAlertTypes">
+      <soap:operation soapAction="http://tempuri.org/GetKBHyperAlertTypes" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetKBImplications">
+      <soap:operation soapAction="http://tempuri.org/GetKBImplications" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetHyperAlertType">
+      <soap:operation soapAction="http://tempuri.org/GetHyperAlertType" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddHyperAlertType">
+      <soap:operation soapAction="http://tempuri.org/AddHyperAlertType" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddImplication">
+      <soap:operation soapAction="http://tempuri.org/AddImplication" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddPredicate">
+      <soap:operation soapAction="http://tempuri.org/AddPredicate" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddNewAlert">
+      <soap:operation soapAction="http://tempuri.org/AddNewAlert" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="ServerMonitorServiceSoap12" type="tns:ServerMonitorServiceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="ScanServerVuln">
+      <soap12:operation soapAction="http://tempuri.org/ScanServerVuln" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRawAlerts">
+      <soap12:operation soapAction="http://tempuri.org/GetRawAlerts" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAlertsWithinInterval">
+      <soap12:operation soapAction="http://tempuri.org/GetAlertsWithinInterval" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetServerNetworkTraffic">
+      <soap12:operation soapAction="http://tempuri.org/GetServerNetworkTraffic" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetKBPredicates">
+      <soap12:operation soapAction="http://tempuri.org/GetKBPredicates" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetKBHyperAlertTypes">
+      <soap12:operation soapAction="http://tempuri.org/GetKBHyperAlertTypes" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetKBImplications">
+      <soap12:operation soapAction="http://tempuri.org/GetKBImplications" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetHyperAlertType">
+      <soap12:operation soapAction="http://tempuri.org/GetHyperAlertType" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddHyperAlertType">
+      <soap12:operation soapAction="http://tempuri.org/AddHyperAlertType" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddImplication">
+      <soap12:operation soapAction="http://tempuri.org/AddImplication" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddPredicate">
+      <soap12:operation soapAction="http://tempuri.org/AddPredicate" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddNewAlert">
+      <soap12:operation soapAction="http://tempuri.org/AddNewAlert" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="ServerMonitorService">
+    <wsdl:port name="ServerMonitorServiceSoap" binding="tns:ServerMonitorServiceSoap">
+      <soap:address location="http://localhost:8080/Services/ServerMonitorService.asmx" />
+    </wsdl:port>
+    <wsdl:port name="ServerMonitorServiceSoap12" binding="tns:ServerMonitorServiceSoap12">
+      <soap12:address location="http://localhost:8080/Services/ServerMonitorService.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="HelloWorld">
+        <s:complexType />
+      </s:element>
+      <s:element name="HelloWorldResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="HelloWorldResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="NoneAggregateAlerts">
+        <s:complexType />
+      </s:element>
+      <s:element name="NoneAggregateAlertsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="NoneAggregateAlertsResult" type="tns:ArrayOfRawAlert" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfRawAlert">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="RawAlert" nillable="true" type="tns:RawAlert" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="RawAlert">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="messageID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="analyzerID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="createTime" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="detectTime" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="sourceNetworkAddress" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="sourcePort" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="targetNetworkAddress" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="targetPort" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="assessmentImpact" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="alertName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="MessageID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="AnalyzerID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CreateTime" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="DetectTime" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="SourceNetworkAddress" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="SourcePort" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="TargetNetworkAddress" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="TargetPort" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="AssessmentImpact" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="AlertName" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="TrivialAggregateAlerts">
+        <s:complexType />
+      </s:element>
+      <s:element name="TrivialAggregateAlertsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TrivialAggregateAlertsResult" type="tns:ArrayOfRawAlert" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="KmeanAggregationAlerts">
+        <s:complexType />
+      </s:element>
+      <s:element name="KmeanAggregationAlertsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="KmeanAggregationAlertsResult" type="tns:ArrayOfRawAlert" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DensityAggregationAlerts">
+        <s:complexType />
+      </s:element>
+      <s:element name="DensityAggregationAlertsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="DensityAggregationAlertsResult" type="tns:ArrayOfRawAlert" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="HelloWorldSoapIn">
+    <wsdl:part name="parameters" element="tns:HelloWorld" />
+  </wsdl:message>
+  <wsdl:message name="HelloWorldSoapOut">
+    <wsdl:part name="parameters" element="tns:HelloWorldResponse" />
+  </wsdl:message>
+  <wsdl:message name="NoneAggregateAlertsSoapIn">
+    <wsdl:part name="parameters" element="tns:NoneAggregateAlerts" />
+  </wsdl:message>
+  <wsdl:message name="NoneAggregateAlertsSoapOut">
+    <wsdl:part name="parameters" element="tns:NoneAggregateAlertsResponse" />
+  </wsdl:message>
+  <wsdl:message name="TrivialAggregateAlertsSoapIn">
+    <wsdl:part name="parameters" element="tns:TrivialAggregateAlerts" />
+  </wsdl:message>
+  <wsdl:message name="TrivialAggregateAlertsSoapOut">
+    <wsdl:part name="parameters" element="tns:TrivialAggregateAlertsResponse" />
+  </wsdl:message>
+  <wsdl:message name="KmeanAggregationAlertsSoapIn">
+    <wsdl:part name="parameters" element="tns:KmeanAggregationAlerts" />
+  </wsdl:message>
+  <wsdl:message name="KmeanAggregationAlertsSoapOut">
+    <wsdl:part name="parameters" element="tns:KmeanAggregationAlertsResponse" />
+  </wsdl:message>
+  <wsdl:message name="DensityAggregationAlertsSoapIn">
+    <wsdl:part name="parameters" element="tns:DensityAggregationAlerts" />
+  </wsdl:message>
+  <wsdl:message name="DensityAggregationAlertsSoapOut">
+    <wsdl:part name="parameters" element="tns:DensityAggregationAlertsResponse" />
+  </wsdl:message>
+  <wsdl:portType name="AggregationServiceSoap">
+    <wsdl:operation name="HelloWorld">
+      <wsdl:input message="tns:HelloWorldSoapIn" />
+      <wsdl:output message="tns:HelloWorldSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="NoneAggregateAlerts">
+      <wsdl:input message="tns:NoneAggregateAlertsSoapIn" />
+      <wsdl:output message="tns:NoneAggregateAlertsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TrivialAggregateAlerts">
+      <wsdl:input message="tns:TrivialAggregateAlertsSoapIn" />
+      <wsdl:output message="tns:TrivialAggregateAlertsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="KmeanAggregationAlerts">
+      <wsdl:input message="tns:KmeanAggregationAlertsSoapIn" />
+      <wsdl:output message="tns:KmeanAggregationAlertsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DensityAggregationAlerts">
+      <wsdl:input message="tns:DensityAggregationAlertsSoapIn" />
+      <wsdl:output message="tns:DensityAggregationAlertsSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="AggregationServiceSoap" type="tns:AggregationServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="HelloWorld">
+      <soap:operation soapAction="http://tempuri.org/HelloWorld" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NoneAggregateAlerts">
+      <soap:operation soapAction="http://tempuri.org/NoneAggregateAlerts" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TrivialAggregateAlerts">
+      <soap:operation soapAction="http://tempuri.org/TrivialAggregateAlerts" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="KmeanAggregationAlerts">
+      <soap:operation soapAction="http://tempuri.org/KmeanAggregationAlerts" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DensityAggregationAlerts">
+      <soap:operation soapAction="http://tempuri.org/DensityAggregationAlerts" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="AggregationServiceSoap12" type="tns:AggregationServiceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="HelloWorld">
+      <soap12:operation soapAction="http://tempuri.org/HelloWorld" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NoneAggregateAlerts">
+      <soap12:operation soapAction="http://tempuri.org/NoneAggregateAlerts" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TrivialAggregateAlerts">
+      <soap12:operation soapAction="http://tempuri.org/TrivialAggregateAlerts" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="KmeanAggregationAlerts">
+      <soap12:operation soapAction="http://tempuri.org/KmeanAggregationAlerts" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DensityAggregationAlerts">
+      <soap12:operation soapAction="http://tempuri.org/DensityAggregationAlerts" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="AggregationService">
+    <wsdl:port name="AggregationServiceSoap" binding="tns:AggregationServiceSoap">
+      <soap:address location="http://localhost:8080/Services/AggregationService.asmx" />
+    </wsdl:port>
+    <wsdl:port name="AggregationServiceSoap12" binding="tns:AggregationServiceSoap12">
+      <soap12:address location="http://localhost:8080/Services/AggregationService.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

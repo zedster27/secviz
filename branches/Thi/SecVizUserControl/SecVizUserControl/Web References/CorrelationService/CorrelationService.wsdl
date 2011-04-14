@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="GetFullAttackGraphDotFile">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetFullAttackGraphDotFileResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetFullAttackGraphDotFileResult" type="s:base64Binary" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAttackGraphDotFileWithAttributes">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="attrs" type="tns:AttributeValueList" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="AttributeValueList" />
+      <s:element name="GetAttackGraphDotFileWithAttributesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetAttackGraphDotFileWithAttributesResult" type="s:base64Binary" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetFullAttackGraph">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetFullAttackGraphResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetFullAttackGraphResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAttackGraphWithAttributes">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="atttrs" type="tns:AttributeValueList" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAttackGraphWithAttributesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetAttackGraphWithAttributesResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PredictNextAlerts">
+        <s:complexType />
+      </s:element>
+      <s:element name="PredictNextAlertsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PredictNextAlertsResult" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfString">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="string" nillable="true" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="PredictNextAlertsForAlert">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="alertId" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PredictNextAlertsForAlertResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PredictNextAlertsForAlertResult" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="GetFullAttackGraphDotFileSoapIn">
+    <wsdl:part name="parameters" element="tns:GetFullAttackGraphDotFile" />
+  </wsdl:message>
+  <wsdl:message name="GetFullAttackGraphDotFileSoapOut">
+    <wsdl:part name="parameters" element="tns:GetFullAttackGraphDotFileResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetAttackGraphDotFileWithAttributesSoapIn">
+    <wsdl:part name="parameters" element="tns:GetAttackGraphDotFileWithAttributes" />
+  </wsdl:message>
+  <wsdl:message name="GetAttackGraphDotFileWithAttributesSoapOut">
+    <wsdl:part name="parameters" element="tns:GetAttackGraphDotFileWithAttributesResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetFullAttackGraphSoapIn">
+    <wsdl:part name="parameters" element="tns:GetFullAttackGraph" />
+  </wsdl:message>
+  <wsdl:message name="GetFullAttackGraphSoapOut">
+    <wsdl:part name="parameters" element="tns:GetFullAttackGraphResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetAttackGraphWithAttributesSoapIn">
+    <wsdl:part name="parameters" element="tns:GetAttackGraphWithAttributes" />
+  </wsdl:message>
+  <wsdl:message name="GetAttackGraphWithAttributesSoapOut">
+    <wsdl:part name="parameters" element="tns:GetAttackGraphWithAttributesResponse" />
+  </wsdl:message>
+  <wsdl:message name="PredictNextAlertsSoapIn">
+    <wsdl:part name="parameters" element="tns:PredictNextAlerts" />
+  </wsdl:message>
+  <wsdl:message name="PredictNextAlertsSoapOut">
+    <wsdl:part name="parameters" element="tns:PredictNextAlertsResponse" />
+  </wsdl:message>
+  <wsdl:message name="PredictNextAlertsForAlertSoapIn">
+    <wsdl:part name="parameters" element="tns:PredictNextAlertsForAlert" />
+  </wsdl:message>
+  <wsdl:message name="PredictNextAlertsForAlertSoapOut">
+    <wsdl:part name="parameters" element="tns:PredictNextAlertsForAlertResponse" />
+  </wsdl:message>
+  <wsdl:portType name="CorrelationServiceSoap">
+    <wsdl:operation name="GetFullAttackGraphDotFile">
+      <wsdl:input message="tns:GetFullAttackGraphDotFileSoapIn" />
+      <wsdl:output message="tns:GetFullAttackGraphDotFileSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAttackGraphDotFileWithAttributes">
+      <wsdl:input message="tns:GetAttackGraphDotFileWithAttributesSoapIn" />
+      <wsdl:output message="tns:GetAttackGraphDotFileWithAttributesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetFullAttackGraph">
+      <wsdl:input message="tns:GetFullAttackGraphSoapIn" />
+      <wsdl:output message="tns:GetFullAttackGraphSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAttackGraphWithAttributes">
+      <wsdl:input message="tns:GetAttackGraphWithAttributesSoapIn" />
+      <wsdl:output message="tns:GetAttackGraphWithAttributesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PredictNextAlerts">
+      <wsdl:input message="tns:PredictNextAlertsSoapIn" />
+      <wsdl:output message="tns:PredictNextAlertsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PredictNextAlertsForAlert">
+      <wsdl:input message="tns:PredictNextAlertsForAlertSoapIn" />
+      <wsdl:output message="tns:PredictNextAlertsForAlertSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="CorrelationServiceSoap" type="tns:CorrelationServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetFullAttackGraphDotFile">
+      <soap:operation soapAction="http://tempuri.org/GetFullAttackGraphDotFile" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAttackGraphDotFileWithAttributes">
+      <soap:operation soapAction="http://tempuri.org/GetAttackGraphDotFileWithAttributes" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetFullAttackGraph">
+      <soap:operation soapAction="http://tempuri.org/GetFullAttackGraph" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAttackGraphWithAttributes">
+      <soap:operation soapAction="http://tempuri.org/GetAttackGraphWithAttributes" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PredictNextAlerts">
+      <soap:operation soapAction="http://tempuri.org/PredictNextAlerts" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PredictNextAlertsForAlert">
+      <soap:operation soapAction="http://tempuri.org/PredictNextAlertsForAlert" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="CorrelationServiceSoap12" type="tns:CorrelationServiceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetFullAttackGraphDotFile">
+      <soap12:operation soapAction="http://tempuri.org/GetFullAttackGraphDotFile" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAttackGraphDotFileWithAttributes">
+      <soap12:operation soapAction="http://tempuri.org/GetAttackGraphDotFileWithAttributes" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetFullAttackGraph">
+      <soap12:operation soapAction="http://tempuri.org/GetFullAttackGraph" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAttackGraphWithAttributes">
+      <soap12:operation soapAction="http://tempuri.org/GetAttackGraphWithAttributes" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PredictNextAlerts">
+      <soap12:operation soapAction="http://tempuri.org/PredictNextAlerts" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PredictNextAlertsForAlert">
+      <soap12:operation soapAction="http://tempuri.org/PredictNextAlertsForAlert" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="CorrelationService">
+    <wsdl:port name="CorrelationServiceSoap" binding="tns:CorrelationServiceSoap">
+      <soap:address location="http://localhost:8080/Services/CorrelationService.asmx" />
+    </wsdl:port>
+    <wsdl:port name="CorrelationServiceSoap12" binding="tns:CorrelationServiceSoap12">
+      <soap12:address location="http://localhost:8080/Services/CorrelationService.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

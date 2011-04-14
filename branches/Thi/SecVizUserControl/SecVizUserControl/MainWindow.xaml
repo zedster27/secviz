@@ -1,0 +1,14 @@
+﻿<Window x:Class="SecVizAdminApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:cust="clr-namespace:SecVizAdminApp"
+        Title="MainWindow" Height="688" Width="1068">
+    <Grid Name="mainGrid" Height="650" Width="1000">
+        <Menu Height="30" HorizontalAlignment="Left" Name="menu" VerticalAlignment="Top" Width="1000">
+            <MenuItem Header="File"/>
+            <MenuItem Header="Tools"/>
+            <MenuItem Header="Help"/>
+        </Menu>
+        <Grid Name="uiGrid" Width="1000" Margin="0,30,0,-31"></Grid>
+    </Grid>
+</Window>
