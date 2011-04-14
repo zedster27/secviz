@@ -1,0 +1,13 @@
+﻿<Window x:Class="SecVizAdminApp.AddRuleWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="AddRuleWindow" Height="398" Width="677">
+    <Grid>
+        <TextBox Height="164" HorizontalAlignment="Left" Margin="12,119,0,0" Name="contentTextbox" VerticalAlignment="Top" Width="623" />
+        <Button Content="Add" Height="22" HorizontalAlignment="Left" Margin="102,313,0,0" Name="addButton" VerticalAlignment="Top" Width="127" Click="addButton_Click" />
+        <Button Content="Close" Height="23" HorizontalAlignment="Left" Margin="312,313,0,0" Name="closeButton" VerticalAlignment="Top" Width="121" Click="closeButton_Click" />
+        <Label Content="Rule content:" Height="28" HorizontalAlignment="Left" Margin="12,85,0,0" Name="label1" VerticalAlignment="Top" Width="92" />
+        <Label Content="Rule name:" Height="28" HorizontalAlignment="Left" Margin="12,33,0,0" Name="label2" VerticalAlignment="Top" Width="92" />
+        <TextBox Height="23" HorizontalAlignment="Left" Margin="131,38,0,0" Name="nameTextbox" VerticalAlignment="Top" Width="373" />
+    </Grid>
+</Window>

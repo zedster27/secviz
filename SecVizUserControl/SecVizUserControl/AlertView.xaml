@@ -1,0 +1,16 @@
+﻿<UserControl x:Class="SecVizAdminApp.AlertView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="600" d:DesignWidth="1000">
+    <Grid Height="600" Width="1000">
+        <DataGrid Name="alertDataGrid" Margin="12,12,0,109" ItemsSource="{Binding Alerts}" AutoGenerateColumns="True" HorizontalAlignment="Left" Width="901" VerticalAlignment="Stretch" />
+        <Button Content="Search" IsEnabled="False" Height="30" HorizontalAlignment="Left" Margin="62,523,0,0" 
+                Name="searchButton" VerticalAlignment="Top" Width="150" Click="searchButton_Click" />
+        <ProgressBar Height="26" HorizontalAlignment="Left" Margin="320,206,0,0" Name="dataLoadingProgressbar"
+                     VerticalAlignment="Top" Width="293" />
+        <Button Content="Refresh" IsEnabled="False" Height="30" HorizontalAlignment="Left" Margin="259,523,0,0" Name="refreshButton" VerticalAlignment="Top" Width="161" Click="refreshButton_Click" />
+    </Grid>
+</UserControl>

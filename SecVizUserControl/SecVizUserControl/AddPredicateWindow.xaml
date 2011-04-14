@@ -1,0 +1,8 @@
+﻿<Window x:Class="SecVizAdminApp.AddPredicateWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="AddPredicateWindow" Height="375" Width="700">
+    <Grid Height="352" Width="678">
+        
+    </Grid>
+</Window>

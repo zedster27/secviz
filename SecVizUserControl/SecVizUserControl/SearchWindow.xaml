@@ -1,0 +1,11 @@
+﻿<Window x:Class="SecVizAdminApp.SearchWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Find" Height="167" Width="442">
+    <Grid>
+        <Button Content="Find" Height="23" HorizontalAlignment="Left" Margin="281,48,0,0" Name="findButton" VerticalAlignment="Top" Width="101" Click="findButton_Click" />
+        <TextBox Height="23" HorizontalAlignment="Left" Margin="22,48,0,0" Name="findPatterTextbox" VerticalAlignment="Top" Width="241" />
+        <Label Content="Enter string to find" Height="28" HorizontalAlignment="Left" Margin="22,12,0,0" Name="label1" VerticalAlignment="Top" Width="173" />
+        <Button Content="Close" Height="23" HorizontalAlignment="Left" Margin="281,93,0,0" Name="closeButton" VerticalAlignment="Top" Width="101" Click="closeButton_Click" />
+    </Grid>
+</Window>

@@ -1,0 +1,15 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="SecVizAdminApp.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="SecVizUserControl_MonitorWebRef_ServerMonitorService" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://localhost:8080/Services/ServerMonitorService.asmx</Value>
+    </Setting>
+    <Setting Name="SecVizUserControl_AggregationService_AggregationService" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://localhost:8080/Services/AggregationService.asmx</Value>
+    </Setting>
+    <Setting Name="SecVizUserControl_CorrelationService_CorrelationService" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://localhost:8080/Services/CorrelationService.asmx</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
