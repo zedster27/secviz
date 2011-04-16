@@ -30,6 +30,29 @@
                 </Trigger>
             </Style.Triggers>
         </Style>
+        <Style TargetType="{x:Type ListViewItem}">
+            <Style.Triggers>
+                <Trigger Property="IsMouseOver" Value="true">
+                    <Setter Property="FontWeight" Value="Bold"/>
+                    <Setter Property="BorderThickness" Value="1"/>
+                    <Setter Property="BorderBrush" Value="#FF848484"/>
+                    <Setter Property="Background">
+                        <Setter.Value>
+                            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                <GradientStop Color="Red" Offset="0"/>
+                                <GradientStop Color="Gainsboro" Offset="0.5"/>
+                                <GradientStop Color="#FFADADAD" Offset="0.5"/>
+                                <GradientStop Color="#FFD4D4D4" Offset="1"/>
+                            </LinearGradientBrush>
+                        </Setter.Value>
+                    </Setter>
+                    <Setter Property="Foreground" Value="Black"/>
+                    <Setter Property="HorizontalContentAlignment" Value="Center"/>
+                    <Setter Property="VerticalContentAlignment" Value="Center"/>
+                    <Setter Property="Padding" Value="3"/>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
     </UserControl.Resources>
         <Grid Name="mainItemGrid" Height="69" Width="172">
             <Grid.ColumnDefinitions>
