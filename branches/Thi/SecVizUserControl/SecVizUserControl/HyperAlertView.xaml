@@ -8,8 +8,8 @@
     <Grid Height="352" Width="666">
         <ListView Height="254" ItemsSource="{Binding HyperAlerts}" HorizontalAlignment="Left" Margin="12,12,0,0" Name="hatListView" VerticalAlignment="Top" Width="406" />
         <TextBlock Height="254" HorizontalAlignment="Left" Margin="442,12,0,0" Name="detailTextblock" Text="" VerticalAlignment="Top" Width="203" />
-        <Button Content="View Detail" Height="23" HorizontalAlignment="Left" Margin="95,306,0,0" Name="viewdetailButton" VerticalAlignment="Top" Width="129" Click="viewdetailButton_Click" />
-        <Button Content="Reload" Height="23" HorizontalAlignment="Left" Margin="285,306,0,0" Name="reloadButton" VerticalAlignment="Top" Width="133" Click="reloadButton_Click" />
-        <Button Content="Add" Height="23" HorizontalAlignment="Left" Margin="489,306,0,0" Name="addButton" VerticalAlignment="Top" Width="129" Click="addButton_Click" />
+        <Button Content="View Detail" Height="30" HorizontalAlignment="Left" Margin="95,306,0,0" Name="viewdetailButton" VerticalAlignment="Top" Width="150" Click="viewdetailButton_Click" />
+        <Button Content="Reload" Height="30" HorizontalAlignment="Left" Margin="285,306,0,0" Name="reloadButton" VerticalAlignment="Top" Width="150" Click="reloadButton_Click" />
+        <Button Content="Add" Height="30" HorizontalAlignment="Left" Margin="489,306,0,0" Name="addButton" VerticalAlignment="Top" Width="150" Click="addButton_Click" />
     </Grid>
 </UserControl>

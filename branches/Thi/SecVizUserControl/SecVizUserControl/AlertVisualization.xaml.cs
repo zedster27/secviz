@@ -25,7 +25,13 @@ namespace SecVizAdminApp
     {
         public AlertVisualization()
         {
-            InitializeComponent();
+            InitializeComponent();           
+            ImageBrush brushBackground = new ImageBrush();
+            Uri uriBackground = new Uri(Constant.BACKGROUND_PATH);
+            BitmapImage imgBackground = new BitmapImage(uriBackground);
+            brushBackground.ImageSource = imgBackground;
+            this.Background = brushBackground;
+
             this.Loaded += new RoutedEventHandler(AlertVisualization_Loaded);
 
             monitorService = new ServerMonitorService.ServerMonitorService();

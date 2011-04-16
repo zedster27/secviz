@@ -26,11 +26,18 @@ namespace SecVizAdminApp
         public TabItem()
         {
             InitializeComponent();
+            ImageBrush brush = new ImageBrush();
+            Uri uri = new Uri(Constant.MAIN_TAB_PATH);
+            BitmapImage img = new BitmapImage(uri);
+            brush.ImageSource = img;
+            main_button.Background = brush;
+
             this.Width = ITEM_WIDTH + ITEM_HEIGHT;
             this.Height = ITEM_HEIGHT;
             main_listView.Width = ITEM_WIDTH;
             main_listView.Height = ITEM_HEIGHT;
             main_listView.Margin = new Thickness(ITEM_HEIGHT, ITEM_HEIGHT, 0, -ITEM_HEIGHT);
+            main_listView.Background = Brushes.LightGray;
 
             main_listView.Visibility = Visibility.Hidden;
             

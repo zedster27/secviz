@@ -4,9 +4,9 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              mc:Ignorable="d" 
-             d:DesignHeight="536" d:DesignWidth="733">
+             d:DesignHeight="600" d:DesignWidth="1000">
     <Grid Height="537" Width="732">
         <DataGrid AutoGenerateColumns="True" ItemsSource="{Binding Implications}" Height="436" HorizontalAlignment="Left" Margin="12,12,0,0" Name="dataGrid" VerticalAlignment="Top" Width="708" />
-        <Button Content="Reload" Height="29" HorizontalAlignment="Left" Margin="70,486,0,0" Name="reloadButton" VerticalAlignment="Top" Width="179" Click="reloadButton_Click" />
+        <Button Content="Reload" Height="30" HorizontalAlignment="Left" Margin="70,486,0,0" Name="reloadButton" VerticalAlignment="Top" Width="150" Click="reloadButton_Click" />
     </Grid>
 </UserControl>
