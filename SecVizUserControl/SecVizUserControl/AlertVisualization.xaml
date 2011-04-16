@@ -4,9 +4,9 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              mc:Ignorable="d" 
-             d:DesignHeight="483" d:DesignWidth="774">
+             d:DesignHeight="600" d:DesignWidth="1000">
     <Grid>
-        <Canvas Height="483" HorizontalAlignment="Left" Name="canvas1" VerticalAlignment="Top" Width="774" Background="LightGray">
+        <Canvas Height="483" HorizontalAlignment="Left" Name="canvas1" VerticalAlignment="Top" Width="774" Background="LightGray" Margin="51,0,0,0">
             <Line X1="10" X2="10" Y1="30" Y2="450" Stroke="Black" StrokeThickness="4" Height="450" />
             <Line X1="500" X2="500" Y1="30" Y2="450" Stroke="Black" StrokeThickness="4" Height="450" />
             <ComboBox Canvas.Left="590" Canvas.Top="101" Height="23" Name="optionCombobox" Width="120" SelectionChanged="option_SelectionChanged" DataContext="{Binding}" ItemsSource="{Binding}" SelectedIndex="1">

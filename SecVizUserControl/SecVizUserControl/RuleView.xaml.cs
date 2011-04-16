@@ -24,6 +24,18 @@ namespace SecVizAdminApp
         public RuleView()
         {
             InitializeComponent();
+            ImageBrush brush = new ImageBrush();
+            Uri uri = new Uri(Constant.BUTTON_BACKGROUND_PATH);
+            BitmapImage img = new BitmapImage(uri);
+            brush.ImageSource = img;
+            deleteRuleButton.Background = brush;
+            addRuleButton.Background = brush;
+
+            ImageBrush brushBackground = new ImageBrush();
+            Uri uriBackground = new Uri(Constant.BACKGROUND_PATH);
+            BitmapImage imgBackground = new BitmapImage(uriBackground);
+            brushBackground.ImageSource = imgBackground;
+            this.Background = brushBackground;
             loadedRule = new List<Rule>();
         }
 

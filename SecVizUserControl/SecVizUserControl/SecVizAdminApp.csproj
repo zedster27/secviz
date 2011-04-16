@@ -81,6 +81,7 @@
     <Compile Include="CommandView.xaml.cs">
       <DependentUpon>CommandView.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Constant.cs" />
     <Compile Include="DrawingTools\ArrowEnds.cs" />
     <Compile Include="DrawingTools\ArrowLine.cs" />
     <Compile Include="DrawingTools\ArrowLineBase.cs" />
@@ -321,6 +322,16 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Web References\CorrelationService\CorrelationService.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Pictures\blue.png" />
+    <Resource Include="Pictures\dark-blue.png" />
+    <Resource Include="Pictures\orange.png" />
+    <Resource Include="Pictures\white.png" />
+    <Resource Include="Pictures\yellow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Pictures\blue-background.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

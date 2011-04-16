@@ -26,6 +26,19 @@ namespace SecVizAdminApp
         public AlertView()
         {
             InitializeComponent();
+            ImageBrush brush = new ImageBrush();
+            Uri uri = new Uri(Constant.BUTTON_BACKGROUND_PATH);
+            BitmapImage img = new BitmapImage(uri);
+            brush.ImageSource = img;
+            searchButton.Background = brush;            
+            refreshButton.Background = brush;
+          
+            ImageBrush brushBackground = new ImageBrush();
+            Uri uriBackground = new Uri(Constant.BACKGROUND_PATH);
+            BitmapImage imgBackground = new BitmapImage(uriBackground);
+            brushBackground.ImageSource = imgBackground;
+            this.Background = brushBackground;
+
             this.Loaded += new RoutedEventHandler(AlertView_Loaded);
 
             monitorService = new ServerMonitorService.ServerMonitorService();
